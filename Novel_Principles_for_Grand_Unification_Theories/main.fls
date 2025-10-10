@@ -1,6 +1,6 @@
-PWD /Users/slw/Code/latex/Novel_Principles_for_Grand_Unification_Theories
+PWD /Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories
 INPUT /usr/local/texlive/2025/texmf-var/web2c/luahbtex/lualatex.fmt
-INPUT /Users/slw/Code/latex/Novel_Principles_for_Grand_Unification_Theories/main.tex
+INPUT /Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tex-ini-files/lualatexquotejobname.lua
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/ltluatex.lua

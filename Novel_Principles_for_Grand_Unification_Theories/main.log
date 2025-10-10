@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.9.11)  9 OCT 2025 11:03
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.9.11)  10 OCT 2025 16:50
  restricted system commands enabled.
  file:line:error style messages enabled.
-**/Users/slw/Code/latex/Novel_Principles_for_Grand_Unification_Theories/main.tex
-(/Users/slw/Code/latex/Novel_Principles_for_Grand_Unification_Theories/main.tex
+**/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex
+(/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
@@ -1360,16 +1360,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Chapter 2.
 ("./Sections/Physics theory.tex"
 
-LaTeX Warning: Citation 'zee' on page 11 undefined on input line 2.
+LaTeX Warning: Citation 'zee' on page 11 undefined on input line 3.
 
 
 
 [11]
 
-LaTeX Warning: Reference `conventions section' on page 12 undefined on input line 33.
+LaTeX Warning: Reference `conventions section' on page 12 undefined on input line 34.
 
 
-LaTeX Warning: Citation '' on page 12 undefined on input line 40.
+LaTeX Warning: Citation '' on page 12 undefined on input line 41.
 
 
 
@@ -1382,13 +1382,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12]
 
-LaTeX Warning: Citation 'zee' on page 13 undefined on input line 65.
+LaTeX Warning: Citation 'zee' on page 13 undefined on input line 66.
 
 
-LaTeX Warning: Citation 'for dummies' on page 13 undefined on input line 116.
+LaTeX Warning: Citation 'for dummies' on page 13 undefined on input line 120.
 
 
-LaTeX Warning: Citation 'zee' on page 13 undefined on input line 116.
+LaTeX Warning: Citation 'zee' on page 13 undefined on input line 120.
 
 
 
@@ -1410,7 +1410,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14]
 
-LaTeX Warning: Reference `sec: XX' on page 15 undefined on input line 159.
+LaTeX Warning: Reference `sec: XX' on page 15 undefined on input line 163.
 
 )
 
@@ -1488,10 +1488,10 @@ Here is how much of LuaTeX's memory you used:
  125165,1977958 words of node,token memory allocated
  1012 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 8 glue, 4 kern, 1 glyph, 97 attribute, 74 glue_spec, 97 attribute_list, 2 write nodes
-   avail lists: 1:1,2:608,3:235,4:174,5:1196,6:65,7:8354,8:93,9:893,10:15,11:565
+   avail lists: 1:1,2:614,3:235,4:174,5:1196,6:65,7:8354,8:93,9:893,10:15,11:565
  60284 multiletter control sequences out of 65536+600000
  80 fonts using 19220183 bytes
- 84i,13n,92p,1423b,1290s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,92p,1429b,1290s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'cite.0@M_lgaard_2017'
 
@@ -1501,7 +1501,7 @@ warning  (pdf backend): unreferenced destination with name 'cite.0@Georgi1999'
 
 warning  (pdf backend): unreferenced destination with name 'cite.0@Peskin:1995ev'
 </usr/local/texlive/2025/texmf-dist/fonts/truetype/typoland/lato/Lato-Italic.ttf></usr/local/texlive/2025/texmf-dist/fonts/truetype/typoland/lato/Lato-BoldItalic.ttf></usr/local/texlive/2025/texmf-dist/fonts/truetype/typoland/lato/Lato-Bold.ttf></usr/local/texlive/2025/texmf-dist/fonts/truetype/typoland/lato/Lato-Regular.ttf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (19 pages, 285932 bytes).
+Output written on main.pdf (19 pages, 286027 bytes).
 
 PDF statistics: 410 PDF objects out of 1000 (max. 8388607)
  357 compressed objects within 4 object streams
