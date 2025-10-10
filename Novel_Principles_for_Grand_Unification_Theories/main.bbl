@@ -1,0 +1,165 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Peskin:1995ev}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=e148b6b43275e52828b8df297254414c}{%
+           family={Peskin},
+           familyi={P\bibinitperiod},
+           given={Michael\bibnamedelima Edward},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=cc0fe4ad0bcb2f8883e7f5e5b5287dd9}{%
+           family={Schroeder},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Westview Press}%
+      }
+      \strng{namehash}{bd0b09f9d4658a6110c7cf3ae280532f}
+      \strng{fullhash}{bd0b09f9d4658a6110c7cf3ae280532f}
+      \strng{fullhashraw}{bd0b09f9d4658a6110c7cf3ae280532f}
+      \strng{bibnamehash}{bd0b09f9d4658a6110c7cf3ae280532f}
+      \strng{authorbibnamehash}{bd0b09f9d4658a6110c7cf3ae280532f}
+      \strng{authornamehash}{bd0b09f9d4658a6110c7cf3ae280532f}
+      \strng{authorfullhash}{bd0b09f9d4658a6110c7cf3ae280532f}
+      \strng{authorfullhashraw}{bd0b09f9d4658a6110c7cf3ae280532f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Introduction to Quantum Field Theory}
+      \field{year}{1995}
+    \endentry
+    \entry{Georgi1999}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=4530dbd5db7973544ed696e1861238a8}{%
+           family={Georgi},
+           familyi={G\bibinitperiod},
+           given={Howard},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Perseus Books}%
+      }
+      \strng{namehash}{4530dbd5db7973544ed696e1861238a8}
+      \strng{fullhash}{4530dbd5db7973544ed696e1861238a8}
+      \strng{fullhashraw}{4530dbd5db7973544ed696e1861238a8}
+      \strng{bibnamehash}{4530dbd5db7973544ed696e1861238a8}
+      \strng{authorbibnamehash}{4530dbd5db7973544ed696e1861238a8}
+      \strng{authornamehash}{4530dbd5db7973544ed696e1861238a8}
+      \strng{authorfullhash}{4530dbd5db7973544ed696e1861238a8}
+      \strng{authorfullhashraw}{4530dbd5db7973544ed696e1861238a8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{series}{Frontiers in Physics}
+      \field{title}{Lie Algebras in Particle Physics: From Isospin to Unified Theories}
+      \field{year}{1999}
+    \endentry
+    \entry{srednicki2006qft}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=dcf0b6d39b9c28db1835e7d435784d7b}{%
+           family={Srednicki},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of California, Santa Barbara}%
+      }
+      \strng{namehash}{dcf0b6d39b9c28db1835e7d435784d7b}
+      \strng{fullhash}{dcf0b6d39b9c28db1835e7d435784d7b}
+      \strng{fullhashraw}{dcf0b6d39b9c28db1835e7d435784d7b}
+      \strng{bibnamehash}{dcf0b6d39b9c28db1835e7d435784d7b}
+      \strng{authorbibnamehash}{dcf0b6d39b9c28db1835e7d435784d7b}
+      \strng{authornamehash}{dcf0b6d39b9c28db1835e7d435784d7b}
+      \strng{authorfullhash}{dcf0b6d39b9c28db1835e7d435784d7b}
+      \strng{authorfullhashraw}{dcf0b6d39b9c28db1835e7d435784d7b}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Draft version}
+      \field{title}{Quantum Field Theory}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://web.physics.ucsb.edu/~mark/ms-qft-DRAFT.pdf
+      \endverb
+      \verb{url}
+      \verb https://web.physics.ucsb.edu/~mark/ms-qft-DRAFT.pdf
+      \endverb
+    \endentry
+    \entry{M_lgaard_2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=630ba211486c4907c7357f482fc22cb5}{%
+           family={Mølgaard},
+           familyi={M\bibinitperiod},
+           given={Esben},
+           giveni={E\bibinitperiod}}}%
+        {{hash=951bea001d5d3994a637dbdcbfbed0e1}{%
+           family={Sannino},
+           familyi={S\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{fullhash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{fullhashraw}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{bibnamehash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{authorbibnamehash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{authornamehash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{authorfullhash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{authorfullhashraw}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2470-0029}
+      \field{journaltitle}{Physical Review D}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{Asymptotically safe and free chiral theories with and without scalars}
+      \field{volume}{96}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1103/physrevd.96.056004
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevD.96.056004
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevD.96.056004
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{for dummies}
+  \missing{missing source}
+  \missing{zee}
+\endrefsection
+\endinput
+

@@ -1,0 +1,51 @@
+\section{Paper: Conformal Phase Diagram of Complete Asymptotically Free Theories}
+
+\textit{The paper approaches CAF's by considering three main cases. Gauge, gauge and Yukawa and lastly gauge, yukawa and scalar interactions. Their approach is generally to write the RG equation on the form:
+\begin{align}
+    \mu \frac{\mathrm{d} \alpha_H}{\mathrm{d} \mu}=\alpha_H (c_1\alpha_g+c_2 \alpha_H)\;.
+\end{align}
+where the coefficients (normally quite complicated) are written as a constant. From previous work the paper considers these coeffecients to be positive or negative. Doing this flows of the gauge and Yukawa couplings are plotted. (this is all done to first order where only the gaussian fix point excists.) After this scalars are introduced making it more complex. This gives constrictions on the constants to ensure asymptotic freedom of the couplings. To study IR fix point, the paper considers the gauge coupling to second order. This gives a new fix point for certain conditions on the coeffecients. Lastly, a stability analysis is made using einvalue equations and the jacobi matrix. This is done to investegate whether the fix points are repulsive or attractive. First it is done without scalars then with scalars.}\\
+
+
+The paper consideres fix point structure of gauge-Yukawa theories. These theories have scalar, gauge and yukawa-self interactions
+\begin{align}
+    \alpha_g=\frac{g^2}{(4\pi)^2},\quad \alpha_y=\frac{y^2}{(4\pi)^2},\quad \alpha_\lambda=\frac{\lambda^2}{(4\pi)^2}\;.
+\end{align}
+First considering a system with only a gauge coupling. That is no Yukawa or self couplings. To do this we consider the beta equation
+\begin{align}
+    \mu \frac{\mathrm d\alpha_g}{\mathrm d\mu}=b_0\alpha^2_g \;. 
+    \label{eq:OD1}
+\end{align}
+which describes how a coupling constant, in this case the gauge self coupling, changes with the energy scale $\mu$. The equation here is to first loop order, which is invariant under different choice of renomalisation. The constant in fron $b_0$ is obtained by solving the Feynmann diagram \comment{....}. Further, it tells \comment{need to look more into this}.
+Equation \ref{eq:OD1} can simply be solved by isolating the variables on either side and integrating
+\begin{align}
+    \int^{\alpha_g(\mu)}_{\alpha_g(\mu_0)} \frac{\mathrm d\alpha_g}{\alpha_g^2} =b_0 \int^{\mu}_{\mu_0} \frac{\mathrm d\mu}{\mu}  \Longleftrightarrow -\frac{1}{\alpha_{g_0}}+\frac{1}{\alpha_g}=b_0 \ln\frac{\mu}{\mu_0}\;,
+\end{align} 
+where $\alpha_g(\mu_0)=\alpha_{g_0}$ is a fixed scale\footnote{To obtain an expression for how the coupling changes with time using the renonormalisation group, we need a fix point, that is a value of the coupling constant and some scale. This is also called the renomalisation scale, and is the required initial conditions}. Obtaing the expression for the gaug self coupling:
+\begin{align}
+    \alpha_g =\frac{\alpha_{g_0}}{1-b_0\alpha_{g_0}\ln(\frac{\mu}{\mu_0})}\;.
+    \label{eq:OD1sol}
+\end{align}
+This is asymptotically free for $b_0<0$, which is what we want. So from now on we consider only cases where $b_0<0$. As $\mu\to \infty$ in Equation \ref{eq:OD1sol} we approach the UV sector and the trvial UV fix point at $alpha_g\to0$. It should also be noted that there is unphysical branch \comment{...}
+Now promoting the system to also having a Yukawa coupling. The renomalisation group equation looks a little different than Equation \ref{eq:OD1} for the Yukawa coupling. Further, it should be noted that the beta equation of the gauge coupling does not change when we add fermion or even scalar interactions, because it is independtent of these. The fermion beta function is ony independtent on the scalar interaction and then gauge gauge interactions but will be affected by the gauge fermion interactions adding an extra term to the function: 
+\begin{align}
+    \mu \frac{\mathrm{d} \alpha_H}{\mathrm{d} \mu}=\alpha_H (c_1\alpha_g+c_2 \alpha_H)\;.
+\end{align}
+\comment{Should the H not be a y?} the factors $c_1<0$ and $c_2>0$ can again be found doing Feynman diagram computations, this time of \comment{..}. The $c_1$ is less than zero, showing the gauge bosons screening properties. Hence the $c_2$ constant is larger than zero a theory with only a single Yukawa coupling on its own can never be asymptotically free. This can quickly be shown by making the same computation as for the single gauge boson. However, opposite to this case the constant in front is postive. This effects the point at which $\mu=\mu_0\exp\left(\frac{1}{b_0\alpha_{g_0}}\right)$ for the gauge bosons this wasn't a problem because the pole wpuld be reached in an unphysical branch because $\alpha_g$ would be negative. However, with $b_0\to c_2$ in the case of a single Yukawa theory it would happen in a physical branch, and the theory would have a Landau pole. After the Landau pole the coupling would get negative and thus be in an unphyscial branch as it approaches the trivial UV fix point. Thus, as stated in the begning of this paragraph, a single Yukawa theory cannot be asymptotically free with out other interactions balacing it out. , it is nesseary to find a theory The beta equation has changed from the previous equation because of the extra interaction 
+
+Now having two interactions means that we have a set of coupled differentiel equations to solve. This is becuase for every independtent interaction we will have a beta function, the beta function can depend on all the other cooplings in principal. The solution will be more complicated, but the principle in what we need to analyse is the same. What solutions will be asymptotically free, are there any possible poles? And then set constraints to avoid poles. Further, we need to ensure that there are physical branches, without negative couplings. This can be plotted together and seen in their Figure 1. The figure depicts the trivial UV fix point (pink), the fixed flow\footnote{Fixed flow means that the flow between the considered couplings are constant or "fixed" in this case \begin{align*}
+\frac{\alpha_H}{\alpha_g}=\frac{b_0-c_1}{c_2}
+\end{align*} } (green) and a asymptotical region below the green line and a non-asymptotical region below the green line. The arrows on the plot point towards the IR region hence they point away from the UV trivial fix point. From these arrows it can be seen that they all orginates from the fix point thus being asymptotically free below the green line. Whereas for above the green line the arrows point towards the uv point and does not point away from it, meaning it is is never reached. Further, regions where the arrows are vertical suggest that the gauge coupling doesn't change when the Yukawa coupling does, this hints a Landau Pole. \comment{unsure about the last part}
+
+\subsubsection{Adding scalar interactions}
+Lets introduce scalars to the mix. The scalar coupling is not independtent on any of the other interactions \question{Because of lack of constraing symmetries?}. Thus the beta equation has five terms
+\begin{align}
+    \mu \frac{\mathrm{d} \alpha_\lambda}{\mathrm{d} \mu}=\alpha_\lambda (d_1\alpha_\lambda+d_2 \alpha_g+d_3 \alpha_H)+d_4\alpha_g^2 +d_5\alpha^2_H\;,
+\end{align}
+where $d_1,d_3,d_4 \geq0$ and $d_2,d_5\leq0$. These relations to zero are again based on Feynman diagram calculations. Solving the three coupled equations for different cases. They obtain a window for the relation of the scalar coupling and the gauge coupling, being constrainted by ensuring no Landau poles at IR or UV. 
+
+\comment{I'm not done writing about all of it}
+
+\section{Paper: Asymptotically safe and free chiral theories with and without scalars}
+
+\textit{The paper fouces on two main theories Georgi-Glashow (GG) and Bars-Yankielowicz (BY), both SU(N) theories with two index representations, the GG model han anti-symmetric and the BY symmetric indicies. The paper first considers these models "gauge-fermion" without scalars. This is done to 2nd and 3rd loop order in the gauge coupling. Using Banks-Zacks method they get a constaing value of x=p/N for a asymptotically free theory. Further, they consider the IR fix point or the conformal window for small N. Next the paper considers Meson like scalars (composite particles) and next Higgs like scalars. It is possible to obtain CAF's for both BY and GG for specific values of p and N.}

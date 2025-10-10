@@ -1,0 +1,140 @@
+I will write some notes here \cite{Peskin:1995ev}
+
+\section{Group theory}
+\subsection{Groups}
+Groups are used as a fundamental mathematical language to describe, understand and predict symmetries and physical phenomena within physics particular in quantum field theory. A group $G$  is a set of elements $\{g\}$ with an operation that assigns to every pair of elements a third element within that same set. The operation must be 
+\begin{enumerate}
+    \item Closure: If $f,g \in G$ then $h=fg\in G$.
+    \item Associativity: For all $g,\,h,\,k,\in G$, $(gh)k=g(hk)$.
+    \item Identity element: There exist an element, $e\in G$ such that for all $f\in G$ we have $ef=fe=f$.
+    \item Inverse element: For every $f\in G$ there exist an inverse element such that $gg^{-1}=g^{-1}g=e$.
+\end{enumerate}
+Groups can be interpreted more visual as a a multiplication table, as seen in table \ref{} (for discrete group elements). An example of this for the group $Z_3$ see table \ref{}.
+
+A group can be both finite and infinite. $Z_3$ is a finite group because it has a finite number of group elements, where an infinite group will have an infinite number of group elements. The number of elements in a finite group is called the order of the group. Thus, $Z_3$ is of order $3$. Groups can also be categorized by being abelian or non-abelian. The operation of an abelian group has an extra axiom, restricting the multiplication law
+\begin{enumerate}
+    \item Communicative: For all $g,h\in G$, $gh=hg$.
+\end{enumerate}
+From the multiplication table for $Z_3$ \ref{} it can be seen that the group is abelian as well. 
+
+\subsection{Representation}
+A representation of a group $G$ is a mapping, $D$ of the elements of the group onto a set of linear operators acting on a vector space $V$. This makes the abstract group easier to realize, hence representations are matrices (for finite groups). This is useful because without this a mathematical abstract object like a group, can't directly be understood but with a representation of the group, we can realize it using one of the things we understand well: matrices. The group representations are useful because they live in linear space. This also means that we can always change the representation by peforming a linear transformation. The mapping $D$ need to uphold two conditions
+\begin{itemize}
+    \item The representation of the identity element $e\in G$ must yield the identity operator in the respective vector space: $D(e)=1$. 
+    \item The groups multiplication law is mirrored by the multiplication of their corresponding linear operators on the vector space: $D(g_1)D(g_2)=D(g_1g_2)$.
+\end{itemize}
+An example of this is the 3D rotation group: $SO(3)$. The group has a representation that consist of $3\times 3$ matrices. The dimension of a representation is defined by the dimensions of the space that it acts upon. In this example the dimensions is thus $3$. Each group has multiple different representations and they don't have to have the same dimensions. A representation is regular if the dimensions of the representation is the order of the group. 
+
+Representations can also be described by being reducible, completely reduicble and irreducible. To understand these definitions, we need to first understand invariant subspaces. An invariant subspace is when all mappings $D(g)$ on any vector $w$ in the subspace $W\subset V $ maps the vector back into the subspace $W$:
+\begin{equation}
+    D(g)w\in W\quad \forall g\in G, w\in W\;.
+\end{equation}
+A representaiton is reducible if it has a non-trivial invariant subspace. Non-trivial meaning that it has to be an invariant subspace which is not just $\{0\}$ or the entire set of $V$. An irreducible representation (irrep) is when the repersentation has no non-trivial invariant subspaces. Thus you cannot "break" the repersentation further down. A completly reducible representation is on block diagonal form and can thus be written as a direct sum of irreducible representations
+\begin{equation}
+    D_1\oplus D_2 \oplus \cdots\;.
+\end{equation}
+An important property of finite groups is that their representations always is completely reducible \cite{Georgi1999}.
+
+\comment{Need to write about unitary repersentations}
+
+\subsection{Subgroups}
+A subgroup $H$ is a group with a set of elements which all is a part of a group $G$. Then $H$ will be a subgroup of $G$. There are two trivial subgroups of $G$, namely the identity and the group itself. Subgroups thus capture a smaller symmetry structure inside a larger symmetry.
+Using subspaces we can define cosets. A coset can both be a right- or a left-coset. A right-coset of a subgroup $H$ in a group $G$ is defined to be all the elements on the form $Hg$, with $g\in G$. This means that all elements of the subgroup multiplied with a group element to the right is a right-coset. The set which holds all right-cosets of the subgroup is denoted as $G/H$. This is called a coset-space. From the definition of cosets normal subgroups can be defined as having their righ-coset and left-coset being equal
+\begin{align}
+    gH=Hg\;.
+\end{align}
+
+
+\subsection{Schur's Lemma}
+We won't prove Schur's Lemma here, mearly state it. Take two irreducible representations $D_1$ and $D_2$ of the group $G$. Now consider a linear map that take one representation to the other
+\begin{align}
+    T:\;V\to W\;,
+\end{align}
+while respecting the group rules. This is also called a homomorphisme of representations.
+
+
+
+\subsection{Characters}
+A character is the trace of a representation
+\begin{equation}
+    \chi(g) =\text{tr}\,D(g)\;,
+\end{equation}
+The characters of a group representation are useful for two main reasons. First, using the cyclic property of the trace $\text{tr}\,AB=\text{tr}\, BA$, means that under a similarity transformation\footnote{A similarity transformation of a matrix $M$ is given by 
+\begin{equation}
+    M'=PMP^{-1}\;,
+\end{equation} 
+where the matrices $M$ and $M'$ is said to be \textit{similar}. They have the same trace, determinant and eigenvalues but in different bases. \cite{missing source}} the charchters will not differ. This also means that characters are constant on conjugate classes\footnote{For $g_1\in G$ the conjugate class is $\{g^{-1}g_1g ∣ g\in G$, so for a matrix, the conjugate will be a similar matrix.}. Second, character tables are useful to describe the representation quite well. Let us look at an example of $S_3$. This group is a permutation group of the elements $1,2,3$. This means that it has six elements
+\begin{equation}
+    \{e,(12),(13),(23),(123),(132)\}\;,
+\end{equation}
+and the conjugate classes are easy to find. They preserve the shape of the permutations, so the three groups are
+\begin{equation}
+    C_1=\{e\},\;C_2=\{(12),(13),(23)\},\;C_3=\{(123),(132)\}\;.
+\end{equation}
+The trivial representation $D_0$ is defined as $D_0(g)=1\;\forall \; g$. Thus, this representation has characters $\chi_0(g)=1$. We know from the number of conjugate classes that there exist three irreducible representations. We also know that the dimensions of the representations depend of the number of elements in the group
+\begin{equation}
+    \sum_an_a^2=N\;,
+\end{equation}
+in our case we must thus have the dimensions of the two remaining representations to be one and two. The one second one dimensional representations is almost the same as the first, only the sign differs. Even permutations will have $+1$ and odd $-1$. Therefore, the second conjugate class is odd (only one permutation) and the third one is even (two permutations). Now the two-dimensional trivial representation must have a character with the value $2$. To find the remaining characters, the orthogonality:
+\begin{equation}
+    \frac{1}{N}\sum_g \chi_{D_a}(g)^*\chi_{D_b}(g)=\delta_{ab}
+\end{equation}
+now, using these two equations can be made, and the result gives us the character table for the group.
+\begin{table}[]
+\begin{tabular}{l|lll}
+  & e & (12), (13), (23) & (123), (132) \\ \hline
+0 & 1 & 1                & 1            \\
+1 & 1 & -1               & 1            \\
+2 & 2 & 0                & -1          
+\end{tabular}
+\end{table}
+
+\subsection{Young Tableaux}
+
+\subsection{Lie groups}
+
+\subsubsection{Non-abelian group representations}
+%   https://web.physics.ucsb.edu/%7Emark/ms-qft-DRAFT.pdf + chapter 15.4 peskin
+Lie groups are continuously generated groups, where continuously indicates that using infinitesimal elements of the group a general element can be reached. This also requires, that the group elements are arbitrarily close to the identity. An infinitesimal element can be written 
+\begin{equation}
+    g(\alpha)=1+i\alpha^aT^a + \mathcal{O}^a\;,
+\end{equation}
+where $T^a$ is the generators of the group and $\alpha^a$ is the infinitesimal group parameters. The generators span the space of the infinitesimal group transformations and they obey the commutation relation
+\begin{equation}
+    [T^a,T^b]=if^{abc}T^c
+\end{equation}
+which is a linear combination of generators. The vector space spanned by the generators are called the Lie algebra \cite{Peskin:1995ev}. The structure constants $f^{abc}$ obey the Jacobi identity
+\begin{equation}
+    f^{ade}f^{bcd}+f^{bde}f^{cad}+f^{cde}f^{abd}=0\;.
+\end{equation}
+\comment{der skal skrives noget mere forklarende her, kap 70 og 15.4 i peskin skal bare ind her}
+Two useful characterstics of representations are the quadratic Casimir operator $C_2(R)$ and the Dynkin index $T(R)$ \cite{srednicki2006qft}. The Dynkin index is defined 
+\begin{equation}
+    \tr{T^a_R T^b_R}=T(R)\delta^{ab}\;.
+\end{equation}
+\comment{mere mat}
+\begin{equation}
+    \tr{T^a_R T^b_R}=\frac{1}{2}\delta^{ab}\;.
+    \label{eq: Dynkin index fund. rep}
+\end{equation}
+\comment{mere mat}
+If we now consider anti-commutator relations we have another invariant symbol 
+\begin{equation}
+    A(R)d^{abc}\equiv \frac 12 \tr{T^a_R\{T^b_R,T^c_R\}}\;,
+\end{equation}
+with $A(R)$ being the anomaly coefficient \cite{srednicki2006qft}. Using the cyclic property of the trace and that $(T^a_R)^i_{\;j}=-(T^a_{\bar R})_j^{\;i}$, we have
+\begin{equation}
+    A(R)=-A(\bar R)\;.
+    \label{eq:anomaly coefficient}
+\end{equation}
+For real or pseudoreal representation the anomaly coefficient is thus $A(R)=0$. 
+
+
+
+\subsubsection{SU(2)}
+
+\subsection{Roots}
+
+\subsection{Dynkin Diagrams}
+
+

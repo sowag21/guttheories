@@ -1,0 +1,148 @@
+\documentclass[11pt, a4paper]{book}
+
+%---------------- Geometry ----------------%
+\usepackage[margin=2cm, tmargin=3cm, bmargin=2.5cm]{geometry}
+
+%---------------- Fonts ----------------%
+% \usepackage{fontenc}
+\usepackage{fontspec}
+\setmainfont{Lato}
+\newfontface\titlefont{Lato}
+% \usepackage{lmodern}
+\linespread{1.2}
+
+
+%---------------- Math ----------------%
+\usepackage{amsmath}
+\usepackage{slashed}
+% \usepackage{lete-sans-math}
+% \setmathfont{LeteSansMath.otf}
+\usepackage{amsfonts}
+% \usepackage{amssymb}
+\usepackage{braket}
+
+\numberwithin{equation}{chapter}
+
+\DeclareMathOperator{\tr}{tr}
+
+%---------------- Colors ----------------%
+\usepackage[table,dvipsnames]{xcolor}
+\definecolor{linkblue}{rgb}{0.020, 0.000, 0.478}
+\definecolor{linkred}{rgb}{0.459, 0.078, 0.047}
+\definecolor{tocgray}{rgb}{0.3, 0.3, 0.3} 
+\definecolor{sectiongray}{rgb}{0.2, 0.2, 0.2}
+\definecolor{darkgreen}{rgb}{0.0, 0.39, 0.0}
+\definecolor{vibrantred}{rgb}{0.86, 0.07, 0.24}
+
+%---------------- Sections ----------------%
+\usepackage{sectsty}
+\chapterfont{\Huge\titlefont\color{sectiongray}} 
+\sectionfont{\Large\titlefont\color{sectiongray}} 
+\subsectionfont{\large\titlefont\color{sectiongray}}
+
+%---------------- Tables ----------------%
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{booktabs}
+
+%---------------- Graphics ----------------%
+\usepackage{graphicx}
+\graphicspath{{images}}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{afterpage}
+\usepackage[format=hang, labelfont=sc, font=it]{caption}
+
+%---------------- Page Layout ----------------%
+\usepackage{indentfirst}
+\usepackage[page, toc]{appendix}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[LE]{\small{\textsc{\leftmark}}}
+\fancyhead[LO]{\textsc{\thepage}}
+\fancyhead[RE]{\textsc{\thepage}}
+\fancyhead[RO]{ \small{\textsc{\rightmark}}}
+\cfoot{}
+%\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\headrulewidth}{0.5pt}
+
+%---------------- Theorems ----------------%
+\usepackage{amsthm}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{definition}{Definition}
+\newtheorem*{postulate}{Postulate}
+
+%---------------- Custom Commands ----------------%
+\newcommand{\question}[1]{\textbf{\textit{\color{vibrantred}[Question: #1]}}}
+\newcommand{\comment}[1]{\textbf{\textit{\color{darkgreen}[Comment: #1]}}}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+\usepackage{perpage} 
+\MakePerPage{footnote}
+
+%---------------- Bibliography ----------------%
+\usepackage[sorting = none ]{biblatex}% style=authoryear
+\addbibresource{reflist.bib}
+
+%---------------- Hyperlinks ----------------%
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=tocgray,
+    citecolor=linkblue,
+    urlcolor=darkgreen,
+}
+
+%---------------- Misc ----------------%
+\usepackage{csquotes}
+\usepackage{makeidx}
+\makeindex
+\usepackage{siunitx}
+\usepackage{blindtext}
+\usepackage{footmisc}
+%\setcounter{tocdepth}{1}
+
+%---------------- Plots ----------------%
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+% \usepackage{pgfplots}
+
+\graphicspath{{Figures/}}
+
+\begin{document}
+
+ \input{Title.tex} %<------------ 
+
+\section*{Abstract}
+
+\input{Sections/Abstract.tex}
+\newpage
+\thispagestyle{empty}
+
+\setcounter{tocdepth}{2}
+\renewcommand{\baselinestretch}{1.22}\normalsize
+
+\thispagestyle{empty}
+\tableofcontents
+\renewcommand{\baselinestretch}{1.3}\normalsize
+
+\chapter{Mathematical theory}
+
+\label{chap:mathematical theory}
+\input{Sections/Mathematical theory.tex}
+
+\chapter{Physics theory}
+
+\label{chap:Physics theory}
+\input{Sections/Physics theory.tex}
+
+\chapter{Papers}
+
+\label{chap:Papers}
+\input{Sections/Papers.tex}
+
+\end{document}
