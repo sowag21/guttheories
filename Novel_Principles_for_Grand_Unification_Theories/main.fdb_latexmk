@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1760000605.47705 "main.bcf" "main.bbl" "main" 1760107835.45176 0
-  "main.bcf" 1760107835.31772 108552 b3bb8f105fe4edb6b0beefce03ab7038 "lualatex"
+["biber main"] 1760000605.47705 "main.bcf" "main.bbl" "main" 1760884927.71131 0
+  "main.bcf" 1760884927.56921 108552 b3bb8f105fe4edb6b0beefce03ab7038 "lualatex"
   "reflist.bib" 1759409181.64539 1167 46f02b2a944eec015c1d414dea1e873b ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["lualatex"] 1760107833.74616 "/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex" "main.pdf" "main" 1760107835.45192 0
+["lualatex"] 1760884925.98072 "/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex" "main.pdf" "main" 1760884927.71147 0
   "/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex" 1759397175.90119 3683 21ec5f068fcb2d0aeb8367aed26daf8f ""
   "/Users/slw/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lato-bold.luc" 1757610570.86726 1525262 4639a8e784131b4198c23da0564bfd16 ""
   "/Users/slw/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lato-bolditalic.luc" 1757610570.20087 1554217 fb1844d4df3f396b6b33bf8f4482ef94 ""
@@ -287,15 +287,15 @@
   "Sections/Abstract.tex" 1757600630 10 48b6e391de8102fc45b6b6d4d7c03f0e ""
   "Sections/Mathematical theory.tex" 1759417732.26253 10293 b8a681d6a5b7a723fa78920084dcca9f ""
   "Sections/Papers.tex" 1759417730.48866 8317 36f93aac02a424a1ff4485024aa5dc4d ""
-  "Sections/Physics theory.tex" 1760107833.5725 14913 5f57f9d93e2a14a0537bb53d422c1034 ""
+  "Sections/Physics theory.tex" 1760884925.87265 19882 a3eec3d158a5fccbbb9e9ce5201a95bd ""
   "Title.tex" 1757600630 1173 885275dc6e2196a8fea51d4316bd694a ""
-  "main.aux" 1760107835.31613 6261 8a56ea6fc5f3e37bb1bea36d0ab56a16 "lualatex"
+  "main.aux" 1760884927.5674 6681 a72fcc57b8edd3af5b5f0ed663b01bd1 "lualatex"
   "main.bbl" 1760000606.61665 6171 e8cd3c7b6440c3423dfb324f762c039c "biber main"
   "main.ind" 1759997603.33154 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.out" 1760107835.317 3526 daa5bc73bb9e5f52f09e67ac9efc51b9 "lualatex"
-  "main.run.xml" 1760107835.31818 2337 907f5b9b361f4daa221cc185ab0fe46b "lualatex"
+  "main.out" 1760884927.56845 4211 f749901ac104e642497b5f754b39cbb6 "lualatex"
+  "main.run.xml" 1760884927.56965 2337 907f5b9b361f4daa221cc185ab0fe46b "lualatex"
   "main.tex" 1759397175.90119 3683 21ec5f068fcb2d0aeb8367aed26daf8f ""
-  "main.toc" 1760107835.31824 2187 70747871a98afc1bbea89eebbad9be7e "lualatex"
+  "main.toc" 1760884927.5697 2484 641537c0a093abf4be9c3250ced744a4 "lualatex"
   (generated)
   "main.aux"
   "main.bcf"
@@ -306,8 +306,8 @@
   "main.run.xml"
   "main.toc"
   (rewritten before read)
-["makeindex main.idx"] 1759997603.25586 "main.idx" "main.ind" "main" 1760107835.45169 0
-  "main.idx" 1760107834.6861 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+["makeindex main.idx"] 1759997603.25586 "main.idx" "main.ind" "main" 1760884927.71124 0
+  "main.idx" 1760884926.92384 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
   (generated)
   "main.ilg"
   "main.ind"

@@ -1,5 +1,4 @@
 \section{Effective potential}
-hej jeg hedder sophie
 The effective potential is a function which to lowest order in pertubation theory is equal to the classical potential energy and to higher orders would include qunatum corrections \cite{Peskin:1995ev}. These corrections are generally not finite and owuld require renormalisation. The effective potential can be used for studying spontaneous symmetry breaking, which is based on minimizing the classical potential $V(\phi)$. However, the vacuum at a qunatum level isn't static, but rather fluctuating. Thus, using the effective potetial these qunatum fluctuation is taken intro account \cite{zee}.
 To define the effective potential, we first need to define the effective action. To do this, we consider a scalar field theory $\phi$  with energy as the connected generating functional $E[J]$
 \begin{equation}
@@ -164,4 +163,71 @@ where $x=p/N$. From this the fixed point can be found to one loop order by setti
 \begin{equation}
     \beta_{\alpha_{g}}=0\Rightarrow \alpha_g=0 \vee 6N-\frac{4}{3}xN \mp 4=0\;,
 \end{equation}
-where the first solution is the trivial UV fixed point, also called the gaussian fixed point. The second fixed point is for $x=x_{FP}=\frac{9}{2}\mp \frac{3}{N}$ \cite{M_lgaard_2017} \comment{need to do the fix point analysis - first the veneziano limit takes p and N to infinity but keep x=p/N constant, this makes the explicit chiral factor disappear. I think I need to do the change of variables also for vector like theories to really see the difference.}. 
+where the first solution is the trivial UV fixed point, also called the gaussian fixed point. The second fixed point is for $x=x_{FP}=\frac{9}{2}\mp \frac{3}{N}$ \cite{M_lgaard_2017} \comment{need to do the fix point analysis - first the veneziano limit takes p and N to infinity but keep x=p/N constant, this makes the explicit chiral factor disappear. I think I need to do the change of variables also for vector like theories to really see the difference.}.
+
+\subsection{Calculation of the effective potential}
+\begin{equation}
+    V_1(h, s) = \sum_i \pm n_i \frac{m_i^4(h, s)}{64\pi^2} \left( \log \left[ \frac{m_i^2(h, s)}{Q^2} \right] - C_i \right)
+\end{equation}
+and 
+\begin{equation}
+    V_{\text{eff}}(\varphi) = \frac{\lambda}{4!}\varphi^4 + \frac{\lambda^2 \varphi^4}{256\pi^2} \left( \log \frac{\varphi^2}{Q^2} - \frac{25}{6} \right) + O(\lambda^3)
+\end{equation}
+
+For $\ln 2/\lambda =8/3$ and $m^2=\lambda\phi^2/2$
+
+
+\section{GG model with one scalar}
+The Georgi-Glashow model is considered, with $p=0$ and one scalar. The groups are thus \comment{unsure how to write it}
+\begin{equation}
+    \text{SU}(N)\times \text{SU}(N-4)\times \text{U}(1)
+\end{equation}
+where the transformation of the scalar, anti-fundamental fermion, and two index antisymmetric fermion under each group is denoted in Table \ref{}.
+To write the Lagrangian down, we need to ensure that all terms will be invariant under $U(1)$ and that no indices remains open. To do this we start by writing down the kinetic terms for all particles. Let us first consider the free theory:
+\begin{equation}
+    \mathcal{L}_{free}= i \bar \Psi_{ij}\sigma^\mu \partial_\mu\Psi_{ij}+i \bar \psi_i^a\sigma^\mu \partial_\mu\psi_i^a+\partial_\mu (\phi^*)_i\partial^\mu\phi_i\;,
+\end{equation}
+where $\sigma^\mu$ is used because the fermions are chiral and thus are massless. Next, we want to consider the interacting theory, which we do by promoting the global $U(1)$ symmetry of the Lagrangian to a local symmetry. To ensure that ... we introduce the covariant derivative $\partial_\mu \to D_\mu= \partial_\mu - ie(T^a)^i_{\,j}A_\mu^a$
+\begin{equation}
+    \mathcal{L}_{kinetic}= -\frac{1}{4} F_{\mu\nu}^a F^{\mu\nu\,a}+i \bar \Psi_{ij}\slashed{D}\Psi_{ij}+i \bar \psi_i^a\slashed{D}\psi_i^a+(D_\mu \phi^*D^\mu\phi)^2\;,
+\end{equation}
+where $F_{\mu\nu}^a=\partial_\mu A_\nu^a-\partial_\nu A_\mu ^a+g f^{abc}A_\mu^bA_\nu^c$, with $A_\mu$ being the connection. This gives us our first coupling constant, $g$. If we write out the first term, we obtain
+\begin{equation}
+    F_{\mu\nu}^a F^{\mu\nu\,a}\approx(\partial_\mu A_\nu^a)^2+ g f^{abc}(\partial_\mu A_\nu^a)A_\mu^bA_\nu^c +g^2 f^{abc}f^{def}A_\mu^bA_\nu^cA_\mu^dA_\nu^e\;,
+\end{equation}
+which gives us the gauge boson propagator and the two gauge bosons vertices
+\comment{feynman diagrams}
+The three remaining kinetic terms gives us the scalar and two fermion propagators 
+\comment{feynman diagram}
+Next, we consider all the possible interaction terms, which we can write in the Lagrangian. Consider first, the possible Yukawa interactions. Terms like $\Psi_{ij}\bar A_{ij}H^i$ and $\psi \bar \psi H^i$ are not invariant under $U(1)$. However, mixing the two fermion representations, is possible, this however gives an open gauge index from the anti-fundamental fermion. To fix this we take the coupling with the same gauge index, giving us $2a=2(N-4)$ Yukawa terms including the hermitian conjugated terms
+\begin{equation}
+    \mathcal{L}_{Yukawa}= y^a\Psi_{ij} \psi ^a_{\, i} H^j + h.c.\; ,
+\end{equation}
+Lastly, we have to consider possible quartic scalar terms. Again, ensuring $U(1)$ invariant terms, we can write terms like
+\begin{equation}
+    \mathcal{L}_{quartic}= 
+    \lambda_1 (H^\dagger_i H_j)^2 
+    + \lambda_2 (\bar \Psi_{ij}\Psi_{ij})^2
+    +\lambda_3 (\bar \psi_{i}\psi_{j})^2
+    +\lambda_4 (H^\dagger_i H_j)(\bar \psi_{i}\psi_{j})
+    +\lambda_5 (H^\dagger_i H_j)(\bar \Psi_{ij}\Psi_{ij})
+    +\lambda_2 (\bar \psi_{i}\psi_{j})(\bar \Psi_{ij}\Psi_{ij})
+    +\lambda_2 (\bar \Psi_{ij}\Psi_{ij})^2+...\;,
+\end{equation}
+and similar terms. However, we will impose another condition namely that the theory needs to be renomalizablel. This means that the coupling, shouldn't have negative dimensions. The quartic scalar lagrangian thus simplifies to one term
+\begin{equation}
+    \mathcal{L}_{quartic}= 
+    \lambda H^\dagger_i H_i H^\dagger_j H_j \;,
+\end{equation}
+thus we also have one scalar coupling, with the coupling constant $\lambda$. From the scalar and the yukawa terms we obtain three new vertices. The full Lagrangian thus reads
+\begin{equation}
+    \mathcal{L}= -\frac{1}{4} F_{\mu\nu}^a F^{\mu\nu\,a}+i \bar \Psi_{ij}\slashed{D}\Psi_{ij}+i \bar \psi_i^a\slashed{D}\psi_i^a+(D_\mu \phi^*D^\mu\phi)^2+(y^a\Psi_{ij} \psi ^a_{\, i} H^j + h.c.)+\lambda H^\dagger_i H_i H^\dagger_j H_j 
+    \;.
+\end{equation}
+
+\subsection{Beta functions of the Lagrangian}
+To analyze wether the theory is asymptotical free, we will use the Callan-Symanzik Equation \ref{}. The beta function will first be computed for the gauge coupling
+\begin{equation}
+    \mu\frac{\text{d}\alpha_g}{\text{d}\ln\mu}= b_0 \alpha_g^2\;,
+\end{equation}
+where $\alpha_g=\frac{g^2}{4\pi}$ and $\mu$ is an arbitrary energy-scale. The beta equation for the gauge interaction can be computed by calculating the two, one-loop diagrams\comment{insert feynman diagrams that contribute}. To compute this we first need to renormalize the Lagrangian.  

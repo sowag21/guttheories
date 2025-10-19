@@ -20,7 +20,10 @@
 \contentsline {subsection}{\numberline {2.2.3}Fixed point analysis}{13}{subsection.2.2.3}%
 \contentsline {subsubsection}{Banks-Zacks fixed point}{13}{section*.10}%
 \contentsline {section}{\numberline {2.3}Chiral theories}{13}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Papers}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Paper: Conformal Phase Diagram of Complete Asymptotically Free Theories}{17}{section.3.1}%
-\contentsline {subsubsection}{Adding scalar interactions}{19}{section*.11}%
-\contentsline {section}{\numberline {3.2}Paper: Asymptotically safe and free chiral theories with and without scalars}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {2.3.1}Calculation of the effective potential}{15}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}GG model with one scalar}{16}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Beta functions of the Lagrangian}{17}{subsection.2.4.1}%
+\contentsline {chapter}{\numberline {3}Papers}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Paper: Conformal Phase Diagram of Complete Asymptotically Free Theories}{19}{section.3.1}%
+\contentsline {subsubsection}{Adding scalar interactions}{21}{section*.11}%
+\contentsline {section}{\numberline {3.2}Paper: Asymptotically safe and free chiral theories with and without scalars}{21}{section.3.2}%
