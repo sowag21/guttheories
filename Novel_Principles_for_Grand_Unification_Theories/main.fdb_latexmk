@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1760000605.47705 "main.bcf" "main.bbl" "main" 1760884927.71131 0
-  "main.bcf" 1760884927.56921 108552 b3bb8f105fe4edb6b0beefce03ab7038 "lualatex"
+["biber main"] 1762188463.52816 "main.bcf" "main.bbl" "main" 1762257898.71417 0
+  "main.bcf" 1762257898.58282 108552 b3bb8f105fe4edb6b0beefce03ab7038 "lualatex"
   "reflist.bib" 1759409181.64539 1167 46f02b2a944eec015c1d414dea1e873b ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["lualatex"] 1760884925.98072 "/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex" "main.pdf" "main" 1760884927.71147 0
-  "/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex" 1759397175.90119 3683 21ec5f068fcb2d0aeb8367aed26daf8f ""
+["lualatex"] 1762257897.04646 "/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex" "main.pdf" "main" 1762257898.71434 0
+  "/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex" 1762188482.97408 3705 723e87df4fb00637e974ceca95b5750f ""
   "/Users/slw/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lato-bold.luc" 1757610570.86726 1525262 4639a8e784131b4198c23da0564bfd16 ""
   "/Users/slw/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lato-bolditalic.luc" 1757610570.20087 1554217 fb1844d4df3f396b6b33bf8f4482ef94 ""
   "/Users/slw/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lato-italic.luc" 1757610571.53094 1580286 8eabb9bf11a609d0e0e228dc2e471a12 ""
@@ -222,6 +222,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty" 1601326656 348 ee405e64380c11319f0e249fed57e6c5 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1601326656 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1601326656 325 f9f16d12354225b7dd52a3321f085955 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/pgfopts/pgfopts.sty" 1405118212 5540 d5c60cf09c59da351aa4023ed084e4eb ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/sectsty/sectsty.sty" 1137110779 22423 d476012cd03f82f9475ad54ba6cd3267 ""
@@ -238,6 +239,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1137111090 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty" 1727642399 55384 b454dec21c2d9f45ec0b793f0995b992 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/ytableau/ytableau.sty" 1623617601 9205 02f9b2cccde94c720189905bc832b940 ""
   "/usr/local/texlive/2025/texmf-dist/tex/luatex/lua-uni-algos/lua-uni-case.lua" 1645915452 1921 020c660fdc1d4c83ffebb059fead7b51 ""
   "/usr/local/texlive/2025/texmf-dist/tex/luatex/lua-uni-algos/lua-uni-normalize.lua" 1645915452 21269 eb4154856f0afe9e8d886dbf6922dcc6 ""
   "/usr/local/texlive/2025/texmf-dist/tex/luatex/lua-uni-algos/lua-uni-parse.lua" 1645915452 2115 596f0e8384e97c26c78a8e88c65a7843 ""
@@ -287,15 +289,15 @@
   "Sections/Abstract.tex" 1757600630 10 48b6e391de8102fc45b6b6d4d7c03f0e ""
   "Sections/Mathematical theory.tex" 1759417732.26253 10293 b8a681d6a5b7a723fa78920084dcca9f ""
   "Sections/Papers.tex" 1759417730.48866 8317 36f93aac02a424a1ff4485024aa5dc4d ""
-  "Sections/Physics theory.tex" 1760884925.87265 19882 a3eec3d158a5fccbbb9e9ce5201a95bd ""
+  "Sections/Physics theory.tex" 1762257896.93844 26522 e72521c8099ae3d5f8f13c0205fb19cd ""
   "Title.tex" 1757600630 1173 885275dc6e2196a8fea51d4316bd694a ""
-  "main.aux" 1760884927.5674 6681 a72fcc57b8edd3af5b5f0ed663b01bd1 "lualatex"
-  "main.bbl" 1760000606.61665 6171 e8cd3c7b6440c3423dfb324f762c039c "biber main"
-  "main.ind" 1759997603.33154 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.out" 1760884927.56845 4211 f749901ac104e642497b5f754b39cbb6 "lualatex"
-  "main.run.xml" 1760884927.56965 2337 907f5b9b361f4daa221cc185ab0fe46b "lualatex"
-  "main.tex" 1759397175.90119 3683 21ec5f068fcb2d0aeb8367aed26daf8f ""
-  "main.toc" 1760884927.5697 2484 641537c0a093abf4be9c3250ced744a4 "lualatex"
+  "main.aux" 1762257898.58089 11928 3726c545be7d6791b9e92416c74b5080 "lualatex"
+  "main.bbl" 1762188464.44209 6171 e8cd3c7b6440c3423dfb324f762c039c "biber main"
+  "main.ind" 1762188410.51268 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
+  "main.out" 1762257898.58212 4663 4abfbf544e899eac0b1dae3065a03a29 "lualatex"
+  "main.run.xml" 1762257898.58325 2337 2eb9bd0c9b7dcc3f9de18e637073815c "lualatex"
+  "main.tex" 1762188482.97408 3705 723e87df4fb00637e974ceca95b5750f ""
+  "main.toc" 1762257898.5833 2746 eb876ad7e827ef44d2db28dca1c7585a "lualatex"
   (generated)
   "main.aux"
   "main.bcf"
@@ -306,8 +308,8 @@
   "main.run.xml"
   "main.toc"
   (rewritten before read)
-["makeindex main.idx"] 1759997603.25586 "main.idx" "main.ind" "main" 1760884927.71124 0
-  "main.idx" 1760884926.92384 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+["makeindex main.idx"] 1762188410.44942 "main.idx" "main.ind" "main" 1762257898.71411 0
+  "main.idx" 1762257897.93282 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
   (generated)
   "main.ilg"
   "main.ind"

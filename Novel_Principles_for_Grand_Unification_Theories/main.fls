@@ -91,6 +91,11 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/slashed.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/braket/braket.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/ytableau/ytableau.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/luatex.def
@@ -178,8 +183,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
@@ -224,8 +227,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.c
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex

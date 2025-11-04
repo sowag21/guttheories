@@ -118,7 +118,7 @@ m & 0 \\
 \end{equation}
 From this it can be seen that massless particles come in two types, left- and right-handed and that they do not mix \cite{for dummies}. In this case an additional symmetry also applies for the field, namely the chiral symmetry $\psi\to e^{i\gamma^5\phi}\psi$ \cite{zee}. Chiral fermions are fermions which transform differently under the gauge group. This also means that you cannot combine left- and right-handed fermions and form a gauge invariant mass term in the lagrangian. Thus, in chiral theories fermions obtain mass at spontantous symmetry breaking like the Higgs mechanism \cite{Peskin:1995ev}.
 
-To investegate chiral theories and how the gauge coupling in the theory change with energy scale, we want to consider the beta function of the lagrangian 
+To investigate chiral theories and how the gauge coupling in the theory change with energy scale, we want to consider the beta function of the lagrangian 
 \begin{equation}
     \mathcal{L}=-\frac{1}{4} F^a_{\mu\nu}F^{a\mu\nu} + iT_{ij}\sigma^\mu D_\mu \bar T^{ij} + i\tilde{F}_k\sigma^\mu D_\mu \bar{\tilde{F}}^k+iF_m \sigma^\mu D_\mu \bar{F}^m\;, \label{eq:lagrangian YM Weyl}
 \end{equation}
@@ -137,7 +137,6 @@ Next we can use that we are considering $\operatorname{SU}(N)$. This results in 
     \beta_{\alpha_{g}}={-\alpha_g^2}\left[ \frac{11}{3}N-\frac{4}{3}n_fC(R)\right]\;,
 \end{equation}
 Next lets consider the second term which depends on the number of fermions for each representation. This is where chiral theories differ from vector-like theories. We consider the same fermionic representations as we had in the lagrangian in Equation \ref{eq:lagrangian YM Weyl}. To do so, it is necessary to specify the flavors of each fermionic representation. This depends on gauge anomalies, also called $\left[\operatorname{SU}(N) \right]^3$ anomalies \cite{Peskin:1995ev}. This anomaly appears in triangle diagrams of three gauge currents. For the theory to be valid the anomaly has to vanish. This happens in the SM. For $\operatorname{SU}(3)_c$ it is trivial because the theory is vector-like and thus have an equal amount of left- and righthanded fermions in the same representation. However, for $\operatorname{SU}(2)_L$ it is not as trivial because it is chiral. For three $\operatorname{SU}(2)_L$ gauge currents the anomaly cancels because the representation is pseudoreal. However, the anomaly can still happen between $\operatorname{SU}(2)_L$ gauge currents and $\operatorname{U}(1)$ or gravity. These combinations still cancel due to the definition of the hypercharge and \comment{why for gravity} \cite{Peskin:1995ev}. 
-
 Thus, to ensure that our chiral theories are anomaly free, it is important that the different representations are build so their anomaly coefficients $A(r)$ cancel
 \begin{equation}
     \sum_{fermions}A(r)=\mathcal{A}\overset{!}{=}0\;,
@@ -178,7 +177,15 @@ For $\ln 2/\lambda =8/3$ and $m^2=\lambda\phi^2/2$
 
 
 \section{GG model with one scalar}
-The Georgi-Glashow model is considered, with $p=0$ and one scalar. The groups are thus \comment{unsure how to write it}
+\begin{table}[h] 
+    \centering 
+    \begin{tabular}{|c|c|c|c|c|} \hline Fields & $[SU(N)]$ & $SU(N-4)$  & $U(1)$ \\ \hline $\Psi$ & $\square\square$ & 1 & $N-4$ \\ $\psi$ & $\bar\square$ & $\bar\square$ & $-(N-2)$ \\ \hline $\phi$ & $\bar\square$ & 1  & 2 \\ \hline 
+    \end{tabular} 
+    \caption{OBS squares need to be ontop of each other \\
+    $\mathcal{L}= -\frac{1}{4} F_{\mu\nu}^a F^{\mu\nu\,a}+i \bar \Psi_{ij}\slashed{D}\Psi_{ij}+i \bar \psi_i^a\slashed{D}\psi_i^a+(D_\mu \phi^*D^\mu\phi)+(y^a\Psi_{ij} \psi ^a_{\, i} H^j + h.c.)+\lambda H^\dagger_i H_i H^\dagger_j H_j 
+    \;.$} 
+    \label{tab:GGp0} 
+\end{table}
 \begin{equation}
     \text{SU}(N)\times \text{SU}(N-4)\times \text{U}(1)
 \end{equation}
@@ -189,7 +196,7 @@ To write the Lagrangian down, we need to ensure that all terms will be invariant
 \end{equation}
 where $\sigma^\mu$ is used because the fermions are chiral and thus are massless. Next, we want to consider the interacting theory, which we do by promoting the global $U(1)$ symmetry of the Lagrangian to a local symmetry. To ensure that ... we introduce the covariant derivative $\partial_\mu \to D_\mu= \partial_\mu - ie(T^a)^i_{\,j}A_\mu^a$
 \begin{equation}
-    \mathcal{L}_{kinetic}= -\frac{1}{4} F_{\mu\nu}^a F^{\mu\nu\,a}+i \bar \Psi_{ij}\slashed{D}\Psi_{ij}+i \bar \psi_i^a\slashed{D}\psi_i^a+(D_\mu \phi^*D^\mu\phi)^2\;,
+    \mathcal{L}_{kinetic}= -\frac{1}{4} F_{\mu\nu}^a F^{\mu\nu\,a}+i \bar \Psi_{ij}\slashed{D}\Psi_{ij}+i \bar \psi_i^a\slashed{D}\psi_i^a+(D_\mu \phi^*D^\mu\phi)\;,
 \end{equation}
 where $F_{\mu\nu}^a=\partial_\mu A_\nu^a-\partial_\nu A_\mu ^a+g f^{abc}A_\mu^bA_\nu^c$, with $A_\mu$ being the connection. This gives us our first coupling constant, $g$. If we write out the first term, we obtain
 \begin{equation}
@@ -226,8 +233,115 @@ thus we also have one scalar coupling, with the coupling constant $\lambda$. Fro
 \end{equation}
 
 \subsection{Beta functions of the Lagrangian}
-To analyze wether the theory is asymptotical free, we will use the Callan-Symanzik Equation \ref{}. The beta function will first be computed for the gauge coupling
+To analyze wether the theory is asymptotical free, we will use the Callan-Symanzik Equation \ref{h}. The beta function will first be computed for the gauge coupling
 \begin{equation}
-    \mu\frac{\text{d}\alpha_g}{\text{d}\ln\mu}= b_0 \alpha_g^2\;,
+    \beta(\alpha_g)\mu\frac{\text{d}\alpha_g}{\text{d}\ln\mu}= b_0 \alpha_g^2\;,
 \end{equation}
 where $\alpha_g=\frac{g^2}{4\pi}$ and $\mu$ is an arbitrary energy-scale. The beta equation for the gauge interaction can be computed by calculating the two, one-loop diagrams\comment{insert feynman diagrams that contribute}. To compute this we first need to renormalize the Lagrangian.  
+
+For the gauge coupling the betafunction is thus (without scalars)
+\begin{equation}
+    \beta(g)=-\frac{g^3}{(4\pi)^2}\left[\frac{11}{3}C_2(G)-\frac{2}{6}T(R)\right]\;,
+\end{equation}
+This took quite a lot of computation, and I realized so would the remaning beta functions. I then chose to use a numerical approach, the beta function with scalars was then looked up:
+\begin{equation}
+    \beta(g)=-\frac{g^3}{(4\pi)^2}\left[\frac{11}{3}C_2(G)-\frac{2}{6}T(F)-\frac{1}{3}T(S)\right]\;,
+\end{equation}
+\subsection{BY model with p=0 and one scalar}
+\begin{table}[h] 
+    \centering 
+    \begin{tabular}{|c|c|c|c|c|} \hline Fields & $[SU(N)]$ & $SU(N-4)$  & $U(1)$ \\ \hline $\chi$ & $\square\square$ & 1 & $N+4$ \\ $\psi$ & $\bar\square$ & $\bar\square$ & $-(N+2)$ \\ \hline $\phi$ & $\bar\square$ & 1  & -2 \\ \hline 
+    \end{tabular} 
+    \caption{ caption} 
+    \label{tab:BYp0} 
+\end{table}
+Considering a chiral model with scalars, we now focus on the Bars-Yankielowicz model. As seen in table \ref{tab:BYp0}, the main difference from the GG model is that instead og having a two index antisymmetric representation, we have a two-index symmetric representation. That is the fermionic field $\chi_{ij}=\chi_{ji}$. The lagrangian is similar to the one of GG and can be expressed as
+ \begin{align*}\mathcal{L}= -\frac{1}{4} F_{\mu\nu}^a F^{\mu\nu\,a}+i \bar \chi^{ij}\slashed{D}\chi_{ij}+i \bar \psi_{i\,a}\slashed{D}\psi_i^a+(D_\mu \phi^{*\,i})(D^\mu\phi_i)+(y^a\chi^{ij} \psi ^a_{\, i} \phi_j + h.c.)+\lambda (\phi^{\dagger}_i \phi^i)( \phi^{\dagger}_j \phi^j )
+    \;.
+ \end{align*}
+There is another scalar quartic term however for (anti-)fundamental representations it is not linearly independent on the quartic scalar term in the lagrangian. Let us start by proving that 
+\begin{align}
+    (\phi_i^\dagger T_i ^{\,A\,j}\phi^j)(\phi_k^\dagger T_k ^{\,A\,l}\phi^l)\;,
+\end{align}
+where the generators $T^A$ upholds the Fierz identity
+\begin{align}
+    T_i ^{\,A\,j}T_k ^{\,A\,l}=\frac{1}{2}\left(\delta_i^{\,l}\delta_k^{\,j}-\frac{1}{N}\delta_i^{\,j}\delta_k^{\,l}\right) \;.
+\end{align}
+The Fierz identity can be shown to be true for fundamental representations of $SU(N)$ by considering \dots
+The generators of $SU(N)$ can be written as $n\times n $ traceless Hermitian matricies $T^a$. The noramlisation of theses matricies is first defined to be 
+\begin{equation}
+      \text{tr}(T^a T^b)=\frac{1}{2}\delta^{ab}\;,
+\end{equation}
+using this we can write a general matrix $M$ as a linear combination of the identity matrix and the generators of the Lie algebra
+\begin{equation}
+      M=n_0 I+n_aT^a\;,
+\end{equation}
+where $n_0$ and $n_a$ are coefficients. Now let us take the trace on both sides and simplify using that $\tr(T^a)=0$ and $\tr(I)=N$
+\begin{equation}
+      \tr(M)=n_0 \tr(I)+n_a\tr(T^a)=n_0N\;.\label{eq:tr1}
+\end{equation}
+Next using the definition of the normalisation of the generators
+\begin{equation}
+      \tr(MT^b)=n_0 \tr(IT^b)+n_a\tr(T^aT^b)=\frac{n_b}{2}\;.\label{eq:tr2}
+\end{equation}
+Now using Equation \ref{eq:tr1,eq:tr2}, the constants $n_0,n_a$ can be replaced, and the matrix $M$ can be written as
+\begin{equation}
+      M=\frac{\tr(M)}{N} I+2\tr(MT^a)T^a\;,
+\end{equation}
+the matrix decomposition can be written in index notation
+\begin{equation}
+      M_{ij}=\frac{\tr(M)}{N} \delta_{ij}+2\tr(MT^a)T^a_{ij}\;,
+\end{equation}
+Using that it is in Euclidian space with the metric $\delta_{ij}$, the traces cab be simplified, and the lhs can be rewritten
+\begin{equation}
+      \delta_{jk}\delta_{il}M_{lk}=\frac{1}{N} \delta_{kl}M_{lk}\delta_{ij}+2\delta_{ln}M_{lk}T^a_{kn}T^a_{ij}\;,
+\end{equation}
+which can be simplified to 
+\begin{equation}
+      \delta_{jk}\delta_{il}=\frac{1}{N} \delta_{kl}\delta_{ij}+2T^a_{kl}T^a_{ij}\;,
+\end{equation}
+Isolating 
+\begin{equation}
+      T^a_{kl}T^a_{ij}=\frac{1}{2}\left(\delta_{jk}\delta_{il}-\frac{1}{N} \delta_{kl}\delta_{ij}\right)
+\end{equation}
+Inserting this back into the term gives us
+\begin{align}
+    \frac{1}{2} (\phi_i^\dagger \phi^j)(\phi_k^\dagger \phi^l)\left(\delta_i^{\,l}\delta_k^{\,j}-\frac{1}{N}\delta_i^{\,j}\delta_k^{\,l}\right)=\frac{1}{2}\left[\phi^{\dagger}_i \phi^j \phi^{\dagger}_j \phi^i-\frac{1}{N}\phi^{\dagger}_i \phi^i \phi^{\dagger}_k \phi^ik\right]=\frac{1}{2}\left(1-\frac{1}{N}\right) (\phi^{\dagger}_i \phi^i))^2\;,
+\end{align}
+so it is not linarly independt on the quartic term in the lagrangian. 
+\subsection{Beta functions}
+For the couplings defined as
+\begin{align*}
+    \alpha_g = \frac{g^2}{(4\pi)^2}, \quad \alpha_y = \frac{y^2}{(4\pi)^2}, \quad\alpha_\lambda = \frac{\lambda}{(4\pi)^2}
+\end{align*}
+For GG model:
+\begin{align}
+    \beta_{\alpha_g}&=-\frac{11+18N}{3}\alpha_g^2\\
+    \beta_{\alpha_y}&= \frac{\alpha_y }{2}\left[(3 N-1)
+   \alpha_y+6 \alpha_g \left(-3 N+2+\frac 5N\right)\right]\\
+    \beta_{\alpha_\lambda}&=\alpha_\lambda\left[2(N+1)\alpha_y-\frac{6 \alpha_g 
+   \left(N^2-1\right)}{N}+4 \alpha_\lambda (N+4)\right]-\frac{1}{2} (N+3)
+  \alpha_y^2+\frac{3 \alpha_g^2 \left(N^3+N^2-4 N+2\right)}{4 N^2}
+\end{align}
+For BY model:
+\begin{align}
+    \beta_{\alpha_g}&=-(1+6N)\alpha_g^2\\
+    \beta_{\alpha_y}&= \frac{\alpha_y}{2}\left[(3 N+5)\alpha_y+6 \alpha_g\left(-3 N-2+\frac 5N\right) \right]
+   \\
+   \beta_{\alpha_\lambda}&=\alpha_\lambda\left[2(N+1)\alpha_y-\frac{6 \alpha_g 
+   \left(N^2-1\right)}{N}+4 \alpha_\lambda (N+4)\right]-\frac{1}{2} (N+3)
+  \alpha_y^2+\frac{3 \alpha_g^2 \left(N^3+N^2-4 N+2\right)}{4 N^2}
+\end{align}
+For large N both models reduce to
+\begin{align}
+    \beta_{\alpha_g}&\approx-6N\alpha_g^2\\
+    \beta_{\alpha_y}&\approx N\alpha_y\left(-9\alpha_g+\frac{3}{2}\alpha_y\right)\\
+    \beta_{\alpha_\lambda}&\approx N\left(\alpha_\lambda\left[2\alpha_y-6 \alpha_g 
+   +4 \alpha_\lambda \right]-\frac{1}{2}
+  \alpha_y^2+\frac{3}{4} \alpha_g^2 \right)
+\end{align}
+\subsection{CAF}
+After the fixed point analysis we have the following conditions when the Yukawa and gauge coupling is not on fixed flow:
+\begin{equation}
+    b_0<0,\quad\quad b_0-c_1>0,\quad\quad (b_0-d_2)^2-4d_1d_4\geq 0,\quad\quad b_0-d_2+\sqrt{(b_0-d_2)^2-4d_1d_4}>0
+\end{equation}
