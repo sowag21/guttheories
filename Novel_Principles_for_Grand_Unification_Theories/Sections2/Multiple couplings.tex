@@ -1,0 +1,123 @@
+\section{Polynomial approach}\label{sec:ODEpoly}
+\subsection{Interplay of Multiple Couplings}\label{sec:CAF2}
+To address the complexity of multiple couplings  we follow the framework of \cite{Giudice:2014tma} to derive the CAF conditions. First, we introduce RG time $t$ so that the beta functions can be rewritten as
+\begin{equation}
+    \beta_n:=\frac{\text{d}\alpha_n}{\text{d}t}\;,
+\end{equation}
+where $t=\ln(\mu^2/\mu_0^2)$ and $n=({g_i},{y_a},{\lambda_m})$. Then, we redefine the couplings so that the coupled differential equations can be rewritten as coupled algebraic equations \cite{Zimmermann:1984sx}. This is done by introducing shifted couplings
+\begin{equation}
+    \alpha_{g_i} = \frac{\tilde \alpha_{g_i}}{t}, \quad \quad  \alpha_{y_a} = \frac{\tilde \alpha_{y_a}}{t}, \quad \quad \alpha_{\lambda_m} = \frac{\tilde \alpha_{\lambda_m}}{t} \;.
+\end{equation}
+It should be noted that at $t\to0$ the couplings blow up. However, since we are not interested in the IR behaviour of the theory, this redefinition is not a problem. 
+This lets us define the rescaled coupling vector 
+\begin{equation}
+    \boldsymbol{x}^T=(\tilde\alpha_{g_1},\dots,\tilde\alpha_{g_{N_g}},\tilde\alpha_{y_1},\dots\,\tilde\alpha_{y_{N_y}},\tilde\alpha_{\lambda_1},\dots,\tilde\alpha_{\lambda_{N_\lambda}})=:(\tilde\alpha_{\boldsymbol{g}},\tilde\alpha_{\boldsymbol{y}},\tilde\alpha_{\boldsymbol{\lambda}})\;,
+\end{equation}
+which obeys the differential equation
+\begin{equation}
+    \frac{\text{d}\boldsymbol{x}}{\text{d}\ln t}=\boldsymbol{V}(\boldsymbol{x})\;,\quad
+    \boldsymbol{V}(\boldsymbol{x})=\begin{pmatrix}
+        \tilde \alpha_{\boldsymbol{g}}+\beta_{\boldsymbol{g}}(\tilde\alpha_{g})\\\tilde \alpha_{\boldsymbol{y}}+\beta_{\boldsymbol{y}}(\tilde\alpha_{g},\tilde\alpha_{y})\\\tilde \alpha_{\boldsymbol{\lambda}}+\beta_{\boldsymbol{\lambda}}(\tilde\alpha_{g},\tilde\alpha_{y},\tilde\alpha_{\lambda})
+    \end{pmatrix}\;,\label{eq:CAF2V}
+\end{equation}
+The fixed-flow terminology from the first CAF analysis can be extended to this case to help in solving the coupled differential equations. That is, if they all go as $1/t$, then the differential in Eq.\ \eqref{eq:CAF2V} will be zero. Then the fixed flows are determined by the solutions to $\boldsymbol{V}(\boldsymbol{ x}_\infty)=0$ yielding 
+\begin{equation}
+     \boldsymbol{x}_\infty=\begin{pmatrix}
+        -\beta_{{\boldsymbol{g}}}(\tilde\alpha_{g\infty})\\-\beta_{{\boldsymbol{y}}}(\tilde\alpha_{g\infty},\tilde\alpha_{y\infty})\\-\beta_{\boldsymbol{\lambda}}(\tilde\alpha_{g\infty},\tilde\alpha_{y\infty},\tilde\alpha_{\lambda\infty})
+    \end{pmatrix}\label{eq:solCAF2}\;.
+\end{equation}
+As in previous CAF analyses, the equations couple in such a way that we can start by only considering the gauge coupling, then the Yukawa and gauge, and finally all three couplings. 
+
+In the case of multiple gauge couplings, we can start by finding the possible solutions to Eq.\ \eqref{eq:solCAF2}. Using the gauge beta function in Eq.\ \eqref{eq:betag1loopcaf}, the possible solutions are
+\begin{equation}
+   (\tilde\alpha_{g\infty})_i= \left\{0,-\frac 1{(b_0)_i}\right\}
+        \;,
+\end{equation}
+It should be noted that the non-zero solution $-\frac{1}{(b_0)_i}$ exists only for $(b_0)_i<0$. Thus, it is only under this condition that the theory admits a non-trivial solution. Additionally, and unsurprisingly, the CAF condition coincides with the first CAF analysis (see Section \ref{sec:CAFgauge}) .
+
+Let us continue with the case of one gauge coupling and multiple Yukawa couplings. For this we use the Yukawa beta function from Eq.\ \eqref{eq:betay1loop}. The fixed-flow trajectories of the Yukawa couplings are given by
+\begin{equation}
+   \tilde\alpha_{\boldsymbol{y}\infty}= - \beta_{\boldsymbol y}(-b_0^{-1}, \tilde\alpha_{y\infty})\;. \label{eq:CAF2y}
+\end{equation}
+We can find a solution to Eq.\  \eqref{eq:CAF2y} for the case of one Yukawa. Only for $c_1-b_0<0$ will there be non-trivial solutions. As expected, the CAF condition matches that obtained in the first CAF analysis (see Eq.\ \eqref{eq:ygfixed}):
+\begin{align} 
+    (\tilde\alpha_{y\infty})_a=\begin{cases}
+       0\\\frac {(c_1)_{a}-b_0}{b_0(c_2)_a}
+    \end{cases}.
+\end{align}
+Finally, the case of one gauge, one Yukawa and multiple quartic scalar couplings can be considered. The beta equation of the quartic couplings can be written as
+\begin{equation}
+    \beta_{{\lambda_m}} = d^{\lambda}_{mnp} \alpha_{\lambda_n} \alpha_{\lambda_p} + \alpha_{\lambda_m} \left( d^{\lambda_y}_{ma} \alpha_{y_a} + d^{\lambda_g}_{mi} \alpha_{g_i} \right) + d^{y}_{mab} \alpha_{y_a} \alpha_{y_b}+ d^{g}_{mij} \alpha_{g_i} \alpha_{g_j}\;,\label{eq:multquartic}
+\end{equation}
+where $m$ indicates the $m$th quartic coupling. This can be rewritten by setting Eq.\ \eqref{eq:CAF2V} equal to zero ensuring that all the couplings are on fixed flow, which yields
+\begin{equation}
+    \tilde\alpha_{\lambda _{m\infty}} + d^{\lambda}_{mnp}\tilde\alpha_{\lambda _{m\infty}}\tilde\alpha_{\lambda _{p\infty}}+ \tilde\alpha_{\lambda _{m\infty}}(d^{\lambda y}_m \tilde\alpha_{y _{\infty}} +d^{\lambda_g}_m\alpha_{y _{\infty}}) + d^{y}_m\alpha_{y\infty}^2+ d^{g}_m \alpha_{g\infty}^2 = 0    \;.\label{eq:CAF2quartic}
+\end{equation}
+Next, we will use this approach on a specific case of one gauge, one Yukawa and two quartic couplings.
+
+\subsubsection{Two quartic scalar couplings}
+We consider the case of $m=1,2$ corresponding to two quartic couplings. In this case, the algebraic equation \eqref{eq:CAF2quartic} can be written as two coupled quadratic equations
+\begin{equation}
+    a  {x}^2 + b  {z}^2 + c  {x}{z} + d  {x} + e = 0\;,
+\end{equation}
+\begin{equation}
+    f  {z}^2 + g  {x}^2 + h  {x}{z} + i  {z} + j = 0\;,\label{eq:CAF2poly2}
+\end{equation}
+where $x=\alpha_{\lambda_{1\infty}}$ and $z=\alpha_{\lambda_{2\infty}}$. The coefficients are given by
+\begin{align}
+    a=d^{\lambda}_{mmm},\quad b=d^{\lambda}_{mnn},\quad c=d^{\lambda}_{mmn},\quad d=(d^{\lambda y}_m \tilde\alpha_{y _{\infty}} +d^{\lambda_g}_m\tilde\alpha_{g _{\infty}}),\quad e=d^{y}_m\alpha_{y\infty}^2+ d^{g}_m \alpha_{g\infty}^2\;,\label{eq:coef2quartic}
+\end{align}
+where $m=1$ and $n=2$. For Eq.\ \eqref{eq:CAF2poly2}, the coefficients $f$, $g$, $h$, $i$, and $j$ are defined analogously by exchanging the indices $m\Longleftrightarrow n$ of the coefficients in Eq.\ \eqref{eq:coef2quartic}. The two coupled polynomial equations can be rewritten as a single fourth-degree polynomial:
+\begin{equation}
+    \alpha x^4+ \beta x^3 +\gamma x^2 +\delta x+\epsilon=0\;,\label{eq:fourthdegpoly}
+\end{equation}
+where $x=\tilde\alpha_{\lambda \infty}$. The definitions of the coefficients can be found in Appendix \ref{sec:appCafadj}. 
+
+To extract the CAF region we need real solutions to the polynomial equation. Therefore we consider the nature of the roots by using Rees' approach in \cite{Rees1922}. Furthermore, we can exploit Descartes' rule of signs \cite{Wang2004} to identify positive real-valued quartic scalar couplings that satisfy CAF conditions. This CAF analysis will prove useful in the case of a chiral model with one adjoint scalar (see Section \ref{sec:adj}). 
+
+We have now considered all the couplings on fixed flow. Similar to the CAF analyses in Sections \ref{sec:CAFgauge}, \ref{sec:CAFYukawa} and \ref{sec:CAGquartic} we can also consider couplings to be off fixed flow. 
+
+\paragraph{Yukawa off fixed flow}
+We first consider the Yukawa coupling off fixed flow. This can be done by using that couplings off fixed flow must vanish faster than the rest of the couplings i.e.\ ${\alpha_y}\sim\frac{1}{t^a}$, with $a>1$. Consequently, the beta functions of the quartic couplings Eq.\ \eqref{eq:multquartic} simplify to
+\begin{align}
+    \beta_{{\lambda_m}} = d^{\lambda}_{mnp} \alpha_{\lambda_n} \alpha_{\lambda_p} + \alpha_{\lambda_m}  d^{\lambda_g}_{mi} \alpha_{g_i} + d^{g}_{mij} \alpha_{g_i} \alpha_{g_j}\;,
+\end{align}
+at significantly high energies. 
+
+% \paragraph{One quartic scalar off fixed flow}
+% Analogously to the case of the Yukawa coupling off fixed flow, we consider one quartic coupling off fixed flow. The general beta functions for the two quartic couplings are 
+% \begin{align}
+%     \beta_{\lambda_1}&=\alpha_{\lambda_1}\left(d_{1}\alpha_{\lambda_1} + d_{2}\alpha_g+d_3\alpha_y\right)+d_4\alpha_g^2+d_5\alpha_y^2+d_6\alpha_{\lambda_1}\alpha_{\lambda_2}+d_7\alpha_{\lambda_2}^2\;,\\
+%     \beta_{\lambda_2}&=\alpha_{\lambda_2}\left(e_1\alpha_{\lambda_2} + e_2\alpha_g+e_3\alpha_y\right)+e_4\alpha_g^2+e_5\alpha_y^2+e_6\alpha_{\lambda_2}\alpha_{\lambda_1}+e_7\alpha_{\lambda_1}^2\;,
+% \end{align}
+% where the notation of the coefficients follow the first CAF analysis in Section \ref{sec:CAGquartic}, since that analysis will be utilised to obtain the conditions.
+
+% Let us first discuss the case of $\alpha_{\lambda_1}$ off fixed flow. This leaves us with the decoupled quartic beta functions
+% \begin{align}
+%     \beta_{\lambda_1}&=d_4\alpha_g^2+d_5\alpha_y^2+d_6\alpha_{\lambda_1}\alpha_{\lambda_2}+d_7\alpha_{\lambda_2}^2\;,\label{eq:lam1off}\\
+%     \beta_{\lambda_2}&=\alpha_{\lambda_2}\left(e_1\alpha_{\lambda_2} + e_2\alpha_g+e_3\alpha_y\right)+e_4\alpha_g^2+e_5\alpha_y^2\;.\label{eq:lam2off}
+% \end{align}
+% Now decoupled, we simply apply the CAF analysis derived in Sections \ref{sec:CAFgauge}, \ref{sec:CAFYukawa}, and \ref{sec:CAGquartic}. It is important to note that the approach described in the beginning of Section \ref{sec:CAF2} fails in this case compared to the Yukawa coupling off fixed flow. This is because all terms of the first order RG equation for the Yukawa coupling are dependent on $\alpha_y$. However, this is not the case for the quartic couplings, here some of the terms are independent of the quartic coupling. Thus, the step $\boldsymbol{V}( \boldsymbol{x}_\infty)=0$ we used to create algebraic equations fails for one quartic coupling off fixed flow. 
+
+% As before, we can solve the coupled ODE's analytically using the ratio method. The full derivation can be found in Appendix \ref{app:CAFnolam}. 
+
+% We solve the two ODE's from the quartic couplings' beta functions Eq.\ \eqref{eq:lam1off} and Eq.\ \eqref{eq:lam2off} and obtain the CAF conditions 
+% \begin{align}
+%     &b_0<0,\quad\quad b_0-c_1>0,\quad\quad d_4''<0,\quad\quad k_e'\geq 0,\quad \quad  b_0-e_2'+\sqrt{k_e'}>0\;,\label{eq:CAFfixednolam1}
+% \end{align}  
+% where 
+% \begin{align}
+%     e_2'&=e_2+e_3\frac{b_0-c_1}{c_2}\;,\\
+%     e_4'&=e_4+e_5\left(\frac{b_0-c_1}{c_2}\right)^2\;,\\
+%     d_4''&=d_4+d_5\left(\frac{b_0-c_1}{c_2}\right)^2+d_7\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2\;,\\
+%     k_e'&= \left(b_0-e_2'\right)^2-4e_1e_4'\;.
+% \end{align}
+% In the case of both $\alpha_{\lambda_1}$ and $\alpha_{y}$ off fixed flow, the new condition on $d_4''$ reduces to that of the unprimed parameter, as for the other coefficients Eq.\ \eqref{eq:CAF}. Thus, we obtain
+% \begin{align}
+%     &b_0<0,\quad\quad b_0-c_1>0,\quad\quad d_4<0,\quad\quad k_e\geq 0,\quad \quad  b_0-e_2+\sqrt{k_e}>0\;,\label{eq:CAFnotfixednolam1}
+% \end{align}  
+% where $k_e= \left(b_0-e_2\right)^2-4e_1e_4$. 
+
+% The conditions are similar when considering $\alpha_{\lambda_2}$ off fixed flow and can be found by exchanging $d\Longleftrightarrow e$ in equations \eqref{eq:CAFfixednolam1}-\eqref{eq:CAFnotfixednolam1}.
+
+% We are now equipped with the CAF conditions needed to analyse the models we will encounter in the next sections, and we are ready to study different chiral models. In the next section, we will start by applying these conditions to two chiral models without scalars.

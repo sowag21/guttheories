@@ -1,0 +1,594 @@
+\section{CAF analysis}
+\subsection{Derivation of $\alpha_y(\alpha_g)$ for $b_0\neq c_1$}
+The solution for $b_0\neq c_1$ is
+\begin{equation*}
+    \alpha_y=\frac{(b_0-c_1)\alpha_{g_0}\alpha_g^{\frac{c_1}{b_0}}\alpha_{y_0}}{ (b_0-c_1)\alpha_g\alpha_{g_0}^{\frac{b_0+c_1}{b_0}}+{c_2}\alpha_{y_0}{\alpha_{g_0}}\alpha_g^{\frac{c_1}{b_0}}-c_2\alpha_{y_0}\alpha_{g_0}^{\frac{c_1}{b_0}}\alpha_{g}}\;,
+\end{equation*}
+which can be simplified:
+\begin{align*}
+    \alpha_y&=\frac{\alpha_{y_0}}{ \alpha_g^{1-\frac{c_1}{b_0}}\alpha_{g_0}^{\frac{c_1}{b_0}}+\frac{c_2}{b_0-c_1}\alpha_{y_0}-\frac{\alpha_{y_0}}{\alpha_{g_0}}\alpha_g^{1-\frac{c_1}{b_0}}\alpha_{g_0}^{\frac{c_1}{b_0}}\frac{c_2}{b_0-c_1}\alpha_{y_0} }\alpha_g\;,
+\end{align*}
+\begin{equation}
+        \boxed{\alpha_y=\frac{\alpha_{y_0}}{\alpha_g^{1-\frac{c_1}{b_0}}\alpha_{g_0}^{\frac{c_1}{b_0}}\left(1-\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\right)+\frac{c_2}{b_0-c_1}\alpha_{y_0}}
+        \alpha_g}\label{eq:alphay}
+\end{equation}
+\subsection{Derivation of $\alpha_\lambda(\alpha_g)$ for Different $k$}
+First defining the parameters $k,\,k_0$ as:
+\[
+ k \equiv (b_0 - d_2)^2 - 4d_1 d_4
+\]
+\[
+k_0 \equiv (b_0 - d_2)\alpha_{g_0} - 2d_1\alpha_{\lambda0}
+\]
+This will be useful for finding $\alpha_\lambda$ as a function of $\alpha_g$ for cases $k<0$, $k>0$, and $k=0$.
+\subsubsection*{Case 1: $k < 0$}
+We start with the general solution to the differential equation of $\alpha_\lambda(\alpha_g)$ (Equation \ref{eq:betalamfrac})
+\begin{align*}
+    \alpha_{\lambda} (\alpha_{g}) = \frac{\alpha_{g}}{2\alpha_{1}}\Bigg[ b_0& - d_2 + 
+    \sqrt{-k} \tan \bigg( \frac{1}{2} \bigg( \frac{\sqrt{-k} \log (\alpha_{g})}{b_0} 
+    \\-&\sqrt{-k} \bigg( 2b_0 \sqrt{-k} \tan^{-1} \bigg( \frac{(b_0 - d_2) \alpha_{g} \sqrt{-k} - 2d_1 \sqrt{-k} \alpha_{\lambda_0}}{k \alpha_{g_0}} \bigg) + k \log (\alpha_{g_0}) 
+    \bigg)\bigg) \frac{1}{b_0 k} \bigg) \Bigg]\;,
+\end{align*}
+where the definition of $k_0$ can be used, simplifying the expression
+\begin{align*}
+\alpha_{\lambda} (\alpha_{g}) =& \frac{\alpha_{g}}{2\alpha_{1}} \\&\left[ b_0 - d_2 + \sqrt{-k} \tan \left( \frac{1}{2} \left( \frac{\sqrt{-k} \log (\alpha_{g})}{b_0} - \sqrt{-k} \left( 2b_0 \sqrt{-k} \tan^{-1} \left( \frac{k_0 \sqrt{-k}}{k \alpha_{g_0}} \right) + k \log (\alpha_{g_0})\right)   \frac{1}{b_0 k} \right) \right. \right]
+\end{align*}
+If we now consider the argument of the tagents only, and simplify this
+\begin{align*}
+&\tan \left( \frac{1}{2} \left( \frac{\sqrt{-k} \log (\alpha_{g})}{b_0} - \sqrt{-k} \left( 2b_0 \sqrt{-k} \tan^{-1} \left( \frac{k_0 \sqrt{-k}}{k \alpha_{g_0}} \right) + k \log (\alpha_{g_0}) \right) \right)\left( \frac{1}{b_0 k} \right) \right)\\
+&= \tan \left[ \frac{\sqrt{-k}}{2b_0} \log (\alpha_{g}) - \frac{(\sqrt{-k})^2}{k} \tan^{-1} \left( \frac{k_0 \sqrt{-k}}{k \alpha_{g_0}} \right) - \frac{\sqrt{-k}}{2b_0} \log (\alpha_{g_0}) \right] \\
+&= \tan \left[ \frac{\sqrt{-k}}{2b_0} \log \left( \frac{\alpha_{g}}{\alpha_{g_0}} \right) + \tan^{-1} \left( \frac{k_0}{\sqrt{-k} \alpha_{g_0}} \right) \right]
+\end{align*}
+Thus, we obtain:
+\begin{equation}
+    \boxed{\alpha_{\lambda} = \frac{\alpha_{g}}{2d_{1}} \left[ b_0 - d_2 + \sqrt{-k} \tan\left( \frac{\sqrt{-k}}{2b_0} \ln\frac{\alpha_g}{\alpha_{g_0}} - \arctan\frac{k_0}{\sqrt{-k\alpha_{g_0}}} \right) \right] , \quad k<0 }
+    \label{eq:alphalamk<0}
+\end{equation}
+This solution only holds for \( k < 0 \), because we want a real result. For \( k > 0 \), a different approach is required.
+
+
+\subsubsection*{Case 2: $k > 0$}
+For $k>0$, set $\sqrt{-k} = i\sqrt{k}$ which can be inserted in the solution for $k<0$
+\[
+\alpha_{\lambda}(\alpha_g) = \frac{\alpha_g}{2\alpha_1} \left[ b_0 - d_2 + i\sqrt{k} \tan \left( \frac{i\sqrt{k}}{2b_0} \log \left( \frac{\alpha_g}{\alpha_{g_0}} \right) + \tan^{-1} \left( \frac{k_0}{i\sqrt{k} \alpha_{g_0}} \right) \right) \right].
+\]
+Using the identities \(\tan(iz) = i\tanh(z)\) and \(\tan^{-1}(iz) = i\tanh^{-1}(z)\), we rewrite the argument of the tangent. Let
+\[
+z = \frac{\sqrt{k}}{2b_0} \log \left( \frac{\alpha_g}{\alpha_{g_0}} \right) + \tanh^{-1} \left( \frac{k_0}{\sqrt{k} \alpha_{g_0}} \right).
+\]
+Then the expression inside the tangent becomes \(i z\), and we have:
+\[
+\tan(i z) = i\tanh(z).
+\]
+Substituting back, we obtain:
+\[
+\alpha_{\lambda}(\alpha_g) = \frac{\alpha_g}{2\alpha_1} \left[ b_0 - d_2 - \sqrt{k} \tanh(z) \right],
+\]
+To express the hyperbolic tangent of a sum, the following relation is used
+\[
+\tanh(A+B) = \frac{\tanh(A) + \tanh(B)}{1 + \tanh(A)\tanh(B)}\;,
+\]
+where
+\[
+A = \frac{\sqrt{k}}{2b_0} \log \left( \frac{\alpha_g}{\alpha_{g_0}} \right), \quad 
+B = \tanh^{-1} \left( \frac{k_0}{\sqrt{k}\alpha_{g_0}} \right)\;.
+\]
+Further, using the definition of $\tanh\left(x\right)=\frac{e^{2x}-1}{e^{2x}+1}$, the hyperbolic tangent of $A$ and $B$ is thus
+\[
+\tanh(A) = \frac{ \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} - 1 }{ \left(  \frac{\alpha_g}{\alpha_{g_0}}\right)^{\frac{\sqrt{k}}{b_0}} + 1 }, \quad 
+\tanh(B) = \frac{k_0}{\sqrt{k} \, \alpha_{g_0}}.
+\]
+Now focusing on the argument of the hyperbolic tangent and simplifying it
+\begin{align*}
+    \tanh(A+B)=&\frac{ \frac{ \left( \frac{\alpha_g}{\alpha_{g_0}}\right)^{\frac{\sqrt{k}}{b_0}} - 1 }{ \left(\frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} + 1 } + \frac{k_0}{\sqrt{k} \alpha_{g_0}} }{ 1 +\frac{ \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} - 1 }{ \left(\frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} + 1 }  \frac{k_0}{\sqrt{k} \, \alpha_{g_0}} }
+    = \frac{
+  \left( \left( \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} - 1 \right) 
+  + \frac{k_0}{\sqrt{k}\alpha_{g_0}} \left( \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} + 1 \right)
+}{
+  \left( \left( \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} + 1 \right) 
+  + \frac{k_0}{\sqrt{k} \, \alpha_{g_0}} \left( \left( \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} - 1 \right)
+}.\\&=  \frac{
+  \left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} (k_0+\sqrt{k}\alpha_{g_0})+k_0- \sqrt{k}\alpha_{g_0} 
+}{
+  \left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} (k_0+\sqrt{k}\alpha_{g_0})-(k_0- \sqrt{k}\alpha_{g_0} )
+}.
+\\&=  \frac{
+   (k_0+\sqrt{k}\alpha_{g_0})+(k_0- \sqrt{k}\alpha_{g_0})\left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{-\frac{\sqrt{k}}{b_0}}
+}{
+  (k_0+\sqrt{k}\alpha_{g_0})-(k_0- \sqrt{k}\alpha_{g_0} )\left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{-\frac{\sqrt{k}}{b_0}} 
+}.
+\end{align*}
+Which gives the solution for $k>0$
+\begin{equation}
+    \boxed{\alpha_{\lambda} = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \sqrt{k} \, \frac{ (k_0 + \sqrt{k}\alpha_{g_0}) + (k_0 - \sqrt{k}\alpha_{g_0}) \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\sqrt{k}/b_0} }{ (k_0 + \sqrt{k}\alpha_{g_0}) - (k_0 - \sqrt{k}\alpha_{g_0}) \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\sqrt{k}/b_0} } \right) , \quad k>0 }
+    \label{eq:alphalamk>0}
+\end{equation}
+
+\subsubsection*{Case 3: $k = 0$}
+To find the solution of the last case $\lim_{k \to 0^-}(\alpha_\lambda)$ we consider the solution $k<0$, with the approximations $\sqrt{-k} =\epsilon$.
+\begin{align*}
+z &= -\arctan\left( \frac{k_0}{\epsilon\alpha_{g_0}} \right) + \frac{\epsilon}{2b_0} \ln\frac{\alpha_g}{\alpha_{g_0}} .
+\end{align*}
+Using that for large $x$, $\arctan(x) = \frac{\pi}{2} - \frac{1}{x} + O(x^{-3})$, so
+\[
+z = -\frac{\pi}{2} +\epsilon\left( \frac{\alpha_{g_0}}{k_0} + \frac{1}{2b_0}\ln\frac{\alpha_g}{\alpha_{g_0}}\right) + O(\epsilon^3) .
+\]
+Let us call the second term for $\epsilon A$ where $A = \frac{\alpha_{g_0}}{k_0} + \frac{1}{2b_0}\ln\frac{\alpha_g}{\alpha_{g_0}}$. Then for $\epsilon$ small
+\[
+\tan z = \tan\left(-\frac{\pi}{2} + \epsilon A\right) = -\cot\epsilon A = -\frac{1}{\epsilon A} + O(\mu) = -\frac{1}{\epsilon A} + O(\epsilon) .
+\]
+Using that in front of tangent, there is a factor $\sqrt {-k}=\epsilon$
+\[
+\epsilon \tan z = \epsilon \left( -\frac{1}{\epsilon A} + O(\epsilon) \right) = -\frac{1}{A} + O(\epsilon^2) .
+\]
+Inserting this back in the expression for $\alpha_\lambda$
+\[
+\alpha_{\lambda} = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \frac{1}{A} \right) = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \frac{1}{ \frac{\alpha_{g_0}}{k_0} + \frac{1}{2b_0}\ln\frac{\alpha_g}{\alpha_{g_0}} } \right) .
+\]
+Now impose the initial condition $\alpha_{\lambda}(\alpha_{g_0}) = \alpha_{\lambda0}$
+\[
+\alpha_{\lambda0} = \frac{\alpha_{g_0}}{2d_1} \left( b_0 - d_2 - \frac{k_0}{\alpha_{g_0}} \right) .
+\]
+Which gives us an expression for $\frac{\alpha_{g_0}}{k_0}$
+\[
+\frac{\alpha_{g_0}}{k_0} = \frac{1}{b_0 - d_2 - \frac{2d_1\alpha_{\lambda0}}{\alpha_{g_0}}} .
+\]
+Inserting this back into the expression for $\alpha_\lambda$ and simplifying
+\begin{align*}
+    \alpha_\lambda &= \frac{\alpha_g}{2d_1} \left[ b_0 - d_2 - \frac{1}{\frac{1}{\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2}+ \frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}}  \right]
+    \\&= \frac{\alpha_g}{2d_1} \left[ b_0 - d_2 - \frac{\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2}{1+\left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}}   \right]
+    \\&= \frac{\alpha_g}{2d_1} \left[ \frac{(b_0 - d_2)\left(1+\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}}{{1} + \left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}} -\frac{\left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)}{{1} + \left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}} \right]
+    \\&=\frac{\alpha_g}{2d_1} \left[ \frac{\frac{4b_0d_1\alpha_{\lambda_0}}{\alpha_{g_0}}+\left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\ln \frac{\alpha_g}{\alpha_{g_0}}(b_0-d_2)}{{2b_0} + \left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right) \ln \frac{\alpha_g}{\alpha_{g_0}}} \right]
+\end{align*}
+Using the definition of $k_0$, it simplifies to
+\begin{equation}
+    \boxed{\alpha_{\lambda} = \frac{ 4b_0 d_1 \alpha_{\lambda0} + k_0 (b_0 - d_2) \ln\frac{\alpha_g}{\alpha_{g_0}} }{ 2b_0 \alpha_{g_0} + k_0 \ln\frac{\alpha_g}{\alpha_{g_0}} } , \quad k=0 }
+    \label{eq:alphalamk0}
+\end{equation}
+
+%New appendix
+
+\appendix
+\section{Appendix}
+\subsection{CAF analysis} \label{app:caf}
+\subsubsection{Yukawa coupling}
+The RG equations which govern the Yukawa coupling is given by
+\begin{equation}
+    \mu \frac{\text{d}\alpha_y}{\text{d}\mu}=\alpha_y(c_1\alpha_g+c_2\alpha_y)\;,
+\end{equation}
+where $\alpha_y=\frac{y^2}{(4\pi)^2}$, and $c_1$, $c_2$ are constants, where in general $c_1<0$ and $c_2>0$.  
+
+We have a system of two coupled differential equations. The ratio of the Yukawa \eqref{eq:betay1loop} and gauge \eqref{eq:betag1loopcaf} beta functions, are given by
+\begin{align}
+   \frac{\text{d}\alpha_y}{\text{d}\alpha_g}&= \frac{\alpha_y}{b_0 \alpha_g} \left( c_1 + c_2 \frac{\alpha_y}{\alpha_g} \right)\;.
+\end{align}
+The solutions to the differential equation depend on $b_0$ and $c_1$, if they differ, we obtain
+\begin{equation}
+    \alpha_y=\frac{\alpha_{y_0}}{ \alpha_g^{1-\frac{c_1}{b_0}}\alpha_{g_0}^{\frac{c_1}{b_0}}\left(1-\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\right)+\frac{c_2}{b_0-c_1}\alpha_{y_0} }\alpha_g\;,\quad\quad b_0\neq c_1\;,
+\end{equation}
+with the initial condition $\alpha_y(\alpha_{g_0})=\alpha_{y_{0}}$. In the case that $b_0=c_1$, the solution changes to 
+\begin{equation}
+    \alpha_y=\frac{\alpha_{y_0}}{\alpha_{g_0}\left(1+\frac{c_2}{c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\log\alpha_{g_0}\right)-\frac{c_2}{c_1}\alpha_{y_0}\log \alpha_g }\alpha_g\;,\quad\quad b_0=c_1\;.\label{eq:ysolb0c1}
+\end{equation}
+Let us first consider the solution where $b_0=c_1$ for $\alpha_g\to0$. The denominator will be dominated by the second term  $(-\frac{c_2}{c_1}\alpha_{y_0}\log \alpha_g) $, as the logarithm of the gauge coupling will go towards negative infinity. Since the constant in front will always be negative $\frac{c_2}{c_1}<0$, the $\alpha_y$ coupling will be negative.
+
+Let us instead consider the first case of $b_0\neq c_1$. The equation can be divided into two parts, one which will be dependent on $\sim\alpha^{\frac{c_1}{b_0}}$ and one $\sim\alpha$. If $\frac{c_1}{b_0}>1$, the first term will dominate, and for $\frac{c_1}{b_0}<1$ the second term will dominate. The case of $\frac{c_1}{b_0}=1$ has already been ruled out from the analysis of \eqref{eq:ysolb0c1}. In the case of $\frac{c_1}{b_0}<1$, the coupling will go as \begin{equation}
+    \alpha_y\sim\frac{b_0-c_1}{c_2}\alpha_g\;,\quad\quad \frac{c_1}{b_0}<1\;,
+\end{equation}
+which will always be negative, since $b_0-c_1<0$. This case will thus not have an asymptotically free Yukawa coupling. The last possible case is the case of $\frac{c_1}{b_0}>1$ or $b_0-c_1>0$. In this case, the coupling will go as
+\begin{equation}
+    \alpha_y\sim\frac{\alpha_{y_0}}{ \alpha_{g_0}^{\frac{c_1}{b_0}}\left(1-\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\right)}\alpha_g^{\frac{c_1}{b_0}}\;,\quad\quad \frac{c_1}{b_0}>1\;,
+\end{equation}
+to ensure that the coupling will be positive, we need to constrain the values of the couplings at the arbitrary energy level $\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}<1$. In the UV, where $\alpha_g\to 0$, the Yukawa coupling will also be asymptotically free, and because $\frac{c_1}{b_0}>1$, the Yukawa coupling will go faster to zero than the gauge coupling at high energies. Another possibility is that the values of the couplings at the arbitrary energy level are fine-tuned $\frac{\alpha_{g_0}}{\alpha_{y_0}}=\frac{c_2}{b_0-c_1}$. In this case, the first term in the denominator vanishes, and the previously dominated term is now the only one left:
+\begin{equation}
+    \alpha_y=\frac{b_0-c_1}{ c_2 }\alpha_g\;,\quad\quad \frac{\alpha_{g_0}}{\alpha_{y_0}}=\frac{c_2}{b_0-c_1}\;,\quad\quad b_0-c_1>0\;.\label{eq:ygfixed2}
+\end{equation}
+This case is known as fixed flow \cite{SoftenedGravity}. In this case, the Yukawa coupling vanishes at the same order as the gauge coupling. Now that we have the CAF conditions for the case of one Yukawa and one gauge coupling, let us turn to the case which includes the scalar.
+
+\subsection{Quartic scalar coupling}
+The remaining coupling can now be added to the analysis, the self-coupling
+\begin{equation}
+    \mu \frac{\text{d} \alpha_\lambda}{\text{d}\mu}=\alpha_\lambda\left(d_1\alpha_\lambda + d_2\alpha_g+d_3\alpha_y\right)+d_4\alpha_g^2+d_5\alpha_y^2\;.
+\end{equation}
+The coupling is dependent on both the other two couplings, with the coefficients generally $d_1,d_3,d_4\ge0$ and $d_2,d_5\le 0$. Like the two other couplings, we can consider whether the quartic coupling can be asymptotically free on its own. In this case, the solution will be similar to that of the two other couplings
+\begin{equation}
+    \alpha_\lambda=\frac{\alpha_{\lambda_0}}{1-d_1 \alpha_{\lambda_0} \log \left(\frac{\mu}{\mu_0 }\right)}\;,
+\end{equation}
+similar to the case of the Yukawa coupling, the constant $d_1$ will be positive. So similar to that case, there will be a Landau pole at the energy scale $\mu_L=\mu_0\exp(\frac1{d_1\alpha_{y_0}})$, where at higher energies than $\mu_L$ the coupling will be negative, for a system with only one scalar couplin,g this must be discarded, since the potential would be unbounded from below. At energies lower than $\mu_,L$, the coupling will be positive with a trivial Gaussian fixed point in the IR. 
+Let us now consider a theory with both gauge, Yukawa and quartic coupling. The beta equation of the quartic coupling ( \eqref{eq:betalam1loop}) can be rewritten similar to \eqref{eq:betayfrac} by taking the ratio $\frac{\beta_\lambda}{\beta_g}$
+\begin{equation}
+    \frac{\text{d} \alpha_\lambda}{\text{d}\alpha_g}=\frac{\alpha_\lambda}{b_0\alpha_g}\left(d_1\frac{\alpha_\lambda}{\alpha_g} + d_2+d_3\frac{\alpha_y}{\alpha_g}\right)+\frac{d_4}{b_0}+\frac{d_5\alpha_y^2}{b_0\alpha_g^2}\;.
+\end{equation}
+Recall that the Yukawa coupling can be asymptotically free in two cases, when the Yukawa coupling vanishes faster than the gauge coupling and when they are on fixed flow and go to zero at the same order. Let us start with considering the case of the Yukawa coupling vanishing faster than the gauge coupling, then the differential equations simplify
+\begin{equation}
+    \frac{\text{d} \alpha_\lambda}{\text{d}\alpha_g}=\frac{\alpha_\lambda}{b_0\alpha_g}\left(d_1\frac{\alpha_\lambda}{\alpha_g} + d_2\right)+\frac{d_4}{b_0}\;.
+    \label{eq:betalamfrac}
+\end{equation}
+with the solution found in Appendix in \eqref{eq:alphalamkl0}, \eqref{eq:alphalamkg0}, and \eqref{eq:alphalamkeq0} with $k = (b_0 - d_2)^2 - 4d_1 d_4$, and $k_0 = (b_0 - d_2)\alpha_{g_0} - 2d_1\alpha_{\lambda0}$
+\begin{align}
+    &\alpha_{\lambda} = \frac{\alpha_{g}}{2d_{1}} \left[ b_0 - d_2 + \sqrt{-k} \tan\left( \frac{\sqrt{-k}}{2b_0} \ln\frac{\alpha_g}{\alpha_{g_0}} - \arctan\frac{k_0}{\sqrt{-k\alpha_{g_0}}} \right) \right] , \quad k<0 \\&
+    \alpha_{\lambda} = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \sqrt{k} \, \frac{ (k_0 + \sqrt{k}\alpha_{g_0}) + (k_0 - \sqrt{k}\alpha_{g_0}) \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\sqrt{k}/b_0} }{ (k_0 + \sqrt{k}\alpha_{g_0}) - (k_0 - \sqrt{k}\alpha_{g_0}) \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\sqrt{k}/b_0} } \right) , \quad k>0 \label{eq:lambdak>0}\\&
+    \alpha_{\lambda} = \frac{ 4b_0 d_1 \alpha_{\lambda0} + k_0 (b_0 - d_2) \ln\frac{\alpha_g}{\alpha_{g_0}} }{ 2b_0 \alpha_{g_0} + k_0 \ln\frac{\alpha_g}{\alpha_{g_0}} } , \quad k=0 \label{eq:lambdak0}
+\end{align}
+If we start by considering the first solution with $k<0$, the coupling will reach a Landau pole, because of the nature of the tangent function as one varies the gauge coupling. Instead, let us consider the case for $k>0$. From this equation, it can be seen that there are two possible fixed flows between the gauge and self-coupling. Namely, when $k_0+\sqrt{k}\alpha_g=0$ or when $k_0-\sqrt{k}\alpha_g=0$
+\begin{equation}
+    \alpha_\lambda =\frac{b_0-d_2\pm\sqrt{k}}{2d_1}\alpha_g\;.\label{eq:lamgfixed}
+\end{equation}
+If we only consider solutions for $\alpha_\lambda>0$ to be relevant solutions, we will see that these fixed-flow lines also create the boundaries of the asymptotically free region of the quartic coupling. First, if $\frac{b_0-d_2-\sqrt{k}}{2d_1}>0$, then it is asymptotically free along both fixed-flow lines. If $\frac{b_0-d_2+\sqrt{k}}{2d_1}>0$ and $\frac{b_0-d_2-\sqrt{k}}{2d_1}<0$, it will only be asymptotically free along one direction. Lastly, if $\frac{b_0-d_2+\sqrt{k}}{2d_1}<0$, it will not be asymptotically free along any of the fixed-flow directions. To ensure that no Landau poles are met within the fixed-flow lines, we consider the denominator of \eqref{eq:lambdak>0}, to find other possible asymptotically free flows. Take the denominator to be zero,o then the gauge coupling has to uphold
+\begin{equation}
+    \left(\frac{\alpha_g}{\alpha_{g_0}}\right)^{-\frac{\sqrt{k}}{b_0}}=\frac{k_0+\sqrt{k}\alpha_{g_0}}{k_0-\sqrt{k}\alpha_{g_0}}\;,
+\end{equation}
+so if there are any solutions, there will be Landau poles. First, the solution of $k_0+\sqrt{k}\alpha_{g_0}=0$ is not relevant, because this zero will be cancelled by a zero in the numerator, as shown by the fixed-flow analysis. So for $\alpha_g=0$ there are no Landau poles, however, for $\alpha_g>0$ there still might be poles. Since the LHS will be positive, so must the RHS, this means that both the numerator and denominator will have the same sign. Further, for $\mu\to \infty$, $\alpha_g\to0$, so that the LHS will be less than one. Essentially, for a pole in the UV, the RHS will have to be less than one, and if the RHS is larger than one, we have a pole in the IR. Thus, for a pole in the UV
+\begin{equation}
+    0<\frac{k_0+\sqrt{k}\alpha_{g_0}}{k_0-\sqrt{k}\alpha_{g_0}}<1\;,
+\end{equation}
+For this to be the case, both the denominator and the numerator would have to be negative, for the numerator to be less than the denominator. So to ensure no poles in the UV $k_0+\sqrt{k}\alpha_{g_0}>0$. Considering possible poles in the IR, the condition for a pole will be
+\begin{equation}
+    1<\frac{k_0+\sqrt{k}\alpha_{g_0}}{k_0-\sqrt{k}\alpha_{g_0}}\;,
+\end{equation}
+for this to be the case, we need both numerator and denominator to be positive, hence, the numerator needs to be positive for no poles in the UV. We can ensure no poles in the IR by constraining the denominator $k_0-\sqrt{k}\alpha_{g_0}<0$. The reason why we need to have no poles in the IR, even though we are only interested in asymptotic freedom, is that the coupling would blow up at minus infinity, creating an unstable potential. Thus, putting this together with \eqref{eq:lamgfixed} the restriction on $\alpha_{\lambda_0}$ and $\alpha_{g_0}$ will be
+\begin{equation}
+    \frac{b_0-d_2-\sqrt{k}}{2d_1}\le \frac{\alpha_{\lambda_0}}{\alpha_{g_0}}\le \frac{b_0-d_2+\sqrt{k}}{2d_1}\;.
+\end{equation}
+However, it is also needed to make a further restriction, if at least one of the trajectories has a positive quartic coupling at all scales, this can be done by having a positive upper boundary
+\begin{equation}
+    {b_0-d_2+\sqrt{k}}>0\;.
+\end{equation}
+Thus, the self-coupling will be asymptotically free within the boundary of the fixed-flow lines and have at least one positive asymptotically free solution for the quartic coupling if
+\begin{equation}
+    k>0\;,\quad\quad  \frac{b_0-d_2-\sqrt{k}}{2d_1}\le \frac{\alpha_{\lambda_0}}{\alpha_{g_0}}\le \frac{b_0-d_2+\sqrt{k}}{2d_1}, \quad\quad {b_0-d_2+\sqrt{k}}>0\;.
+\end{equation}
+Now, let us consider the last solution $k=0$. Again, let us consider the denominator to be zero
+\begin{equation}
+    \ln\frac{\alpha_g}{\alpha_{g_0}}=-\frac{2b_0\alpha_{g_0}}{k_0}\;,
+\end{equation}
+for $\alpha_g\ge0$, we have again two possible solutions, which will give Landau poles. For $\alpha_g<\alpha_{g_0}$, the RHS has to be negative, for a pole in the UV, to ensure no poles $k_0>0$. The case will be opposite for the IR, thus $k_0<0$ and the only possible solution inserting this back in \eqref{eq:lambdak0}
+\begin{equation}
+    \alpha_{\lambda} = \frac{ \alpha_{\lambda0}  }{ \alpha_{g_0}  } \alpha_g\;,
+\end{equation}
+Thus, the restrictions for asymptotically free quartic coupling in this case will be
+\begin{equation}
+    \alpha_{\lambda} = \frac{ \alpha_{\lambda0}  }{ \alpha_{g_0}  } \alpha_g\;,\quad\quad k_0=0\;, \quad\quad k=0\;
+\end{equation}
+so in this case, only one flow line would be asymptotically free. 
+This was the case of the gauge and Yukawa coupling not on fixed flow, however, for the gauge and Yukawa coupling on fixed flow, the ratio of the beta function of the scalar and gauge coupling does not reduce
+\begin{equation}
+    \frac{\text{d} \alpha_\lambda}{\text{d}\alpha_g}=\frac{\alpha_\lambda}{b_0\alpha_g}\left(d_1\frac{\alpha_\lambda}{\alpha_g} + d_2+d_3\frac{\alpha_y}{\alpha_g}\right)+\frac{d_4}{b_0}+\frac{\alpha_y^2}{b_0\alpha_g^2}\;.
+\end{equation}
+However, it is not necessary to do the full CAF analysis again for the quartic coupling in this case, because it is possible to remove the Yukawa dependency. This can be done by recalling the fixed-flow relation of the Yukawa and gauge coupling in \eqref{eq:ygfixed2}, so we can replace $\frac{\alpha_y}{\alpha_g}=\frac{b_0-c_1}{c_2}$ 
+\begin{equation}
+    \frac{\text{d} \alpha_\lambda}{\text{d}\alpha_g}=\frac{\alpha_\lambda}{b_0\alpha_g}\left(d_1\frac{\alpha_\lambda}{\alpha_g} + d_2+d_3\frac{b_0-c_1}{c_2}\right)+\frac{d_4}{b_0}+\frac{(b_0-c_1)^2}{b_0c_2^2}\;.
+\end{equation}
+Now the equation can be rewritten as
+\begin{equation}
+    \frac{\text{d} \alpha_\lambda}{\text{d}\alpha_g}=\frac{\alpha_\lambda}{b_0\alpha_g}\left(d_1\frac{\alpha_\lambda}{\alpha_g} + d_2'\right)+\frac{d_4'}{b_0}\;,
+\end{equation}
+where 
+\begin{align}
+    d_2'=d_2+d_3\frac{b_0-c_1}{c_2}\;,\quad\quad d_4'&={d_4}+d_5\frac{(b_0-c_1)^2}{c_2^2}\;,
+\end{align}
+It should be noted that for these new coefficients, their sign might change. As previously defined $d_2,d_5\le 0$,  $d_3,d_4\ge0$, and $b_0-c_1>0$ thus
+\begin{align}
+     &d_2'>0 \quad \text{  if}\quad d_3\frac{b_0-c_1}{c_2}>|d_2|
+     \\&d_4'<0 \quad \text{  if}\quad |d_5|\frac{(b_0-c_1)^2}{c_2^2}>d_4
+\end{align}
+thus the solution to the differential equation will be the same as for the case of the Yukawa coupling going to zero faster than the gauge coupling. The constriction on the parameters will also be the same, with $k\to k'=(b_0-d_2')^2-4d_1d_4'$.
+After the CAF analysis, we have the following conditions when the Yukawa and gauge couplings are not on fixed flow
+\begin{equation}
+    b_0<0,\quad\quad b_0-c_1>0,\quad\quad (b_0-d_2)^2-4d_1d_4\geq 0,\quad\quad b_0-d_2+\sqrt{(b_0-d_2)^2-4d_1d_4}>0\;,
+\end{equation}
+for the coefficients of the beta functions, and the constraints on the gauge, Yukawa and self-coupling at an arbitrary energy scale 
+\begin{align}
+    &\text{For }k=0: \quad \alpha_{\lambda} = \frac{ \alpha_{\lambda0}  }{ \alpha_{g_0}  } \alpha_g\;,\quad\quad k_0=0\;.\\&
+    \text{For }k>0: \quad 
+    \frac{b_0-d_2-\sqrt{k}}{2d_1}\le \frac{\alpha_{\lambda_0}}{\alpha_{g_0}}\le \frac{b_0-d_2+\sqrt{k}}{2d_1}\;. 
+\end{align}
+Similarly, for a fixed-flow condition, the CAF conditions 
+\begin{align}
+    &b_0<0,\quad\quad b_0-c_1>0,\quad\quad \left(b_0-d_2-d_3\frac{b_0-c_1}{c_2}\right)^2-4d_1\left(d_4+d_5\left(\frac{b_0-c_1}{c_2}\right)^2\right)\geq 0,\\&b_0-d_2- d_3 \frac{b_0-c_1}{c_2}+\sqrt{\left(b_0-d_2 - d_3 \frac{b_0-c_1}{c_2}\right)^2-4d_1\left(d_4+d_5\left(\frac{b_0-c_1}{c_2}\right)^2\right)}>0\;.
+\end{align}  
+If the primed coefficients change sign, especially if $d'_4<0$, then the third condition of $k'\ge0$ will always be upheld. 
+\subsection{Solutions of differential equations for CAF analysis}
+\subsubsection{Derivation of \texorpdfstring{$\alpha_y(\alpha_g)$}{alpha-y(alpha-g)} for \texorpdfstring{$b_0\neq c_1$}{b0 != c1}}
+The solution for $b_0\neq c_1$ is
+\begin{equation*}
+    \alpha_y=\frac{(b_0-c_1)\alpha_{g_0}\alpha_g^{\frac{c_1}{b_0}}\alpha_{y_0}}{ (b_0-c_1)\alpha_g\alpha_{g_0}^{\frac{b_0+c_1}{b_0}}+{c_2}\alpha_{y_0}{\alpha_{g_0}}\alpha_g^{\frac{c_1}{b_0}}-c_2\alpha_{y_0}\alpha_{g_0}^{\frac{c_1}{b_0}}\alpha_{g}}\;,
+\end{equation*}
+which can be simplified:
+\begin{align*}
+    \alpha_y&=\frac{\alpha_{y_0}}{ \alpha_g^{1-\frac{c_1}{b_0}}\alpha_{g_0}^{\frac{c_1}{b_0}}+\frac{c_2}{b_0-c_1}\alpha_{y_0}-\frac{\alpha_{y_0}}{\alpha_{g_0}}\alpha_g^{1-\frac{c_1}{b_0}}\alpha_{g_0}^{\frac{c_1}{b_0}}\frac{c_2}{b_0-c_1}\alpha_{y_0} }\alpha_g\;,
+\end{align*}
+\begin{equation}
+    \boxed{\alpha_y=\frac{\alpha_{y_0}}{ \alpha_g^{1-\frac{c_1}{b_0}}\alpha_{g_0}^{\frac{c_1}{b_0}}\left(1-\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\right)+\frac{c_2}{b_0-c_1}\alpha_{y_0} }\alpha_g}
+    \label{eq:alphay}
+\end{equation}
+\subsubsection{Derivation of \texorpdfstring{$\alpha_\lambda(\alpha_g)$}{alpha-lambda (alpha-g)} for Different \texorpdfstring{$k$}{k}}
+First defining the parameters $k,\,k_0$ as:
+\[
+ k \equiv (b_0 - d_2)^2 - 4d_1 d_4
+\]
+\[
+k_0 \equiv (b_0 - d_2)\alpha_{g_0} - 2d_1\alpha_{\lambda0}
+\]
+This will be useful for finding $\alpha_\lambda$ as a function of $\alpha_g$ for cases $k<0$, $k>0$, and $k=0$.
+\paragraph{Case 1: $k < 0$}
+We start with the general solution to the differential equation of $\alpha_\lambda(\alpha_g)$ (Equation \ref{eq:betalamfrac})
+\begin{align*}
+    \alpha_{\lambda} (\alpha_{g}) = \frac{\alpha_{g}}{2\alpha_{1}}\Bigg[ b_0& - d_2 + 
+    \sqrt{-k} \tan \bigg( \frac{1}{2} \bigg( \frac{\sqrt{-k} \log (\alpha_{g})}{b_0} 
+    \\-&\sqrt{-k} \bigg( 2b_0 \sqrt{-k} \tan^{-1} \bigg( \frac{(b_0 - d_2) \alpha_{g} \sqrt{-k} - 2d_1 \sqrt{-k} \alpha_{\lambda_0}}{k \alpha_{g_0}} \bigg) + k \log (\alpha_{g_0}) 
+    \bigg)\bigg) \frac{1}{b_0 k} \bigg) \Bigg]\;,
+\end{align*}
+where the definition of $k_0$ can be used, simplifying the expression
+\begin{align*}
+\alpha_{\lambda} (\alpha_{g}) =& \frac{\alpha_{g}}{2\alpha_{1}} \\&\left[ b_0 - d_2 + \sqrt{-k} \tan \left( \frac{1}{2} \left( \frac{\sqrt{-k} \log (\alpha_{g})}{b_0} - \sqrt{-k} \left( 2b_0 \sqrt{-k} \tan^{-1} \left( \frac{k_0 \sqrt{-k}}{k \alpha_{g_0}} \right) + k \log (\alpha_{g_0})\right)   \frac{1}{b_0 k} \right) \right. \right]
+\end{align*}
+If we now consider the argument of the tagents only, and simplify this
+\begin{align*}
+&\tan \left( \frac{1}{2} \left( \frac{\sqrt{-k} \log (\alpha_{g})}{b_0} - \sqrt{-k} \left( 2b_0 \sqrt{-k} \tan^{-1} \left( \frac{k_0 \sqrt{-k}}{k \alpha_{g_0}} \right) + k \log (\alpha_{g_0}) \right) \right)\left( \frac{1}{b_0 k} \right) \right)\\
+&= \tan \left[ \frac{\sqrt{-k}}{2b_0} \log (\alpha_{g}) - \frac{(\sqrt{-k})^2}{k} \tan^{-1} \left( \frac{k_0 \sqrt{-k}}{k \alpha_{g_0}} \right) - \frac{\sqrt{-k}}{2b_0} \log (\alpha_{g_0}) \right] \\
+&= \tan \left[ \frac{\sqrt{-k}}{2b_0} \log \left( \frac{\alpha_{g}}{\alpha_{g_0}} \right) + \tan^{-1} \left( \frac{k_0}{\sqrt{-k} \alpha_{g_0}} \right) \right]
+\end{align*}
+Thus, we obtain:
+\begin{equation}
+    \boxed{\alpha_{\lambda} = \frac{\alpha_{g}}{2d_{1}} \left[ b_0 - d_2 + \sqrt{-k} \tan\left( \frac{\sqrt{-k}}{2b_0} \ln\frac{\alpha_g}{\alpha_{g_0}} - \arctan\frac{k_0}{\sqrt{-k\alpha_{g_0}}} \right) \right] , \quad k<0 }
+    \label{eq:alphalamkl0}
+\end{equation}
+This solution only holds for \( k < 0 \), because we want a real result. For \( k > 0 \), a different approach is required.
+
+
+\paragraph{Case 2: $k > 0$}
+For $k>0$, set $\sqrt{-k} = i\sqrt{k}$ which can be inserted in the solution for $k<0$
+\[
+\alpha_{\lambda}(\alpha_g) = \frac{\alpha_g}{2\alpha_1} \left[ b_0 - d_2 + i\sqrt{k} \tan \left( \frac{i\sqrt{k}}{2b_0} \log \left( \frac{\alpha_g}{\alpha_{g_0}} \right) + \tan^{-1} \left( \frac{k_0}{i\sqrt{k} \alpha_{g_0}} \right) \right) \right].
+\]
+Using the identities \(\tan(iz) = i\tanh(z)\) and \(\tan^{-1}(iz) = i\tanh^{-1}(z)\), we rewrite the argument of the tangent. Let
+\[
+z = \frac{\sqrt{k}}{2b_0} \log \left( \frac{\alpha_g}{\alpha_{g_0}} \right) + \tanh^{-1} \left( \frac{k_0}{\sqrt{k} \alpha_{g_0}} \right).
+\]
+Then the expression inside the tangent becomes \(i z\), and we have:
+\[
+\tan(i z) = i\tanh(z).
+\]
+Substituting back, we obtain:
+\[
+\alpha_{\lambda}(\alpha_g) = \frac{\alpha_g}{2\alpha_1} \left[ b_0 - d_2 - \sqrt{k} \tanh(z) \right],
+\]
+To express the hyperbolic tangent of a sum, the following relation is used
+\[
+\tanh(A+B) = \frac{\tanh(A) + \tanh(B)}{1 + \tanh(A)\tanh(B)}\;,
+\]
+where
+\[
+A = \frac{\sqrt{k}}{2b_0} \log \left( \frac{\alpha_g}{\alpha_{g_0}} \right), \quad 
+B = \tanh^{-1} \left( \frac{k_0}{\sqrt{k}\alpha_{g_0}} \right)\;.
+\]
+Further, using the definition of $\tanh\left(x\right)=\frac{e^{2x}-1}{e^{2x}+1}$, the hyperbolic tangent of $A$ and $B$ is thus
+\[
+\tanh(A) = \frac{ \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} - 1 }{ \left(  \frac{\alpha_g}{\alpha_{g_0}}\right)^{\frac{\sqrt{k}}{b_0}} + 1 }, \quad 
+\tanh(B) = \frac{k_0}{\sqrt{k} \, \alpha_{g_0}}.
+\]
+Now focusing on the argument of the hyperbolic tangent and simplifying it
+\begin{align*}
+    \tanh(A+B)=&\frac{ \frac{ \left( \frac{\alpha_g}{\alpha_{g_0}}\right)^{\frac{\sqrt{k}}{b_0}} - 1 }{ \left(\frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} + 1 } + \frac{k_0}{\sqrt{k} \alpha_{g_0}} }{ 1 +\frac{ \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} - 1 }{ \left(\frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} + 1 }  \frac{k_0}{\sqrt{k} \, \alpha_{g_0}} }
+    = \frac{
+  \left( \left( \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} - 1 \right) 
+  + \frac{k_0}{\sqrt{k}\alpha_{g_0}} \left( \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} + 1 \right)
+}{
+  \left( \left( \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} + 1 \right) 
+  + \frac{k_0}{\sqrt{k} \, \alpha_{g_0}} \left( \left( \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} - 1 \right)
+}.\\&=  \frac{
+  \left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} (k_0+\sqrt{k}\alpha_{g_0})+k_0- \sqrt{k}\alpha_{g_0} 
+}{
+  \left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} (k_0+\sqrt{k}\alpha_{g_0})-(k_0- \sqrt{k}\alpha_{g_0} )
+}.
+\\&=  \frac{
+   (k_0+\sqrt{k}\alpha_{g_0})+(k_0- \sqrt{k}\alpha_{g_0})\left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{-\frac{\sqrt{k}}{b_0}}
+}{
+  (k_0+\sqrt{k}\alpha_{g_0})-(k_0- \sqrt{k}\alpha_{g_0} )\left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{-\frac{\sqrt{k}}{b_0}} 
+}.
+\end{align*}
+Which gives the solution for $k>0$
+\begin{equation}
+    \boxed{\alpha_{\lambda} = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \sqrt{k} \, \frac{ (k_0 + \sqrt{k}\alpha_{g_0}) + (k_0 - \sqrt{k}\alpha_{g_0}) \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\sqrt{k}/b_0} }{ (k_0 + \sqrt{k}\alpha_{g_0}) - (k_0 - \sqrt{k}\alpha_{g_0}) \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\sqrt{k}/b_0} } \right) , \quad k>0 }
+    \label{eq:alphalamkg0}
+\end{equation}
+
+\paragraph{Case 3: $k = 0$}
+To find the solution of the last case $\lim_{k \to 0^-}(\alpha_\lambda)$ we consider the solution $k<0$, with the approximations $\sqrt{-k} =\epsilon$.
+\begin{align*}
+z &= -\arctan\left( \frac{k_0}{\epsilon\alpha_{g_0}} \right) + \frac{\epsilon}{2b_0} \ln\frac{\alpha_g}{\alpha_{g_0}} .
+\end{align*}
+Using that for large $x$, $\arctan(x) = \frac{\pi}{2} - \frac{1}{x} + O(x^{-3})$, so
+\[
+z = -\frac{\pi}{2} +\epsilon\left( \frac{\alpha_{g_0}}{k_0} + \frac{1}{2b_0}\ln\frac{\alpha_g}{\alpha_{g_0}}\right) + O(\epsilon^3) .
+\]
+Let us call the second term for $\epsilon A$ where $A = \frac{\alpha_{g_0}}{k_0} + \frac{1}{2b_0}\ln\frac{\alpha_g}{\alpha_{g_0}}$. Then for $\epsilon$ small
+\[
+\tan z = \tan\left(-\frac{\pi}{2} + \epsilon A\right) = -\cot\epsilon A = -\frac{1}{\epsilon A} + O(\mu) = -\frac{1}{\epsilon A} + O(\epsilon) .
+\]
+Using that in front of tangent, there is a factor $\sqrt {-k}=\epsilon$
+\[
+\epsilon \tan z = \epsilon \left( -\frac{1}{\epsilon A} + O(\epsilon) \right) = -\frac{1}{A} + O(\epsilon^2) .
+\]
+Inserting this back in the expression for $\alpha_\lambda$
+\[
+\alpha_{\lambda} = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \frac{1}{A} \right) = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \frac{1}{ \frac{\alpha_{g_0}}{k_0} + \frac{1}{2b_0}\ln\frac{\alpha_g}{\alpha_{g_0}} } \right) .
+\]
+Now impose the initial condition $\alpha_{\lambda}(\alpha_{g_0}) = \alpha_{\lambda0}$
+\[
+\alpha_{\lambda0} = \frac{\alpha_{g_0}}{2d_1} \left( b_0 - d_2 - \frac{k_0}{\alpha_{g_0}} \right) .
+\]
+Which gives us an expression for $\frac{\alpha_{g_0}}{k_0}$
+\[
+\frac{\alpha_{g_0}}{k_0} = \frac{1}{b_0 - d_2 - \frac{2d_1\alpha_{\lambda0}}{\alpha_{g_0}}} .
+\]
+Inserting this back into the expression for $\alpha_\lambda$ and simplifying
+\begin{align*}
+    \alpha_\lambda &= \frac{\alpha_g}{2d_1} \left[ b_0 - d_2 - \frac{1}{\frac{1}{\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2}+ \frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}}  \right]
+    \\&= \frac{\alpha_g}{2d_1} \left[ b_0 - d_2 - \frac{\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2}{1+\left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}}   \right]
+    \\&= \frac{\alpha_g}{2d_1} \left[ \frac{(b_0 - d_2)\left(1+\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}}{{1} + \left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}} -\frac{\left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)}{{1} + \left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}} \right]
+    \\&=\frac{\alpha_g}{2d_1} \left[ \frac{\frac{4b_0d_1\alpha_{\lambda_0}}{\alpha_{g_0}}+\left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\ln \frac{\alpha_g}{\alpha_{g_0}}(b_0-d_2)}{{2b_0} + \left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right) \ln \frac{\alpha_g}{\alpha_{g_0}}} \right]
+\end{align*}
+Using the definition of $k_0$, it simplifies to
+\begin{equation}
+    \boxed{\alpha_{\lambda} = \frac{ 4b_0 d_1 \alpha_{\lambda0} + k_0 (b_0 - d_2) \ln\frac{\alpha_g}{\alpha_{g_0}} }{ 2b_0 \alpha_{g_0} + k_0 \ln\frac{\alpha_g}{\alpha_{g_0}} } , \quad k=0 }
+    \label{eq:alphalamkeq0}
+\end{equation}
+
+
+\subsection{CAF analysis for two quartic couplings} \label{sec:appCafadj}
+In this case, we will be working with only $b=0$
+\begin{equation}
+    a  {x}^2  + c  {x}{z} + d  {x} + e = 0    \label{eq:poly1}
+\end{equation}
+\begin{equation}
+   f  {z}^2 + g  {x}^2 + h  {x}{z} + i  {z} + j = 0  \label{eq:poly2}
+\end{equation}
+To figure out if there is any CAF region in this case, we have to find the roots of the functions. This is done by inserting  ${z}$ in \ref{eq:poly1} into \ref{eq:poly2} and multiplying with $(d{x})^2$
+\begin{equation}
+    fT^2+gd^2 {x}^4 -hdT^2 {x}^2-idT  {x} +jd^2 {x}^2=0\;,
+\end{equation}
+where $T=ax^2+cx+e$, which is a fourth-degree polynomial, that we can write as
+\begin{equation}
+    \alpha  {x}^4  + \beta {x}^3 + \gamma  {x}^2 + \delta x+ \epsilon = 0  \;,  \label{eq:poly4th}
+\end{equation}
+where $\alpha=fa^2+gd^2-had, \,\beta= 2fac-hcd-iad, \,\gamma=fc^2+2fae-hed-icd+jd^2,\,\delta=e(2fc-id),\,\epsilon=fe^2$. By computing the sign of its determinant, one can find whether the solutions are real or complex. Additionally, one should check whether the roots are real positive or real negative roots, which can be done using Descartes' rule of signs.
+where the $x=\tilde\alpha_{\lambda \infty}$ and the coefficients are based on the coefficients of the two quartic beta functions. As described in Appendix \ref{sec:appCafadj}, the sign of the determinant $\Delta$ defines the nature of the roots, whether they are all real, all complex or two real and two complex \cite{Hansen2018, Gellert1977}. 
+
+\subsection{Solution to ODE's for one quartic coupling off fixed flow}\label{app:CAFnolam}
+We will have one new ODE to solve in the case of two quartic couplings, with one quartic coupling off fixed flow. The coupling which is not on fixed flow will have a solution to the ODE equation and CAF analysis, as in the case of only one quartic coupling. Notice that when terms proportional to the opposite quartic coupling drop out, the quartic beta function simplifies to the form of \eqref{eq:lam1off} and \eqref{eq:lam2off}. Thus, only the ODE, for the coupling off fixed flow is necessary to solve, giving us an extra CAF condition. 
+
+The ratio of RG equation of the coupling off fixed flow with the gauge coupling is 
+\begin{equation}
+    \frac{\dd \alpha_{\lambda_m}}{\dd \alpha_g}= \frac{d_4}{b_0}+\frac{d_5}{b_0}\frac{\alpha_y^2}{\alpha_g^2}+\frac{d_7}{b_0}\frac{\alpha_{\lambda_n}^2}{\alpha_g^2}\;,
+\end{equation}
+where all terms $\alpha_{\lambda_m}/\alpha_g$ or higher order vanishes. In this case $\alpha_{\lambda_m}$ is off fixed flow and $m\neq n$. The solution can be found by inserting the fixed flows defined in Equations \eqref{eq:ygfixed} and \eqref{eq:lamgfixed}
+\begin{equation}
+    \frac{\dd \alpha_{\lambda_m}}{\dd \alpha_g}= \frac{d_4}{b_0}+\frac{d_5}{b_0}\left(\frac{b_0-c_1}{c_2}\right)^2+\frac{d_7}{b_0}\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2\;,
+\end{equation}
+where $k_e,\, e_1,\, e_2$ are parameters from $\beta_{\lambda_n}$.
+The solution is given by
+\begin{align}
+    \alpha_{\lambda_m}=\left(\frac{b_0-c_1}{c_2}\right)^2\frac{d_5}{b_0}(\alpha_g-\alpha_{g_0})+\frac{d_6}{b_0}(\alpha_g-\alpha_{g_0})+\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2\frac{d_7}{b_0}(\alpha_g-\alpha_{g_0})+\frac{\alpha_{\lambda_{m_0}}}{c_2^2}\;.
+\end{align}
+\comment{double check solution, any conditions on 0 parameters?.} Hence, we need the coupling to approach zero from a positive branch, we get the constraint 
+\begin{align}
+    \frac{1}{b_0}\left[\left(\frac{b_0-c_1}{c_2}\right)^2d_5+d_6+\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2d_7\right]>0\;,\\ \left(\frac{b_0-c_1}{c_2}\right)^2d_5+d_6+\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2d_7<0\;.
+\end{align}
+The full set of CAF conditions in this case can be found in Equations \ref{eq:CAFfixednolam1} and \ref{eq:CAFnotfixednolam1}. 
+\section{RG flows of the BY model with one anti-fundamental scalar}\label{app:flow}
+To better understand the CAF regions, the RG flow of the BY model with one anti-fundamental scalar can be analysed. In all the flow diagrams, the arrows point towards the UV.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/FlowplotBYN5p30.pdf}
+        \caption{$(\alpha_g,\alpha_y)$} 
+        \label{fig:flowgy_left}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/FlowplotScalar_N5_p30.pdf}
+        \caption{$(\alpha_g,\alpha_\lambda)$}
+        \label{fig:flowgy_right}
+    \end{subfigure}
+    \caption{The figure displays flow diagrams for the BY model with $N=5$ and $p=30$ (a) for $(\alpha_g,\alpha_y)$ and (b) $(\alpha_g,\alpha_\lambda)$. The green flow lines represent fixed-flow trajectories.}
+\label{fig:flowgy}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/FlowplotBYN10p12.pdf}
+        \caption{$(\alpha_g,\alpha_y)$}
+        \label{fig:flowlam_left}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/FlowplotScalar_N10_p12.pdf}
+        \caption{$(\alpha_g,\alpha_\lambda)$}
+        \label{fig:flowlam_right}
+    \end{subfigure}
+    \caption{The figure displays flow diagrams for the BY model with $N=10$ and $p=12$(a) for $(\alpha_g,\alpha_y)$ and (b) $(\alpha_g,\alpha_\lambda)$. The green flow line represents the fixed-flow trajectory.}
+\label{fig:flowlam}
+\end{figure}
+
+First, consider Figure \ref{fig:flowgy_left}. The left plot displays the gauge versus Yukawa coupling for $N=5$, $p=30$. This choice of parameters places the model outside the CAF region, where the gauge coupling loses asymptotic freedom. The flow plot also shows that there is no region within the plot where the gauge coupling is asymptotically free. Furthermore, one can see that for $\alpha_g=0$, the Yukawa coupling diverges, hitting a Landau pole in the UV. This is exactly as one would expect, since the gauge coupling is responsible for making the Yukawa coupling asymptotically free (see Section \ref{sec:CAF}). 
+
+Now consider Figure \ref{fig:flowgy_right} which has the same $N$ and $p$ but displays the gauge versus the quartic coupling. As already concluded from Figure \ref{fig:flowgy_left}, the gauge coupling cannot be asymptotically free. Thus, the quartic coupling cannot be asymptotically free\footnote{The assumption that $b_0<0$ is used in the CAF analysis regarding the quartic coupling. }. This is also evident from the flow plot in Figure \ref{fig:flowgy_right}. Here, none of the flows is asymptotically free in either of the couplings. 
+
+In Figure \ref{fig:flowlam}, the case of $N=10,\;p=12$ is shown. These flow plots are below the light blue region on Figure \ref{fig:cafby}, where only the case of the Yukawa and the gauge coupling on fixed flow upholds the CAF conditions. In Figure \ref{fig:flowlam_left}, a green dashed line can be seen, which shows the fixed flow of the gauge and Yukawa coupling. Everything underneath this line is asymptotically free in both couplings. Thus, the Yukawa and gauge coupling can be asymptotically free in this case. 
+
+In Figure \ref{fig:flowlam_right}, the gauge and quartic coupling is plotted for $N=10$, $p=12$ as well. The flow diagram shows that for a positive quartic coupling, the flow always goes to infinity, and thus is not asymptotically free. Although we do not consider the region $\alpha_\lambda<0$, as it would lead to a potential unbounded from below, the RG flow in this region is directed towards $\alpha_\lambda=0$. However, in the CAF analysis, we required a positive value of $\alpha_\lambda$, and therefore there are no physical valid asymptotically free RG trajectories (see Section \ref{sec:CAF}).
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Images/ColoredFlowGridBYgy.pdf}
+    \caption{Flow diagrams of $(\alpha_g,\alpha_y)$ for $(N,p)=(5,12),(5,10),(10,12), \,\text{and }(10,30)$ (top-left to bottom-right). Green (red) background regions indicate the presence (absence) of asymptotic freedom for both couplings. The green flow lines illustrate the fixed-flow trajectories of these couplings $(\alpha_g,\alpha_y)$.}
+    \label{fig:gridgy}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/ColoredFlowGridBYlam.pdf}
+    \caption{Flow diagrams of $(\alpha_g,\alpha_\lambda)$ for $(N,p)=(5,12),(5,10),(10,12), \,\text{and }(10,30)$ (top-left to bottom-right) for the gauge and Yukawa coupling off fixed flow. Green (red) background colour indicates the presence (absence) of asymptotic freedom for the scalar coupling, when the gauge and Yukawa coupling is off fixed flow. The green flow lines illustrate the fixed-flow trajectories of these couplings $(\alpha_g,\alpha_\lambda)$.}
+    \label{fig:gridlam}
+\end{figure}
+To compare more values of $N$ and $p$ using flow diagrams, we consider four scenarios in Figures \ref{fig:gridgy}, \ref{fig:gridlam} and \ref{fig:gridlamfixed}. Figure \ref{fig:gridgy} shows whether the gauge and Yukawa coupling are asymptotically free. Green (red) background colour indicates the presence (absence) of asymptotic freedom for the scalar coupling. The same values of $N$, $p$ are shown in the second grid in Figure \ref{fig:gridlam}, here the coupling space is the gauge vs.\ the quartic coupling. In this case, the green background colour represents regions where the quartic coupling is asymptotically free, while the red background colour represents regions where it is not.
+
+Let us now consider the case Yukawa coupling on fixed flow. This changes nothing in the flow plots of the gauge vs.\ Yukawa coupling. The conditions of the quartic couplings does however, change on fixed flow, as can be seen in Figure \ref{fig:gridlamfixed}. The three figures in the bottom left all exhibit similar behaviour. Below the line of the fixed flow (of the scalar and gauge coupling), the flow moves to a negative quartic coupling before flowing up to the origin, or the flow comes from negative infinity before reaching the origin. Even though this flow tends towards $\alpha_\lambda=0$, it does so from a negative quartic coupling, which is not physical. The RG flow above the fixed-flow line (green dashed line) goes towards a Landau pole. Thus, only exactly on the fixed-flow line is it possible to have a complete asymptotically free theory with a positive quartic coupling at all energy scales. These three flow plots also have asymptotically free gauge coupling, hence the flow moves toward the origin. 
+
+The plot in the top right of Figure \ref{fig:gridlamfixed} exhibits non-asymptotic freedom. This is evident from the RG flow, which never tends towards $\alpha_\lambda=0$. This is because the gauge coupling is not asymptotically free for these values of $N$ and $p$.
+
+Now, combining the information from the three plots, we conclude that on fixed flow the theory is only CAF for one of the four parameter sets, namely when $N=10$ and $p=30$. Going back to Figure \ref{fig:cafby}, these values lie within the light blue CAF region. Additionally, on fixed flow three of the four parameter sets are CAF, effectively only the boundary coming from the gauge coupling influences whether the model is CAF in that case.   
+
+Together, from the Figures \ref{fig:gridgy}, \ref{fig:gridlam} and \ref{fig:gridlamfixed}, we can understand the meaning of the CAF regions. Further, the conclusions drawn from these are consistent with Figure \ref{fig:cafby}.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/ColoredFlowGridBYlamfixed.pdf}
+    \caption{Flow diagrams of $(\alpha_g,\alpha_\lambda)$ for $(N,p)=(5,12),(5,10),(10,12), \,\text{and }(10,30)$ (top-left to bottom-right) for the gauge and Yukawa coupling on fixed flow. Green (red) background colour indicates the presence (absence) of asymptotic freedom for the scalar coupling, when the gauge and Yukawa coupling is on fixed flow. The green flow lines illustrate the fixed-flow trajectories of these couplings $(\alpha_g,\alpha_\lambda)$.}
+    \label{fig:gridlamfixed}
+\end{figure}
+\section{Additional Figures}
+\subsection{GG model with one scalar in the adjoint representation} \label{sec:appGGplotsadj}
+
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/CAFplotGG_1_RootsFixed_Ng1.pdf}
+        \caption{All couplings on fixed flow} 
+        \label{fig:roots_fixedGG}
+    \end{subfigure}
+    \hspace{0.1cm}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/CAFplotGG_2_RootsNoY_Ng1.pdf}
+        \caption{$\alpha_y$ off fixed flow} 
+        \label{fig:roots_noyGG}
+    \end{subfigure}
+    
+    \caption{ Root structure of the fourth-degree polynomial for the GG model, for (a) all couplings on fixed flow and (b) the Yukawa coupling off fixed flow. The shaded regions denote four complex roots (white), two real and two complex roots (light green), and four real roots (dark green). The dashed black line illustrates the $b_0=0$ condition, underneath which the gauge coupling is asymptotic free.} 
+    \label{fig:DeltaadjGG}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.48\textwidth]{Images/CAFplotGG_3_FinalCombined_Ng1.pdf}
+    \caption{CAF regions for the GG model with all couplings on fixed flow (dark blue) and for the Yukawa coupling $\alpha_y$ off fixed flow (light blue). The dashed black line illustrates the $b_0=0$ condition, underneath which the gauge coupling is asymptotic free.}
+    \label{fig:BYposrootsGG}
+\end{figure}
+
+
+\subsection{Additional graphs for one adjoint scalar with chiral families}\label{sec:appplotsadjfam}
+
+The case of $N_g=4$ for the BY model can be seen in Figure \ref{fig:final_comb_Ng4_adj_by}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.48\textwidth]{Images/CAFplot_3_FinalCombined_Ng4.pdf}
+    \caption{}
+    \label{fig:final_comb_Ng4_adj_by}
+\end{figure}

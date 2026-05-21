@@ -1,19 +1,37 @@
 \documentclass[11pt, a4paper]{book}
 
 %---------------- Geometry ----------------%
-\usepackage[margin=2cm, tmargin=3cm, bmargin=2.5cm]{geometry}
+\usepackage[margin=2.2cm, tmargin=3cm, bmargin=3cm]{geometry}
 
 %---------------- Fonts ----------------%
-% \usepackage{fontenc}
 \usepackage{fontspec}
 \setmainfont{Lato}
-\newfontface\titlefont{Lato}
-% \usepackage{lmodern}
-\linespread{1.2}
+\newcommand{\titlefont}{\normalfont\sffamily} %\bfseries
+%\setsansfont{Fira Sans}[Numbers=OldStyle]
+%\setmainfont{Linux Libertine O}[Ligatures=TeX]
+%\setmainfont{TeX Gyre Pagella}[Ligatures=TeX]
+%\setmainfont{XCharter}[Ligatures=TeX]
+\setmainfont{STIX Two Text}[Ligatures=TeX]
+%\setmainfont{Latin Modern Roman}[Ligatures=TeX]
+\newfontface\headerfont{Fira Sans}[Letters=SmallCaps, Scale=1.4]
+\newfontface\primefont{Playfair Display}
+\usepackage{setspace}
+\setstretch{1.2}
+\usepackage{xspace}
+\usepackage{dsfont}
+\usepackage[british]{babel}
+
+\newcommand{\titletext}[1]{%
+  {\primefont\huge\color{blue!40!black}#1}%
+}
+\newcommand{\nametext}[1]{%
+  {\primefont\LARGE\color{blue!20!black}#1}%
+}
 
 
 %---------------- Math ----------------%
 \usepackage{amsmath}
+\allowdisplaybreaks
 \usepackage{slashed}
 % \usepackage{lete-sans-math}
 % \setmathfont{LeteSansMath.otf}
@@ -21,12 +39,19 @@
 % \usepackage{amssymb}
 \usepackage{braket}
 \usepackage{ytableau}
+\ytableausetup{centertableaux}
 
 \numberwithin{equation}{chapter}
 
 \DeclareMathOperator{\tr}{tr}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\SU}{\mathrm{SU}}
+\newcommand{\U}{\mathrm{U}}
+\newcommand{\SO}{\mathrm{SO}}
+\newcommand{\Sp}{\mathrm{Sp}}
+\newcommand{\E}{\mathrm{E}}
 
-%---------------- Colors ----------------%
+%---------------- Colours ----------------%
 \usepackage[table,dvipsnames]{xcolor}
 \definecolor{linkblue}{rgb}{0.020, 0.000, 0.478}
 \definecolor{linkred}{rgb}{0.459, 0.078, 0.047}
@@ -34,12 +59,55 @@
 \definecolor{sectiongray}{rgb}{0.2, 0.2, 0.2}
 \definecolor{darkgreen}{rgb}{0.0, 0.39, 0.0}
 \definecolor{vibrantred}{rgb}{0.86, 0.07, 0.24}
+\definecolor{chaptercolour}{rgb}{0.08,0.32,0.17}
+\definecolor{chaptercolour2}{rgb}{0.08,0.3,0.17}
+\definecolor{sectioncolour2}{RGB}{170,69,128}
+\definecolor{sectioncolour1}{RGB}{202,108,168}
+\definecolor{sectioncolour}{RGB}{150, 50, 100}
 
 %---------------- Sections ----------------%
-\usepackage{sectsty}
-\chapterfont{\Huge\titlefont\color{sectiongray}} 
-\sectionfont{\Large\titlefont\color{sectiongray}} 
-\subsectionfont{\large\titlefont\color{sectiongray}}
+\usepackage{chngcntr}
+\usepackage{titlesec}
+\usepackage[page, toc]{appendix}
+
+\titleformat{\chapter}[display]
+  {\titlefont}
+  {%
+  \filleft\bfseries
+    \begin{minipage}{0.3\textwidth}
+      \centering
+      \raisebox{-1.6cm}{\fontsize{25}{35}\selectfont\rotatebox{90}{\textcolor{chaptercolour2}{\titlefont{\textbf{Chapter}}}}}
+      \hspace{3mm}
+      \colorbox{chaptercolour2}{\parbox[c][8em][c]{8em}{%
+        \centering\fontsize{80}{120}\selectfont\color{white}\thechapter}} \hspace{-1.1cm}
+    \end{minipage}
+  }
+  {1em}
+  {\filleft\bfseries
+    \fontsize{30}{45}\selectfont\color{chaptercolour2}}
+
+\titleformat{\section}
+  {\titlefont}
+  {\hspace{-1mm}
+    \filright
+    \colorbox{sectioncolour}{\parbox[c][2em][c]{6em}{%
+    \centering\bfseries\fontsize{20}{40}\selectfont\color{white}\thesection}}
+  }
+  {1em}
+    {
+      \LARGE\bfseries\color{sectioncolour}\raisebox{-0.15ex}
+    }
+     [\vspace{-1.172em}\color{sectioncolour}\rule{\textwidth}{2pt}]
+
+\titleformat{\subsection}
+  {\titlefont}
+  {\hspace{-1mm}
+    \filright
+    \centering\color{chaptercolour2}\Large\thesubsection}
+  {1em}
+  {
+    \Large\color{chaptercolour2}}
+     [\vspace{-1.1em}\color{chaptercolour2}\rule{\textwidth}{1pt}]
 
 %---------------- Tables ----------------%
 \usepackage{array}
@@ -54,20 +122,41 @@
 \usepackage{wrapfig}
 \usepackage{subcaption}
 \usepackage{afterpage}
-\usepackage[format=hang, labelfont=sc, font=it]{caption}
+\usepackage[format=hang, labelfont=sc, textfont={sl, md}]{caption}
+
 
 %---------------- Page Layout ----------------%
 \usepackage{indentfirst}
-\usepackage[page, toc]{appendix}
 \usepackage{fancyhdr}
+\usepackage{microtype}
 \pagestyle{fancy}
-\fancyhead[LE]{\small{\textsc{\leftmark}}}
-\fancyhead[LO]{\textsc{\thepage}}
-\fancyhead[RE]{\textsc{\thepage}}
-\fancyhead[RO]{ \small{\textsc{\rightmark}}}
+
+% \renewcommand{\chaptermark}[1]{%
+%   \markboth{\textsc{#1}}}{}%
+% }
+% \renewcommand{\sectionmark}[1]{%
+%   \markboth{\textsc{#1}}}{}%
+% }
+
+\fancyhead[RO]{\textsf{\leftmark}}
+\fancyhead[LO]{\scalebox{1.0}{\textsf{SOPHIE LUND WAGNER}}}
+\fancyhead[RE]{\scalebox{1.0}{\textsf{SOPHIE LUND WAGNER}}}
+\fancyhead[LE]{\textsf{\rightmark}}
+\fancyfoot[LE]{\primefont\large —\ \thepage\ —}
+\fancyfoot[RO]{\primefont\large —\ \thepage\ —}
 \cfoot{}
-%\renewcommand{\footrulewidth}{0.5pt}
-\renewcommand{\headrulewidth}{0.5pt}
+% \renewcommand{\footrulewidth}{0.1pt}
+% \renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{plain}{
+  \fancyhf{} % clear header/footer
+  \fancyfoot[LE]{\primefont\large —\ \thepage\ —}
+  \fancyfoot[RO]{\primefont\large —\ \thepage\ —}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\setlength{\headheight}{14pt}
+
 
 %---------------- Theorems ----------------%
 \usepackage{amsthm}
@@ -76,6 +165,13 @@
 \newtheorem*{corollary}{Corollary}
 \newtheorem*{definition}{Definition}
 \newtheorem*{postulate}{Postulate}
+
+%---------------- Colours ----------------%
+\definecolor{myLightBlue}{HTML}{ADD8E6} % Very soft ice blue
+\definecolor{myDarkerBlue}{HTML}{D1F6FF} % Slightly darker slate/blue
+\definecolor{darkgreen}{rgb}{0.0, 0.39, 0.0}
+\definecolor{myblue}{rgb}{0, 0.3, 0.5}
+\definecolor{myred}{RGB}{130, 0, 0} % Updated to match the target preamble
 
 %---------------- Custom Commands ----------------%
 \newcommand{\question}[1]{\textbf{\textit{\color{vibrantred}[Question: #1]}}}
@@ -86,18 +182,12 @@
 \MakePerPage{footnote}
 
 %---------------- Bibliography ----------------%
-\usepackage[sorting = none ]{biblatex}% style=authoryear
+\usepackage[sorting = none, style=numeric-comp]{biblatex}% style=authoryear
 \addbibresource{reflist.bib}
 
 %---------------- Hyperlinks ----------------%
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=tocgray,
-    citecolor=linkblue,
-    urlcolor=darkgreen,
-}
-
+% Define your custom hex colours here
+\usepackage[colorlinks=true, linkcolor=myblue, citecolor=myred, urlcolor=myblue, linktoc=page]{hyperref}
 %---------------- Misc ----------------%
 \usepackage{csquotes}
 \usepackage{makeidx}
@@ -109,41 +199,103 @@
 
 %---------------- Plots ----------------%
 \usepackage{tikz}
+\usepackage{tikz-feynman}
 \usetikzlibrary{patterns}
+\usetikzlibrary{shapes.misc}
+\usetikzlibrary{decorations.markings, arrows.meta}
 % \usepackage{pgfplots}
 
 \graphicspath{{Figures/}}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % Or whichever version Overleaf/your editor suggests
 
+
+%---------------- Boxes ----------------%
+\usepackage[framemethod=tikz]{mdframed}
+
+% Define a custom styled box style
+\mdfdefinestyle{thesisbox}{
+    backgroundcolor=red!5!white,   % 5% blue, 95% white background
+    linecolor=sectioncolour,         % Border color
+    linewidth=2pt,                  % Border thickness
+    roundcorner=5mm,                % Radius of rounded corners
+    innerleftmargin=15pt,           % Padding on the left
+    innerrightmargin=15pt,          % Padding on the right
+    innertopmargin=12pt,            % Padding on the top
+    innerbottommargin=12pt          % Padding on the bottom
+}
+
+%---------------- Other ----------------%
+
+
+%---------------- Document start ----------------%
 \begin{document}
 
- \input{Title.tex} %<------------ 
+\input{Sections0/Title.tex} %<------------ 
+
+\section*{Resumé}
+
+\input{Sections0/Resume.tex}
 
 \section*{Abstract}
 
-\input{Sections/Abstract.tex}
-\newpage
+\input{Sections0/Abstract.tex}
 \thispagestyle{empty}
 
 \setcounter{tocdepth}{2}
-\renewcommand{\baselinestretch}{1.22}\normalsize
 
 \thispagestyle{empty}
 \tableofcontents
-\renewcommand{\baselinestretch}{1.3}\normalsize
+\newpage
+\section*{Preface and Acknowledgements}
 
-\chapter{Mathematical theory}
+\input{Sections0/Preface.tex}
+\newpage
+\chapter{Introduction}
+\input{Sections0/Introduction.tex}
 
-\label{chap:mathematical theory}
-\input{Sections/Mathematical theory.tex}
 
-\chapter{Physics theory}
+\chapter{The Renormalisation Group}
+\label{chap:RG}
+\input{Sections1/RG group.tex}
+\chapter{Grand Unified Theories}
+\label{chap:GUT}
+\input{Sections1/GUTs.tex}
 
-\label{chap:Physics theory}
-\input{Sections/Physics theory.tex}
+\chapter{CAF Framework}
+\label{chap:CAF}
+\input{Sections2/Gauge coupling.tex}
+\input{Sections2/Yukawa coupling.tex}
+\input{Sections2/Quartic coupling.tex}
+\input{Sections2/Multiple couplings.tex}
 
-\chapter{Papers}
+\chapter{Chiral models}
+\label{chap:chiralmodels}
+\input{Sections3/no scalar.tex}
+\input{Sections3/fund scalar.tex}
+\input{Sections3/adj scalar.tex}
 
-\label{chap:Papers}
-\input{Sections/Papers.tex}
+\chapter{Conclusion}
+\label{chap:conc}
+\input{Sections4/Conclusion.tex}
+
+\printbibliography
+%\newpage
+\appendix
+\chapter{Group theory}
+\label{app:GT}
+\input{Appendix/Group theory.tex}
+\chapter{CAF framework}
+\label{app:CAF}
+\input{Appendix/CAF.tex}
+\chapter{Chiral models}
+\label{app:models}
+\input{Appendix/Figures.tex}
+%\chapter{Random notes}
+%\input{Random.tex}
+%\input{Sections1/Effective potential.tex}
+%\input{Sections1/Symmetry non-restoration.tex}
+%\input{Sections1/Chiral theories.tex}
+
 
 \end{document}

@@ -1,0 +1,645 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Cacciapaglia:2025gta}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9560b685de7bddd82ac888fdca571462}{%
+           family={Cacciapaglia},
+           familyi={C\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=237f368f40512fbbff7e330dd6852e27}{%
+           family={Deandrea},
+           familyi={D\bibinitperiod},
+           given={Aldo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=df6af7cfb507f6381bef433ae1487d04}{%
+           family={Kollias},
+           familyi={K\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod}}}%
+        {{hash=951bea001d5d3994a637dbdcbfbed0e1}{%
+           family={Sannino},
+           familyi={S\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d28f5e94706057b12ebab951a002d896}
+      \strng{fullhash}{53f613428183811cfbf627b78eaa502c}
+      \strng{fullhashraw}{53f613428183811cfbf627b78eaa502c}
+      \strng{bibnamehash}{d28f5e94706057b12ebab951a002d896}
+      \strng{authorbibnamehash}{d28f5e94706057b12ebab951a002d896}
+      \strng{authornamehash}{d28f5e94706057b12ebab951a002d896}
+      \strng{authorfullhash}{53f613428183811cfbf627b78eaa502c}
+      \strng{authorfullhashraw}{53f613428183811cfbf627b78eaa502c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{note}{Submitted on July 8, 2025; revised July 21, 2025}
+      \field{title}{Grand-unification Theory Atlas: Standard Model and Beyond}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2507.06368
+      \endverb
+    \endentry
+    \entry{PhysRevLett.32.438}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=539150865c9eaf3cf228abdd3d0e88ba}{%
+           family={Georgi},
+           familyi={G\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fdc67cd69f482037e96009aec70a2312}{%
+           family={Glashow},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c0a03798f5f6f8738c9e985c4568c99}
+      \strng{fullhash}{8c0a03798f5f6f8738c9e985c4568c99}
+      \strng{fullhashraw}{8c0a03798f5f6f8738c9e985c4568c99}
+      \strng{bibnamehash}{8c0a03798f5f6f8738c9e985c4568c99}
+      \strng{authorbibnamehash}{8c0a03798f5f6f8738c9e985c4568c99}
+      \strng{authornamehash}{8c0a03798f5f6f8738c9e985c4568c99}
+      \strng{authorfullhash}{8c0a03798f5f6f8738c9e985c4568c99}
+      \strng{authorfullhashraw}{8c0a03798f5f6f8738c9e985c4568c99}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Magnetic Monopoles in Unified Gauge Theories}
+      \field{volume}{32}
+      \field{year}{1974}
+      \field{pages}{438\bibrangedash 441}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.32.438
+      \endverb
+    \endentry
+    \entry{Bars1981BY}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=bb27c4bbe7481f64c15ca3cb92b60f64}{%
+           family={Bars},
+           familyi={B\bibinitperiod},
+           given={Itzhak},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b75741357d8c941ecb9dc31f9c384b2d}{%
+           family={Yankielowicz},
+           familyi={Y\bibinitperiod},
+           given={Shimon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c089fc55495189d805f9ddd5c548c4e}
+      \strng{fullhash}{9c089fc55495189d805f9ddd5c548c4e}
+      \strng{fullhashraw}{9c089fc55495189d805f9ddd5c548c4e}
+      \strng{bibnamehash}{9c089fc55495189d805f9ddd5c548c4e}
+      \strng{authorbibnamehash}{9c089fc55495189d805f9ddd5c548c4e}
+      \strng{authornamehash}{9c089fc55495189d805f9ddd5c548c4e}
+      \strng{authorfullhash}{9c089fc55495189d805f9ddd5c548c4e}
+      \strng{authorfullhashraw}{9c089fc55495189d805f9ddd5c548c4e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Letters B}
+      \field{title}{Composite quarks and leptons as solutions of anomaly constraints}
+      \field{volume}{101}
+      \field{year}{1981}
+      \field{pages}{159\bibrangedash 162}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/0370-2693(81)90572-3
+      \endverb
+    \endentry
+    \entry{SoftenedGravity}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=b904596473effcf71818789ee8bceb0a}{%
+           family={Giudice},
+           familyi={G\bibinitperiod},
+           given={Gian\bibnamedelima F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=a834041850ddf2def9e6eb079ebd65d3}{%
+           family={Isidori},
+           familyi={I\bibinitperiod},
+           given={Gino},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8f98b44f495c52df792f09c95f3c061e}{%
+           family={Salvio},
+           familyi={S\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b217c027775fbf2541a4c4dcf0a78f8e}{%
+           family={Strumia},
+           familyi={S\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{891f9977111e670e7b815ce7a38a1947}
+      \strng{fullhash}{6eb8dbfa6ab22534ceeb3b76c5c36d1f}
+      \strng{fullhashraw}{6eb8dbfa6ab22534ceeb3b76c5c36d1f}
+      \strng{bibnamehash}{891f9977111e670e7b815ce7a38a1947}
+      \strng{authorbibnamehash}{891f9977111e670e7b815ce7a38a1947}
+      \strng{authornamehash}{891f9977111e670e7b815ce7a38a1947}
+      \strng{authorfullhash}{6eb8dbfa6ab22534ceeb3b76c5c36d1f}
+      \strng{authorfullhashraw}{6eb8dbfa6ab22534ceeb3b76c5c36d1f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{number}{02}
+      \field{title}{Softened Gravity and the Extension of the Standard Model up to Infinite Energy}
+      \field{volume}{2015}
+      \field{year}{2015}
+      \field{pages}{137}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/JHEP02(2015)137
+      \endverb
+      \verb{eprint}
+      \verb arXiv:1412.2769
+      \endverb
+    \endentry
+    \entry{Pica2017ConformalPhase}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=91a60803acbee19b9b46e0007ef410d3}{%
+           family={Pica},
+           familyi={P\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3c5125c40296f2bb2a4529e9e5cff38b}{%
+           family={Ryttov},
+           familyi={R\bibinitperiod},
+           given={Thomas\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=951bea001d5d3994a637dbdcbfbed0e1}{%
+           family={Sannino},
+           familyi={S\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{f28f979af7e162bd70a1a06689c3f7a2}
+      \strng{fullhash}{f28f979af7e162bd70a1a06689c3f7a2}
+      \strng{fullhashraw}{f28f979af7e162bd70a1a06689c3f7a2}
+      \strng{bibnamehash}{f28f979af7e162bd70a1a06689c3f7a2}
+      \strng{authorbibnamehash}{f28f979af7e162bd70a1a06689c3f7a2}
+      \strng{authornamehash}{f28f979af7e162bd70a1a06689c3f7a2}
+      \strng{authorfullhash}{f28f979af7e162bd70a1a06689c3f7a2}
+      \strng{authorfullhashraw}{f28f979af7e162bd70a1a06689c3f7a2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{074015}
+      \field{title}{Conformal Phase Diagram of Complete Asymptotically Free Theories}
+      \field{volume}{96}
+      \field{year}{2017}
+      \field{pages}{074015}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.96.074015
+      \endverb
+      \verb{eprint}
+      \verb arXiv:1605.04712
+      \endverb
+    \endentry
+    \entry{M_lgaard_2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=630ba211486c4907c7357f482fc22cb5}{%
+           family={Mølgaard},
+           familyi={M\bibinitperiod},
+           given={Esben},
+           giveni={E\bibinitperiod}}}%
+        {{hash=951bea001d5d3994a637dbdcbfbed0e1}{%
+           family={Sannino},
+           familyi={S\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{fullhash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{fullhashraw}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{bibnamehash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{authorbibnamehash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{authornamehash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{authorfullhash}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \strng{authorfullhashraw}{54166dc237ba4ee6f4562b1e9884f2ef}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2470-0029}
+      \field{journaltitle}{Physical Review D}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{Asymptotically safe and free chiral theories with and without scalars}
+      \field{volume}{96}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1103/physrevd.96.056004
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevD.96.056004
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevD.96.056004
+      \endverb
+    \endentry
+    \entry{Weinberg1974}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=15e144c72b0b9d10db00ddc6d37a19e6}{%
+           family={Weinberg},
+           familyi={W\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{fullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{fullhashraw}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{bibnamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{authorbibnamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{authornamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{authorfullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{authorfullhashraw}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{Gauge and Global Symmetries at High Temperature}
+      \field{volume}{9}
+      \field{year}{1974}
+      \field{pages}{3357\bibrangedash 3378}
+      \range{pages}{22}
+    \endentry
+    \entry{BajcLugoSannino2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=c0dbc06c82dddd432110a90081563807}{%
+           family={Bajc},
+           familyi={B\bibinitperiod},
+           given={Borut},
+           giveni={B\bibinitperiod}}}%
+        {{hash=96fd880340c2e0a48abe1aba1cc2951c}{%
+           family={Lugo},
+           familyi={L\bibinitperiod},
+           given={Adrián},
+           giveni={A\bibinitperiod}}}%
+        {{hash=951bea001d5d3994a637dbdcbfbed0e1}{%
+           family={Sannino},
+           familyi={S\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3cc01d97f07b93b353cdbc1d9e1eeb9}
+      \strng{fullhash}{b3cc01d97f07b93b353cdbc1d9e1eeb9}
+      \strng{fullhashraw}{b3cc01d97f07b93b353cdbc1d9e1eeb9}
+      \strng{bibnamehash}{b3cc01d97f07b93b353cdbc1d9e1eeb9}
+      \strng{authorbibnamehash}{b3cc01d97f07b93b353cdbc1d9e1eeb9}
+      \strng{authornamehash}{b3cc01d97f07b93b353cdbc1d9e1eeb9}
+      \strng{authorfullhash}{b3cc01d97f07b93b353cdbc1d9e1eeb9}
+      \strng{authorfullhashraw}{b3cc01d97f07b93b353cdbc1d9e1eeb9}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{The Free and Safe Fate of Symmetry Non-Restoration}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2012.08428
+      \endverb
+    \endentry
+    \entry{Kallosh1995}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=32c810826c2ded7dca7cdd8f6c06014d}{%
+           family={Kallosh},
+           familyi={K\bibinitperiod},
+           given={Renata},
+           giveni={R\bibinitperiod}}}%
+        {{hash=175a991cfbbe8118020f2b0a484a8f40}{%
+           family={Linde},
+           familyi={L\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4be9c7fa86061b799e69e4f320d8f546}{%
+           family={Linde},
+           familyi={L\bibinitperiod},
+           given={Dmitri},
+           giveni={D\bibinitperiod}}}%
+        {{hash=57d5460feef651e0511cad25207f396b}{%
+           family={Susskind},
+           familyi={S\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b961769378749d5c41737bd0a991b03}
+      \strng{fullhash}{06330af729103d1045ef0fce1bbee934}
+      \strng{fullhashraw}{06330af729103d1045ef0fce1bbee934}
+      \strng{bibnamehash}{4b961769378749d5c41737bd0a991b03}
+      \strng{authorbibnamehash}{4b961769378749d5c41737bd0a991b03}
+      \strng{authornamehash}{4b961769378749d5c41737bd0a991b03}
+      \strng{authorfullhash}{06330af729103d1045ef0fce1bbee934}
+      \strng{authorfullhashraw}{06330af729103d1045ef0fce1bbee934}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{Gravity and Global Symmetries}
+      \field{volume}{52}
+      \field{year}{1995}
+      \field{pages}{912\bibrangedash 935}
+      \range{pages}{24}
+      \verb{eprint}
+      \verb hep-th/9502069
+      \endverb
+    \endentry
+    \entry{Arvanitaki2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=3599a261a65a9751896282f5637ad999}{%
+           family={Arvanitaki},
+           familyi={A\bibinitperiod},
+           given={Asimina},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a23516cd794503fa75a5973f4f7d2c2d}{%
+           family={Dubovsky},
+           familyi={D\bibinitperiod},
+           given={Sergei},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{891ae1d5985831e6ef54c75e40b2bf86}
+      \strng{fullhash}{891ae1d5985831e6ef54c75e40b2bf86}
+      \strng{fullhashraw}{891ae1d5985831e6ef54c75e40b2bf86}
+      \strng{bibnamehash}{891ae1d5985831e6ef54c75e40b2bf86}
+      \strng{authorbibnamehash}{891ae1d5985831e6ef54c75e40b2bf86}
+      \strng{authornamehash}{891ae1d5985831e6ef54c75e40b2bf86}
+      \strng{authorfullhash}{891ae1d5985831e6ef54c75e40b2bf86}
+      \strng{authorfullhashraw}{891ae1d5985831e6ef54c75e40b2bf86}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{Exploring the String Axiverse with Precision Black Hole Physics}
+      \field{volume}{83}
+      \field{year}{2011}
+      \field{pages}{044026}
+      \range{pages}{1}
+      \verb{eprint}
+      \verb 1004.3558
+      \endverb
+    \endentry
+    \entry{Doneva2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=5df23c15dc7596655ba09aa8b92b2000}{%
+           family={Doneva},
+           familyi={D\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5d6d788b39c6b5daba5656cfe6bb2740}{%
+           family={Ramazanoğlu},
+           familyi={R\bibinitperiod},
+           given={Fethi},
+           giveni={F\bibinitperiod}}}%
+        {{hash=02a84c18a0f25cfd95d0c6b18716a30a}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Hector},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e16dd4901be61e4f357403b7d2dc0452}{%
+           family={Sotiriou},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=513911d1657a2404bc45000fe7888542}{%
+           family={Yazadjiev},
+           familyi={Y\bibinitperiod},
+           given={Stoytcho},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8870842b68573bd70ac6a5282aaf5da}
+      \strng{fullhash}{23fecfbeb741b65ae2a52a1a09eb2d02}
+      \strng{fullhashraw}{23fecfbeb741b65ae2a52a1a09eb2d02}
+      \strng{bibnamehash}{f8870842b68573bd70ac6a5282aaf5da}
+      \strng{authorbibnamehash}{f8870842b68573bd70ac6a5282aaf5da}
+      \strng{authornamehash}{f8870842b68573bd70ac6a5282aaf5da}
+      \strng{authorfullhash}{23fecfbeb741b65ae2a52a1a09eb2d02}
+      \strng{authorfullhashraw}{23fecfbeb741b65ae2a52a1a09eb2d02}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{gr-qc}
+      \field{eprinttype}{arXiv}
+      \field{title}{Scalarization}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2211.01766
+      \endverb
+    \endentry
+    \entry{EichhornSchiffer2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5f13c52e98b23083846a77ac57779d5c}{%
+           family={Eichhorn},
+           familyi={E\bibinitperiod},
+           given={Astrid},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f896a4eca43f8348bb390758a21caa2f}{%
+           family={Schiffer},
+           familyi={S\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b8aae682c08a88e6aa86ea47e496bf8}
+      \strng{fullhash}{3b8aae682c08a88e6aa86ea47e496bf8}
+      \strng{fullhashraw}{3b8aae682c08a88e6aa86ea47e496bf8}
+      \strng{bibnamehash}{3b8aae682c08a88e6aa86ea47e496bf8}
+      \strng{authorbibnamehash}{3b8aae682c08a88e6aa86ea47e496bf8}
+      \strng{authornamehash}{3b8aae682c08a88e6aa86ea47e496bf8}
+      \strng{authorfullhash}{3b8aae682c08a88e6aa86ea47e496bf8}
+      \strng{authorfullhashraw}{3b8aae682c08a88e6aa86ea47e496bf8}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Asymptotically Safe Gravity and the Axion Quality Problem}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2003.00044
+      \endverb
+    \endentry
+    \entry{Assant2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d6c26a79d5f2e772eaf74ada97c20210}{%
+           family={Assant},
+           familyi={A\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5f13c52e98b23083846a77ac57779d5c}{%
+           family={Eichhorn},
+           familyi={E\bibinitperiod},
+           given={Astrid},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4f34baa382764f38461e96036ddb7ee2}{%
+           family={Knorr},
+           familyi={K\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{6dbbe647355d70d9b72c298d89c1872c}
+      \strng{fullhash}{6dbbe647355d70d9b72c298d89c1872c}
+      \strng{fullhashraw}{6dbbe647355d70d9b72c298d89c1872c}
+      \strng{bibnamehash}{6dbbe647355d70d9b72c298d89c1872c}
+      \strng{authorbibnamehash}{6dbbe647355d70d9b72c298d89c1872c}
+      \strng{authornamehash}{6dbbe647355d70d9b72c298d89c1872c}
+      \strng{authorfullhash}{6dbbe647355d70d9b72c298d89c1872c}
+      \strng{authorfullhashraw}{6dbbe647355d70d9b72c298d89c1872c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{title}{Towards theory constraints on ultralight dark matter from quantum gravity}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2510.23808
+      \endverb
+    \endentry
+    \entry{Arvanitaki2010}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=3599a261a65a9751896282f5637ad999}{%
+           family={Arvanitaki},
+           familyi={A\bibinitperiod},
+           given={Asimina},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4fdbe5879bd7ae98ea737aae04003262}{%
+           family={Dimopoulos},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=04c72787a6477a37856b6db919654b58}{%
+           family={Dubovsky},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cd0ec8ce8a1802267979e4216b030c14}{%
+           family={Kaloper},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=849eb888f4bb6310a721f5e0648522c6}{%
+           family={March-Russell},
+           familyi={M\bibinithyphendelim R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5459fd137831a186e22b01267c86b94e}
+      \strng{fullhash}{3a9d4cd7a96cb7d26ce78dcd6a7fbbe1}
+      \strng{fullhashraw}{3a9d4cd7a96cb7d26ce78dcd6a7fbbe1}
+      \strng{bibnamehash}{5459fd137831a186e22b01267c86b94e}
+      \strng{authorbibnamehash}{5459fd137831a186e22b01267c86b94e}
+      \strng{authornamehash}{5459fd137831a186e22b01267c86b94e}
+      \strng{authorfullhash}{3a9d4cd7a96cb7d26ce78dcd6a7fbbe1}
+      \strng{authorfullhashraw}{3a9d4cd7a96cb7d26ce78dcd6a7fbbe1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{String Axiverse}
+      \field{volume}{81}
+      \field{year}{2010}
+      \field{pages}{123530}
+      \range{pages}{1}
+      \verb{eprint}
+      \verb 0905.4720
+      \endverb
+    \endentry
+    \entry{Sharma2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=31149f58d4f339113d239f687000d391}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=92fa2e0679b8fe81a585d658997cc1d6}{%
+           family={Brandenburg},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2edb51c83f7daceff9ce1ecd5444e203}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=12cf663aa79f37df26d826c959162aaa}{%
+           family={Vikman},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{25f2d08265d02d8972177c5c6017a89e}
+      \strng{fullhash}{bcbed3e920cd8bc912bb2126549dbaef}
+      \strng{fullhashraw}{bcbed3e920cd8bc912bb2126549dbaef}
+      \strng{bibnamehash}{25f2d08265d02d8972177c5c6017a89e}
+      \strng{authorbibnamehash}{25f2d08265d02d8972177c5c6017a89e}
+      \strng{authornamehash}{25f2d08265d02d8972177c5c6017a89e}
+      \strng{authorfullhash}{bcbed3e920cd8bc912bb2126549dbaef}
+      \strng{authorfullhashraw}{bcbed3e920cd8bc912bb2126549dbaef}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Lattice simulations of axion-U(1) inflation: gravitational waves, magnetic fields, and black holes}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2411.04854
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

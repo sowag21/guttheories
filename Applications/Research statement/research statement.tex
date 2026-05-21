@@ -1,0 +1,173 @@
+\documentclass[a4paper, 11pt]{article}
+
+%---------------- Geometry ----------------%
+\usepackage[margin=2cm, tmargin=3cm, bmargin=2.5cm]{geometry}
+
+%---------------- Fonts ----------------%
+\usepackage{fontspec}
+\setmainfont{Fira Sans}
+\newfontface\titlefont{Fira Sans}
+\linespread{1.15}
+
+
+%---------------- Math ----------------%
+% \usepackage{lete-sans-math}
+% \setmathfont{LeteSansMath.otf}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+% \usepackage{amssymb}
+\usepackage{braket}
+
+\DeclareMathOperator{\tr}{tr}
+
+%---------------- Colors ----------------%
+\usepackage[table,dvipsnames]{xcolor}
+\definecolor{linkblue}{rgb}{0.020, 0.000, 0.478}
+\definecolor{linkred}{rgb}{0.459, 0.078, 0.047}
+\definecolor{tocgray}{rgb}{0.3, 0.3, 0.3} 
+\definecolor{sectiongray}{rgb}{0.2, 0.2, 0.2}
+\definecolor{darkgreen}{rgb}{0.0, 0.39, 0.0}
+\definecolor{vibrantred}{rgb}{0.86, 0.07, 0.24}
+
+%---------------- Sections ----------------%
+\usepackage{sectsty}
+% \chapterfont{\Huge\titlefont\color{sectiongray}} 
+\sectionfont{\Large\titlefont\color{sectiongray}} 
+% \subsectionfont{\large\titlefont\color{sectiongray}}
+
+%---------------- Tables ----------------%
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{booktabs}
+
+%---------------- Graphics ----------------%
+\usepackage{graphicx}
+\graphicspath{{images}}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{afterpage}
+\usepackage[format=hang, labelfont=sc, font=it]{caption}
+
+%---------------- Page Layout ----------------%
+\usepackage{indentfirst}
+\usepackage[page, toc]{appendix}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\textsc{Sophie Lund Wagner}}
+\fancyhead[R]{ \small{\textsc{Research statement}}}
+\cfoot{\thepage}
+%\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\headrulewidth}{0.5pt}
+
+%---------------- Theorems ----------------%
+\usepackage{amsthm}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{definition}{Definition}
+\newtheorem*{postulate}{Postulate}
+
+%---------------- Custom Commands ----------------%
+\newcommand{\question}[1]{\textbf{\textit{\color{vibrantred}[Question: #1]}}}
+\newcommand{\comment}[1]{\textbf{\textit{\color{darkgreen}[Comment: #1]}}}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+\usepackage{perpage} 
+\MakePerPage{footnote}
+
+\newcommand{\cst}{\textsf{\textsc{cst}}\xspace}
+\newcommand{\qft}{\textsf{\textsc{qft}}\xspace}
+\newcommand{\gr}{\textsf{\textsc{gr}}\xspace}
+\newcommand{\ctc}{\textsf{\textsc{ctc}}\xspace}
+\newcommand{\lisa}{\textsf{\textsc{lisa}}\xspace}
+
+%---------------- Bibliography ----------------%
+\usepackage[sorting = none, style=numeric-comp]{biblatex}
+\addbibresource{reflist.bib}
+
+%---------------- Hyperlinks ----------------%
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=tocgray,
+    citecolor=linkblue,
+    urlcolor=darkgreen,
+}
+
+%---------------- Misc ----------------%
+\usepackage{csquotes}
+\usepackage{makeidx}
+\makeindex
+\usepackage{siunitx}
+\usepackage{blindtext}
+\usepackage{footmisc}
+%\setcounter{tocdepth}{1}
+
+\begin{document}
+
+\vspace*{-1.25cm}
+\begin{center}
+    {\LARGE
+    Research statement}
+\end{center}
+\vspace{-0.45cm}
+\begin{center}
+    {\large Sophie Lund Wagner}
+\end{center}
+
+\vspace{0.2cm}
+
+\textit{Introduction.} 
+\textbf{My interest in theoretical physics has been driven by a desire to understand the fundamental structure of nature}, which first led me to investigate large-scales within cosmology. Later in my studies, particle physics caught my interest and has naturally pulled me towards quantum field theory. Indeed, I am particularly fascinated by the role of symmetries in shaping physical laws, including how phenomena such as spontaneous symmetry breaking and anomalies play a central role in determining particle behaviour. I wish to deepen my understanding of these principles and ultimately piece together the clues to answer the question \textbf{"What symmetries govern physics beyond the Standard Model?"} In what follows, I will first outline my research experience and then present my research plans, which mirror my interest in the current work carried out at the Faculty of Mathematics and Physics at Charles University. \\
+% - start passion
+% - aqurring new knowledge 
+% - bachelors caught my intrest was cosmologi
+% - masters I chose to dive deeper into theoretical physics
+% - also wanted to broaden my horzion, and did that by going on exchange
+% - got into quantum field theory 
+% - which is also what i'm doing my master thesis on
+% - shot statement on why this phd fits for me
+
+% Your broad research area(s) of interest (e.g., cosmology, QFT, condensed matter, AMO, computational physics, etc.).
+% A short “why” — what motivates you scientifically (not a life story).
+% 1–2 sentences summarizing your current research themes.
+% Optional: one sentence linking your interest to the group you are applying to.
+% Tone: Confident, concise, forward-looking.
+
+\textit{Research experience.}
+\textbf{My research experience spans fundamental particle physics, cosmology, and computational methods.} Currently, \textbf{I am working on my master’s thesis}, which focuses on gaining a deeper understanding of fundamental interactions and \textbf{beyond-the-Standard-Model physics.} In my research, I explore grand unified theories (GUTs). Rather than proposing a specific gauge group, I study a general landscape of high-energy GUTs and identify preferred models by minimizing their free energy. My project is a continuation of previous work by my supervisor Francesco Sannino \cite{Cacciapaglia:2025gta}, which lacks models including scalars. \textbf{Thus, the central goal of my thesis is to extend the landscape approach to GUTs to include scalars,} by determining how different reperesentations of the scalars affect the viability of a candidate GUT.  I began by studying chiral gauge theories, such as the Georgi–Glashow \cite{PhysRevLett.32.438} and Bars–Yankielowicz \cite{Bars1981BY} models, introducing scalars in various representations and identifying which combinations can yield completely asymptotically free theories \cite{SoftenedGravity,Pica2017ConformalPhase,M_lgaard_2017}; this work is currently being prepared for publication. After this I will compute the free energy for theories with chiral fermions and scalars, with the goal of minimizing it and adding the results to an atlas of possible GUTs that include scalar fields. \\
+In parallel, I am involved in a project on infinite heat order, concerning \textbf{high-temperature symmetry non-restoration}, an idea first considered by Weinberg \cite{Weinberg1974}. This original approach considered non-UV-complete theories, whereas our work focuses on UV-complete models with this characteristic, building on previous work by my supervisor \cite{BajcLugoSannino2020}.
+Through these projects in my master's thesis, \textbf{I have developed a strong foundation in quantum field theory.}\\
+
+Besides my master’s thesis, \textbf{I have completed two other projects during my master’s degree}. \textbf{The first project was on topological anomalies in quantum field theory}, which I completed while on exchange in Canada. The project deepened my understanding of quantum field theory by studying the perturbative chiral anomaly and the non-perturbative Witten anomaly. The Fujikawa and triangle diagrams methods were used, and the chiral anomaly was considered topologically via the Atiyah-Singer index theorem. The Witten anomaly especially opened my eyes to the interplay of topology and the structure of fundamental interaction. \textbf{The second project was on percolation models as a comparison to SIR (susceptible, infected, recovered) models initiated at the beginning of the COVID-19 pandemic.} My project was focused on treating infection rate as a phase transition and enhanced my programming skills and model building abilities.\\ 
+
+During my bachelor's degree, \textbf{I worked on density profiles of dark matter, both theoretically and using machine learning techniques}. This interest culminated in a bachelor’s thesis in cosmology, where \textbf{I examined whether inhomogeneities in the structure of the universe could explain its accelerated expansion.} Throughout this project, I gained experience with deriving and manipulating complex dynamical equations, implementing numerical models, and analysing how local interactions can produce global effects.\\
+
+\textit{Research plans.} 
+During my PhD, I want to contribute to research in theoretical particle physics. \textbf{I yearn to use the framework of quantum field theory to study the interplay of flavour, Higgs dynamics, and beyond-Standard-Model physics, particularly axion models arising from spontaneously broken global symmetries} and their implications for particle physics and cosmology. Moreover, the opportunity to use machine learning and neural networks as tools for furthering our knowledge within theoretical particle physics excites me. Ultimately, I aim to contribute to clarifying the underlying principles that determine the structure of our Universe, and my research plans align closely with the work of Alexander Vikman’s group:
+
+\begin{itemize}
+    % \item answer to question, research direction. How does this relate to my past experience, paragraph to pursue this research direction with a name drop of the supervisor - ypu did this I would like to do more of, and add something new! (bold things) big adjectives - wow so cool
+    
+    \item \textbf{I aim to clarify how symmetries beyond the Standard Model are affected by quantum gravity by studying the axion quality problem across different gravitational frameworks.} My interest in this question developed through exposure to particle-based approaches to dark matter during a visit to DESY, where I became increasingly drawn to the role of fundamental fields and symmetries. During my master’s thesis, seminars by my supervisor amongst others made the axion quality problem resonate with me, as it highlights the tension between symmetry-protected axion models and gravitational effects \cite{Kallosh1995}. I am now eager to investigate this further, specifically by \textbf{understanding how quantum-gravity phenomena, such as black holes, can explicitly or effectively break axionic shift symmetries, and to explore these effects within multiple theoretical frameworks for gravity, including asymptotically safe gravity} \cite{Arvanitaki2011,Doneva2022,EichhornSchiffer2020}. Recent work in this framework has shown that couplings for CP-even scalar dark matter are constrained to vanish \cite{Assant2025}. I am interested in determining if similar rigorous constraints apply to the axionic sector. 
+    \item \textbf{I am interested in how symmetry breaking beyond the Standard Model can leave observable signatures in the early Universe \cite{Arvanitaki2010}.} This interest grew out of my bachelor’s thesis research in cosmology, where I gained experience relating theoretical models to cosmological observables. Axions appear naturally in inflationary models and in proposed alternatives to inflation. Recent numerical studies of axion-U(1) inflation illustrate how axion-driven symmetry breaking can lead to observable effects such as gravitational waves, magnetic fields, and enhanced axion inhomogeneities, making these scenarios especially relevant for upcoming experiments like LISA \cite{Sharma2024}. I am keen to further explore how such early-Universe axion dynamics connect high-energy theories with cosmological and gravitational-wave observations.
+
+    
+
+\end{itemize}
+
+\vspace{1cm}
+\noindent
+Thank you for considering my application. I would be thrilled to contribute to the research activities of the Faculty of Mathematics and Physics at Charles University.
+% Purpose: Leave a professional, positive impression.
+% Include:
+% A forward-looking sentence about your scientific goals.
+% What you hope to contribute to the group.
+% A confident but humble closing tone.
+
+
+\printbibliography
+
+\end{document}

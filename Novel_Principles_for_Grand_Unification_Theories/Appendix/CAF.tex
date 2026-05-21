@@ -1,0 +1,260 @@
+
+\section{Detailed CAF analysis}
+\subsection{CAF Analysis from Solving ODE's} \label{app:caf}
+This approach considers coupled ODE's governing the beta functions, which admit analytic solutions. 
+\subsubsection{Yukawa Coupling}
+The RG equation, which governs the Yukawa coupling, is given by
+\begin{equation}
+    \mu \frac{\text{d}\alpha_y}{\text{d}\mu}=\alpha_y(c_1\alpha_g+c_2\alpha_y)\;, \label{eq:betay1loopapp}
+\end{equation}
+where $\alpha_y=\frac{y^2}{(4\pi)^2}$, and $c_1$, $c_2$ are constants, where in general $c_1<0$ and $c_2>0$.  
+
+
+\subsubsection{Quartic Scalar Coupling}
+The remaining coupling can now be added to the analysis, the self-coupling
+\begin{equation}
+    \mu \frac{\text{d} \alpha_\lambda}{\text{d}\mu}=\alpha_\lambda\left(d_1\alpha_\lambda + d_2\alpha_g+d_3\alpha_y\right)+d_4\alpha_g^2+d_5\alpha_y^2\;.
+\end{equation}
+This coupling is dependent on both the other two couplings, with the coefficients $d_1,d_3,d_4\ge0$ and $d_2,d_5\le 0$.
+
+To solve the coupled differential equations we consider the ratio $\frac{\beta_\lambda}{\beta_g}$:
+\begin{equation}
+    \frac{\text{d} \alpha_\lambda}{\text{d}\alpha_g}=\frac{\alpha_\lambda}{b_0\alpha_g}\left(d_1\frac{\alpha_\lambda}{\alpha_g} + d_2+d_3\frac{\alpha_y}{\alpha_g}\right)+\frac{d_4}{b_0}+\frac{d_5\alpha_y^2}{b_0\alpha_g^2}\;.\label{eq:appodelam}
+\end{equation}
+Recall that the Yukawa coupling can be asymptotically free in two cases: on or off fixed flow with the gauge coupling. 
+
+\paragraph{Case 1 $k < 0$:}
+We start with the general solution to the differential equation of $\alpha_\lambda(\alpha_g)$ (Equation \ref{eq:betalamfracapp}):
+\begin{align}
+    \alpha_{\lambda} (\alpha_{g}) = \frac{\alpha_{g}}{2\alpha_{1}}\Bigg[ b_0& - d_2 + 
+    \sqrt{-k} \tan \bigg( \frac{1}{2} \bigg( \frac{\sqrt{-k} \log (\alpha_{g})}{b_0} 
+    \\-&\sqrt{-k} \bigg( 2b_0 \sqrt{-k} \tan^{-1} \bigg( \frac{(b_0 - d_2) \alpha_{g} \sqrt{-k} - 2d_1 \sqrt{-k} \alpha_{\lambda_0}}{k \alpha_{g_0}} \bigg) + k \log (\alpha_{g_0}) 
+    \bigg)\bigg) \frac{1}{b_0 k} \bigg) \Bigg]\;,\nonumber
+\end{align}
+where the definition of $k_0$ can be used to simplify the expression, we obtain:
+\begin{equation}
+    \boxed{\alpha_{\lambda} = \frac{\alpha_{g}}{2d_{1}} \left[ b_0 - d_2 + \sqrt{-k} \tan\left( \frac{\sqrt{-k}}{2b_0} \log\frac{\alpha_g}{\alpha_{g_0}} - \tan^{-1}\frac{k_0}{\sqrt{-k\alpha_{g_0}}} \right) \right] , \quad k<0 }
+    \label{eq:appalphalamkl0}
+\end{equation}
+This solution only holds for \( k < 0 \), because we want a real result. For \( k > 0 \), a different approach is required. In this case the coupling will reach a Landau pole, because of the nature of the tangent function as one varies the gauge coupling. Thus, no possible CAF regions are found when $k<0$.
+
+\paragraph{Case 2 $k > 0$:}
+For $k>0$, we rewrite the square root $\sqrt{-k} = i\sqrt{k}$ which can be inserted in the solution for $k<0$
+\begin{align}
+    \alpha_{\lambda}(\alpha_g) = \frac{\alpha_g}{2\alpha_1} \left[ b_0 - d_2 + i\sqrt{k} \tan \left( \frac{i\sqrt{k}}{2b_0} \log \left( \frac{\alpha_g}{\alpha_{g_0}} \right) + \tan^{-1} \left( \frac{k_0}{i\sqrt{k} \alpha_{g_0}} \right) \right) \right].
+\end{align}
+Using the identities \(\tan(iz) = i\tanh(z)\) and \(\tan^{-1}(iz) = i\tanh^{-1}(z)\), we rewrite the argument of the tangent. Let
+\begin{align}
+z = \frac{\sqrt{k}}{2b_0} \log \left( \frac{\alpha_g}{\alpha_{g_0}} \right) + \tanh^{-1} \left( \frac{k_0}{\sqrt{k} \alpha_{g_0}} \right).
+\end{align}
+Using the identity and substituting back in, we obtain:
+\begin{align}
+\alpha_{\lambda}(\alpha_g) = \frac{\alpha_g}{2\alpha_1} \left[ b_0 - d_2 - \sqrt{k} \tanh(z) \right],
+\end{align}
+To express the hyperbolic tangent of a sum, the following relation is used
+\begin{align}
+\tanh(A+B) = \frac{\tanh(A) + \tanh(B)}{1 + \tanh(A)\tanh(B)}\;,
+\end{align}
+where
+\begin{align}
+A = \frac{\sqrt{k}}{2b_0} \log \left( \frac{\alpha_g}{\alpha_{g_0}} \right), \quad 
+B = \tanh^{-1} \left( \frac{k_0}{\sqrt{k}\alpha_{g_0}} \right)\;.
+\end{align}
+Further, using the definition of $\tanh\left(x\right)=\frac{e^{2x}-1}{e^{2x}+1}$, the hyperbolic tangent of $A+B$ is thus
+\begin{align}
+    \tanh(A+B)=&\frac{ \frac{ \left( \frac{\alpha_g}{\alpha_{g_0}}\right)^{\frac{\sqrt{k}}{b_0}} - 1 }{ \left(\frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} + 1 } + \frac{k_0}{\sqrt{k} \alpha_{g_0}} }{ 1 +\frac{ \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} - 1 }{ \left(\frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} + 1 }  \frac{k_0}{\sqrt{k} \, \alpha_{g_0}} }
+    = \frac{
+  \left( \left( \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} - 1 \right) 
+  + \frac{k_0}{\sqrt{k}\alpha_{g_0}} \left( \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\frac{\sqrt{k}}{b_0}} + 1 \right)
+}{
+  \left( \left( \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} + 1 \right) 
+  + \frac{k_0}{\sqrt{k} \, \alpha_{g_0}} \left( \left( \frac{\alpha_g}{\alpha_{g_0}}  \right)^{\frac{\sqrt{k}}{b_0}} - 1 \right)
+}.\nonumber
+\\&=  \frac{
+   (k_0+\sqrt{k}\alpha_{g_0})+(k_0- \sqrt{k}\alpha_{g_0})\left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{-\frac{\sqrt{k}}{b_0}}
+}{
+  (k_0+\sqrt{k}\alpha_{g_0})-(k_0- \sqrt{k}\alpha_{g_0} )\left(  \frac{\alpha_g}{\alpha_{g_0}}  \right)^{-\frac{\sqrt{k}}{b_0}} 
+}.
+\end{align}
+Which gives the solution for $k>0$
+\begin{equation}
+    \boxed{\alpha_{\lambda} = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \sqrt{k} \, \frac{ (k_0 + \sqrt{k}\alpha_{g_0}) + (k_0 - \sqrt{k}\alpha_{g_0}) \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\sqrt{k}/b_0} }{ (k_0 + \sqrt{k}\alpha_{g_0}) - (k_0 - \sqrt{k}\alpha_{g_0}) \left( \frac{\alpha_g}{\alpha_{g_0}} \right)^{\sqrt{k}/b_0} } \right) , \quad k>0 }
+    \label{eq:appalphalamkg0}
+\end{equation}
+
+
+
+\paragraph{Case 3 $k = 0$:}
+To find the solution of the last case $\lim_{k \to 0^-}(\alpha_\lambda)$ we consider the solution $k<0$ (see Eq.\ \eqref{eq:alphalamkg0}), with the approximation $\sqrt{-k} =\epsilon\ll1$. The argument of $\tan^{-1}$ is then
+\begin{align}
+z &= -\tan^{-1}\left( \frac{k_0}{\epsilon\alpha_{g_0}} \right) + \frac{\epsilon}{2b_0} \log\frac{\alpha_g}{\alpha_{g_0}} .
+\end{align}
+Using that for large $z$, $\tan^{-1}(z) = \frac{\pi}{2} - \frac{1}{z} + O(z^{-3})$, we have
+\begin{align}
+z = -\frac{\pi}{2} +\epsilon\left( \frac{\alpha_{g_0}}{k_0} + \frac{1}{2b_0}\log\frac{\alpha_g}{\alpha_{g_0}}\right) + O(\epsilon^3) .
+\end{align}
+Let us call the second term for $\epsilon A$ where $A = \frac{\alpha_{g_0}}{k_0} + \frac{1}{2b_0}\log\frac{\alpha_g}{\alpha_{g_0}}$. Then for $\epsilon$ small
+\begin{align}
+\tan z = \tan\left(-\frac{\pi}{2} + \epsilon A\right) = -\cot\epsilon A = -\frac{1}{\epsilon A} + O(\mu) = -\frac{1}{\epsilon A} + O(\epsilon) .
+\end{align}
+Using that in front of tangent, there is a factor $\sqrt {-k}=\epsilon$
+\begin{align}
+\epsilon \tan z = \epsilon \left( -\frac{1}{\epsilon A} + O(\epsilon) \right) = -\frac{1}{A} + O(\epsilon^2) .
+\end{align}
+Inserting this back in the expression for $\alpha_\lambda$, we find
+\begin{align}
+\alpha_{\lambda} = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \frac{1}{A} \right) = \frac{\alpha_g}{2d_1} \left( b_0 - d_2 - \frac{1}{ \frac{\alpha_{g_0}}{k_0} + \frac{1}{2b_0}\ln\frac{\alpha_g}{\alpha_{g_0}} } \right) .
+\end{align}
+From this we can impose the initial condition $\alpha_{\lambda} (\alpha_{g_0}) = \alpha_{\lambda0}$ to be
+\begin{align}
+\alpha_{\lambda0} = \frac{\alpha_{g_0}}{2d_1} \left( b_0 - d_2 - \frac{k_0}{\alpha_{g_0}} \right) .
+\end{align}
+This gives us an expression for $\frac{\alpha_{g_0}}{k_0}$ which we find to be
+\begin{align}
+    \frac{\alpha_{g_0}}{k_0} = \frac{1}{b_0 - d_2 - \frac{2d_1\alpha_{\lambda0}}{\alpha_{g_0}}} \;.\label{eq:appk0def}
+\end{align}
+Inserting this back into the expression for $\alpha_\lambda$ and simplifying, we obtain
+\begin{align}
+    \alpha_\lambda &= \frac{\alpha_g}{2d_1} \left[ b_0 - d_2 - \frac{1}{\frac{1}{\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2}+ \frac{1}{2b_0} \ln \frac{\alpha_q}{\alpha_{g_0}}}  \right]\;,\nonumber
+    \\&=\frac{\alpha_g}{2d_1} \left[ \frac{\frac{4b_0d_1\alpha_{\lambda_0}}{\alpha_{g_0}}+\left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right)\ln \frac{\alpha_g}{\alpha_{g_0}}(b_0-d_2)}{{2b_0} + \left(\frac{-2d_1\alpha_{\lambda_0}}{\alpha_{g_0}} + b_0 - d_2\right) \ln \frac{\alpha_g}{\alpha_{g_0}}} \right]\label{eq:appk0}
+\end{align}
+Using the definition of $k_0$ in Eq.\ \eqref{eq:appk0def}, Eq.\ \eqref{eq:appk0} simplifies to
+\begin{equation}
+    \boxed{\alpha_{\lambda} = \frac{\alpha_g}{2d_1} \frac{ 4b_0 d_1 \alpha_{\lambda0} + k_0 (b_0 - d_2) \ln\frac{\alpha_g}{\alpha_{g_0}} }{ 2b_0 \alpha_{g_0} + k_0 \ln\frac{\alpha_g}{\alpha_{g_0}} } , \quad k=0 }
+    \label{eq:appalphalamkeq0}
+\end{equation}
+We have now obtained the last of the analytic solutions to Eq.\ \eqref{eq:betalamfracapp}, and we can move forward with the final CAF analysis. 
+
+
+
+
+
+
+
+
+
+
+\subsection{CAF Analysis Using the Fixed-Flow Framework} 
+To utilise the fixed-flow approach, we redefine the couplings 
+\begin{equation}
+    \alpha_{g_i} = \frac{\tilde \alpha_{g_i}}{t}, \quad \quad  \alpha_{y_a} = \frac{\tilde \alpha_{y_a}}
+    {t}, \quad \quad \alpha_{\lambda_m} = \frac{\tilde \alpha_{\lambda_m}}{t} \;.
+\end{equation}
+This gives us the following equations to solve
+\begin{equation}
+     \boldsymbol{x}_\infty=\begin{pmatrix}
+        -\beta_{{\boldsymbol{g}}}(\tilde\alpha_{g\infty})\\-\beta_{{\boldsymbol{y}}}(\tilde\alpha_{g\infty},\tilde\alpha_{y\infty})\\-\beta_{\boldsymbol{\lambda}}(\tilde\alpha_{g\infty},\tilde\alpha_{y\infty},\tilde\alpha_{\lambda\infty})
+    \end{pmatrix}\label{eq:solCAF2app}\;,
+\end{equation}
+effectively transforming the coupled ODE's to polynomial equations. 
+\subsubsection{Two Quartic Couplings}\label{sec:appCafadj}
+Using Eq.\ \eqref{eq:solCAF2app} we can write the polynomial equation for the quartic scalar coupling as
+\begin{equation}
+    \tilde\alpha_{\lambda _{m\infty}} + d^{\lambda}_{mnp}\tilde\alpha_{\lambda _{m\infty}}\tilde\alpha_{\lambda _{p\infty}}+ \tilde\alpha_{\lambda _{m\infty}}(d^{\lambda y}_m \tilde\alpha_{y _{\infty}} +d^{\lambda_g}_m\alpha_{y _{\infty}}) + d^{y}_m\alpha_{y\infty}^2+ d^{g}_m \alpha_{g\infty}^2 = 0    \;.\label{eq:CAF2quarticapp}
+\end{equation}
+We consider the case of $m=1,2$ corresponding to two quartic couplings. In this case, the algebraic equation \eqref{eq:CAF2quartic} can be written as two coupled quadratic equations
+\begin{equation}
+    a  {x}^2 + b  {z}^2 + c  {x}{z} + d  {x} + e = 0\;,
+\end{equation}
+\begin{equation}
+    f  {z}^2 + g  {x}^2 + h  {x}{z} + i  {z} + j = 0\;,\label{eq:CAF2poly2app}
+\end{equation}
+where $x=\alpha_{\lambda_{1\infty}}$ and $z=\alpha_{\lambda_{2\infty}}$. The coefficients are given by
+\begin{align}
+    a=d^{\lambda}_{mmm},\quad b=d^{\lambda}_{mnn},\quad c=d^{\lambda}_{mmn},\quad d=(d^{\lambda y}_m \tilde\alpha_{y _{\infty}} +d^{\lambda_g}_m\tilde\alpha_{g _{\infty}}),\quad e=d^{y}_m\alpha_{y\infty}^2+ d^{g}_m \alpha_{g\infty}^2\;,\label{eq:coef2quarticapp}
+\end{align}
+where $m=1$ and $n=2$. For Eq.\ \eqref{eq:CAF2poly2app}, the coefficients $f$, $g$, $h$, $i$, and $j$ are defined analogously by exchanging the indices $m\Longleftrightarrow n$ of the coefficients in Eq.\ \eqref{eq:coef2quarticapp}. 
+
+
+The relevant case for our models has $b=0$
+\begin{equation}
+    a  {x}^2  + c  {x}{z} + d  {x} + e = 0 \;,   \label{eq:poly1}
+\end{equation}
+\begin{equation}
+   f  {z}^2 + g  {x}^2 + h  {x}{z} + i  {z} + j = 0 \;. \label{eq:poly2}
+\end{equation}
+To determine whether there is any CAF region in this case, we must find the roots of the functions. This is done by inserting  ${z}$ in \ref{eq:poly1} into \ref{eq:poly2} and multiplying with $(d{x})^2$
+\begin{equation}
+    fT^2+gd^2 {x}^4 -hdT^2 {x}^2-idT  {x} +jd^2 {x}^2=0\;,
+\end{equation}
+where $T=ax^2+cx+e$. We have now obtained an uncoupled fourth-degree polynomial which we can express as
+\begin{equation}
+    \alpha  {x}^4  + \beta {x}^3 + \gamma  {x}^2 + \delta x+ \epsilon = 0  \;,  \label{eq:poly4th}
+\end{equation}
+where 
+\begin{align}
+&\alpha=fa^2+gd^2-had\;, \quad\beta= 2fac-hcd-iad\;, \quad\gamma=fc^2+2fae-hed-icd+jd^2\;, \\&\delta=e(2fc-id)\;, \quad\epsilon=fe^2\;.
+\end{align}
+By computing the sign of its determinant $\Delta$, given by \cite{Gellert1977}
+\begin{align}
+    \Delta = \ & 256\alpha^3 \epsilon^3 - 192\alpha^2 \beta\delta\epsilon^2 - 128\alpha^2 \gamma^2 \epsilon^2 + 144\alpha^2 \gamma\delta^2 \epsilon - 27\alpha^2 \delta^4 \\
+& + 144\alpha\beta^2 \gamma\epsilon^2 - 6\alpha\beta^2 \delta^2 \epsilon - 80\alpha\beta\gamma^2 \delta\epsilon + 18\alpha\beta\gamma\delta^3 + 16\alpha\gamma^4 \epsilon \\
+& - 4\alpha\gamma^3 \delta^2 - 27\beta^4 \epsilon^2 + 18\beta^3 \gamma\delta\epsilon - 4\beta^3 \delta^3 - 4\beta^2 \gamma^3 \epsilon + \beta^2 \gamma^2 \delta^2
+\end{align}
+one can find whether the solutions are real or complex. This depends on the following conditions \cite{Hansen:2017pwe}
+\begin{itemize}
+    \item For $\Delta < 0$, the polynomial will have two distinct real roots and two complex roots.
+    \item For $\Delta > 0$, the polynomial has four real or complex roots.
+    \begin{itemize}
+        \item For $P < 0 \wedge  D < 0$: four real roots
+        \item If $P > 0 \vee D > 0$: four complex roots.
+    \end{itemize}
+\end{itemize}
+Where 
+\begin{align}
+    P &= 8\alpha\gamma - 3\beta^2\\
+    D &= 64\alpha^3 \epsilon - 16\alpha^2 \gamma^2 + 16\alpha\beta^2 \gamma - 16\alpha^2 \beta\delta - 3\beta^4
+\end{align}
+
+Additionally, one should check whether the roots are real-positive or real-negative roots, which can be done using Descartes' rule of signs.
+
+\paragraph{The determinant}of the quartic polynomial for the model described in sections \ref{sec:adj} and \ref{sec:adjNg} can be found using the beta functions of the theories and the definition of the coefficients of the polynomial. The boundary of the CAF region for both off and on fixed flow is found from the condition $b_0=0$ (Eqs. \eqref{eq:pmaxadj} and \eqref{eq:padjscalar}) and $\Delta=0$. The condition $\Delta=0$ with the Yukawa coupling off fixed flow is given by
+\begin{align}
+ \Delta=&-2176782336 N^4 P_0 - 725594112 A N^3 P_1 - 10077696 A^2 N^2 P_2 - 15116544 A^3 N P_3  \notag \\
+&- 34992 A^4 P_4 - 139968 A^5 N P_5- 216 A^6 P_6 - 288 A^7 N P_7 - A^8 P_7  = 0\;,\label{eq:Delta0noY}
+\end{align}
+where $A = N (-21 + 4 N_g) + 4 (\mp3 N_g + p)$ and the polynomials are given by
+\begin{align}
+P_0 &= -217326564 - 56077596 N^2 + 23223267 N^4 - 2630538 N^6 + 166727 N^8 \notag\\&\;\;\;\;\; - 9548 N^{10} + 188 N^{12}\;, \\
+P_1 &= -33434856 + 10958328 N^2 + 7518420 N^4 - 1773243 N^6 + 171254 N^8 \notag\\&\;\;\;\;\;- 9917 N^{10} + 350 N^{12}\;, \\
+P_2 &= -64297800 + 83041848 N^2 + 15587964 N^4 - 10068291 N^6 \notag\\&\;\;\;\;\;+ 1385624 N^8 - 104921 N^{10} + 4472 N^{12} \;,\\
+P_3 &= -571536 + 1910304 N^2 - 245412 N^4 - 262236 N^6 + 52675 N^8 - 5338 N^{10} + 247 N^{12} \\
+P_4 &= -1714608 + 14362272 N^2 - 8214156 N^4 - 2139588 N^6 + 725257 N^8 \notag\\&\;\;\;\;\;- 98878 N^{10} + 4837 N^{12} \;,\\
+P_5 &= 35964 - 46278 N^2 - 2949 N^4 + 3476 N^6 - 629 N^8 + 32 N^{10}\;, \\
+P_6 &= 107892 - 365634 N^2 + 31473 N^4 + 27116 N^6 - 6143 N^8 + 320 N^{10}\;, \\
+P_7 &= (-5 + N^2)^2 (-81 - 18 N^2 + 2 N^4)\;.
+\end{align}
+On fixed flow, we obtain
+\begin{align} \Delta=&- B^4 D^2 N^2 (1 + N^2)^2 P_3^2 + B^2 D^3 N (7 + N^2) P_3^2 \nonumber\\ & - 64 C B^6 N^3 (1 + N^2)^3 P_3^3 + 72 C B^4 D N^2 (1 + N^2) (7 + N^2) P_3^3 + 432 C^2 B^4 N^2 (7 + N^2)^2 P_3^4 \nonumber\\& + B^2 D^3 N (1 + N^2)^2 P_4  - D^4 (7 + N^2) P_4 + 72 C B^4 D N^2 (1 + N^2)^3 P_3 P_4\nonumber \\ & - 80 C B^2 D^2 N (1 + N^2) (7 + N^2) P_3 P_4 + 96 C^2 B^4 N^2 (1 + N^2)^2 (7 + N^2) P_3^2 P_4 \label{eq:Delta0}\\ & - 576 C^2 B^2 D N (7 + N^2)^2 P_3^2 P_4 + 432 C^2 B^4 N^2 (1 + N^2)^4 P_4^2\nonumber\\& - 576 C^2 B^2 D N (1 + N^2)^2 (7 + N^2) P_4^2  + 128 C^2 D^2 (7 + N^2)^2 P_4^2  \nonumber\\&- 3072 C^3 B^2 N (1 + N^2) (7 + N^2)^2 P_3 P_4^2 - 4096 C^4 (7 + N^2)^3 P_4^3  = 0 \;,\nonumber
+\end{align}
+where $ K = \min(p, ( N\mp4) N_g + p)$ and the polynomials are given by
+\begin{align} 
+    P_1 &= -18 + N^2 (-3 + 4 N_g) + 4 N (\mp3 N_g + p) \;,\quad P_2 = -3 + N^2 + 2 N K \;,\\ P_3 &= 9 - 20 N^2 + N^4 \;,\quad  P_4 = 567 + 315 N^2 - 35 N^4 + N^6 \;, 
+\end{align}
+and the terms $B, C,D$ is given by
+\begin{align}
+    B &= (-3 + N^2) \big(N (15 + 4 N_g) + 4 (\mp3 N_g + p)\big) + \big(72 + N^2 (42 - 8 N_g) - 8 N (\mp3 N_g + p)\big) K\;, \\ C &= 2 P_1^2 K - 27 N P_2^2 \;,\\ D &= 23328 N P_2^2 - 12 N B^2 - 48 (3 - 2 N^2) C + (7 + N^2) \big(N B^2 + 8 (9 - N^2) C\big)\;.
+\end{align}
+
+
+% \subsubsection{ODE Solutions for One Quartic Coupling off Fixed Flow}\label{app:CAFnolam}
+% We will have one new ODE to solve in the case of two quartic couplings, with one quartic coupling off fixed flow. The quartic coupling which is on fixed flow has the same ODE considered in Eq.\ \eqref{eq:appodelam}. Thus it has a similar solution and CAF analysis, with the conditions in Eqs. \eqref{eq:appCAF1con} and \eqref{eq:appCAF1conon}. Notice that when terms proportional to the opposite quartic coupling drop out, the quartic beta function simplifies to the form of Eq.\ \eqref{eq:lam1off} and Eq.\ \eqref{eq:lam2off}. Thus, only the ODE, for the coupling off fixed flow needs to be solved, giving us an extra CAF condition. 
+% The ratio of RG equation of the coupling off fixed flow with the gauge coupling is 
+% \begin{equation}
+%     \frac{\dd \alpha_{\lambda_m}}{\dd \alpha_g}= \frac{d_4}{b_0}+\frac{d_5}{b_0}\frac{\alpha_y^2}{\alpha_g^2}+\frac{d_7}{b_0}\frac{\alpha_{\lambda_n}^2}{\alpha_g^2}\;,
+% \end{equation}
+% where $m=1\vee2$ and all terms $\alpha_{\lambda_m}/\alpha_g$ or higher order vanish. In this case $\alpha_{\lambda_m}$ is off fixed flow and $m\neq n$. The solution can be found by inserting the fixed flows defined in Eqs. \eqref{eq:ygfixed} and \eqref{eq:lamgfixed}
+% \begin{equation}
+%     \frac{\dd \alpha_{\lambda_m}}{\dd \alpha_g}= \frac{d_4}{b_0}+\frac{d_5}{b_0}\left(\frac{b_0-c_1}{c_2}\right)^2+\frac{d_7}{b_0}\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2\;,
+% \end{equation}
+% where $k_e,\, e_1,\, e_2$ are parameters from $\beta_{\lambda_n}$.
+% The solution is given by
+% \begin{align}
+%     \alpha_{\lambda_m}=\frac{d_4}{b_0}(\alpha_g-\alpha_{g_0})+\left(\frac{b_0-c_1}{c_2}\right)^2\frac{d_5}{b_0}(\alpha_g-\alpha_{g_0})+\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2\frac{d_7}{b_0}(\alpha_g-\alpha_{g_0})+{\alpha_{\lambda_{m_0}}}\;.
+% \end{align}
+% Since we need the coupling to approach zero from a positive branch, we get the constraint 
+% \begin{align}
+%     \frac{1}{b_0}\left[\left(\frac{b_0-c_1}{c_2}\right)^2d_5+d_4+\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2d_7\right]>0\;,\\ \left(\frac{b_0-c_1}{c_2}\right)^2d_5+d_4+\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2d_7<0\;,
+% \end{align}
+% Let us call the LHS $C$ such that $C<0$. Then, the condition on the couplings at the reference scale is $\alpha_{\lambda_0}/\alpha_{g_0}=C/b_0$.
+% The full set of CAF conditions in this case can be found in Equations \ref{eq:CAFfixednolam1} and \ref{eq:CAFnotfixednolam1}. 

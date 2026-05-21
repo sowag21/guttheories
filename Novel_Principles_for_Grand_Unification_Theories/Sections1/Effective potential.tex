@@ -1,0 +1,77 @@
+
+\section{Effective potential}
+The effective potential is a function which to lowest order in pertubation theory is equal to the classical potential energy and to higher orders would include qunatum corrections \cite{Peskin:1995ev}. These corrections are generally not finite and owuld require renormalisation. The effective potential can be used for studying spontaneous symmetry breaking, which is based on minimizing the classical potential $V(\phi)$. However, the vacuum at a qunatum level isn't static, but rather fluctuating. Thus, using the effective potetial these qunatum fluctuation is taken intro account \cite{zee}.
+To define the effective potential, we first need to define the effective action. To do this, we consider a scalar field theory $\phi$  with energy as the connected generating functional $E[J]$
+\begin{equation}
+    Z[J]=e^{-i E[J]}= \int \mathcal{D}\phi\,\phi \exp\left[i\int d^4x (\mathcal{L}[\phi]+J\phi)\right]\;,
+\end{equation}
+where both the external source $J$ and the field $\phi$ depends on the spacetime coordinate $x$. The equation is in the functional integral formalism. If we translate it to the cannonical formalism we recognize that the right hand side is simply an amplitud on the form
+\begin{equation}
+    \langle \Omega | \exp\left[-iHT\right] |\Omega\rangle\;,
+\end{equation}
+where $\ket \Omega$ is the vacuum state of the interacting Hamiltonian $H$, and $T$ is the relevant time interval. Thus, it is simply a vacuum to vacuum amplitude, in the presence of $J$. So $E[J]$ must represent the vacuum energy \cite{Peskin:1995ev}. To define an effective action, we first need to compute the expectation value of the field. This holds information on the state of the vacuum and the systems response to external perturbations
+\begin{equation}    
+    \phi_{c}(x)\equiv\frac{\delta E[J]}{\delta J(x)}\;,
+\end{equation}
+the expectation value $\phi_c(x)$ in the canonical formalism $\langle \Omega | \phi(x) |\Omega\rangle_J   $ is a weighted average of the fluctuations of the vacuum configuration and is sometimes called the classical field \cite{Peskin:1995ev}. Now evaluating the functional derivative
+\begin{equation}
+    \phi_c(x)=-\frac{1}{Z[J]}\int \mathcal{D}\phi\,\phi(x) \exp\left[i\int d^4x (\mathcal{L}[\phi]+J\phi)\right]=\langle \Omega | \phi(x) |\Omega\rangle_J\;.
+\end{equation}
+Now we can perform a Legendre transformation. This is done analogous to statistical mechanics, where the Legendre transformation relates free energy to the energy: $F = E-TS$, where the free energy is a function of temperature $T$ and the energy is a function of entropy $S$. In this case we have a function $E$ of $J$ and we transform it to the effective action $\Gamma$ which is a function of $\phi_c$\footnote{The difference in parenteses used $()$ and $[]$ refers to the function of or the functional of.}
+\begin{equation}
+    \Gamma[\phi_c]= -E[J] - \int d^4y\, J(y)\phi_c(y)\;.
+    \label{eq:eff pot classical field}
+\end{equation}
+To better understand the role of the effective action, we take the functional derivative of it with respect to the classical field. This is analogue to the classic action $S[\phi]=\int \text{d}^4 x\, \mathcal{L}(\phi,\partial_\mu\phi)$ where varying the action with respect to the field $\phi(x)\to\phi(x) +\delta \phi(x)$ gives the equations of motion
+\begin{equation}
+    \frac{\delta S[\phi]}{\delta \phi}=0 \;.
+\end{equation}
+Now let us do the same for the quantum corrected action
+\begin{equation}
+    \frac{\delta \Gamma[\phi_c]}{\delta \phi_c(x)}=- \frac{\delta E[J]}{\delta \phi_c(x)} - \int d^4y\,  J(y)\frac{\delta \phi_c(y)}{\delta \phi_c(x)} - \int d^4y\,  \frac{\delta J(y)}{\delta \phi_c(x)}\phi_c(y)\;,
+    \label{eq:def of eff pot}
+\end{equation}
+using the definition of the functional derivative \ref{conventions section} and that $E[J]$ depends on the source, we can rewrite the functional derivative in the first term using the chain rule
+\footnote{The chain rule for functional derivatives is a generalization of the standard differentiation chain rule $\frac{\partial f}{\partial x}=\frac{\partial f}{\partial g}frac{\partial g}{\partial x}$ for a composotite function $f(g(x))$. For a functional derivative the difference is that $g(x)\to g_i (\vec x)$. This means that $f$ is a functional of $g$ which is a function of $x$, this is why we consider the continium limit and we have 
+\begin{equation*}   
+    \frac{\delta f[g]}{\delta g(x)}=\int  \frac{\delta f[g]}{\delta g(x)}\frac{\delta g(x)}{\delta x(y)}
+\end{equation*}  
+\cite{% https://wiki.physics.udel.edu/wiki_qttg/images/5/53/BOOK%3Ddft_an_advanced_course.pdf p. 411 and https://math.stackexchange.com/questions/235769/is-there-a-chain-rule-for-functional-derivatives 
+}
+\comment{rewrite this is not super correct} }  
+\begin{equation}
+    \frac{\delta \Gamma[\phi_c]}{\delta \phi_c(x)}=- \int d^4y\, \frac{\delta J(y)}{\delta \phi_c(x)} \frac{\delta E[J]}{\delta J(y)} - J(x) - \int d^4y\,  \frac{\delta J(y)}{\delta \phi_c(x)}\phi_c(y)\;,
+\end{equation}
+using the definition of the classical field in Equation \ref{eq:eff pot classical field}, we obtain
+\begin{equation}
+    \frac{\delta \Gamma[\phi_c]}{\delta \phi_c(x)}=- \int d^4y\, \frac{\delta J(y)}{\delta \phi_c(x)}(-\phi_x(y)) - J(x) - \int d^4y\,  \frac{\delta J(y)}{\delta \phi_c(x)}\phi_c(y)=- J(x)\;.
+\end{equation}
+Thus, with no external source $J$, the effective action has the same form as the classic action, when computing the equations of motion. The equation can therefore be interpreted as the quantum equation of motion. Using that the effective action, actually is an action we can expand the functional derivative $\Gamma[\phi_c]$
+\begin{equation}
+    \Gamma[\phi_c] = \int \text{d}^4 x\, \mathcal{L}_{\text{eff}}(\phi_c,\partial_\mu\phi_c)= \int \text{d}^4 x\, \left[-V_{\text{eff}}(\phi_c) + Z(\phi_c)(\partial_\mu \phi_c)^2 + \ddots \right]\;,
+\end{equation}
+where the $\mathcal{L}_{\text{eff}}$ is the effective lagrangian, $V_{\text{eff}}(\phi_c) $ is the effective potential, and the dots indicate higher powers of derivatives. Using this expansion of the effective action, the functional derivative can aslo be written as
+\begin{equation}
+    \frac{\delta \Gamma[\phi_c]}{\delta \phi_c(x)}=- \frac{\delta V_{\text{eff}}(\phi_c) }{\delta \phi_c(x)} frac{\delta }{\delta \phi_c(x)}\int \text{d}^4 x\, \left[ Z(\phi_c)(\partial_\mu \phi_c)^2 + \ddots \right]=- \frac{\delta V_{\text{eff}}(\phi_c) }{\delta \phi_c(x)} \;,
+\end{equation}
+for $\phi_c(x)$ constant in x, and thereby $J$ independent of $x$. Thus, we can write the effective potential as
+
+\begin{equation}
+    \frac{\delta V_{\text{eff}}(\phi_c) }{\delta \phi_c(x)} = J(x) \;.
+\end{equation}
+For the case of no source, the condition that the effective action has an extrenum is converted into a condition on the effective potential to have a minimum \comment{is minimimum correct here? it is not just an extrenum}
+\begin{equation}
+    \frac{\delta V_{\text{eff}}(\phi_c) }{\delta \phi_c(x)} = 0 \;.
+\end{equation}
+Consider Equation \ref{eq:def of eff pot} with no source term the vacuum expectation value is determined by minimizing $V_{\text{eff}}$ \cite{zee}.
+\comment{I think I need an example of how to calculate it}
+\subsection{Calculation of the effective potential}
+\begin{equation}
+    V_1(h, s) = \sum_i \pm n_i \frac{m_i^4(h, s)}{64\pi^2} \left( \log \left[ \frac{m_i^2(h, s)}{Q^2} \right] - C_i \right)
+\end{equation}
+and 
+\begin{equation}
+    V_{\text{eff}}(\varphi) = \frac{\lambda}{4!}\varphi^4 + \frac{\lambda^2 \varphi^4}{256\pi^2} \left( \log \frac{\varphi^2}{Q^2} - \frac{25}{6} \right) + O(\lambda^3)
+\end{equation}
+
+For $\ln 2/\lambda =8/3$ and $m^2=\lambda\phi^2/2$

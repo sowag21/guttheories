@@ -1,0 +1,213 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{url}
+\usepackage{parskip} 	
+\usepackage{csquotes}
+
+\usepackage{fontspec}
+
+% Set the main font to Fira Sans
+\setmainfont{Fira Sans}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\usepackage{setspace}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+\usepackage{booktabs}
+
+\begin{document}
+
+\onehalfspacing
+
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}%
+    \Huge \textbf{Sophie Lund Wagner} \\ [7.5pt]
+    \href{https://linkedin.com/in/sophiewagner1999}{\raisebox{-0.05\height}\faLinkedin\ Sophie Lund Wagner} \ $|$ \ 
+    \href{mailto:sowag21@student.sdu.dk}{\raisebox{-0.05\height}\faEnvelope \ sowag21@student.sdu.dk} \ $|$ \ 
+    \href{tel:+4542187737}{\raisebox{-0.05\height}\faMobile \ +4542187737} \\
+\end{tabularx}
+
+%\section{Summary}
+%M.S.c physics graduate specializing in quantum field theory, with research experience in theories beyond the standard model and infinite heat order. Proficient within advanced theoretical physics, with programming and machine learning skills and experienced outreacher and teacher. Who has international study and research experience.
+
+%\vspace{0.5cm}
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l r@{}}	
+
+ \textbf{M.S.c in Physics} at University of Southern Denmark, Denmark & \hfill \textit{2024 -- present} \\ [3.75pt]
+ \multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.5em, itemsep=3pt]
+         %\item[--] Focus: deepening knowledge of theoretical particle physics, especially focusing on quantum field theory with an emphasis on scientific communication. 
+    %\item[--] Projects: Percolation models vs SIR models, Anomalies in quantum field theory. 
+    \item[--] Thesis title: \textit{Novel principles for grand unification theories.}
+    \item[--] Thesis advisor: Francesco Sannino.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\vspace{0.1cm}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}	
+\textbf{Exchange semester} at University of Calgary, Alberta, Canada& \hfill \textit{2025} 
+\end{tabularx}
+
+\vspace{0.1cm}
+
+\begin{tabularx}{\linewidth}{@{}l r@{}}	
+
+ \textbf{B.S.c in Physics} at University of Southern Denmark, Denmark  & \hfill \textit{2021 -- 2024} \\ [3.75pt]
+ \multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.5em, itemsep=3pt]
+         %\item[--] Focus: deepening knowledge of theoretical particle physics, especially focusing on quantum field theory with an emphasis on scientific communication. 
+    %\item[--] Projects: Dark Matter and Neural Networks 
+    \item[--] Thesis title: \textit{Inhomogeneous cosmology and cosmic backreaction.}
+    \item[--] Thesis advisor: Sofie Marie Koksbang. 
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+
+\section{Research interests}
+Theoretical particle physics, physics beyond the Standard Model, cosmology, fundamental interactions.
+
+
+\vspace{0.1cm}
+
+\section{Awards and Scholarships}
+Zonta Denmark: \enquote{Women in STEM, 2024}, Niels Bohr Foundation, William Demant Foundation, Knud Højgaard Foundation, Torben and Alice Frimodts Foundation, Doctor Else Mogensen Foundation
+
+\vspace{0.1cm}
+
+
+\section{Participation at schools/conferences}
+\begin{tabularx}{\linewidth}{@{}X r@{}}	
+\textbf{IDA Summer School}, NOT telescope La Palma & \hfill \textit{2025} 
+\end{tabularx}
+
+%\section{Services to the academic community}
+%(mentor, physic clubs)
+
+\vspace{0.1cm}
+
+\section{Teaching Experience}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Member of Astrid Eichhorn's group \small\normalfont (Heidelberg University, Germany)} & \hfill \textit{2024 - 2025} \\ [3.75pt]
+% \multicolumn{2}{@{}X@{}}{
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+%         \item[--] Focus of the group: \enquote{probing the quantum structure of spacetime}.
+%         \item[--] Relevant topics: asymptotically safe gravity, scalar-tensor gravity.
+%     \end{itemize}
+%     \end{minipage}
+% }
+% \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Teaching Assistant \small\normalfont (University of Southern Denmark, Denmark)} & \hfill \textit{2026 -- present} \\ [3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+        \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, itemsep=3pt]
+            \item[--] weekly exercises classes for bachelor's students in "Physics A" %, regarding "Dark matter and rotation curves"
+        % \item [--] Main responsibility: producing exercise sheets, teaching basics regarding dark matter, planning) 
+        \end{itemize}
+        \end{minipage}
+    } \\ [3.75pt]
+\textbf{High School project supervisor \small\normalfont (University of Southern Denmark, Denmark)} & \hfill \textit{2023 -- present}
+\end{tabularx}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{High School project supervisor \small\normalfont (University of Southern Denmark, Denmark)} & \hfill \textit{2024 -- present} \\ [3.75pt]
+% \multicolumn{2}{@{}X@{}}{
+% %\begin{minipage}[t]{\linewidth}
+%     % \begin{itemize}[nosep,after=\strut, itemsep=3pt]
+%     %     \item[--] teaching and guidance of high school students in their finial project%, regarding "Dark matter and rotation curves"
+%     %    % \item [--] Main responsibility: producing exercise sheets, teaching basics regarding dark matter, planning) 
+%     % \end{itemize}
+%  %   \end{minipage}
+% }
+% \end{tabularx}
+\vspace{0.1cm}
+\section{Outreach}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Outreach instructor \small\normalfont (University of Southern Denmark, Denmark)} & \hfill \textit{2024 -- present} \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, itemsep=3pt]
+        \item[--] coordination and developing of "physics clubs" at high schools in Southern Denmark, planning of physics-events, teaching at summer schools (supported by the \textit{Villum Foundation}).
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+%vspace
+
+\begin{tabularx}{\linewidth}{ @{}X r@{} }
+\textbf{Student ambassador  \small\normalfont (University of Southern Denmark, Denmark)} & \hfill \textit{2023 -- present}
+\end{tabularx}
+
+
+\section{Programming skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\normalsize{Python, Mathematica}
+\end{tabularx}
+
+% \section{Soft skills}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% Language &  \normalsize{English (fluent), German (fluent), French (fluent)}, Danish (A1), Spanish (A1) \\  
+% Soft skills & clear communication, collaborative, organized
+% %Typing & \normalsize{approx. 50 WPM} \\
+% %Locomotion & \normalsize{happy walker, avid cyclist, certified driver}
+% %Music & classical guitar
+% \end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}

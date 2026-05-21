@@ -1,0 +1,185 @@
+\section{The Fierz identity}\label{app:Fierz}
+The Fierz identity can be shown to be true for fundamental representations of $SU(N)$ by considering the trace of the generators. The generators of $SU(N)$ can be written as $n\times n $ traceless Hermitian matrices $T^a$. The normalisation of these matrices is first defined to be 
+\begin{equation}
+      \text{tr}(T^a T^b)=\frac{1}{2}\delta^{ab}\;,
+\end{equation}
+using this, we can write a general matrix $M$ as a linear combination of the identity matrix and the generators of the Lie algebra
+\begin{equation}
+      M=n_0 I+n_aT^a\;,
+\end{equation}
+where $n_0$ and $n_a$ are coefficients. Now let us take the trace on both sides and simplify using that $\tr(T^a)=0$ and $\tr(I)=N$
+\begin{equation}
+      \tr(M)=n_0 \tr(I)+n_a\tr(T^a)=n_0N\;.\label{eq:tr1}
+\end{equation}
+Next, using the definition of the normalisation of the generators
+\begin{equation}
+      \tr(MT^b)=n_0 \tr(IT^b)+n_a\tr(T^aT^b)=\frac{n_b}{2}\;.\label{eq:tr2}
+\end{equation}
+Now using Eq. \eqref{eq:tr1} and \eqref{eq:tr2}, the constants $n_0,n_a$ can be replaced, and the matrix $M$ can be written as
+\begin{equation}
+      M=\frac{\tr(M)}{N} I+2\tr(MT^a)T^a\;,
+\end{equation}
+the matrix decomposition can be written in index notation
+\begin{equation}
+      M_{ij}=\frac{\tr(M)}{N} \delta_{ij}+2\tr(MT^a)T^a_{ij}\;,
+\end{equation}
+Using that it is in Euclidean space with the metric $\delta_{ij}$, the traces can be simplified, and the lhs can be rewritten
+\begin{equation}
+      \delta_{jk}\delta_{il}M_{lk}=\frac{1}{N} \delta_{kl}M_{lk}\delta_{ij}+2\delta_{ln}M_{lk}T^a_{kn}T^a_{ij}\;,
+\end{equation}
+which can be simplified to 
+\begin{equation}
+      \delta_{jk}\delta_{il}=\frac{1}{N} \delta_{kl}\delta_{ij}+2T^a_{kl}T^a_{ij}\;,
+\end{equation}
+Isolating 
+\begin{equation}
+      T^a_{kl}T^a_{ij}=\frac{1}{2}\left(\delta_{jk}\delta_{il}-\frac{1}{N} \delta_{kl}\delta_{ij}\right)
+\end{equation}
+
+\section{BY model with N=3}\label{app:BYN3}
+The scalar beta function computed strictly for $N=3$ for the BY model (one quartic term)
+\begin{align}
+    \beta_\lambda &= 27\alpha_g^2 - 2p\alpha_y^2 - 36\alpha_\lambda\alpha_g + 16\alpha_\lambda^2 + 4p\alpha_\lambda\alpha_y \label{eq:N3by}
+\end{align}
+The original two beta functions with $N=3$
+\begin{align}
+\beta_{\lambda_1} &= 12\alpha_{\lambda_1}\alpha_{\lambda_2} + 4(p\alpha_y - 9\alpha_g)\alpha_{\lambda_1} + 9\alpha_g^2 - 2p\alpha_y^2 \\
+\beta_{\lambda_2} &= 16\alpha_{\lambda_2}^2 + 16\alpha_{\lambda_1}^2 + 20\alpha_{\lambda_1}\alpha_{\lambda_2} + 4(p\alpha_y - 9\alpha_g)\alpha_{\lambda_2} + 18\alpha_g^2 
+\end{align}
+Now add the two beta functions, and let $\alpha_{\lambda_1}+\alpha_{\lambda_2}=\alpha_{\lambda}$, then we obtain Eq. \eqref{eq:N3by}
+\begin{align}
+    \beta_{\lambda_1} + \beta_{\lambda_2} &= 27\alpha_g^2 - 2p\alpha_y^2  +4(p\alpha_y - 9\alpha_g)\overbrace{(\alpha_{\lambda_1} + \alpha_{\lambda_2})}^{\alpha_\lambda}  + 16\underbrace{(\alpha_{\lambda_1}^2 + 2\alpha_{\lambda_1}\alpha_{\lambda_2} + \alpha_{\lambda_2}^2)}_{(\alpha_{\lambda_1} + \alpha_{\lambda_2})^2=\alpha_\lambda^2} \\
+    &= 27\alpha_g^2 - 2p\alpha_y^2 + 4p\alpha_y\alpha_\lambda - 36\alpha_g\alpha_\lambda + 16\alpha_\lambda^2
+\end{align}
+Both results give no CAF regions for the BY model with $N=3$
+
+
+\section{Supplementary Figures}
+\subsection{RG Flows: BY model with an Anti-Fundamental Scalar}\label{app:flow}
+\begin{figure}[b!]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/FlowplotBYN5p30.pdf}
+        \caption{$(\alpha_g,\alpha_y)$} 
+        \label{fig:flowgy_left}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/FlowplotScalar_N5_p30.pdf}
+        \caption{$(\alpha_g,\alpha_\lambda)$}
+        \label{fig:flowgy_right}
+    \end{subfigure}
+    \caption{The figure displays flow diagrams for the BY model with $N=5$ and $p=30$ (a) for $(\alpha_g,\alpha_y)$ and (b) $(\alpha_g,\alpha_\lambda)$. The green flow lines represent fixed-flow trajectories.}
+\label{fig:flowgy}
+\end{figure}
+To better understand the CAF regions, the RG flow of the BY model (a similar analysis can be done for the GG model) with one anti-fundamental scalar can be analysed. Note that in all the flow diagrams, the arrows point towards the UV.
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/FlowplotBYN10p12.pdf}
+        \caption{$(\alpha_g,\alpha_y)$}
+        \label{fig:flowlam_left}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/FlowplotScalar_N10_p12.pdf}
+        \caption{$(\alpha_g,\alpha_\lambda)$}
+        \label{fig:flowlam_right}
+    \end{subfigure}
+    \caption{The figure displays flow diagrams for the BY model with $N=10$ and $p=12$(a) for $(\alpha_g,\alpha_y)$ and (b) $(\alpha_g,\alpha_\lambda)$. The green flow line represents the fixed-flow trajectory.}
+\label{fig:flowlam}
+\end{figure}
+
+First, consider Figure \ref{fig:flowgy_left}. The plot displays the gauge versus Yukawa coupling for $N=5$, $p=30$. This choice of parameters places the model outside the CAF region, where the gauge coupling loses asymptotic freedom. The flow plot also shows that there is no region within the plot where the gauge coupling is asymptotically free. Furthermore, one can see that for $\alpha_g=0$, the Yukawa coupling diverges, hitting a Landau pole in the UV. This is exactly as one would expect, since the gauge coupling is responsible for making the Yukawa coupling asymptotically free (see Chapter \ref{chap:CAF}). 
+
+Now consider Figure \ref{fig:flowgy_right} which has the same $N$ and $p$ but displays the gauge versus the quartic coupling. As already concluded from Figure \ref{fig:flowgy_left}, the gauge coupling cannot be asymptotically free. Thus, the quartic coupling cannot be asymptotically free\footnote{The assumption that $b_0<0$ is used in the CAF analysis regarding the quartic coupling, because it can not be asymptotically free without an asymptotically free gauge coupling. }. This is also evident from the flow plot in Figure \ref{fig:flowgy_right}. Here, none of the flows is asymptotically free in either of the couplings.
+\begin{figure}[t!]
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/ColoredFlowGridBYgy.pdf}
+        \caption{$(\alpha_g,\alpha_y)$}
+        \label{fig:gridgy}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/ColoredFlowGridBYlam.pdf}
+        \caption{$(\alpha_g,\alpha_\lambda)$}
+        \label{fig:gridlam}
+    \end{subfigure}
+    \caption{Flow diagrams of (a) $(\alpha_g,\alpha_y)$ and (b) $(\alpha_g,\alpha_\lambda)$ for $(N,p)=(5,12)$, $(5,10)$, $(10,12)$, and $(10,30)$ (top-left to bottom-right). Green (red) background regions indicate the presence (absence) of asymptotic freedom for both couplings. The green flow lines illustrate the fixed-flow trajectories of these couplings (a) $(\alpha_g,\alpha_y)$ and (b) of $\alpha_\lambda$.}
+\label{fig:flowgrid}
+\end{figure}
+
+
+In Figure \ref{fig:flowlam}, the case of $N=10,\;p=12$ is shown. These flow plots are below the light blue region on Figure \ref{fig:cafby}, where only the case of the Yukawa and the gauge coupling on fixed flow satisfies the CAF conditions. In Figure \ref{fig:flowlam_left}, a green dashed line can be seen, which shows the fixed flow of the gauge and Yukawa coupling. Everything underneath this line is asymptotically free in both couplings. Thus, the Yukawa and gauge coupling can be asymptotically free in this case. 
+
+In Figure \ref{fig:flowlam_right}, the flow of the gauge and quartic coupling is plotted for $N=10$, $p=12$ as well. The flow diagram shows that for a positive quartic coupling, the flow always goes to infinity, and thus is not asymptotically free. Although we do not consider the region $\alpha_\lambda<0$, as it would lead to a potential unbounded from below, the RG flow in this region is directed towards $\alpha_\lambda=0$. However, in the CAF analysis, we required a positive value of $\alpha_\lambda$, and therefore there are no physical valid asymptotically free RG trajectories (see Chapter \ref{chap:CAF}).
+
+
+
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.51\linewidth]{Figures/ColoredFlowGridBYlamfixed.pdf}
+    \caption{Flow diagrams of $(\alpha_g,\alpha_\lambda)$ for $(N,p)=(5,12),(5,10),(10,12), \,\text{and }(10,30)$ (top-left to bottom-right) for the gauge and Yukawa coupling on fixed flow. Green (red) background colour indicates the presence (absence) of asymptotic freedom for the scalar coupling, when the gauge and Yukawa coupling is on fixed flow. The green flow lines illustrate the fixed-flow trajectories of these couplings $(\alpha_g,\alpha_\lambda)$.}
+    \label{fig:gridlamfixed}
+\end{figure}
+To compare more values of $N$ and $p$ using flow diagrams, we consider four scenarios in Figures \ref{fig:gridgy}, \ref{fig:gridlam} and \ref{fig:gridlamfixed}. Figure \ref{fig:gridgy} shows whether the gauge and Yukawa coupling are asymptotically free. Green (red) background colour indicates the presence (absence) of asymptotic freedom for both couplings. The same values of $N$, $p$ are shown in the second grid in Figure \ref{fig:gridlam}, here the coupling space is the gauge vs.\ the quartic coupling. In this case green (red) background colour indicates the presence (absence) of asymptotic freedom for the quartic coupling
+
+Let us now consider the case Yukawa coupling on fixed flow. This changes nothing in the flow plots of the gauge vs.\ Yukawa coupling. The conditions of the quartic couplings do, however, change on fixed flow, as can be seen in Figure \ref{fig:gridlamfixed}. The three figures in the bottom left all exhibit similar behaviour. Below the line of the fixed flow (of the scalar and gauge coupling), the flow moves to a negative quartic coupling before flowing up to the origin, or the flow comes from negative infinity before reaching the origin. Even though this flow tends towards $\alpha_\lambda=0$, it does so from a negative quartic coupling, which is not physical. The RG flow above the fixed-flow line (green dashed line) goes towards a Landau pole. Thus, only exactly on the fixed-flow line is it possible to have a complete asymptotically free theory with a positive quartic coupling at all energy scales. These three flow plots also have asymptotically free gauge coupling, since the flow moves toward the origin. 
+
+The plot in the top right of Figure \ref{fig:gridlamfixed} exhibits non-asymptotic freedom. This is evident from the RG flow, which never tends towards $\alpha_\lambda=0$. This is because the gauge coupling is not asymptotically free for these values of $N$ and $p$.
+
+Now, combining the information from the three plots, we conclude that on fixed flow the theory is only CAF for one of the four parameter sets, namely when $N=10$ and $p=30$. Going back to Figure \ref{fig:cafby}, these values lie within the light blue CAF region. Additionally, on fixed flow three of the four parameter sets are CAF, effectively only the boundary coming from the gauge coupling influences whether the model is CAF in that case.   
+
+Together, from the Figures \ref{fig:gridgy}, \ref{fig:gridlam} and \ref{fig:gridlamfixed}, we can understand the meaning of the CAF regions. Further, the conclusions drawn from these are consistent with Figure \ref{fig:cafby}.
+
+
+\subsection{Chiral Models with an Adjoint Scalar} \label{sec:appGGplotsadj}
+In the model described in Section \ref{sec:adj}, we obtain Figure \ref{fig:DeltaadjGG} and \ref{fig:gg_combined_ng1}. Similarly to  the GG model, only the case of the Yukawa coupling of fixed flow yields a CAF region.
+
+\begin{figure}[b!]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/CAFplotGG_1_RootsFixed_Ng1.pdf}
+        \caption{All couplings on fixed flow} 
+        \label{fig:roots_fixedGG}
+    \end{subfigure}
+    \hspace{0.1cm}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/CAFplotGG_2_RootsNoY_Ng1.pdf}
+        \caption{$\alpha_y$ off fixed flow} 
+        \label{fig:roots_noyGG}
+    \end{subfigure}
+    
+    \caption{ Root structure of the fourth-degree polynomial for the GG model, for (a) all couplings on fixed flow and (b) the Yukawa coupling off fixed flow. The shaded regions denote four complex roots (white) and two real and two complex roots (light green). The dashed black line illustrates the $b_0=0$ condition.} 
+    \label{fig:DeltaadjGG}
+\end{figure}
+
+% \begin{figure}[t!]
+%     \centering
+%     \begin{subfigure}[b]{0.4\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/CAFplotGG_3_FinalCombined_Ng1.pdf}
+%         \caption{GG model $N_g=1$} 
+%         \label{fig:posrootsGG}
+%     \end{subfigure}
+%     \hspace{0.1cm}
+%     \begin{subfigure}[b]{0.4\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/CAFplot_3_FinalCombined_Ng4.pdf}
+%         \caption{BY model $N_g=4$} 
+%         \label{fig:final_comb_Ng4_adj_by}
+%     \end{subfigure}
+    
+%     \caption{ (a) CAF regions for the GG model with all couplings on fixed flow (dark blue) and for the Yukawa coupling $\alpha_y$ off fixed flow (light blue). The dashed black line illustrates the $b_0=0$ condition, underneath which the gauge coupling is asymptotic free. (b) CAF regions of the BY model with one adjoint scalar and $N_g=4$ chiral families. On the figure, the dark blue region represents the on-fixed-flow region and the light blue the Yukawa coupling $\alpha_y$ off fixed flow. The dashed black line illustrates the $b_0=0$ condition, underneath which the gauge coupling is asymptotically free. } 
+%     \label{fig:appplot}
+% \end{figure}

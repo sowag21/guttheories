@@ -1,0 +1,90 @@
+\section{Conclusion}\label{sec:conc}
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\renewcommand{\tabularxcolumn}[1]{m{#1}} 
+
+\begin{tabularx}{\textwidth}{@{}ccc >{\centering\arraybackslash}X >{\centering\arraybackslash}m{1.8cm} @{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{CAF}} & \multicolumn{1}{c}{\textbf{$p(n)$}} & \multicolumn{1}{c}{\textbf{$(N,p)_{N_g}$}} & \multicolumn{1}{c}{\textbf{Figures}} \\
+\midrule
+
+\multicolumn{5}{c}{\textit{without scalars}} \\
+\midrule
+\rowcolor{myDarkerBlue} GG & CAF & \eqref{eq:pNnoscalarGG} & $(5,0)_1$ &--- \\
+
+\rowcolor{myLightBlue} BY & CAF & \eqref{eq:pNnoscalarBY} & $(5,0)_1$ &--- \\
+
+
+\midrule
+\multicolumn{5}{c}{\textit{with one scalar in the anti-fundamental representation - all on fixed flow}} \\
+\midrule
+\rowcolor{myDarkerBlue} & Not CAF: $N_g > 13$ & --- & --- & --- \\
+\rowcolor{myDarkerBlue} \multirow{-2}{*}{GG} & CAF: $N_g\in\{1,\dots,13\}$ &\eqref{eq:pmaxfundNg} \& \eqref{eq:pminfundNgon} & $(5,6)_1$ $(5,5)_2$ $(5,4)_3$ $(5,3)_4$ $(5,2)_5$ $(5,0)_6$ $(5,0)_7$ $(5,0)_8$ $(5,0)_9$ $(5,0)_{10}$ $(5,0)_{11}$ $(5,0)_{12}$ $(5,0)_{13}$ &\ref{fig:cafgg_fund} \& \ref{fig:CAFGGNG9}  \\
+
+\rowcolor{myLightBlue} & Not CAF: $N_g > 4$ & --- & --- & --- \\
+\rowcolor{myLightBlue} \multirow{-2}{*}{BY} & CAF: $N_g\in\{1,\dots,4\}$  & \eqref{eq:pmaxfundNg}  & $(3,0)_1$ $(3,0)_2$ $(4,0)_3$ $(9,0)_4$ &\ref{fig:cafby_fund} \& \ref{fig:CAFNG9} \\
+
+
+\midrule
+\multicolumn{5}{c}{\textit{with one scalar in the anti-fundamental representation - Yukawa off fixed flow}} \\
+\midrule
+\rowcolor{myDarkerBlue} & Not CAF: $N_g > 13$ & --- & --- & --- \\
+\rowcolor{myDarkerBlue} \multirow{-2}{*}{GG} &CAF: $N_g\in\{1,\dots,13\}$  & \eqref{eq:pmaxfundNg} \& \eqref{eq:pminfundNg}& $(5,22)_1$ $(5,20)_2$ $(5,18)_3$ $(5,16)_4$ $(5,14)_5$ $(5,12)_6$ $(5,10)_7$ $(5,8)_8$ $(5,6)_9$ $(5,4)_{10}$ $(5,2)_{11}$ $(5,0)_{12}$ $(5,0)_{13}$ &\ref{fig:cafgg_fund} \& \ref{fig:CAFGGNG9} \\
+
+\rowcolor{myLightBlue} & Not CAF: $N_g > 4$ & --- & --- & --- \\
+\rowcolor{myLightBlue} \multirow{-2}{*}{BY} & CAF: $N_g\in\{1,\dots,4\}$  &\eqref{eq:pmaxfundNg} \& \eqref{eq:pminfundNg} & $(3,10)_1$ $(3,4)_2$ $(4,0)_3$ $(9,0)_4$   &\ref{fig:cafby_fund} \& \ref{fig:CAFNG9} \\
+
+\bottomrule
+\end{tabularx}
+\caption{Summary of CAF possibilities for the BY and GG models for different numbers of chiral families ($N_g$). The table shows the CAF status, the boundary functions $p(N,N_g)$ for vector-like fermions, and the minimal $N$ for each $N_g$ and the required minimal $p$ displayed as as $(N,p)_{N_g}$.\label{tab:conc_part1}}
+\end{table}
+\comment{rewrite}
+We studied chiral gauge-Yukawa theories' ultraviolet behaviour, specifically the generalised Georgi--Glashow (GG) and the Bars--Yankielowicz (BY). The focus was on completely asymptotically free (CAF) regimes for the models with either a scalar in the anti-fundamental or the adjoint representation. Additionally, we wanted to extend the model to include multiple chiral families to see how this changed the CAF regions.
+
+Our work was based on two approaches to CAF analysis and extended the general CAF analysis for multiple couplings \cite{Giudice:2014tma} to consider the Yukawa coupling both on and off fixed flow. This proved crucial for the CAF regions of the BY (GG) model with one adjoint scalar, as it only exhibits CAF for the Yukawa coupling of fixed flow for $N_g\in\{1,2\}$ ($N_g\in\{1,\dots,4\}$) chiral families. All models exhibited CAF for some $(N,p)$. A summary of the CAF regions for both models GG and BY can be found in Tables \ref{tab:conc_part1} and \ref{tab:conc_part2}.
+
+We derived the functions $p_{\max}$ and $p_{\min}$ that characterise the CAF regions across all the considered models. This formulation makes the analysis applicable to model building, allowing one to insert the number of colours and chiral families and then obtain the required amount of vector-like fermions for a theory to be CAF. 
+
+This analysis elucidates a framework for choosing chiral gauge-Yukawa theories which are UV-complete by restricting the number of vector-like fermions. This framework has broad applications within model-building and beyond the Standard Model physics. \comment{Next steps?}
+
+
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\renewcommand{\tabularxcolumn}[1]{m{#1}} 
+
+\begin{tabularx}{\textwidth}{@{}ccc >{\centering\arraybackslash}X >{\centering\arraybackslash}m{1.8cm} @{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{CAF}} & \multicolumn{1}{c}{\textbf{$p(n)$}} & \multicolumn{1}{c}{\textbf{$(N,p)_{N_g}$}} & \multicolumn{1}{c}{\textbf{Figures}} \\
+\midrule
+\multicolumn{5}{c}{\textit{with one scalar in the adjoint representation - all on fixed flow}} \\
+\midrule
+\rowcolor{myDarkerBlue} & Not CAF: $N_g \in \mathbb{N} \setminus \{5,\dots,12\}$ &--- &--- &--- \\
+\rowcolor{myDarkerBlue} \multirow{-2}{*}{GG} & CAF: $N_g\in\{5,\dots,12\}$ &\eqref{eq:padjscalar} \& \eqref{eq:Delta0} & $(13,2)_5$ $(9,1)_6$ $(7,1)_7$ $(6,1)_8$ $(6,1)_9$ $(6,1)_{10}$ $(5,1)_{11}$ $(5,1)_{12}$ & \ref{fig:final_combined_ng3}, \ref{fig:gg_combined_ng5} \& \ref{fig:gg_combined_ng6}\\
+
+\rowcolor{myLightBlue} &Not CAF: $N_g \in \mathbb{N} \setminus \{3,4\}$ &--- &--- &--- \\
+\rowcolor{myLightBlue} \multirow{-2}{*}{BY} & CAF: $N_g\in\{3,4\}$ & \eqref{eq:padjscalar} \& \eqref{eq:Delta0} &$(5,1)_3$ $(10,0)_4$ &\ref{fig:by_combined_ng5} \& \ref{fig:by_combined_ng6} \\
+
+
+\midrule
+\multicolumn{5}{c}{\textit{with one scalar in the adjoint representation - Yukawa coupling off fixed flow}} \\
+\midrule
+\rowcolor{myDarkerBlue} & Not CAF: $N_g > 9$ & --- & --- & --- \\
+\rowcolor{myDarkerBlue} \multirow{-2}{*}{GG} & CAF: $N_g \in \{1,\dots,9\}$ & \eqref{eq:padjscalar} \& \eqref{eq:Delta0noY} & $(7,32)_1$ $(7,28)_2$ $(7,24)_3$ $(7,20)_4$ $(7,16)_5$ $(7,12)_6$ $(7,8)_7$ $(7,4)_8$ $(7,0)_9$ & \ref{fig:BYposroots}, \ref{fig:final_combined_ng2}, \ref{fig:final_combined_ng3}, \ref{fig:gg_combined_ng5} \& \ref{fig:gg_combined_ng6}\\
+
+\rowcolor{myLightBlue} & Not CAF: $N_g > 4$ & --- & --- & --- \\
+\rowcolor{myLightBlue} \multirow{-2}{*}{BY} & CAF: $N_g \in \{1,\dots,4\}$ & \eqref{eq:padjscalar} \& \eqref{eq:Delta0noY} & $(7,26)_1$ $(7,16)_2$ $(7,6)_3$ $(10,0)_4$ &  \ref{fig:GGadjNG37} \\
+
+
+% \midrule
+% \multicolumn{5}{c}{\textit{with one scalar in the adjoint representation - one quartic off fixed flow}} \\
+% \midrule
+% \rowcolor{myDarkerBlue} GG & Not CAF: $N_g\in\mathbb{N}$ & ---&--- & ---\\ 
+
+% \rowcolor{myLightBlue} BY & Not CAF: $N_g\in\mathbb{N}$ &--- & ---&--- \\
+
+\bottomrule
+\end{tabularx}
+\caption{Summary of CAF possibilities for the BY and GG models for different numbers of chiral families ($N_g$). The table shows the CAF status, the boundary functions $p(N,N_g)$ for vector-like fermions, and the minimal $N$ for each $N_g$ and the required minimal $p$ displayed as $(N,p)_{N_g}$. \label{tab:conc_part2}}
+\end{table}

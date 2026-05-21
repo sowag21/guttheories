@@ -1,0 +1,528 @@
+
+\section{Random}
+\subsection{BY model with N=3}
+The scalar beta function computed strictly for $N=3$ for the BY model (one quartic term)
+\begin{align}
+    \beta_\lambda &= 27\alpha_g^2 - 2p\alpha_y^2 - 36\alpha_\lambda\alpha_g + 16\alpha_\lambda^2 + 4p\alpha_\lambda\alpha_y \label{eq:N3by}
+\end{align}
+The original two beta functions with $N=3$
+\begin{align}
+\beta_{\lambda_1} &= 12\alpha_{\lambda_1}\alpha_{\lambda_2} + 4(p\alpha_y - 9\alpha_g)\alpha_{\lambda_1} + 9\alpha_g^2 - 2p\alpha_y^2 \\
+\beta_{\lambda_2} &= 16\alpha_{\lambda_2}^2 + 16\alpha_{\lambda_1}^2 + 20\alpha_{\lambda_1}\alpha_{\lambda_2} + 4(p\alpha_y - 9\alpha_g)\alpha_{\lambda_2} + 18\alpha_g^2 
+\end{align}
+Now add the two beta functions, and let $\alpha_{\lambda_1}+\alpha_{\lambda_2}=\alpha_{\lambda}$, then we obtain Eq. \eqref{eq:N3by}
+\begin{align}
+    \beta_{\lambda_1} + \beta_{\lambda_2} &= 27\alpha_g^2 - 2p\alpha_y^2  +4(p\alpha_y - 9\alpha_g)\overbrace{(\alpha_{\lambda_1} + \alpha_{\lambda_2})}^{\alpha_\lambda}  + 16\underbrace{(\alpha_{\lambda_1}^2 + 2\alpha_{\lambda_1}\alpha_{\lambda_2} + \alpha_{\lambda_2}^2)}_{(\alpha_{\lambda_1} + \alpha_{\lambda_2})^2=\alpha_\lambda^2} \\
+    &= 27\alpha_g^2 - 2p\alpha_y^2 + 4p\alpha_y\alpha_\lambda - 36\alpha_g\alpha_\lambda + 16\alpha_\lambda^2
+\end{align}
+Both results give no CAF regions for the BY model with $N=3$
+
+
+\subsection{GG-model with p=0}
+Let us start by considering a Georgi-Glashow model \cite{GGmodel}, with transformation properties shown in table \ref{tab:GGp0}. This model has $p=0$, and we will therefore have three fields: the anti-fundamental scalar $\phi$, anti-fundamental fermion $\psi$, and two-index antisymmetric fermion under the gauge group $SU(N)$, where only $\psi$ transforms under the global symmetry group $SU(N-4)$. All fields are charged under the $U(1)$ symmetry.  
+\begin{table}[h] 
+    \centering 
+    \begin{tabular}{|c|c|c|c|c|} \hline Fields & $SU(N)$ & $SU(N-4)$  & $U(1)$ \\ \hline $\Psi$ & $\ytableausetup{boxsize=0.25cm}\begin{ytableau}{}&{}\end{ytableau}$ & 1 & $N-4$ \\ $\psi$ & $\overline\square$ & $\overline\square$ & $-(N-2)$ \\ \hline $\phi$ & $\overline\square$ & 1  & 2 \\ \hline 
+    \end{tabular} 
+    \caption{Transformation rules of the GG model with $p=0$} 
+    \label{tab:GGp0} 
+\end{table}
+To write the Lagrangian down, we need to ensure that all terms will be invariant under $U(1)$ and that no indices remain open. To do this, we start by writing down the kinetic terms for all particles. Let us first consider the free theory:
+\begin{equation}
+    \mathcal{L}_{free}= i \bar \Psi_{ij}\sigma^\mu \partial_\mu\Psi_{ij}+i \bar \psi_i^a\sigma^\mu \partial_\mu\psi_i^a+\partial_\mu (\phi^*)_i\partial^\mu\phi_i\;,
+\end{equation}
+where $\sigma^\mu$ is used because the fermions are chiral and thus are massless. Next, we want to consider the interacting theory, which we do by promoting the global $SU(N)$ symmetry of the Lagrangian to a local symmetry. To ensure gauge invariance we introduce the covariant derivative $\partial_\mu \to D_\mu= \partial_\mu - ie(T^a)^i_{\,j}A_\mu^a$
+\begin{equation}
+    \mathcal{L}_{kinetic}= -\frac{1}{4} F_{\mu\nu}^a F^{\mu\nu\,a}+i \bar \Psi_{ij}\slashed{D}\Psi_{ij}+i \bar \psi_i^a\slashed{D}\psi_i^a+(D_\mu \phi^*D^\mu\phi)\;,
+\end{equation}
+where $F_{\mu\nu}^a=\partial_\mu A_\nu^a-\partial_\nu A_\mu ^a+g f^{abc}A_\mu^bA_\nu^c$, with $A_\mu$ being the connection. This gives us our first coupling constant, $g$. If we expand the first term, we get three types of terms
+\begin{equation}
+    F_{\mu\nu}^a F^{\mu\nu\,a}\approx(\partial_\mu A_\nu^a)^2+ g f^{abc}(\partial_\mu A_\nu^a)A_\mu^bA_\nu^c +g^2 f^{abc}f^{def}A_\mu^bA_\nu^cA_\mu^dA_\nu^e\;,
+\end{equation}
+which gives us the gauge boson propagator and the two gauge boson vertices. The three remaining kinetic terms give us the scalar and two fermion propagators 
+Next, we consider all the possible interaction terms, which we can write in the Lagrangian. Consider first the possible Yukawa interactions. Terms as $\Psi_{ij}\bar A_{ij}H^i$ and $\psi \bar \psi H^i$ are not invariant under $U(1)$. However, mixing the two fermion representations is possible; this, however, gives an open gauge index from the anti-fundamental fermion. Therefore, to have a Yukawa term, we break the global symmetry of $SU(N-4)$. Furthermore, the coupling $y^a$ will thus have the gauge index, giving us $a=N-4$ Yukawa terms, excluding the hermitian conjugate terms.
+\begin{equation}
+    \mathcal{L}_{Yukawa}= y^a\Psi_{ij} \psi ^a_{\, i} \phi^j + h.c.\; ,
+\end{equation}
+Lastly, we have to consider possible quartic scalar terms. Again, ensuring $U(1)$ invariant terms, we can write terms like
+\begin{align}
+    \mathcal{L}_{quartic}= &
+    \lambda_1 (\phi^\dagger_i \phi_j)^2 
+    + \lambda_2 (\bar \Psi_{ij}\Psi_{ij})^2
+    +\lambda_3 (\bar \psi_{i}\psi_{j})^2
+    +\lambda_4 (\phi^\dagger_i \phi_j)(\bar \psi_{i}\psi_{j})
+    +\lambda_5 (\phi^\dagger_i \phi_j)(\bar \Psi_{ij}\Psi_{ij})
+    \\&+\lambda_6 (\bar \psi_{i}\psi_{j})(\bar \Psi_{ij}\Psi_{ij})
+    +\lambda_7 (\bar \Psi_{ij}\Psi_{ij})^2+...\;,
+\end{align}
+and similar terms. However, we will impose another condition, namely that the theory needs to be renormalisable. This means that the coupling should not have negative dimensions. The quartic scalar Lagrangian thus simplifies to one term
+\begin{equation}
+    \mathcal{L}_{quartic}= 
+    \lambda \phi^\dagger_i \phi_i \phi^\dagger_j \phi_j \;,
+\end{equation}
+thus, we also have one scalar coupling, with the coupling constant $\lambda$. From the quartic and the Yukawa terms, we obtain three new vertices. Before writing up the full Lagrangian, we first consider another possible quartic term 
+\begin{align}
+    (\phi_i^\dagger T_i ^{\,A\,j}\phi^j)(\phi_k^\dagger T_k ^{\,A\,l}\phi^l)\;.
+\end{align}
+However, for (anti-)fundamental representations, it is not linearly independent on the quartic scalar term $\lambda \phi^\dagger_i \phi_i \phi^\dagger_j \phi_j $  already written. This can be proved by considering that the generators $T^A$ uphold the Fierz identity
+\begin{align}
+    T_i ^{\,A\,j}T_k ^{\,A\,l}=\frac{1}{2}\left(\delta_i^{\,l}\delta_k^{\,j}-\frac{1}{N}\delta_i^{\,j}\delta_k^{\,l}\right) \;.
+\end{align}
+The Fierz identity can be shown to be true for fundamental representations of $SU(N)$ by considering the trace of the generators. The generators of $SU(N)$ can be written as $n\times n $ traceless Hermitian matrices $T^a$. The normalisation of these matrices is first defined to be 
+\begin{equation}
+      \text{tr}(T^a T^b)=\frac{1}{2}\delta^{ab}\;,
+\end{equation}
+using this, we can write a general matrix $M$ as a linear combination of the identity matrix and the generators of the Lie algebra
+\begin{equation}
+      M=n_0 I+n_aT^a\;,
+\end{equation}
+where $n_0$ and $n_a$ are coefficients. Now let us take the trace on both sides and simplify using that $\tr(T^a)=0$ and $\tr(I)=N$
+\begin{equation}
+      \tr(M)=n_0 \tr(I)+n_a\tr(T^a)=n_0N\;.\label{eq:tr1}
+\end{equation}
+Next, using the definition of the normalisation of the generators
+\begin{equation}
+      \tr(MT^b)=n_0 \tr(IT^b)+n_a\tr(T^aT^b)=\frac{n_b}{2}\;.\label{eq:tr2}
+\end{equation}
+Now using Equation \ref{eq:tr1,eq:tr2}, the constants $n_0,n_a$ can be replaced, and the matrix $M$ can be written as
+\begin{equation}
+      M=\frac{\tr(M)}{N} I+2\tr(MT^a)T^a\;,
+\end{equation}
+the matrix decomposition can be written in index notation
+\begin{equation}
+      M_{ij}=\frac{\tr(M)}{N} \delta_{ij}+2\tr(MT^a)T^a_{ij}\;,
+\end{equation}
+Using that it is in Euclidean space with the metric $\delta_{ij}$, the traces can be simplified, and the lhs can be rewritten
+\begin{equation}
+      \delta_{jk}\delta_{il}M_{lk}=\frac{1}{N} \delta_{kl}M_{lk}\delta_{ij}+2\delta_{ln}M_{lk}T^a_{kn}T^a_{ij}\;,
+\end{equation}
+which can be simplified to 
+\begin{equation}
+      \delta_{jk}\delta_{il}=\frac{1}{N} \delta_{kl}\delta_{ij}+2T^a_{kl}T^a_{ij}\;,
+\end{equation}
+Isolating 
+\begin{equation}
+      T^a_{kl}T^a_{ij}=\frac{1}{2}\left(\delta_{jk}\delta_{il}-\frac{1}{N} \delta_{kl}\delta_{ij}\right)
+\end{equation}
+Inserting this back into the term gives us
+\begin{align}
+    \frac{1}{2} (\phi_i^\dagger \phi^j)(\phi_k^\dagger \phi^l)\left(\delta_i^{\,l}\delta_k^{\,j}-\frac{1}{N}\delta_i^{\,j}\delta_k^{\,l}\right)=\frac{1}{2}\left[\phi^{\dagger}_i \phi^j \phi^{\dagger}_j \phi^i-\frac{1}{N}\phi^{\dagger}_i \phi^i \phi^{\dagger}_k \phi^ik\right]=\frac{1}{2}\left(1-\frac{1}{N}\right) (\phi^{\dagger}_i \phi^i))^2\;,
+\end{align}
+so it is not linearly independent of the quartic term in the Lagrangian. Thus, the full Lagrangian reads
+\begin{equation}
+    \mathcal{L}= -\frac{1}{4} F_{\mu\nu}^a F^{\mu\nu\,a}+i \bar \Psi_{ij}\slashed{D}\Psi_{ij}+i \bar \psi_i^a\slashed{D}\psi_i^a+(D_\mu \phi^*D^\mu\phi)^2+(y^a\Psi_{ij} \psi ^a_{\, i} \phi^j + h.c.)+\lambda \phi^\dagger_i \phi_i \phi^\dagger_j \phi_j 
+    \;.
+\end{equation}
+\section{Random: Group theory}
+\subsection{Groups}
+Groups are used as a fundamental mathematical language to describe, understand and predict symmetries and physical phenomena within physics particular in quantum field theory. A group $G$  is a set of elements $\{g\}$ with an operation that assigns to every pair of elements a third element within that same set. The operation must be 
+\begin{enumerate}
+    \item Closure: If $f,g \in G$ then $h=fg\in G$.
+    \item Associativity: For all $g,\,h,\,k,\in G$, $(gh)k=g(hk)$.
+    \item Identity element: There exist an element, $e\in G$ such that for all $f\in G$ we have $ef=fe=f$.
+    \item Inverse element: For every $f\in G$ there exist an inverse element such that $gg^{-1}=g^{-1}g=e$.
+\end{enumerate}
+Groups can be interpreted more visual as a a multiplication table, as seen in table \ref{} (for discrete group elements). An example of this for the group $Z_3$ see table \ref{}.
+
+A group can be both finite and infinite. $Z_3$ is a finite group because it has a finite number of group elements, where an infinite group will have an infinite number of group elements. The number of elements in a finite group is called the order of the group. Thus, $Z_3$ is of order $3$. Groups can also be categorized by being abelian or non-abelian. The operation of an abelian group has an extra axiom, restricting the multiplication law
+\begin{enumerate}
+    \item Communicative: For all $g,h\in G$, $gh=hg$.
+\end{enumerate}
+From the multiplication table for $Z_3$ \ref{} it can be seen that the group is abelian as well. 
+
+\subsection{Representation}
+A representation of a group $G$ is a mapping, $D$ of the elements of the group onto a set of linear operators acting on a vector space $V$. This makes the abstract group easier to realize, hence representations are matrices (for finite groups). This is useful because without this a mathematical abstract object like a group, can't directly be understood but with a representation of the group, we can realize it using one of the things we understand well: matrices. The group representations are useful because they live in linear space. This also means that we can always change the representation by performing a linear transformation. The mapping $D$ need to uphold two conditions
+\begin{itemize}
+    \item The representation of the identity element $e\in G$ must yield the identity operator in the respective vector space: $D(e)=1$. 
+    \item The groups multiplication law is mirrored by the multiplication of their corresponding linear operators on the vector space: $D(g_1)D(g_2)=D(g_1g_2)$.
+\end{itemize}
+An example of this is the 3D rotation group: $SO(3)$. The group has a representation that consist of $3\times 3$ matrices. The dimension of a representation is defined by the dimensions of the space that it acts upon. In this example the dimensions is thus $3$. Each group has multiple different representations and they don't have to have the same dimensions. A representation is regular if the dimensions of the representation is the order of the group. 
+
+Representations can also be described by being reducible, completely reducible and irreducible. To understand these definitions, we need to first understand invariant subspaces. An invariant subspace is when all mappings $D(g)$ on any vector $w$ in the subspace $W\subset V $ maps the vector back into the subspace $W$:
+\begin{equation}
+    D(g)w\in W\quad \forall g\in G, w\in W\;.
+\end{equation}
+A representation is reducible if it has a non-trivial invariant subspace. Non-trivial meaning that it has to be an invariant subspace which is not just $\{0\}$ or the entire set of $V$. An irreducible representation (irrep) is when the representation has no non-trivial invariant subspaces. Thus you cannot "break" the representation further down. A completely reducible representation is on block diagonal form and can thus be written as a direct sum of irreducible representations
+\begin{equation}
+    D_1\oplus D_2 \oplus \cdots\;.
+\end{equation}
+An important property of finite groups is that their representations always is completely reducible \cite{Georgi1999}.
+
+\comment{Need to write about unitary repersentations}
+
+\subsection{Subgroups}
+A subgroup $H$ is a group with a set of elements which all is a part of a group $G$. Then $H$ will be a subgroup of $G$. There are two trivial subgroups of $G$, namely the identity and the group itself. Subgroups thus capture a smaller symmetry structure inside a larger symmetry.
+Using subspaces we can define cosets. A coset can both be a right- or a left-coset. A right-coset of a subgroup $H$ in a group $G$ is defined to be all the elements on the form $Hg$, with $g\in G$. This means that all elements of the subgroup multiplied with a group element to the right is a right-coset. The set which holds all right-cosets of the subgroup is denoted as $G/H$. This is called a coset-space. From the definition of cosets normal subgroups can be defined as having their righ-coset and left-coset being equal
+\begin{align}
+    gH=Hg\;.
+\end{align}
+
+
+\subsection{Schur's Lemma}
+We won't prove Schur's Lemma here, mearly state it. Take two irreducible representations $D_1$ and $D_2$ of the group $G$. Now consider a linear map that take one representation to the other
+\begin{align}
+    T:\;V\to W\;,
+\end{align}
+while respecting the group rules. This is also called a homomorphism of representations.
+
+
+
+\subsection{Characters}
+A character is the trace of a representation
+\begin{equation}
+    \chi(g) =\text{tr}\,D(g)\;,
+\end{equation}
+The characters of a group representation are useful for two main reasons. First, using the cyclic property of the trace $\text{tr}\,AB=\text{tr}\, BA$, means that under a similarity transformation\footnote{A similarity transformation of a matrix $M$ is given by 
+\begin{equation}
+    M'=PMP^{-1}\;,
+\end{equation} 
+where the matrices $M$ and $M'$ is said to be \textit{similar}. They have the same trace, determinant and eigenvalues but in different bases. \cite{missing source}} the charchters will not differ. This also means that characters are constant on conjugate classes\footnote{For $g_1\in G$ the conjugate class is $\{g^{-1}g_1g ∣ g\in G$, so for a matrix, the conjugate will be a similar matrix.}. Second, character tables are useful to describe the representation quite well. Let us look at an example of $S_3$. This group is a permutation group of the elements $1,2,3$. This means that it has six elements
+\begin{equation}
+    \{e,(12),(13),(23),(123),(132)\}\;,
+\end{equation}
+and the conjugate classes are easy to find. They preserve the shape of the permutations, so the three groups are
+\begin{equation}
+    C_1=\{e\},\;C_2=\{(12),(13),(23)\},\;C_3=\{(123),(132)\}\;.
+\end{equation}
+The trivial representation $D_0$ is defined as $D_0(g)=1\;\forall \; g$. Thus, this representation has characters $\chi_0(g)=1$. We know from the number of conjugate classes that there exist three irreducible representations. We also know that the dimensions of the representations depend of the number of elements in the group
+\begin{equation}
+    \sum_an_a^2=N\;,
+\end{equation}
+in our case we must thus have the dimensions of the two remaining representations to be one and two. The one second one dimensional representations is almost the same as the first, only the sign differs. Even permutations will have $+1$ and odd $-1$. Therefore, the second conjugate class is odd (only one permutation) and the third one is even (two permutations). Now the two-dimensional trivial representation must have a character with the value $2$. To find the remaining characters, the orthogonality:
+\begin{equation}
+    \frac{1}{N}\sum_g \chi_{D_a}(g)^*\chi_{D_b}(g)=\delta_{ab}
+\end{equation}
+now, using these two equations can be made, and the result gives us the character table for the group.
+\begin{table}[]
+\begin{tabular}{l|lll}
+  & e & (12), (13), (23) & (123), (132) \\ \hline
+0 & 1 & 1                & 1            \\
+1 & 1 & -1               & 1            \\
+2 & 2 & 0                & -1          
+\end{tabular}
+\end{table}
+
+\subsection{Young Tableaux} \label{sec:youngtab}
+The goal is to index a simple representation of the symmetry group $S_n$ which describes all possible permutation of $n$ different objects. Let us consider the symmetry group $S_4$. This groups permutes the three numbers $1,2,3,4$. It is a non-abelian group. To consider their representation theory, we can describe it using combinatorics. To do this we can use conjugacy classes of the symmetric group which has a one-to-one corresponds with the simple representations. So we need to be able to label the conjugated classes. The definition is that conjugate classes consists of all permutations with the same cycle type. A cycle type is the length of a permutation. So for an example
+\begin{align*}
+    (1)(234)
+    \label{eq:cycle}
+\end{align*}
+would let the first number unchanged. The second number would be changed to the third, the thirds to the fourth and the fourth to the second. So $1234$ would change to $1342$. This is a combination of a 1-cycle and a 3-cycle. The conjucay classes can be used to find the irreducible representations of the group. This can be done using Young tableaux \cite{Georgi1999}
+\begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    \begin{ytableau}
+        {} & {}\\
+        {}\\
+        {}
+    \end{ytableau}
+\end{align}
+This is the same cycle as Equation \ref{eq:cycle}. Each cycle type is represented in columns. Here we have the first row of length three and the second has of length one. This tableau thus represents the conjugacy class $(2,1^2)$, where the first denotes the boxes in first row, and that the two following rows have one box in each . Each tableau represents a different conjugacy class, another example could be the identity element $(4)$
+\begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    \begin{ytableau}
+        {} & {}& {}&{}
+    \end{ytableau}
+\end{align}
+which is four 1-cycles. The constructions of these diagrams are bounded by 
+\begin{align}
+    \lambda_1\ge\lambda_2\ge...\ge\lambda_n, \quad \sum_{i=1}^n\lambda_n=n\;,
+\end{align}
+for $S_n$ where $\lambda_i$ denotes the row considered. Each tableau not only corresponds to a conjugacy class but also an irreducible representation \cite{YoungTableaux}. The dimension of the irreducible representation can be determined from the Young tableau, by multiplying the hook-lengths $h$ of all the boxes together and then dividing with $1/n!$
+\begin{align}
+   f^\lambda=\frac{n!}{\prod_{(i,j)\in \lambda}h_ij} \;,
+\end{align}
+where the hook-length is calculated by adding $1$ (for the box it self) with all the boxes to the right and all the boxes below. So for $S_4$ with $n!=4!$ the tableaus are
+\begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    &\begin{ytableau}
+        {4} & {3}& {2}&{1}
+    \end{ytableau}
+    \quad\quad \quad
+    \begin{ytableau}
+        {4} & {2}&{1}\\
+        {1}
+    \end{ytableau}
+    \quad\quad \quad\quad
+    \begin{ytableau}
+        {3} & {2}\\
+        {2}&{1}
+    \end{ytableau}
+     \quad\quad \quad\quad\quad
+    \begin{ytableau}
+        {4} & {1}\\
+        {2}\\
+        {1}
+    \end{ytableau}
+    \quad\quad \quad\quad
+    \begin{ytableau}
+        {4} \\
+        {3}\\
+        {2}\\
+        {1}
+    \end{ytableau}
+    \\
+    &\quad\frac{4!}{4!}=1,\quad \quad\quad\frac{4!}{4\cdot 2\cdot 1\cdot 1}=3,\quad\frac{4!}{3\cdot 2\cdot 2\cdot 1}=2,\quad\frac{4!}{4\cdot 1\cdot 2\cdot 1}=3,\quad\frac{4!}{4!}=1,
+\end{align}
+where the numbers inside denotes the hook-length of that box \cite{https://arxiv.org/pdf/1112.0687}. 
+Now if we instead of finite groups consider the continuos groups $SU(N)$ the Young tableaux will prove to still be useful for finding the irreps of a specific group, we will come back to this after considering Lie groups. 
+
+
+\subsection{Lie groups}
+
+\subsubsection{Non-abelian group representations}
+%   https://web.physics.ucsb.edu/%7Emark/ms-qft-DRAFT.pdf + chapter 15.4 peskin
+Lie groups are continuously generated groups, where continuously indicates that using infinitesimal elements of the group a general element can be reached. This also requires, that the group elements are arbitrarily close to the identity. An infinitesimal element can be written 
+\begin{equation}
+    g(\alpha)=1+i\alpha^aT^a + \mathcal{O}^a\;,
+\end{equation}
+where $T^a$ is the generators of the group and $\alpha^a$ is the infinitesimal group parameters. The generators span the space of the infinitesimal group transformations and they obey the commutation relation
+\begin{equation}
+    [T^a,T^b]=if^{abc}T^c
+\end{equation}
+which is a linear combination of generators. The vector space spanned by the generators are called the Lie algebra \cite{Peskin:1995ev}. The structure constants $f^{abc}$ obey the Jacobi identity
+\begin{equation}
+    f^{ade}f^{bcd}+f^{bde}f^{cad}+f^{cde}f^{abd}=0\;.
+\end{equation}
+\comment{der skal skrives noget mere forklarende her, kap 70 og 15.4 i peskin skal bare ind her}
+Two useful characteristics of representations are the quadratic Casimir operator $C_2(R)$ and the Dynkin index $T(R)$ \cite{srednicki2006qft}. The Dynkin index is defined 
+\begin{equation}
+    \tr{T^a_R T^b_R}=T(R)\delta^{ab}\;.
+\end{equation}
+\comment{mere mat}
+\begin{equation}
+    \tr{T^a_R T^b_R}=\frac{1}{2}\delta^{ab}\;.
+    \label{eq: Dynkin index fund. rep}
+\end{equation}
+\comment{mere mat}
+If we now consider anti-commutator relations we have another invariant symbol 
+\begin{equation}
+    A(R)d^{abc}\equiv \frac 12 \tr{T^a_R\{T^b_R,T^c_R\}}\;,
+\end{equation}
+with $A(R)$ being the anomaly coefficient \cite{srednicki2006qft}. Using the cyclic property of the trace and that $(T^a_R)^i_{\;j}=-(T^a_{\bar R})_j^{\;i}$, we have
+\begin{equation}
+    A(R)=-A(\bar R)\;.
+    \label{eq:anomaly coefficient}
+\end{equation}
+For real or pseudoreal representation the anomaly coefficient is thus $A(R)=0$. 
+\subsubsection{SU(2)}
+
+\subsection{Roots}
+
+\subsection{Dynkin Diagrams}
+
+\subsection{Young tableaux for SU(N)}
+As mentioned in Section \ref{sec:youngtab} the Young tableau approach can be generalized to be used to find irreps of a Lie Algebra. This is done by considering the highest weight vector, $\Lambda$ \cite{Georgi1999}. This weight vector is defined from the fundamental weights $\{\eta^k\}^r_{k=1}$, which is related to the root space basis vectors \footnote{The vector-space basis of the root space is written in terms of the simple roots $\{\alpha_i\}^r_{i=1}$. This root space comes from the subalgebra of a Lie algebra: The Cartan subalgebra. This vector-space basis together with the alternative basis $\{\eta^k\}^r_{k=1}$, showing that the fundamental weights are dual with the simple roots \cite{YoungTableaux}.}
+\begin{align}
+    \Lambda\equiv m_1\eta^1 +...+m_r\eta^r\;,
+\end{align} 
+where $(m_1,..,m_r)$ are the Dynkin integers. These integers is what we use to distinct from different irreps. Each irrep will have its own distinct values of $(m_1,..,m_r)$, where the Dynkin integers must be non-negative. To understand the irreps of a certain Lie Algebra, we can now use Young tableaux, to determine the dimensions of these irreps and the decomposition of a direct product of two irreps. We can do this by considering the value of the $m_j$'s as the number of columns of length $j$. For one single box $\begin{ytableau}{} \end{ytableau}$ we will have $m_1=1$ and $m_2,...,m_r=0$. This can also be written as $(1,0,0,...,0)$. For $(0,2,0,0,...,0)$ we would have two columns of two boxes each
+\begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    \begin{ytableau}
+        {} & {}\\ {}&{}
+    \end{ytableau}
+\end{align}
+
+The number of rows is restricted by the group
+\begin{align}
+    \text{\# of boxes} =\sum^r_{j=1}j m_j\;,
+\end{align}
+for $SU(N)$, $r=N-1$, this means that for $SU(4)$ e.g. the maximum number of boxes will be 3 in each column for non-trivial representations. This is because a column of $n$ boxes would correspond to the determinant representation which is simply 1 \cite{YoungTableaux}. $SU(N)$ has two invariant tensors $\delta^k_l$ and $e^{abc...n}$, this is different from other Lie algebras, and therefore the Young tableaux scheme is mostly used for $SU(N)$ \cite{YoungTableaux}. The rows describe symmetric indices, and the columns describe the antisymmetric indices.   
+
+Now to compute the dimensions of the irrep, the hook length $h_{ij}$ is used \cite{YoungTableaux}
+\begin{align}
+    \dim(\Lambda)=\prod_{i,j\in \Lambda}\frac{N+j-i}{h_ij}\;,
+\end{align}
+where $j$ denotes column and $i$ denotes row. Using this formula, we consider an example, let us focus on the Young tableau $(1,1,0,0,...,0)$
+\begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    \dim\left(\begin{ytableau}
+        {} & {}\\ {}
+    \end{ytableau}\right)=\begin{ytableau}
+        {N} & {M}\\ {P}
+    \end{ytableau}\; \text{ divided by } \;\begin{ytableau}
+        {3} & {1}\\ {1}
+    \end{ytableau}=\frac{1}{3}N(N^2-1)\;,
+\end{align}
+where $M=N+2-1=N+1$ and $P=N+1-2=N-1$. Now that we can compute the dimensions of a specific irrep from the Young tableau, the next step is to use the Young tableaux to compute direct products. Understanding how to decompose two or more representations into a direct sum of irreps, is best shown by an example. Let us consider the direct product of two $(0,0,1,0,...,0)$
+\begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    \begin{ytableau}
+        {} \\ {}\\{}
+    \end{ytableau}
+    \otimes \begin{ytableau}
+        {a} &{a}\\ {b}
+    \end{ytableau}\;,
+\end{align}    
+the first step is to write up the two Young tableaux for the representations in the direct product. In the second Young tableau one writes a new letter in each row, so $a,b$ in the first two, in the third row $c$, and so on. For a row with multiple boxes, all boxes in the row gets the same letter. Next, the first box (the box furthest to the top and to the right) is attached to the three boxes of the first tableau, in all possible combinations
+ \begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    \begin{ytableau}
+        {} \\ {}\\{}
+    \end{ytableau}
+    \otimes \begin{ytableau}
+        {a} &{a}\\ {b}
+    \end{ytableau}=\left(
+        \begin{ytableau}
+        {} &{a}\\ {}\\ {}
+        \end{ytableau}\oplus 
+        \begin{ytableau}
+        {} \\ {}\\ {}\\{a}
+        \end{ytableau} 
+    \right)
+    \otimes \begin{ytableau}
+        {a}\\ {b}
+    \end{ytableau}\;.
+\end{align} 
+After this the next box can be attached,
+ \begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    \begin{ytableau}
+        {} \\ {}\\{}
+    \end{ytableau}
+    \otimes \begin{ytableau}
+        {a} &{a}\\ {b}
+    \end{ytableau}=\left(
+        \begin{ytableau}
+        {} &{a}&{a}\\ {}\\ {}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}\\ {}\\ {}\\{a}
+        \end{ytableau}\oplus  
+        \begin{ytableau}
+        {} &{a}\\ {}\\ {}\\{a}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} \\ {}\\ {}\\{a}\\{a}
+        \end{ytableau} 
+    \right)
+    \otimes \begin{ytableau}
+        {b}
+    \end{ytableau}\;.
+\end{align} 
+however not all of these tableaux is allowed. Having the same letter in the same column is prohibited, thus rendering the last tableau wrong. The two middle tableaux is identical \footnote{This is where the notation of $a,b$ is important. If two tableaux have the same shape, but different letters in different boxes. They would both be kept. }, and we will only keep one, thus the expression reduces to
+ \begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    \begin{ytableau}
+        {} \\ {}\\{}
+    \end{ytableau}
+    \otimes \begin{ytableau}
+        {a} &{a}\\ {b}
+    \end{ytableau}=\left(
+        \begin{ytableau}
+        {} &{a}&{a}\\ {}\\ {}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}\\ {}\\ {}\\{a}
+        \end{ytableau}
+    \right)
+    \otimes \begin{ytableau}
+        {b}
+    \end{ytableau}\;.
+\end{align}
+Continuing, with the last box
+ \begin{align}
+    \ytableausetup{boxsize=0.5cm}
+    \begin{ytableau}
+        {} \\ {}\\{}
+    \end{ytableau}
+    \otimes \begin{ytableau}
+        {a} &{a}\\ {b}
+    \end{ytableau}=
+        \begin{ytableau}
+        {} &{a}&{a}&{b}\\ {}\\ {}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}&{a}\\ {}&{b}\\ {}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}&{a}\\ {}\\ {}\\{b}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}&{b}\\ {}\\ {}\\{a}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}\\ {}&{b}\\ {}\\{a}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}\\ {}\\ {}\\{a}\\{b}
+      \end{ytableau}\;,
+\end{align}
+once again not all diagrams are allowed. The additional rule is that, when adding a box, one needs to make sure that from the right, the letter from a higher row number is not proceed that of a lower row number. So in this case of $a$'s and $b$'s, we need to count the number of boxes with each letter, staring from the first row at the right, moving to the left and doing the same in the following rows. If at any point in this counting, there are more $b$'s than $a$'a, the tableau should be removed. This is the same for more $c$'s than $b$'s and so on. This also means that the first and the fourth tableau should be deleted  
+\begin{align}
+\begin{ytableau}
+        {} \\ {}\\{}
+    \end{ytableau}
+    \otimes \begin{ytableau}
+        {a} &{a}\\ {b}
+    \end{ytableau}=
+    \ytableausetup{boxsize=0.5cm}
+        \begin{ytableau}
+        {} &{a}&{a}\\ {}&{b}\\ {}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}&{a}\\ {}\\ {}\\{b}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}\\ {}&{b}\\ {}\\{a}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{a}\\ {}\\ {}\\{a}\\{b}
+      \end{ytableau}\;,
+\end{align}
+one continues attaching the boxes of the second tableau in the direct product onto the first, until none remains. Thus, in this example we end up with four irreps, and to check that the dimensions fit, we can calculate the dimensions of the irreps. To do this, we need to assume a group, let us tak $SU(5)$. This also, changes on of the diagrams. As mentioned previously the maximum length of a column should be $N-1$. Thus, the last diagrams first column would be invariant under $SU(5)$, and we therefore delete it 
+\begin{align}
+\begin{ytableau}
+        {} \\ {}\\{}
+    \end{ytableau}
+    \otimes \begin{ytableau}
+        {} &{}\\ {}
+    \end{ytableau}=
+    \ytableausetup{boxsize=0.5cm}
+        \begin{ytableau}
+        {} &{}&{}\\ {}&{}\\ {}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{}&{}\\ {}\\ {}\\{}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} &{}\\ {}&{}\\ {}\\{}
+        \end{ytableau}\oplus
+        \begin{ytableau}
+        {} 
+      \end{ytableau}\;,
+\end{align}
+with the dimensions
+\begin{align}
+    10 \times 40 = 280+70 + 45+5 \;,
+\end{align} 
+where on both sides the dimension is equal to $400$, thus it is consitent. Using the Dynkin integer notation the direct product can be written as
+\begin{align}
+    (0,0,1) \otimes (1,2) = (1,1,1)\oplus (2,0,0,1) \oplus (0,1,0,1)\oplus (1) \;.
+\end{align} 
+This method is useful within physics, because it is a systematic way to decompose direct products of representations. This is especially useful GUTs, where it is needed to decompose large representations of groups such as $SU(5)$ or $SO(10)$ into the representations of the Standard Model.
+\subsection{(Caswell-) Banks-Zaks fixed point:} It is worth nothing what happens to the $\beta$ function at two-loop order 
+\begin{align}
+    \beta_{\text{2-loop}}(g) &= b_0 g^3 + {b_1 g^5}
+\end{align}
+where $b_0={\frac{1}{(4\pi)^2} \left(\frac{11}{3}N_c - \frac{2}{3}n_f\right)}$ and $b_1$ follows from two-loop order calculations.
+The fixed points are
+\begin{align*}
+    g^* = 0 \ , \quad \sqrt{\frac{b_0}{b_1}}
+\end{align*}
+where the first is the gaussian and the second is the so-called \textit{Banks-Zaks} fixed point. 
+We know for $\frac{11}{2}N_c > n_f$ we have asymptotic freedom and $b_0 < 0$. For $\frac{b_0}{b_1} > 0$ we need $b_1 < 0$.
+\begin{align*}
+    b_1 = 0 \implies n_f &= 2 \frac{34 N_c^2}{3 \cdot \left( 2 \frac{N_c^2 - 1}{N_c} + \frac{20}{3} N_c \right)} \\
+    &= 2 \frac{34 N_c^2}{\frac{6N_c^2 - 6 + 20N_c^2}{N_c}} \\
+    &= \frac{34 N_c^3}{13 N_c^2 - 3}
+\end{align*}
+
+\noindent So it's needed for $\frac{34 N_c^3}{13 N_c^2 - 3} < n_f < \frac{11}{2}N_c$. 
+
+\vspace{1em}
+\noindent If $n_f$ is in this interval it will have a non-trivial infrared fixed point the Banks-Zaks. So it gives a bound as well on the number of fermions an $SU(N)$ can have without having an IR fix point and thus have confinement because the coupling blows up in the IR. 
+
+\vspace{1em}
+\noindent However, if $n_f$ is in the interval things changes in the IR $\rightarrow$ now we no longer have confinement but a constant value at large lengths. This also results in no spontaneous breaking of chiral symmetry.

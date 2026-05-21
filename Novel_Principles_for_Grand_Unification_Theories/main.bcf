@@ -168,7 +168,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortlocale</bcf:key>
-      <bcf:value>english</bcf:value>
+      <bcf:value>british</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
@@ -643,6 +643,7 @@
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
     <bcf:option datatype="boolean">subentry</bcf:option>
+    <bcf:option datatype="boolean">subentrycomp</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
@@ -725,6 +726,7 @@
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
     <bcf:option datatype="boolean">subentry</bcf:option>
+    <bcf:option datatype="boolean">subentrycomp</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="xml">labelalphatemplate</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
@@ -814,6 +816,7 @@
     <bcf:option datatype="boolean" backendout="1">eprint</bcf:option>
     <bcf:option datatype="boolean" backendout="1">related</bcf:option>
     <bcf:option datatype="boolean" backendout="1">subentry</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">subentrycomp</bcf:option>
     <bcf:option datatype="boolean" backendout="1">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer" backendin="maxcitenames,maxbibnames,maxsortnames">maxnames</bcf:option>
     <bcf:option datatype="integer" backendin="mincitenames,minbibnames,minsortnames">minnames</bcf:option>
@@ -2372,25 +2375,290 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">reflist.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">Peskin:1995ev</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">Georgi1999</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">missing source</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">Peskin:1995ev</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">srednicki2006qft</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">srednicki2006qft</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">Peskin:1995ev</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">zee</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Peskin:1995ev</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Peskin:1995ev</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">zee</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">for dummies</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">zee</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Peskin:1995ev</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">M_lgaard_2017</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Peskin:1995ev</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Peskin:1995ev</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Peskin:1995ev</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">M_lgaard_2017</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">Thomsen:2021ncy</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">Staub:2008uz</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Sartore:2020gou</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Cacciapaglia:2026pwh</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Glashow:1961tr</bcf:citekey>
+    <bcf:citekey order="5" intorder="2">Weinberg:1967tq</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Fan:2022eto</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">SLAC-SP-017:1974ind</bcf:citekey>
+    <bcf:citekey order="7" intorder="2">E598:1974sol</bcf:citekey>
+    <bcf:citekey order="7" intorder="3">PLUTO:1978jrw</bcf:citekey>
+    <bcf:citekey order="7" intorder="4">CDF:1995wbb</bcf:citekey>
+    <bcf:citekey order="7" intorder="5">D0:1995jca</bcf:citekey>
+    <bcf:citekey order="7" intorder="6">UA1:1983mne</bcf:citekey>
+    <bcf:citekey order="7" intorder="7">UA1:1983crd</bcf:citekey>
+    <bcf:citekey order="7" intorder="8">UA2:1983mlz</bcf:citekey>
+    <bcf:citekey order="7" intorder="9">UA2:1983tsx</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Higgs:1964ia</bcf:citekey>
+    <bcf:citekey order="8" intorder="2">Higgs:1966ev</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">ATLAS:2012yve</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Gross:1973id</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Georgi:1974yf</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">Fritzsch:1974nn</bcf:citekey>
+    <bcf:citekey order="11" intorder="3">Pati:1974yy</bcf:citekey>
+    <bcf:citekey order="11" intorder="4">Bai:2021tgl</bcf:citekey>
+    <bcf:citekey order="11" intorder="5">Langacker:1980js</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Cacciapaglia:2025nff</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Cheng:1973nv</bcf:citekey>
+    <bcf:citekey order="13" intorder="2">Gross:1973ju</bcf:citekey>
+    <bcf:citekey order="13" intorder="3">Holdom_2015</bcf:citekey>
+    <bcf:citekey order="13" intorder="4">Giudice:2014tma</bcf:citekey>
+    <bcf:citekey order="13" intorder="5">Pica:2016krb</bcf:citekey>
+    <bcf:citekey order="13" intorder="6">Callaway:1988ya</bcf:citekey>
+    <bcf:citekey order="13" intorder="7">Hansen:2017pwe</bcf:citekey>
+    <bcf:citekey order="13" intorder="8">Zimmermann:1984sx</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Giudice:2014tma</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Georgi:1974sy</bcf:citekey>
+    <bcf:citekey order="15" intorder="2">Georgi:1974yf</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Bars:1981se</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Appelquist:2000qg</bcf:citekey>
+    <bcf:citekey order="17" intorder="2">Bolognesi:2020mpe</bcf:citekey>
+    <bcf:citekey order="17" intorder="3">Csaki:2021xhi</bcf:citekey>
+    <bcf:citekey order="17" intorder="4">Bolognesi:2021yni</bcf:citekey>
+    <bcf:citekey order="17" intorder="5">Bolognesi:2021hmg</bcf:citekey>
+    <bcf:citekey order="17" intorder="6">Bai:2021tgl</bcf:citekey>
+    <bcf:citekey order="17" intorder="7">Bolognesi:2023xxv</bcf:citekey>
+    <bcf:citekey order="17" intorder="8">Li:2025tvu</bcf:citekey>
+    <bcf:citekey order="17" intorder="9">Li:2026ayh</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Molgaard:2016bqf</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Georgi:1974yf</bcf:citekey>
+    <bcf:citekey order="19" intorder="2">Li:1973mq</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">Callan:1970yg</bcf:citekey>
+    <bcf:citekey order="20" intorder="2">Symanzik:1970rt</bcf:citekey>
+    <bcf:citekey order="20" intorder="3">Symanzik:1971vw</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Gell-Mann:1954yli</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Wilson:1983xri</bcf:citekey>
+    <bcf:citekey order="22" intorder="2">Wilson:1974mb</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Pauli:1949zm</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">tHooft:1972tcz</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">Lancaster:2014</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Lancaster:2014</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Callan:1970yg</bcf:citekey>
+    <bcf:citekey order="31" intorder="2">Symanzik:1970rt</bcf:citekey>
+    <bcf:citekey order="31" intorder="3">Symanzik:1971vw</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Srednicki2007</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Srednicki2007</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">tHooft:1972tcz</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">Gross:1973ju</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">Landau:1954nau</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">Weinberg:1980gg</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">Gross:1973id</bcf:citekey>
+    <bcf:citekey order="51" intorder="2">Politzer:1973fx</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">Lancaster:2014</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">Zee:2010</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">Politzer:1973fx</bcf:citekey>
+    <bcf:citekey order="54" intorder="2">Gross:1973id</bcf:citekey>
+    <bcf:citekey order="54" intorder="3">Weinberg:1973un</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">Glashow:1961tr</bcf:citekey>
+    <bcf:citekey order="55" intorder="2">Salam:1964ry</bcf:citekey>
+    <bcf:citekey order="55" intorder="3">Weinberg:1967tq</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">Pich:2007vu</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">Yang:1954ek</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">Englert:1964et</bcf:citekey>
+    <bcf:citekey order="61" intorder="2">Higgs:1964pj</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">Glashow:1961tr</bcf:citekey>
+    <bcf:citekey order="62" intorder="2">Weinberg:1967tq</bcf:citekey>
+    <bcf:citekey order="62" intorder="3">Salam:1964ry</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">Englert:1964et</bcf:citekey>
+    <bcf:citekey order="63" intorder="2">Higgs:1964pj</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">ATLAS:2012yve</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">CMS:2012qbp</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">Gell-Mann:1956iqa</bcf:citekey>
+    <bcf:citekey order="70" intorder="2">Nishijima:1955gxk</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">Goldstone:1961eq</bcf:citekey>
+    <bcf:citekey order="71" intorder="2">Goldstone:1962es</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">Cabibbo:1963yz</bcf:citekey>
+    <bcf:citekey order="78" intorder="2">Kobayashi:1973fv</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">Christenson:1964fg</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">Cabibbo:1963yz</bcf:citekey>
+    <bcf:citekey order="82" intorder="2">Kobayashi:1973fv</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">Pontecorvo:1967fh</bcf:citekey>
+    <bcf:citekey order="86" intorder="1">WMAP:2012fli</bcf:citekey>
+    <bcf:citekey order="86" intorder="2">Planck:2018vyg</bcf:citekey>
+    <bcf:citekey order="87" intorder="1">Zwicky:1933gu</bcf:citekey>
+    <bcf:citekey order="87" intorder="2">Rubin:1970zza</bcf:citekey>
+    <bcf:citekey order="87" intorder="3">Clowe:2006eq</bcf:citekey>
+    <bcf:citekey order="88" intorder="1">Planck:2018vyg</bcf:citekey>
+    <bcf:citekey order="89" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="90" intorder="1">Sakharov:1967dj</bcf:citekey>
+    <bcf:citekey order="91" intorder="1">Kuzmin:1985mm</bcf:citekey>
+    <bcf:citekey order="92" intorder="1">Gavela:1993ts</bcf:citekey>
+    <bcf:citekey order="93" intorder="1">Kajantie:1996mn</bcf:citekey>
+    <bcf:citekey order="94" intorder="1">Bilal:2008qx</bcf:citekey>
+    <bcf:citekey order="95" intorder="1">Zee:2010</bcf:citekey>
+    <bcf:citekey order="96" intorder="1">Bilal:2008qx</bcf:citekey>
+    <bcf:citekey order="97" intorder="1">Adler:1969gk</bcf:citekey>
+    <bcf:citekey order="97" intorder="2">Bell:1969ts</bcf:citekey>
+    <bcf:citekey order="97" intorder="3">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">Feruglio:2015jfa</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">ATLAS:2012yve</bcf:citekey>
+    <bcf:citekey order="99" intorder="2">CMS:2012qbp</bcf:citekey>
+    <bcf:citekey order="100" intorder="1">Gaillard:1998ui</bcf:citekey>
+    <bcf:citekey order="101" intorder="1">Susskind:1978ms</bcf:citekey>
+    <bcf:citekey order="101" intorder="2">Vieira:2012ex</bcf:citekey>
+    <bcf:citekey order="102" intorder="1">tHooft:1976rip</bcf:citekey>
+    <bcf:citekey order="102" intorder="2">tHooft:1976snw</bcf:citekey>
+    <bcf:citekey order="102" intorder="3">Wilczek:1977pj</bcf:citekey>
+    <bcf:citekey order="103" intorder="1">Sannino:2026wgx</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">Abel:2020pzs</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">Peccei:1977hh</bcf:citekey>
+    <bcf:citekey order="105" intorder="2">Peccei:1977ur</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">Preskill:1982cy</bcf:citekey>
+    <bcf:citekey order="106" intorder="2">Abbott:1982af</bcf:citekey>
+    <bcf:citekey order="106" intorder="3">Dine:1982ah</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">ParticleDataGroup:2024cfk</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="109" intorder="1">Langacker:1994vf</bcf:citekey>
+    <bcf:citekey order="110" intorder="1">Georgi:1974yf</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">ParticleDataGroup:2024cfk</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="113" intorder="1">Langacker:1994vf</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">Croon:2019kpe</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">Georgi:1974yf</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">Pernow:2021fvb</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">Croon:2019kpe</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">Croon:2019kpe</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">FileviezPerez:2007bcw</bcf:citekey>
+    <bcf:citekey order="128" intorder="2">Zee:1980ai</bcf:citekey>
+    <bcf:citekey order="128" intorder="3">FileviezPerez:2016sal</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">Croon:2019kpe</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">Takenaka:2020cmb</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">Dorsner:2005fq</bcf:citekey>
+    <bcf:citekey order="131" intorder="2">Dorsner:2006dj</bcf:citekey>
+    <bcf:citekey order="131" intorder="3">Fornal:2017xcj</bcf:citekey>
+    <bcf:citekey order="131" intorder="4">FileviezPerez:2018dyf</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">Fritzsch:1974nn</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">Gursey:1975ki</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">Witten:1985xc</bcf:citekey>
+    <bcf:citekey order="135" intorder="2">Candelas:1985en</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">Langacker:2008yv</bcf:citekey>
+    <bcf:citekey order="137" intorder="1">Pati:1974yy</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">Barr:1981qv</bcf:citekey>
+    <bcf:citekey order="138" intorder="2">DeRujula:1980qc</bcf:citekey>
+    <bcf:citekey order="139" intorder="1">Croon:2019kpe</bcf:citekey>
+    <bcf:citekey order="140" intorder="1">Achiman:1978rv</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">Dimopoulos:1981zb</bcf:citekey>
+    <bcf:citekey order="142" intorder="1">Giudice:2014tma</bcf:citekey>
+    <bcf:citekey order="142" intorder="2">Pica:2016krb</bcf:citekey>
+    <bcf:citekey order="143" intorder="1">Giudice:2014tma</bcf:citekey>
+    <bcf:citekey order="143" intorder="2">Pica:2016krb</bcf:citekey>
+    <bcf:citekey order="144" intorder="1">Giudice:2014tma</bcf:citekey>
+    <bcf:citekey order="144" intorder="2">Pica:2016krb</bcf:citekey>
+    <bcf:citekey order="145" intorder="1">Politzer:1974fr</bcf:citekey>
+    <bcf:citekey order="146" intorder="1">Pendleton:1980as</bcf:citekey>
+    <bcf:citekey order="147" intorder="1">Giudice:2014tma</bcf:citekey>
+    <bcf:citekey order="148" intorder="1">Pica:2016krb</bcf:citekey>
+    <bcf:citekey order="149" intorder="1">Giudice:2014tma</bcf:citekey>
+    <bcf:citekey order="150" intorder="1">Zimmermann:1984sx</bcf:citekey>
+    <bcf:citekey order="151" intorder="1">Rees1922</bcf:citekey>
+    <bcf:citekey order="152" intorder="1">Wang2004</bcf:citekey>
+    <bcf:citekey order="153" intorder="1">Georgi:1974yf</bcf:citekey>
+    <bcf:citekey order="154" intorder="1">Bars:1981se</bcf:citekey>
+    <bcf:citekey order="155" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="156" intorder="1">tong</bcf:citekey>
+    <bcf:citekey order="157" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="158" intorder="1">Adler:1969gk</bcf:citekey>
+    <bcf:citekey order="158" intorder="2">Bell:1969ts</bcf:citekey>
+    <bcf:citekey order="159" intorder="1">Georgi:1974yf</bcf:citekey>
+    <bcf:citekey order="160" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="161" intorder="1">Lancaster:2014</bcf:citekey>
+    <bcf:citekey order="162" intorder="1">Gross:1973ju</bcf:citekey>
+    <bcf:citekey order="163" intorder="1">Bars:1981se</bcf:citekey>
+    <bcf:citekey order="164" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="165" intorder="1">Thomsen:2021ncy</bcf:citekey>
+    <bcf:citekey order="166" intorder="1">Georgi:1974yf</bcf:citekey>
+    <bcf:citekey order="167" intorder="1">Georgi:1974yf</bcf:citekey>
+    <bcf:citekey order="167" intorder="2">Li:1973mq</bcf:citekey>
+    <bcf:citekey order="168" intorder="1">Giudice:2014tma</bcf:citekey>
+    <bcf:citekey order="169" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="170" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="171" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="172" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="173" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="174" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="175" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="176" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="177" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="178" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="179" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="180" intorder="1">YoungTableaux</bcf:citekey>
+    <bcf:citekey order="181" intorder="1">westrich2011young</bcf:citekey>
+    <bcf:citekey order="182" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="183" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="184" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="185" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="186" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="187" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="188" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="189" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="190" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="191" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="192" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="193" intorder="1">srednicki2006qft</bcf:citekey>
+    <bcf:citekey order="194" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="195" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="196" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="197" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="198" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="199" intorder="1">Peskin:1995ev</bcf:citekey>
+    <bcf:citekey order="200" intorder="1">srednicki2006qft</bcf:citekey>
+    <bcf:citekey order="201" intorder="1">Georgi:1999wka</bcf:citekey>
+    <bcf:citekey order="202" intorder="1">YoungTableaux</bcf:citekey>
+    <bcf:citekey order="203" intorder="1">YoungTableaux</bcf:citekey>
+    <bcf:citekey order="204" intorder="1">YoungTableaux</bcf:citekey>
+    <bcf:citekey order="205" intorder="1">YoungTableaux</bcf:citekey>
+    <bcf:citekey order="206" intorder="1">YoungTableaux</bcf:citekey>
+    <bcf:citekey order="207" intorder="1">YoungTableaux</bcf:citekey>
+    <bcf:citekey order="208" intorder="1">YoungTableaux</bcf:citekey>
+    <bcf:citekey order="209" intorder="1">YoungTableaux</bcf:citekey>
+    <bcf:citekey order="210" intorder="1">Gellert1977</bcf:citekey>
+    <bcf:citekey order="211" intorder="1">Hansen:2017pwe</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
@@ -2402,4 +2670,14 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>

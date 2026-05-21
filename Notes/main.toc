@@ -1,0 +1,35 @@
+\contentsline {chapter}{\numberline {1}Physics theory}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Effective potential}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Calculation of the effective potential}{7}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Infinite heat order}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Calculations for new paper}{7}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}The renormalisation group}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}The Callan-Symanzik Equation}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}The beta function and anomalous dimensions}{7}{subsection.1.3.2}%
+\contentsline {subsubsection}{An example: Non-Abelian Lagrangian}{7}{section*.6}%
+\contentsline {subsection}{\numberline {1.3.3}Fixed point analysis}{7}{subsection.1.3.3}%
+\contentsline {subsubsection}{Banks-Zacks fixed point}{7}{section*.7}%
+\contentsline {section}{\numberline {1.4}GUTs}{8}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Standard Model}{8}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Why GUTs}{8}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}SU(5)}{8}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}SO(10)}{8}{subsection.1.4.4}%
+\contentsline {section}{\numberline {1.5}CAF analysis}{8}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Chiral theories}{13}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Chiral models with scalars}{15}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}GG-model with p=0}{15}{subsection.1.7.1}%
+\contentsline {subsubsection}{Beta functions of the Lagrangian}{18}{section*.9}%
+\contentsline {subsection}{\numberline {1.7.2}BY-model with p=0}{19}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}CAF analysis of the GG and BY model with $p=0$}{20}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}GG and BY models with $p\neq 0$}{20}{subsection.1.7.4}%
+\contentsline {subsection}{\numberline {1.7.5}GG and BY models with Ng chiral families}{24}{subsection.1.7.5}%
+\contentsline {section}{\numberline {1.8}Chiral models with scalars}{24}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}GG-model with p=0}{25}{subsection.1.8.1}%
+\contentsline {subsubsection}{Beta functions of the Lagrangian}{26}{section*.15}%
+\contentsline {subsection}{\numberline {1.8.2}BY-model with p=0}{27}{subsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.8.3}Beta functions}{28}{subsection.1.8.3}%
+\contentsline {subsection}{\numberline {1.8.4}GG and BY models with $p\neq 0$}{29}{subsection.1.8.4}%
+\contentsline {subsection}{\numberline {1.8.5}GG and BY models, new scalar representation, with $p\neq 0$}{30}{subsection.1.8.5}%
+\contentsline {section}{\numberline {1.9}Infinite heat order}{30}{section.1.9}%
+\contentsline {section}{\numberline {1.10} The 1-loop RG equations}{32}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1} $SU(N_{c_1}) \times SU(N_{c_2})$ with two scalar fundamentals}{32}{subsection.1.10.1}%

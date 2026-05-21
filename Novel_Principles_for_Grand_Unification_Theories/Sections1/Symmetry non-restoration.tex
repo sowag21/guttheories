@@ -1,0 +1,192 @@
+
+\section{Infinite heat order}
+Before diving into the analysis of models with symmetry non-restoration at finite $N$, we first review the results of our previous paper \cite{Bajc:2021}. This work provided a much-needed UV completion for models of symmetry non-restoration, which historical models such as Weinberg's \cite{Weinberg:1974hy} lacked. To understand this mechanism, let us briefly review Weinberg's foundational setup. This model features two scalars and has a quartic potential with a cross-coupling term that preserves a discrete $\mathrm{Z}_2\times\mathrm{Z}_2$ symmetry:
+\begin{equation}
+    V=\frac{\lambda_1}{4}\phi^4_1+\frac{\lambda_2}{4}\phi_2^4-\frac{\lambda}{2}\phi_1^2\phi_2^2\;. \label{eq:VfromWeinberg}
+\end{equation}
+For the model to be viable, the potential has to be bounded from below, imposing constraints on the couplings
+\begin{align}
+    \lambda_{1,2}>0\quad,\quad \lambda^2<\lambda_1\lambda_2\,.
+\end{align}
+At high temperatures, the potential acquires a leading-order thermal correction
+\begin{equation}
+    \Delta V_T= \frac{T^2}{24}((3\lambda_1-\lambda)\phi_1^2 +(3\lambda_2-\lambda)\phi^2_2)\;,
+\end{equation}
+which for $\lambda>3\lambda_2$ will ensure that $\phi_2$ acquires a negative thermal mass, resulting in a non-zero VEV at high temperatures. However, as mentioned above, this model is not UV complete, since the required large cross-coupling increases with the energy scale, eventually reaching a Landau pole before the UV. 
+
+In our previous work, we expanded this framework to UV-complete models. We can split the models considered into two main categories: asymptotically free or safe. In this paper, we focus on the models which are asymptotically free. Two branches of scalar models were considered. The first considers two singlet scalars coupled through fermions in the fundamental representation of $\mathrm{SU}(N_c)$ while also introducing a separate set of fermions that interact with the gauge fields but remain inert to the scalars (no Yukawa couplings) to provide additional freedom in the RGEs. This model was also generalised to a real scalar vector field $\phi$ with $d_\phi$ components. Both models were analysed near the UV, with a fixed-flow assumption, ensuring complete asymptotic freedom of all couplings and that they all scale as $1/t$ in the UV, where $t=\log(\mu/\mu_0)$ is the RG time. None of these models supported symmetry non-restoration at high energies. The models failed when requiring all the couplings to be on fixed flow, i.e.\ they could not both support complete asymptotic freedom and symmetry non-restoration. Therefore, we turned to a different set of asymptotically free models. 
+
+In the second set of models, we extended the framework to include gauged scalars, meaning that the scalars were no longer singlets under the gauge group. First, models with one gauge group $ \mathrm{SU}(N_{c})$ were explored. This again resulted in symmetry restoration at high temperatures due to the high symmetry of the models, both for two and $N_s$ fundamental scalars. The result, however, changed when considering a product of two simple gauge groups $\mathrm{SU}(N_{c_1})\times\mathrm{SU}(N_{c_2})$. This model thus achieved enough mathematical freedom to satisfy both the fixed flow conditions and the negative thermal mass condition, resulting in symmetry non-restoration at high energies. 
+
+Let us elaborate on this specific model. Each scalar $\varphi_i$ will be in the fundamental representation under its respective gauge group $\mathrm{SU}(N_{c_i})$ and a singlet under the other. The potential takes the form
+\begin{align}
+    V=\frac{\lambda_1}{2}\left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)^2+\frac{\lambda_2}{2}\left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)^2-
+\lambda\left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)\left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)\;,
+\end{align}
+which is similar in structure to that of Weinberg's model \eqref{eq:VfromWeinberg} and includes the cross-coupling term between the two sectors, a crucial requirement for generating a negative mass squared.
+
+To verify the presence of symmetry non-restoration, we first considered the effective potential $\Delta V_T$ at large $N_{c_i}$. In this process, we parameterised the couplings in terms of RG time to enforce the fixed flow solution. Further, the couplings were scaled by $N_{c_i}$ to ensure stable RGEs in the Veneziano limit of $N_{c_i}\to \infty$
+\begin{align}
+    g_i^2=\frac{16\pi^2\tilde\alpha_i}{N_{ci}t}\quad,\quad \lambda_i=\frac{16\pi^2\tilde\lambda_i}{N_{ci}t}\quad,\quad\lambda=\frac{16\pi^2\tilde\lambda}{\sqrt{N_{c1}N_{c2}}t}\;,
+\end{align}
+for $i=1,2$. We further introduced the variables $\tilde\lambda_\pm=\frac{1}{2}\left(\tilde\lambda_1\pm\tilde\lambda_2\right)$, and $\tilde\alpha_\pm=\frac{1}{2}\left(\tilde\alpha_1\pm\tilde\alpha_2\right)$. Using these variables, enforcing fixed flow trajectories, the RGEs yielded the following solutions
+\begin{align}\label{eq:LO_sol}
+    \tilde\alpha_-&=0 \;,\nonumber\\
+\tilde\lambda_+&=\frac{6\tilde\alpha_+-1}{4}\;,\\
+\tilde\lambda_-^2+\tilde\lambda^2&=\frac{1}{16}\left(24\tilde\alpha_+^2-12\tilde\alpha_++1\right)\;,\nonumber
+\end{align}
+which are valid for
+\begin{align}
+    \tilde\alpha_+\geq(3+\sqrt{3})/12\;.
+\end{align}
+
+From the effective potential $\Delta V_T$, the thermal mass parameters $\mu_1^2$ and $\mu_2^2$ are extracted. We then substituted the RG solutions into the thermal mass equation. Additionally, from the requirement of $\tilde\lambda>0$, we minimised the mass parameter with respect to $|\tilde\lambda|^2$. Doing so, we obtained the minimised mass parameter for $\varphi_1$
+\begin{align}
+    \mu_1^2=\frac{12\tilde\alpha_+-1}{2}-2\sqrt{\frac{24\tilde\alpha_+^2-12\tilde\alpha_++1}{16}}
+\sqrt{1+\frac{N_{c2}}{N_{c1}}}\;.
+\end{align}
+The equation allows for a negative mass squared, because the ratio of the colours $\frac{N_{c_2}}{N_{c_1}}$ is a free parameter, it can be chosen sufficiently large such that the mass squared becomes negative. Thereby ensuring symmetry non-restoration at high temperatures. 
+
+Checking the second condition for a potential bounded from below $\lambda_1\lambda_2-\lambda^2>0$ and ensuring real fixed flow solutions, we found a constraint on the ratio of the number of fermions to colours
+\begin{align}
+    \frac{1}{2}\left(2+3\sqrt{3}\right)\leq\frac{N_{fi}}{N_{ci}}<\frac{11}{2}\;.
+\end{align}
+Ultimately, this framework successfully yields a UV-complete model where one thermal mass turns negative for a given ratio $\frac{N_{c_2}}{N_{c_1}}$. At the same time, the ratio of fermions to colours is bounded to guarantee stability, equal gauge coupling $\tilde\alpha_1=\tilde \alpha_2$ and real RG solutions. All this effectively preserves the broken symmetry at high energies. 
+
+Before moving on, note that this model also has an IR Banks-Zaks fixed circle. Previous analysis found that symmetry non-restoration could also be realised near this IR fixed point. It should also be noted that the previous work did identify more examples of negative mass squared at high energies. These examples include models featuring adjoint scalars within a similar gauge group structure $\mathrm{SU}(N_{c_1})\times\mathrm{SU}(N_{c_2})$ as well as asymptotically safe models. 
+
+However, the analytical success of the model with two scalars, respectively gauged under $\mathrm{SU}(N_{c_1})\times\mathrm{SU}(N_{c_2})$ was achieved by simplifications of the Veneziano limit. This limit decpupled and simplified the RGEs. A critically relevant question is whether this characteristic of negative thermal mass persits beyond this limit. Thus, in the next section we will focus on finding a negative thermal mass for this model in the case of finite $N$. 
+
+
+\subsection{\label{SUNc12} $SU(N_{c_1}) \times SU(N_{c_2})$  with two scalar fundamentals}
+
+The model under consideration has the gauge symmetry $SU(N_{c_1}) \times SU(N_{c_2})$, 
+where each scalar field $\varphi_i$ transforms in the fundamental 
+representation of its respective $SU(N_{c_i})$ and is a singlet under the other. 
+The most general potential is
+
+\begin{align}
+V=\frac{\lambda_1}{2}\left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)^2+\frac{\lambda_2}{2}\left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)^2-
+\lambda\left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)\left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)\;.\label{eq:pot}
+\end{align}
+
+To derive the one-loop RGEs, we follow the approach established in \cite{Bajc:2021}, which maps different components of the RGEs onto different potential terms depending on the scalar potential. Since the model contains no Yukawa couplings, we only need the contributions $V_{\Lambda^2}$, $V_{\Lambda^S}$, and $V_{A}$ (Equation (A.20), (A.23), and (A.24) in \cite{Bajc:2021}) :
+\begin{align}
+\label{machacekhiggs}
+16\pi^2\frac{d\lambda_{abcd}}{dt}=\Lambda^2_{abcd}+2\kappa\Lambda^Y_{abcd}-8\kappa H_{abcd}
+-3g^2\Lambda^S_{abcd}+3g^4A_{abcd}
+\end{align}
+\begin{align}
+    \label{VL2}
+    V_{\Lambda^2}&\equiv\Lambda^2_{abcd}\frac{\phi^a\phi^b\phi^c\phi^d}{4!}
+    =\frac{1}{2}\frac{\partial^2V}{\partial\phi^a\partial\phi^b}\frac{\partial^2V}{\partial\phi^a\partial\phi^b}\;,\\
+    \label{VLS}
+    V_{\Lambda^S}&\equiv-3g^2\Lambda^S_{abcd}\frac{\phi^a\phi^b\phi^c\phi^d}{4!}
+    =-3g^2\phi^a\left(T^A(S)T^A(S)\right)_{ae}\frac{\partial V}{\partial\phi^e}\;,\\
+    \label{VA}
+    V_A&\equiv3g^4A_{abcd}\frac{\phi^a\phi^b\phi^c\phi^d}{4!}
+    =\frac{3}{8}g^4\left(\phi^a\left\{T^A(S),T^B(S)\right\}_{ab}\phi^b\right)\left(\phi^c\left\{T^A(S),T^B(S)\right\}_{cd}\phi^d\right)\;.
+\end{align}
+For this model, the potential terms are
+\begin{align}
+    V_{\Lambda^2}&=&
+    \left(\left(2N_{c_1}+8\right)\lambda_1^2+2N_{c_2}\lambda^2\right)\frac{1}{2}
+    \left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)^2\nonumber\\
+    &&+\left(\left(2N_{c_2}+8\right)\lambda_2^2+2N_{c_1}\lambda^2\right)\frac{1}{2}
+    \left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)^2\\
+    &&-\left(2\left(N_{c_1}\lambda_1+N_{c_2}\lambda_2\right)\lambda+2\left(\lambda_1+\lambda_2\right)\lambda-4\lambda^2\right)
+    \left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)\left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)\;,\nonumber\\
+    V_{\Lambda^S}&=&
+    -6\frac{N_{c_1}^2-1}{N_{c_1}}g_1^2\left(\frac{\lambda_1}{2}\left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)^2
+    -\frac{\lambda}{2}\left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)\left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)\right)\nonumber\\
+    &&
+    -6\frac{N_{c_2}^2-1}{N_{c_2}}g_2^2\left(\frac{\lambda_2}{2}\left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)^2
+    -\frac{\lambda}{2}\left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)\left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)\right)\;,\\
+    V_{A}&=&\frac{3}{4}g_1^4\frac{N_{c_1}^3+N_{c_1}^2-4N_{c_1}+2}{N_{c_1}^2}
+    \left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)^2\nonumber\\
+    &&+\frac{3}{4}g_2^4\frac{N_{c_2}^3+N_{c_2}^2-4N_{c_2}+2}{N_{c_2}^2}
+    \left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)^2\;.
+\end{align}
+
+To ensure that all the couplings are asymptotically free, i.e., that the model exhibits complete asymptotic freedom (CAF), we parametrise the couplings with a factor $1/t$ 
+\begin{align}
+i=1,2&:&g_i^2=\frac{16\pi^2\tilde\alpha_i}{N_{c_i}t}\quad,\quad \lambda_i=\frac{16\pi^2\tilde\lambda_i}{N_{c_i}t}\quad,\quad\lambda=\frac{16\pi^2\tilde\lambda}{\sqrt{N_{c_1}N_{c_2}}t}\;.
+\end{align}
+This ensures that the couplings all vanish at the same rate in the UV, a behaviour known as fixed-flow \cite{Giudice:2015}. With this parametrisation, the RGEs reduce to a set of coupled polynomial equations. Real solutions of these algebraic equations correspond to models exhibiting CAF, as long as the gauge coupling is asymptotically free, $b_0>0$. For the model to be physical viable it must also satisfy \eqref{eq:Vbounded} such that its potential is bounded from below. 
+
+\begin{comment}
+\noindent
+Using the definition $N_{c_1} = x\,N_{c_2}$ and Equation (A.18) in \cite{Bajc:2021} the RGEs are given by 
+\begin{align}\label{eq:finiteNRG}
+-\tilde{\lambda}_1 \;=&\;
+\left(2+\frac{8}{x N_{c_2}}\right)\tilde{\lambda}_1^{\,2}
++2\,\tilde{\lambda}^{\,2}
+-6\!\left(1-\frac{1}{x^{2}N_{c_2}^{2}}\right)\tilde{\alpha}_1\tilde{\lambda}_1
+\nonumber\\&+\frac{3}{2}\tilde{\alpha}_1^{\,2}\!\left(
+1+\frac{1}{x N_{c_2}}-\frac{4}{x^{2}N_{c_2}^{2}}+\frac{2}{x^{3}N_{c_2}^{3}}
+\right),\nonumber
+\\[4pt]
+-\tilde{\lambda}_2 \;=&\;
+\left(2+\frac{8}{N_{c_2}}\right)\tilde{\lambda}_2^{\,2}
++2\,\tilde{\lambda}^{\,2}
+-6\!\left(1-\frac{1}{N_{c_2}^{2}}\right)\tilde{\alpha}_2\tilde{\lambda}_2
+\nonumber\\&+\frac{3}{2}\tilde{\alpha}_2^{\,2}\!\left(
+1+\frac{1}{N_{c_2}}-\frac{4}{N_{c_2}^{2}}+\frac{2}{N_{c_2}^{3}}
+\right),
+\\[4pt]
+-\tilde{\lambda} \;=&\;
+\tilde{\lambda}\Bigg[
+-\frac{4}{N_{c_2}\sqrt{x}}\,\tilde{\lambda}
++2\!\left(1+\frac{1}{x N_{c_2}}\right)\tilde{\lambda}_1
++2\!\left(1+\frac{1}{N_{c_2}}\right)\tilde{\lambda}_2
+\nonumber\\&-3\!\left(
+\tilde{\alpha}_1\!\left(1-\frac{1}{x^{2}N_{c_2}^{2}}\right)
++\tilde{\alpha}_2\!\left(1-\frac{1}{N_{c_2}^{2}}\right)
+\right)
+\Bigg] \ , \nonumber
+\end{align}
+\end{comment}
+\noindent
+The finite-$N$ RG equations we need to solve for this model take the form presented in eq.s \eqref{eq:finiteNRG}. Plugging in those the coupling redefinitions \eqref{eq:couplings} and solving perturbatively order by order, we have that the LO couplings must satisfy the system
+\begin{align}
+-\tilde\lambda^{(0)}_1&=&2\tilde\lambda^{(0)2}_1+2\tilde\lambda^{(0)2}-6\tilde\alpha^{(0)}_1\tilde\lambda^{(0)}_1+\frac{3}{2}\tilde\alpha_1^{(0)2}\;,\\
+-\tilde\lambda^{(0)}_2&=&2\tilde\lambda_2^{(0)2}+2\tilde\lambda^{(0)2}-6\tilde\alpha^{(0)}_2\tilde\lambda^{(0)}_2+\frac{3}{2}\tilde\alpha_2^{(0)2}\;,\\
+-\tilde\lambda^{(0)}&=&2\left(\tilde\lambda^{(0)}_1+\tilde\lambda^{(0)}_2\right)\tilde\lambda^{(0)}-3\left(\tilde\alpha^{(0)}_1+\tilde\alpha^{(0)}_2\right)\tilde\lambda^{(0)}\; ,
+\end{align}
+which is the system solved for the infinite-$N$ case in \cite{Bajc:2021}.  The NLO couplings will need to satisfy on the other hand the system
+\begin{equation}\label{eq:NLORGeqp}
+    \begin{split}
+        &39\tilde\alpha_+^{(0)2}+(1-4\tilde\lambda_-^{(0)})^2-12\tilde\alpha_+^{(0)}(1-4\tilde\lambda_-^{(0)})+x\Big[1+39\tilde\alpha_+^{(0)2}+6\tilde\alpha_+^{(1)2}+16\tilde\lambda^{(0)}\tilde\lambda^{(1)}\\
+        &-12\tilde\alpha_+^{(0)}\Big(1+2\tilde\alpha_+^{(1)}+4\tilde\lambda_-^{(0)}\Big)+8\tilde\lambda_-^{(0)}\Big(1-3\tilde\alpha_-^{(1)}+2\tilde\lambda_-^{(0)}+2\tilde\lambda_-^{(1)}\Big)\Big]=0 \ \ \ ,
+    \end{split}
+\end{equation}
+\begin{equation}\label{eq:NLORGeqm}
+    \begin{split}
+        &39\tilde\alpha_+^{(0)2}+(1-4\tilde\lambda_-^{(0)})^2-12\tilde\alpha_+^{(0)}(1-4\tilde\lambda_-^{(0)})-x\Big[1+39\tilde\alpha_+^{(0)2}+6\tilde\alpha_-^{(1)2}\Big(4\tilde\alpha_+^{(0)}-1\Big)\\
+        &-12\tilde\alpha_+^{(0)}\Big(1+4\tilde\lambda_-^{(0)}\Big)+8\tilde\lambda_-^{(0)}\Big(1+3\tilde\alpha_+^{(1)}+2\tilde\lambda_-^{(0)}-2\tilde\lambda_+^{(1)}\Big)\Big]=0 \ \ \ ,
+    \end{split}
+\end{equation}
+\begin{equation}\label{eq:NLORGeq3}
+    \begin{split}
+        &-1+6\tilde\alpha_+^{(0)}-8\sqrt{x}\tilde\lambda^{(0)}+4\tilde\lambda_-^{(0)}+x\Big(-1+6\tilde\alpha_+^{(0)}-12\tilde\alpha_+^{(1)}-4\tilde\lambda_-^{(0)}+8\tilde\lambda_+^{(1)}\Big)=0 \ \ \ .
+    \end{split}
+\end{equation}
+
+
+\noindent
+The thermal effective potential is given by
+\begin{align}
+\Delta V_T=
+\frac{T^2}{48}\sum_{i=1}^2\sum_{a=1}^{N_{c_i}}\left(4\frac{\partial^2V}{\partial\varphi_i^a\partial\varphi_{ia}^*}
++6g_i^2\frac{N_{c_i}^2-1}{N_{c_i}}\varphi_i^a\varphi_{ia}^*\right)\;,
+\end{align}
+which for the potential \eqref{eq:pot} yields
+\begin{align}
+\Delta V_T=
+(4\pi)^2\frac{T^2}{24\log{T}}&\left(\left(2\left(\tilde\lambda_1-\sqrt{\frac{N_{c_2}}{N_{c_1}}}\tilde\lambda\right)
++3\tilde\alpha_1 \left(1 - \frac{1}{N_{c_1}^2} \right)
+\left(\vec{\varphi}_1^*\cdot\vec{\varphi}_1\right)\right.\right.\nonumber\\
+&\left.+\left(2\left(\tilde\lambda_2-\sqrt{\frac{N_{c_1}}{N_{c_2}}}\tilde\lambda\right)+3\tilde\alpha_2 \left(1 - \frac{1}{N_{c_2}^2} \right)\right)
+\left(\vec{\varphi}_2^*\cdot\vec{\varphi}_2\right)\right)\;.
+\end{align}
+

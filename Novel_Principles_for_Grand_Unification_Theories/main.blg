@@ -1,19 +1,21 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[26] biber-darwin:340> INFO - === Mon Nov  3, 2025, 17:47:44
-[32] Biber.pm:420> INFO - Reading 'main.bcf'
-[61] Biber.pm:994> INFO - Found 7 citekeys in bib section 0
-[66] Biber.pm:4463> INFO - Processing section 0
-[69] Biber.pm:4654> INFO - Looking for bibtex file 'reflist.bib' for section 0
-[70] bibtex.pm:1713> INFO - LaTeX decoding ...
-[72] bibtex.pm:1519> INFO - Found BibTeX data source 'reflist.bib'
-[89] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[89] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[89] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[89] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[91] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[92] bbl.pm:779> INFO - Output to main.bbl
-[92] Biber.pm:131> WARN - I didn't find a database entry for 'missing source' (section 0)
-[92] Biber.pm:131> WARN - I didn't find a database entry for 'zee' (section 0)
-[92] Biber.pm:131> WARN - I didn't find a database entry for 'for dummies' (section 0)
-[92] Biber.pm:133> INFO - WARNINGS: 3
+[28] biber-darwin:340> INFO - === Thu May 21, 2026, 16:48:16
+[36] Biber.pm:420> INFO - Reading 'main.bcf'
+[91] Biber.pm:994> INFO - Found 132 citekeys in bib section 0
+[96] Biber.pm:4463> INFO - Processing section 0
+[101] Biber.pm:4654> INFO - Looking for bibtex file 'reflist.bib' for section 0
+[104] bibtex.pm:1713> INFO - LaTeX decoding ...
+[159] bibtex.pm:1519> INFO - Found BibTeX data source 'reflist.bib'
+[435] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[435] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[435] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-GB'
+[435] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-GB'
+[465] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[486] bbl.pm:779> INFO - Output to main.bbl
+[486] Biber.pm:131> WARN - Duplicate entry key: 'srednicki2006qft' in file 'reflist.bib', skipping ...
+[486] Biber.pm:131> WARN - Duplicate entry key: 'Gross:1973id' in file 'reflist.bib', skipping ...
+[486] Biber.pm:131> WARN - Duplicate entry key: 'Georgi:1974yf' in file 'reflist.bib', skipping ...
+[486] Biber.pm:131> WARN - Duplicate entry key: 'Langacker:1994vf' in file 'reflist.bib', skipping ...
+[487] Biber.pm:131> WARN - Duplicate entry key: 'Croon:2019kpe' in file 'reflist.bib', skipping ...
+[487] Biber.pm:133> INFO - WARNINGS: 5
