@@ -1,0 +1,21 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'out/main.blg'
+[29] biber-darwin:340> INFO - === Fri May 22, 2026, 12:24:11
+[37] Biber.pm:420> INFO - Reading 'out/main.bcf'
+[91] Biber.pm:994> INFO - Found 127 citekeys in bib section 0
+[96] Biber.pm:4463> INFO - Processing section 0
+[101] Biber.pm:4654> INFO - Looking for bibtex file 'reflist.bib' for section 0
+[104] bibtex.pm:1713> INFO - LaTeX decoding ...
+[159] bibtex.pm:1519> INFO - Found BibTeX data source 'reflist.bib'
+[426] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[426] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[427] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-GB'
+[427] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-GB'
+[456] bbl.pm:676> INFO - Writing 'out/main.bbl' with encoding 'UTF-8'
+[476] bbl.pm:779> INFO - Output to out/main.bbl
+[476] Biber.pm:131> WARN - Duplicate entry key: 'srednicki2006qft' in file 'reflist.bib', skipping ...
+[476] Biber.pm:131> WARN - Duplicate entry key: 'Gross:1973id' in file 'reflist.bib', skipping ...
+[476] Biber.pm:131> WARN - Duplicate entry key: 'Georgi:1974yf' in file 'reflist.bib', skipping ...
+[476] Biber.pm:131> WARN - Duplicate entry key: 'Langacker:1994vf' in file 'reflist.bib', skipping ...
+[476] Biber.pm:131> WARN - Duplicate entry key: 'Croon:2019kpe' in file 'reflist.bib', skipping ...
+[476] Biber.pm:133> INFO - WARNINGS: 5

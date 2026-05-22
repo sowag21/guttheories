@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.9.11)  21 MAY 2026 16:55
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.9.11)  22 MAY 2026 16:59
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/slw/Code/guttheories/Novel_Principles_for_Grand_Unification_Theories/main.tex
@@ -1793,10 +1793,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 3.
 (./Sections1/GUTs.tex
 
-LaTeX Warning: Reference `sec:SMHiggs' on page 23 undefined on input line 25.
-
-
-
 [23
 
 ]
@@ -1830,18 +1826,16 @@ Package pgfplots info on input line 173: lua backend=true: LUA version of plot e
 LUA survey failed: ...neric/pgfplots/lua/pgfplotsoldpgfsupp/luamath/parser.lua:130: Function 'x' is undefined (did not find pgfluamathfunctions.x (looked into pgfluamathfunctions.stringToFunctionMap)). Use \pgfplotsset{lua debug} to see more.
 Package pgfplots info on input line 177: lua backend=true: LUA version of plot expression failed. Using TeX version. (plot 1).
 LUA survey failed: ...neric/pgfplots/lua/pgfplotsoldpgfsupp/luamath/parser.lua:130: Function 'x' is undefined (did not find pgfluamathfunctions.x (looked into pgfluamathfunctions.stringToFunctionMap)). Use \pgfplotsset{lua debug} to see more.
-Package pgfplots info on input line 179: lua backend=true: LUA version of plot expression failed. Using TeX version. (plot 2).
+Package pgfplots info on input line 180: lua backend=true: LUA version of plot expression failed. Using TeX version. (plot 2).
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/12'
+(microtype)             (new value: 12.0pt) on input line 215.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7486) has occurred while \output is active []
 
 
 
 [28]
-
-LaTeX Warning: Reference `fig:mexihat' on page 29 undefined on input line 251.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2035) has occurred while \output is active []
 
 
 
@@ -1854,16 +1848,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [31]
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/9'
-(microtype)             (new value: 9.0pt) on input line 343.
+(microtype)             (new value: 9.0pt) on input line 359.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/5'
-(microtype)             (new value: 5.0pt) on input line 343.
+(microtype)             (new value: 5.0pt) on input line 359.
 
 
 [32]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 
 [33]
 
@@ -1872,54 +1862,48 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [35]
 
 [36]
-<Figures/sm_unification.pdf, id=1089, 714.24792pt x 569.48685pt>
+<Figures/sm_unification.pdf, id=9155, 714.24792pt x 569.48685pt>
 File: Figures/sm_unification.pdf Graphic file (type pdf)
 <use Figures/sm_unification.pdf>
-Package luatex.def Info: Figures/sm_unification.pdf  used on input line 458.
+Package luatex.def Info: Figures/sm_unification.pdf  used on input line 472.
 (luatex.def)             Requested size: 231.43741pt x 184.53357pt.
-<Figures/sm_unification_differences.pdf, id=1090, 715.15506pt x 569.48685pt>
+<Figures/sm_unification_differences.pdf, id=9156, 715.15506pt x 569.48685pt>
 File: Figures/sm_unification_differences.pdf Graphic file (type pdf)
 <use Figures/sm_unification_differences.pdf>
-Package luatex.def Info: Figures/sm_unification_differences.pdf  used on input line 465.
+Package luatex.def Info: Figures/sm_unification_differences.pdf  used on input line 479.
 (luatex.def)             Requested size: 231.43741pt x 184.29895pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[37]
+[37<./Figures/sm_unification.pdf><./Figures/sm_unification_differences.pdf>]
 
-[38<./Figures/sm_unification.pdf><./Figures/sm_unification_differences.pdf>]
+[38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [39]
-Underfull \vbox (badness 3199) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [40]
 
 [41]
-Overfull \hbox (17.74527pt too wide) detected at line 649
+Overfull \hbox (12.78409pt too wide) detected at line 674
 []
  []
 
 
-Underfull \vbox (badness 2503) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [42]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [43]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1939,32 +1923,32 @@ Chapter 4.
 ("./Sections2/Gauge coupling.tex"
 
 [49]) ("./Sections2/Yukawa coupling.tex"
-Underfull \vbox (badness 4995) has occurred while \output is active []
-
-
 
 [50]
 
 [51]
-<Figures/flowplottest.pdf, id=1486, 433.62pt x 430.60875pt>
+<Figures/flowplottest.pdf, id=9551, 433.62pt x 430.60875pt>
 File: Figures/flowplottest.pdf Graphic file (type pdf)
 <use Figures/flowplottest.pdf>
-Package luatex.def Info: Figures/flowplottest.pdf  used on input line 55.
+Package luatex.def Info: Figures/flowplottest.pdf  used on input line 52.
 (luatex.def)             Requested size: 226.70963pt x 225.13995pt.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/10'
-(microtype)             (new value: 10.0pt) on input line 56.
+(microtype)             (new value: 10.0pt) on input line 53.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/dsrom/m/n/7'
-(microtype)             (new value: 7.0pt) on input line 56.
-<Figures/FlowplotScalar_N5_p30.pdf, id=1487, 433.62pt x 422.57875pt>
+(microtype)             (new value: 7.0pt) on input line 53.
+<Figures/FlowplotScalar_N5_p30.pdf, id=9552, 433.62pt x 422.57875pt>
 File: Figures/FlowplotScalar_N5_p30.pdf Graphic file (type pdf)
 <use Figures/FlowplotScalar_N5_p30.pdf>
-Package luatex.def Info: Figures/FlowplotScalar_N5_p30.pdf  used on input line 62.
+Package luatex.def Info: Figures/FlowplotScalar_N5_p30.pdf  used on input line 59.
 (luatex.def)             Requested size: 226.70963pt x 220.94154pt.
 LaTeX Font Info:    Font shape `TU/STIXTwoText(0)/b/sl' in size <10> not available
-(Font)              Font shape `TU/STIXTwoText(0)/b/it' tried instead on input line 63.
+(Font)              Font shape `TU/STIXTwoText(0)/b/it' tried instead on input line 60.
 ) ("./Sections2/Quartic coupling.tex"
 
 [52<./Figures/flowplottest.pdf><./Figures/FlowplotScalar_N5_p30.pdf>]
+Underfull \vbox (badness 1331) has occurred while \output is active []
+
+
 
 [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1972,31 +1956,44 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [54]
+
+LaTeX Warning: Reference `eq:ygfixed2' on page 55 undefined on input line 102.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [55]
 
-LaTeX Warning: Reference `eq:CAF1con' on page 56 undefined on input line 116.
+LaTeX Warning: Reference `eq:CAF1con' on page 56 undefined on input line 115.
 
 
-LaTeX Warning: Reference `eq:ke0con' on page 56 undefined on input line 120.
+LaTeX Warning: Reference `eq:ke0con' on page 56 undefined on input line 119.
 
 
-LaTeX Warning: Reference `eq:kg0con' on page 56 undefined on input line 120.
+LaTeX Warning: Reference `eq:kg0con' on page 56 undefined on input line 119.
 
 
-LaTeX Warning: Reference `eq:appCAF1conon' on page 56 undefined on input line 128.
+LaTeX Warning: Reference `eq:appCAF1conon' on page 56 undefined on input line 127.
 
-) ("./Sections2/Multiple couplings.tex"
+
+LaTeX Warning: Reference `label' on page 56 undefined on input line 144.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[56]
+[56]) ("./Sections2/Multiple couplings.tex"
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [58])
 
@@ -2018,183 +2015,189 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [64]
+<Figures/CAFGG_noscalar.pdf, id=9803, 715.473pt x 570.933pt>
+File: Figures/CAFGG_noscalar.pdf Graphic file (type pdf)
+<use Figures/CAFGG_noscalar.pdf>
+Package luatex.def Info: Figures/CAFGG_noscalar.pdf  used on input line 138.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+<Figures/CAFBY_noscalar.pdf, id=9804, 715.473pt x 570.933pt>
+File: Figures/CAFBY_noscalar.pdf Graphic file (type pdf)
+<use Figures/CAFBY_noscalar.pdf>
+Package luatex.def Info: Figures/CAFBY_noscalar.pdf  used on input line 145.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [65]
-<Figures/CAFGG_noscalar.pdf, id=1755, 715.473pt x 570.933pt>
-File: Figures/CAFGG_noscalar.pdf Graphic file (type pdf)
-<use Figures/CAFGG_noscalar.pdf>
-Package luatex.def Info: Figures/CAFGG_noscalar.pdf  used on input line 142.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFBY_noscalar.pdf, id=1756, 715.473pt x 570.933pt>
-File: Figures/CAFBY_noscalar.pdf Graphic file (type pdf)
-<use Figures/CAFBY_noscalar.pdf>
-Package luatex.def Info: Figures/CAFBY_noscalar.pdf  used on input line 149.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-
 
 [66<./Figures/CAFGG_noscalar.pdf><./Figures/CAFBY_noscalar.pdf>]) ("./Sections3/fund scalar.tex"
-Underfull \vbox (badness 1199) has occurred while \output is active []
-
-
 
 [67]
+Underfull \vbox (badness 5359) has occurred while \output is active []
+
+
 
 [68]
-<Figures/CAFGG_fund_Ng1.pdf, id=1848, 715.473pt x 570.933pt>
+<Figures/CAFGG_fund_Ng1.pdf, id=9910, 715.473pt x 570.933pt>
 File: Figures/CAFGG_fund_Ng1.pdf Graphic file (type pdf)
 <use Figures/CAFGG_fund_Ng1.pdf>
-Package luatex.def Info: Figures/CAFGG_fund_Ng1.pdf  used on input line 87.
+Package luatex.def Info: Figures/CAFGG_fund_Ng1.pdf  used on input line 86.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFBY_fund_Ng1.pdf, id=1849, 715.473pt x 570.933pt>
+<Figures/CAFBY_fund_Ng1.pdf, id=9911, 715.473pt x 570.933pt>
 File: Figures/CAFBY_fund_Ng1.pdf Graphic file (type pdf)
 <use Figures/CAFBY_fund_Ng1.pdf>
-Package luatex.def Info: Figures/CAFBY_fund_Ng1.pdf  used on input line 94.
+Package luatex.def Info: Figures/CAFBY_fund_Ng1.pdf  used on input line 93.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
 
 
 [69]
 
 [70<./Figures/CAFGG_fund_Ng1.pdf><./Figures/CAFBY_fund_Ng1.pdf>]
+Underfull \vbox (badness 2393) has occurred while \output is active []
+
+
 
 [71]
-Overfull \hbox (11.22272pt too wide) detected at line 177
+
+[72]
+Overfull \hbox (11.22272pt too wide) detected at line 184
 []
  []
 
+<Figures/CAFGG_NG1.pdf, id=10028, 715.473pt x 570.933pt>
+File: Figures/CAFGG_NG1.pdf Graphic file (type pdf)
+<use Figures/CAFGG_NG1.pdf>
+Package luatex.def Info: Figures/CAFGG_NG1.pdf  used on input line 192.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+<Figures/CAFGG_NG3.pdf, id=10029, 715.473pt x 570.933pt>
+File: Figures/CAFGG_NG3.pdf Graphic file (type pdf)
+<use Figures/CAFGG_NG3.pdf>
+Package luatex.def Info: Figures/CAFGG_NG3.pdf  used on input line 199.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+<Figures/CAFGG_NG6.pdf, id=10030, 715.473pt x 570.933pt>
+File: Figures/CAFGG_NG6.pdf Graphic file (type pdf)
+<use Figures/CAFGG_NG6.pdf>
+Package luatex.def Info: Figures/CAFGG_NG6.pdf  used on input line 208.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+<Figures/CAFGG_NG9.pdf, id=10031, 715.473pt x 570.933pt>
+File: Figures/CAFGG_NG9.pdf Graphic file (type pdf)
+<use Figures/CAFGG_NG9.pdf>
+Package luatex.def Info: Figures/CAFGG_NG9.pdf  used on input line 215.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+<Figures/CAFplotBY_NG1.pdf, id=10038, 715.473pt x 570.933pt>
+File: Figures/CAFplotBY_NG1.pdf Graphic file (type pdf)
+<use Figures/CAFplotBY_NG1.pdf>
+Package luatex.def Info: Figures/CAFplotBY_NG1.pdf  used on input line 229.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+<Figures/CAFplotBY_NG2.pdf, id=10039, 715.473pt x 570.933pt>
+File: Figures/CAFplotBY_NG2.pdf Graphic file (type pdf)
+<use Figures/CAFplotBY_NG2.pdf>
+Package luatex.def Info: Figures/CAFplotBY_NG2.pdf  used on input line 236.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+<Figures/CAFplotBY_NG3.pdf, id=10040, 715.473pt x 570.933pt>
+File: Figures/CAFplotBY_NG3.pdf Graphic file (type pdf)
+<use Figures/CAFplotBY_NG3.pdf>
+Package luatex.def Info: Figures/CAFplotBY_NG3.pdf  used on input line 246.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+<Figures/CAFplotBY_NG4.pdf, id=10041, 715.473pt x 570.933pt>
+File: Figures/CAFplotBY_NG4.pdf Graphic file (type pdf)
+<use Figures/CAFplotBY_NG4.pdf>
+Package luatex.def Info: Figures/CAFplotBY_NG4.pdf  used on input line 253.
+(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
+) ("./Sections3/adj scalar.tex"
+Underfull \vbox (badness 1603) has occurred while \output is active []
 
+
+
+[73]
+
+[74<./Figures/CAFGG_NG1.pdf><./Figures/CAFGG_NG3.pdf><./Figures/CAFGG_NG6.pdf><./Figures/CAFGG_NG9.pdf>]
+
+[75<./Figures/CAFplotBY_NG1.pdf><./Figures/CAFplotBY_NG2.pdf><./Figures/CAFplotBY_NG3.pdf><./Figures/CAFplotBY_NG4.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[72]
-<Figures/CAFGG_NG1.pdf, id=1964, 715.473pt x 570.933pt>
-File: Figures/CAFGG_NG1.pdf Graphic file (type pdf)
-<use Figures/CAFGG_NG1.pdf>
-Package luatex.def Info: Figures/CAFGG_NG1.pdf  used on input line 185.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFGG_NG3.pdf, id=1965, 715.473pt x 570.933pt>
-File: Figures/CAFGG_NG3.pdf Graphic file (type pdf)
-<use Figures/CAFGG_NG3.pdf>
-Package luatex.def Info: Figures/CAFGG_NG3.pdf  used on input line 192.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFGG_NG6.pdf, id=1966, 715.473pt x 570.933pt>
-File: Figures/CAFGG_NG6.pdf Graphic file (type pdf)
-<use Figures/CAFGG_NG6.pdf>
-Package luatex.def Info: Figures/CAFGG_NG6.pdf  used on input line 201.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFGG_NG9.pdf, id=1967, 715.473pt x 570.933pt>
-File: Figures/CAFGG_NG9.pdf Graphic file (type pdf)
-<use Figures/CAFGG_NG9.pdf>
-Package luatex.def Info: Figures/CAFGG_NG9.pdf  used on input line 208.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotBY_NG1.pdf, id=1974, 715.473pt x 570.933pt>
-File: Figures/CAFplotBY_NG1.pdf Graphic file (type pdf)
-<use Figures/CAFplotBY_NG1.pdf>
-Package luatex.def Info: Figures/CAFplotBY_NG1.pdf  used on input line 222.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotBY_NG2.pdf, id=1975, 715.473pt x 570.933pt>
-File: Figures/CAFplotBY_NG2.pdf Graphic file (type pdf)
-<use Figures/CAFplotBY_NG2.pdf>
-Package luatex.def Info: Figures/CAFplotBY_NG2.pdf  used on input line 229.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotBY_NG3.pdf, id=1976, 715.473pt x 570.933pt>
-File: Figures/CAFplotBY_NG3.pdf Graphic file (type pdf)
-<use Figures/CAFplotBY_NG3.pdf>
-Package luatex.def Info: Figures/CAFplotBY_NG3.pdf  used on input line 239.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotBY_NG4.pdf, id=1977, 715.473pt x 570.933pt>
-File: Figures/CAFplotBY_NG4.pdf Graphic file (type pdf)
-<use Figures/CAFplotBY_NG4.pdf>
-Package luatex.def Info: Figures/CAFplotBY_NG4.pdf  used on input line 246.
-(luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-
-
-[73<./Figures/CAFGG_NG1.pdf><./Figures/CAFGG_NG3.pdf><./Figures/CAFGG_NG6.pdf><./Figures/CAFGG_NG9.pdf>]
-
-[74<./Figures/CAFplotBY_NG1.pdf><./Figures/CAFplotBY_NG2.pdf><./Figures/CAFplotBY_NG3.pdf><./Figures/CAFplotBY_NG4.pdf>]) ("./Sections3/adj scalar.tex"
-
-[75]
-<Figures/CAFplotGG_1_RootsFixed_Ng1.pdf, id=2211, 715.473pt x 570.933pt>
+[76]
+<Figures/CAFplotGG_1_RootsFixed_Ng1.pdf, id=10287, 715.473pt x 570.933pt>
 File: Figures/CAFplotGG_1_RootsFixed_Ng1.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_1_RootsFixed_Ng1.pdf>
-Package luatex.def Info: Figures/CAFplotGG_1_RootsFixed_Ng1.pdf  used on input line 60.
+Package luatex.def Info: Figures/CAFplotGG_1_RootsFixed_Ng1.pdf  used on input line 63.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotGG_2_RootsNoY_Ng1.pdf, id=2212, 715.473pt x 570.933pt>
+<Figures/CAFplotGG_2_RootsNoY_Ng1.pdf, id=10288, 715.473pt x 570.933pt>
 File: Figures/CAFplotGG_2_RootsNoY_Ng1.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_2_RootsNoY_Ng1.pdf>
-Package luatex.def Info: Figures/CAFplotGG_2_RootsNoY_Ng1.pdf  used on input line 67.
+Package luatex.def Info: Figures/CAFplotGG_2_RootsNoY_Ng1.pdf  used on input line 70.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotGG_3_FinalCombined_Ng1.pdf, id=2215, 715.473pt x 570.933pt>
+<Figures/CAFplotGG_3_FinalCombined_Ng1.pdf, id=10293, 715.473pt x 570.933pt>
 File: Figures/CAFplotGG_3_FinalCombined_Ng1.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_3_FinalCombined_Ng1.pdf>
-Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng1.pdf  used on input line 79.
+Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng1.pdf  used on input line 82.
 (luatex.def)             Requested size: 236.15797pt x 188.44331pt.
 
 
-[76]
-Underfull \vbox (badness 2617) has occurred while \output is active []
-
-
-
-[77<./Figures/CAFplotGG_1_RootsFixed_Ng1.pdf><./Figures/CAFplotGG_2_RootsNoY_Ng1.pdf><./Figures/CAFplotGG_3_FinalCombined_Ng1.pdf>]
-<Figures/CAFplotGG_1_RootsFixed_Ng3.pdf, id=2310, 715.473pt x 570.933pt>
+[77<./Figures/CAFplotGG_1_RootsFixed_Ng1.pdf><./Figures/CAFplotGG_2_RootsNoY_Ng1.pdf>]
+<Figures/CAFplotGG_1_RootsFixed_Ng3.pdf, id=10354, 715.473pt x 570.933pt>
 File: Figures/CAFplotGG_1_RootsFixed_Ng3.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_1_RootsFixed_Ng3.pdf>
-Package luatex.def Info: Figures/CAFplotGG_1_RootsFixed_Ng3.pdf  used on input line 131.
+Package luatex.def Info: Figures/CAFplotGG_1_RootsFixed_Ng3.pdf  used on input line 127.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotGG_3_FinalCombined_Ng3.pdf, id=2311, 715.473pt x 570.933pt>
+<Figures/CAFplotGG_3_FinalCombined_Ng3.pdf, id=10355, 715.473pt x 570.933pt>
 File: Figures/CAFplotGG_3_FinalCombined_Ng3.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_3_FinalCombined_Ng3.pdf>
-Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng3.pdf  used on input line 138.
+Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng3.pdf  used on input line 134.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotGG_1_RootsFixed_Ng5.pdf, id=2321, 715.473pt x 570.933pt>
+
+Underfull \vbox (badness 1253) has occurred while \output is active []
+
+
+
+[78<./Figures/CAFplotGG_3_FinalCombined_Ng1.pdf>]
+<Figures/CAFplotGG_1_RootsFixed_Ng5.pdf, id=10393, 715.473pt x 570.933pt>
 File: Figures/CAFplotGG_1_RootsFixed_Ng5.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_1_RootsFixed_Ng5.pdf>
-Package luatex.def Info: Figures/CAFplotGG_1_RootsFixed_Ng5.pdf  used on input line 159.
+Package luatex.def Info: Figures/CAFplotGG_1_RootsFixed_Ng5.pdf  used on input line 155.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotGG_3_FinalCombined_Ng5.pdf, id=2322, 715.473pt x 570.933pt>
+<Figures/CAFplotGG_3_FinalCombined_Ng5.pdf, id=10394, 715.473pt x 570.933pt>
 File: Figures/CAFplotGG_3_FinalCombined_Ng5.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_3_FinalCombined_Ng5.pdf>
-Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng5.pdf  used on input line 166.
+Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng5.pdf  used on input line 162.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotGG_3_FinalCombined_Ng6.pdf, id=2323, 715.473pt x 570.933pt>
+<Figures/CAFplotGG_3_FinalCombined_Ng6.pdf, id=10395, 715.473pt x 570.933pt>
 File: Figures/CAFplotGG_3_FinalCombined_Ng6.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_3_FinalCombined_Ng6.pdf>
-Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng6.pdf  used on input line 174.
+Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng6.pdf  used on input line 170.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplotGG_3_FinalCombined_Ng7.pdf, id=2324, 715.473pt x 570.933pt>
+<Figures/CAFplotGG_3_FinalCombined_Ng7.pdf, id=10396, 715.473pt x 570.933pt>
 File: Figures/CAFplotGG_3_FinalCombined_Ng7.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_3_FinalCombined_Ng7.pdf>
-Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng7.pdf  used on input line 181.
+Package luatex.def Info: Figures/CAFplotGG_3_FinalCombined_Ng7.pdf  used on input line 177.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplot_3_FinalCombined_Ng1.pdf, id=2331, 715.473pt x 570.933pt>
+<Figures/CAFplot_3_FinalCombined_Ng1.pdf, id=10403, 715.473pt x 570.933pt>
 File: Figures/CAFplot_3_FinalCombined_Ng1.pdf Graphic file (type pdf)
 <use Figures/CAFplot_3_FinalCombined_Ng1.pdf>
-Package luatex.def Info: Figures/CAFplot_3_FinalCombined_Ng1.pdf  used on input line 194.
+Package luatex.def Info: Figures/CAFplot_3_FinalCombined_Ng1.pdf  used on input line 190.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplot_3_FinalCombined_Ng2.pdf, id=2332, 715.473pt x 570.933pt>
+<Figures/CAFplot_3_FinalCombined_Ng2.pdf, id=10404, 715.473pt x 570.933pt>
 File: Figures/CAFplot_3_FinalCombined_Ng2.pdf Graphic file (type pdf)
 <use Figures/CAFplot_3_FinalCombined_Ng2.pdf>
-Package luatex.def Info: Figures/CAFplot_3_FinalCombined_Ng2.pdf  used on input line 201.
+Package luatex.def Info: Figures/CAFplot_3_FinalCombined_Ng2.pdf  used on input line 197.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplot_3_FinalCombined_Ng3.pdf, id=2333, 715.473pt x 570.933pt>
+<Figures/CAFplot_3_FinalCombined_Ng3.pdf, id=10405, 715.473pt x 570.933pt>
 File: Figures/CAFplot_3_FinalCombined_Ng3.pdf Graphic file (type pdf)
 <use Figures/CAFplot_3_FinalCombined_Ng3.pdf>
-Package luatex.def Info: Figures/CAFplot_3_FinalCombined_Ng3.pdf  used on input line 209.
+Package luatex.def Info: Figures/CAFplot_3_FinalCombined_Ng3.pdf  used on input line 205.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
-<Figures/CAFplot_3_FinalCombined_Ng4.pdf, id=2334, 715.473pt x 570.933pt>
+<Figures/CAFplot_3_FinalCombined_Ng4.pdf, id=10406, 715.473pt x 570.933pt>
 File: Figures/CAFplot_3_FinalCombined_Ng4.pdf Graphic file (type pdf)
 <use Figures/CAFplot_3_FinalCombined_Ng4.pdf>
-Package luatex.def Info: Figures/CAFplot_3_FinalCombined_Ng4.pdf  used on input line 216.
+Package luatex.def Info: Figures/CAFplot_3_FinalCombined_Ng4.pdf  used on input line 212.
 (luatex.def)             Requested size: 231.43741pt x 184.67984pt.
 
 
-[78])
-
-[79<./Figures/CAFplotGG_1_RootsFixed_Ng3.pdf><./Figures/CAFplotGG_3_FinalCombined_Ng3.pdf>]
+[79<./Figures/CAFplotGG_1_RootsFixed_Ng3.pdf><./Figures/CAFplotGG_3_FinalCombined_Ng3.pdf>])
 
 [80<./Figures/CAFplotGG_1_RootsFixed_Ng5.pdf><./Figures/CAFplotGG_3_FinalCombined_Ng5.pdf><./Figures/CAFplotGG_3_FinalCombined_Ng6.pdf><./Figures/CAFplotGG_3_FinalCombined_Ng7.pdf>]
 
@@ -2236,45 +2239,48 @@ Package microtype Info: Loading generic protrusion settings for font family
 [93]
 
 [94]
-
-[95]
-
-[96
-
-]
 Appendix A.
 ("./Appendix/Group theory.tex"
+
+[95
+
+]
+
+[96]
 
 [97]
 
 [98]
-
-[99]
-
-[100]
 Missing character: There is no Ñ (U+00D1) in font cmmi10!
 
 
-[101]
+[99]
 Underfull \vbox (badness 4859) has occurred while \output is active []
 
 
 
+[100]
+
+[101]
+
 [102]
 
-[103]
+[103])
 
 [104]
-
-[105])
-
-[106]
 Appendix B.
 (./Appendix/CAF.tex
 
-[107
+[105
 
 ]
+
+[106]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[107]
 
 [108]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2283,18 +2289,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [109]
 
-[110]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[110])
 
 [111]
 
-[112])
-
-[113]
-
-[114
+[112
 
 ]
 Appendix C.
@@ -2303,8 +2302,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[115]
-<Figures/FlowplotBYN5p30.pdf, id=3281, 433.62pt x 430.60875pt>
+[113]
+<Figures/FlowplotBYN5p30.pdf, id=11332, 433.62pt x 430.60875pt>
 File: Figures/FlowplotBYN5p30.pdf Graphic file (type pdf)
 <use Figures/FlowplotBYN5p30.pdf>
 Package luatex.def Info: Figures/FlowplotBYN5p30.pdf  used on input line 63.
@@ -2313,30 +2312,30 @@ File: Figures/FlowplotScalar_N5_p30.pdf Graphic file (type pdf)
 <use Figures/FlowplotScalar_N5_p30.pdf>
 Package luatex.def Info: Figures/FlowplotScalar_N5_p30.pdf  used on input line 70.
 (luatex.def)             Requested size: 226.70963pt x 220.94154pt.
-<Figures/FlowplotBYN10p12.pdf, id=3282, 433.62pt x 430.60875pt>
+<Figures/FlowplotBYN10p12.pdf, id=11333, 433.62pt x 430.60875pt>
 File: Figures/FlowplotBYN10p12.pdf Graphic file (type pdf)
 <use Figures/FlowplotBYN10p12.pdf>
 Package luatex.def Info: Figures/FlowplotBYN10p12.pdf  used on input line 83.
 (luatex.def)             Requested size: 226.70963pt x 225.13995pt.
-<Figures/FlowplotScalar_N10_p12.pdf, id=3283, 433.62pt x 422.57875pt>
+<Figures/FlowplotScalar_N10_p12.pdf, id=11334, 433.62pt x 422.57875pt>
 File: Figures/FlowplotScalar_N10_p12.pdf Graphic file (type pdf)
 <use Figures/FlowplotScalar_N10_p12.pdf>
 Package luatex.def Info: Figures/FlowplotScalar_N10_p12.pdf  used on input line 90.
 (luatex.def)             Requested size: 226.70963pt x 220.94154pt.
 
 
-[116]
-<Figures/ColoredFlowGridBYgy.pdf, id=3304, 578.16pt x 579.16376pt>
+[114]
+<Figures/ColoredFlowGridBYgy.pdf, id=11355, 578.16pt x 579.16376pt>
 File: Figures/ColoredFlowGridBYgy.pdf Graphic file (type pdf)
 <use Figures/ColoredFlowGridBYgy.pdf>
 Package luatex.def Info: Figures/ColoredFlowGridBYgy.pdf  used on input line 105.
 (luatex.def)             Requested size: 236.15797pt x 236.5661pt.
-<Figures/ColoredFlowGridBYlam.pdf, id=3305, 578.16pt x 578.16pt>
+<Figures/ColoredFlowGridBYlam.pdf, id=11356, 578.16pt x 578.16pt>
 File: Figures/ColoredFlowGridBYlam.pdf Graphic file (type pdf)
 <use Figures/ColoredFlowGridBYlam.pdf>
 Package luatex.def Info: Figures/ColoredFlowGridBYlam.pdf  used on input line 112.
 (luatex.def)             Requested size: 236.15797pt x 236.15611pt.
-<Figures/ColoredFlowGridBYlamfixed.pdf, id=3311, 578.16pt x 578.16pt>
+<Figures/ColoredFlowGridBYlamfixed.pdf, id=11362, 578.16pt x 578.16pt>
 File: Figures/ColoredFlowGridBYlamfixed.pdf Graphic file (type pdf)
 <use Figures/ColoredFlowGridBYlamfixed.pdf>
 Package luatex.def Info: Figures/ColoredFlowGridBYlamfixed.pdf  used on input line 129.
@@ -2347,17 +2346,17 @@ LaTeX Font Info:    Font shape `TU/STIXTwoText(0)/m/sl' in size <6> not availabl
 (Font)              Font shape `TU/STIXTwoText(0)/m/it' tried instead on input line 130.
 
 
-[117<./Figures/FlowplotBYN5p30.pdf>]
+[115<./Figures/FlowplotBYN5p30.pdf>]
 Underfull \vbox (badness 3088) has occurred while \output is active []
 
 
 
-[118<./Figures/FlowplotBYN10p12.pdf><./Figures/FlowplotScalar_N10_p12.pdf><./Figures/ColoredFlowGridBYgy.pdf><./Figures/ColoredFlowGridBYlam.pdf>]
+[116<./Figures/FlowplotBYN10p12.pdf><./Figures/FlowplotScalar_N10_p12.pdf><./Figures/ColoredFlowGridBYgy.pdf><./Figures/ColoredFlowGridBYlam.pdf>]
 Underfull \vbox (badness 2368) has occurred while \output is active []
 
 
 
-[119<./Figures/ColoredFlowGridBYlamfixed.pdf>]
+[117<./Figures/ColoredFlowGridBYlamfixed.pdf>]
 File: Figures/CAFplotGG_1_RootsFixed_Ng1.pdf Graphic file (type pdf)
 <use Figures/CAFplotGG_1_RootsFixed_Ng1.pdf>
 Package luatex.def Info: Figures/CAFplotGG_1_RootsFixed_Ng1.pdf  used on input line 151.
@@ -2368,7 +2367,7 @@ Package luatex.def Info: Figures/CAFplotGG_2_RootsNoY_Ng1.pdf  used on input lin
 (luatex.def)             Requested size: 188.9235pt x 150.7564pt.
 )
 
-[120] (./main.aux)
+[118] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2378,26 +2377,26 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F4588259FD3079F83CA89DED0AC8460B;9528.
+(rerunfilecheck)             Checksum: C2C08E83EDDE6081F122AACBE2686DF6;9440.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 60784 strings out of 475506
- 195334,7087374 words of node,token memory allocated
- 3163 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 28 glue, 4 kern, 1 penalty, 3 sub_mlist, 1 margin_kern, 4 glyph, 659 attribute, 115 glue_spec, 331 attribute_list, 2 write, 27 pdf_action nodes
-   avail lists: 1:27,2:16581,3:10584,4:457,5:2239,6:216,7:8720,8:146,9:2926,10:25,11:493,12:1
- 81449 multiletter control sequences out of 65536+600000
- 144 fonts using 27465927 bytes
- 81i,20n,93p,1747b,2868s stack positions out of 10000i,1000n,20000p,1173543b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-BoldItalic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></System/Library/Fonts/Supplemental/STIXTwoText-Italic.ttf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/playfair/PlayfairDisplay-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-Bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></System/Library/Fonts/Supplemental/STIXTwoText.ttf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (120 pages, 7175244 bytes).
+ 60786 strings out of 475506
+ 931446,4921788 words of node,token memory allocated
+ 3159 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 30 glue, 4 kern, 1 penalty, 1 sub_mlist, 1 margin_kern, 4 glyph, 655 attribute, 115 glue_spec, 329 attribute_list, 2 write, 27 pdf_action nodes
+   avail lists: 1:29,2:118615,3:66681,4:457,5:2239,6:212,7:15565,8:146,9:20932,10:25,11:544,12:1
+ 81453 multiletter control sequences out of 65536+600000
+ 152 fonts using 28240359 bytes
+ 81i,20n,93p,1747b,2868s stack positions out of 10000i,1000n,20000p,768177b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-BoldItalic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></System/Library/Fonts/Supplemental/STIXTwoText-Italic.ttf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/playfair/PlayfairDisplay-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/stix2-otf/STIXTwoText-Bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></System/Library/Fonts/Supplemental/STIXTwoText.ttf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (118 pages, 9061229 bytes).
 
-PDF statistics: 3641 PDF objects out of 4296 (max. 8388607)
- 2984 compressed objects within 30 object streams
- 829 named destinations out of 1000 (max. 131072)
- 473 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 11699 PDF objects out of 12825 (max. 8388607)
+ 6992 compressed objects within 70 object streams
+ 827 named destinations out of 1000 (max. 131072)
+ 30548 words of extra memory for PDF output out of 38145 (max. 100000000)
 

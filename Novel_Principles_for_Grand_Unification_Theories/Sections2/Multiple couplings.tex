@@ -1,10 +1,10 @@
 \section{Polynomial approach}\label{sec:ODEpoly}
 \subsection{Interplay of Multiple Couplings}\label{sec:CAF2}
-To address the complexity of multiple couplings  we follow the framework of \cite{Giudice:2014tma} to derive the CAF conditions. First, we introduce RG time $t$ so that the beta functions can be rewritten as
+To address the complexity due to the presence of multiple couplings  we follow the framework of \cite{Giudice:2014tma} to derive the CAF conditions. First, we introduce RG time $t$ so that the beta functions can be rewritten as
 \begin{equation}
     \beta_n:=\frac{\text{d}\alpha_n}{\text{d}t}\;,
 \end{equation}
-where $t=\ln(\mu^2/\mu_0^2)$ and $n=({g_i},{y_a},{\lambda_m})$. Then, we redefine the couplings so that the coupled differential equations can be rewritten as coupled algebraic equations \cite{Zimmermann:1984sx}. This is done by introducing shifted couplings
+where $t=\ln(\mu^2/\mu_0^2)$ and $n=({g_i},{y_a},{\lambda_m})$. Then, we redefine the couplings so that the coupled differential equations can be rewritten as coupled algebraic equations \cite{Zimmermann:1984sx}. This is done by introducing rescaled couplings
 \begin{equation}
     \alpha_{g_i} = \frac{\tilde \alpha_{g_i}}{t}, \quad \quad  \alpha_{y_a} = \frac{\tilde \alpha_{y_a}}{t}, \quad \quad \alpha_{\lambda_m} = \frac{\tilde \alpha_{\lambda_m}}{t} \;.
 \end{equation}
@@ -26,14 +26,14 @@ The fixed-flow terminology from the first CAF analysis can be extended to this c
         -\beta_{{\boldsymbol{g}}}(\tilde\alpha_{g\infty})\\-\beta_{{\boldsymbol{y}}}(\tilde\alpha_{g\infty},\tilde\alpha_{y\infty})\\-\beta_{\boldsymbol{\lambda}}(\tilde\alpha_{g\infty},\tilde\alpha_{y\infty},\tilde\alpha_{\lambda\infty})
     \end{pmatrix}\label{eq:solCAF2}\;.
 \end{equation}
-As in previous CAF analyses, the equations couple in such a way that we can start by only considering the gauge coupling, then the Yukawa and gauge, and finally all three couplings. 
+As in previous CAF analyses, the equations couple in such a way that we can start by only considering the gauge coupling, then the Yukawa knowing the solution for the gauge, and finally for the quartic couplings. 
 
 In the case of multiple gauge couplings, we can start by finding the possible solutions to Eq.\ \eqref{eq:solCAF2}. Using the gauge beta function in Eq.\ \eqref{eq:betag1loopcaf}, the possible solutions are
 \begin{equation}
    (\tilde\alpha_{g\infty})_i= \left\{0,-\frac 1{(b_0)_i}\right\}
         \;,
 \end{equation}
-It should be noted that the non-zero solution $-\frac{1}{(b_0)_i}$ exists only for $(b_0)_i<0$. Thus, it is only under this condition that the theory admits a non-trivial solution. Additionally, and unsurprisingly, the CAF condition coincides with the first CAF analysis (see Section \ref{sec:CAFgauge}) .
+It should be noted that the non-zero solution $-\frac{1}{(b_0)_i}$ exists only for $(b_0)_i<0$. Thus, it is only under this condition that the theory admits a non-trivial solution. Additionally, and unsurprisingly, the CAF condition coincides with the first CAF analysis (see Section \ref{sec:CAFgauge}).
 
 Let us continue with the case of one gauge coupling and multiple Yukawa couplings. For this we use the Yukawa beta function from Eq.\ \eqref{eq:betay1loop}. The fixed-flow trajectories of the Yukawa couplings are given by
 \begin{equation}
@@ -51,23 +51,23 @@ Finally, the case of one gauge, one Yukawa and multiple quartic scalar couplings
 \end{equation}
 where $m$ indicates the $m$th quartic coupling. This can be rewritten by setting Eq.\ \eqref{eq:CAF2V} equal to zero ensuring that all the couplings are on fixed flow, which yields
 \begin{equation}
-    \tilde\alpha_{\lambda _{m\infty}} + d^{\lambda}_{mnp}\tilde\alpha_{\lambda _{m\infty}}\tilde\alpha_{\lambda _{p\infty}}+ \tilde\alpha_{\lambda _{m\infty}}(d^{\lambda y}_m \tilde\alpha_{y _{\infty}} +d^{\lambda_g}_m\alpha_{y _{\infty}}) + d^{y}_m\alpha_{y\infty}^2+ d^{g}_m \alpha_{g\infty}^2 = 0    \;.\label{eq:CAF2quartic}
+    \tilde\alpha_{\lambda _{m\infty}} + d^{\lambda}_{mnp}\tilde\alpha_{\lambda _{m\infty}}\tilde\alpha_{\lambda _{p\infty}}+ \tilde\alpha_{\lambda _{m\infty}}(d^{\lambda y}_m \tilde\alpha_{y _{\infty}} +d^{\lambda_g}_m\tilde\alpha_{y _{\infty}}) + d^{y}_m\tilde\alpha_{y\infty}^2+ d^{g}_m \tilde\alpha_{g\infty}^2 = 0    \;.\label{eq:CAF2quartic}
 \end{equation}
 Next, we will use this approach on a specific case of one gauge, one Yukawa and two quartic couplings.
 
 \subsubsection{Two quartic scalar couplings}
-We consider the case of $m=1,2$ corresponding to two quartic couplings. In this case, the algebraic equation \eqref{eq:CAF2quartic} can be written as two coupled quadratic equations
+We consider the case of $m=1,2$ corresponding to two quartic couplings. In this case, the algebraic Eq. \eqref{eq:CAF2quartic} can be written as two coupled quadratic equations
 \begin{equation}
-    a  {x}^2 + b  {z}^2 + c  {x}{z} + d  {x} + e = 0\;,
+    a  {x}^2 + b  {z}^2 + c  {x}{z} + d  {x} + e = 0\;,\label{eq:CAF2poly1}
 \end{equation}
 \begin{equation}
     f  {z}^2 + g  {x}^2 + h  {x}{z} + i  {z} + j = 0\;,\label{eq:CAF2poly2}
 \end{equation}
-where $x=\alpha_{\lambda_{1\infty}}$ and $z=\alpha_{\lambda_{2\infty}}$. The coefficients are given by
+where $x=\tilde\alpha_{\lambda_{1\infty}}$ and $z=\tilde\alpha_{\lambda_{2\infty}}$. The coefficients are given by
 \begin{align}
-    a=d^{\lambda}_{mmm},\quad b=d^{\lambda}_{mnn},\quad c=d^{\lambda}_{mmn},\quad d=(d^{\lambda y}_m \tilde\alpha_{y _{\infty}} +d^{\lambda_g}_m\tilde\alpha_{g _{\infty}}),\quad e=d^{y}_m\alpha_{y\infty}^2+ d^{g}_m \alpha_{g\infty}^2\;,\label{eq:coef2quartic}
+    a=d^{\lambda}_{111},\quad b=d^{\lambda}_{122},\quad c=d^{\lambda}_{112},\quad d=1+d^{\lambda y}_1 \tilde\alpha_{y _{\infty}} +d^{\lambda_g}_1\tilde\alpha_{g _{\infty}},\quad e=d^{y}_1\tilde\alpha_{y\infty}^2+ d^{g}_1 \tilde\alpha_{g\infty}^2\;,\label{eq:coef2quartic}
 \end{align}
-where $m=1$ and $n=2$. For Eq.\ \eqref{eq:CAF2poly2}, the coefficients $f$, $g$, $h$, $i$, and $j$ are defined analogously by exchanging the indices $m\Longleftrightarrow n$ of the coefficients in Eq.\ \eqref{eq:coef2quartic}. The two coupled polynomial equations can be rewritten as a single fourth-degree polynomial:
+with $f,\ g,\ h,\ i$ and $j$ given by analogous equations with $1\Leftrightarrow 2$. The two coupled polynomial equations can be rewritten as a single fourth-degree polynomial:
 \begin{equation}
     \alpha x^4+ \beta x^3 +\gamma x^2 +\delta x+\epsilon=0\;,\label{eq:fourthdegpoly}
 \end{equation}
@@ -75,14 +75,10 @@ where $x=\tilde\alpha_{\lambda \infty}$. The definitions of the coefficients can
 
 To extract the CAF region we need real solutions to the polynomial equation. Therefore we consider the nature of the roots by using Rees' approach in \cite{Rees1922}. Furthermore, we can exploit Descartes' rule of signs \cite{Wang2004} to identify positive real-valued quartic scalar couplings that satisfy CAF conditions. This CAF analysis will prove useful in the case of a chiral model with one adjoint scalar (see Section \ref{sec:adj}). 
 
-We have now considered all the couplings on fixed flow. Similar to the CAF analyses in Sections \ref{sec:CAFgauge}, \ref{sec:CAFYukawa} and \ref{sec:CAGquartic} we can also consider couplings to be off fixed flow. 
+We have now considered all the couplings on fixed flow. Similar to the CAF analyses in Sections \ref{sec:CAFgauge}, \ref{sec:CAFYukawa} and \ref{sec:CAGquartic} we can also consider the Yukawa couplings to be off fixed flow. 
 
 \paragraph{Yukawa off fixed flow}
-We first consider the Yukawa coupling off fixed flow. This can be done by using that couplings off fixed flow must vanish faster than the rest of the couplings i.e.\ ${\alpha_y}\sim\frac{1}{t^a}$, with $a>1$. Consequently, the beta functions of the quartic couplings Eq.\ \eqref{eq:multquartic} simplify to
-\begin{align}
-    \beta_{{\lambda_m}} = d^{\lambda}_{mnp} \alpha_{\lambda_n} \alpha_{\lambda_p} + \alpha_{\lambda_m}  d^{\lambda_g}_{mi} \alpha_{g_i} + d^{g}_{mij} \alpha_{g_i} \alpha_{g_j}\;,
-\end{align}
-at significantly high energies. 
+We consider the Yukawa coupling off fixed flow. This implies that the Yukawa coupling vanishes faster than the rest of the couplings i.e.\ ${\alpha_y}\sim\frac{1}{t^a}$, with $a>1$. Effectively, we can replace $\tilde\alpha_{y\infty}=0$. Thus, the coefficients $d,\,e,\,i\,j$ of the coupled polynomial equations (see Eqs. \eqref{eq:CAF2poly1} and \eqref{eq:CAF2poly2}) looses their dependence on $\tilde\alpha_{y\infty}$.
 
 % \paragraph{One quartic scalar off fixed flow}
 % Analogously to the case of the Yukawa coupling off fixed flow, we consider one quartic coupling off fixed flow. The general beta functions for the two quartic couplings are 

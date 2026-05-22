@@ -5,13 +5,13 @@ The analysis within this framework can be split into two primary approaches. The
 The second approach is a polynomial method, which is useful when dealing with multiple couplings of various types. By assuming \textit{fixed flow} the beta functions can be transformed from coupled ODEs into coupled algebraic equations. Depending on the polynomial order, these can be solved numerically or analytically, as explain in Section \ref{sec:ODEpoly}. 
 
 \section{ODE approach}\label{sec:CAFODE}
-To constrain the coefficients of the renormalisation group (RG) equations of a gauge-Yukawa theory with scalars, we will start by considering a pure gauge theory and work our way to the full model, following a similar approach to \cite{Giudice:2014tma, Pica:2016krb}.  
+To constrain the coefficients of the renormalisation group (RG) equations of a gauge-Yukawa theory with scalars, we will start by considering a pure gauge theory and work our way to the full model, following a similar approach to \cite{Giudice:2014tma, Pica:2016krb}. As we seek to find vanishing values of the couplings, we only consider one-loop beta functions. 
 \subsection{Gauge Coupling}\label{sec:CAFgauge}
-Consider first the gauge coupling's beta function $\beta_g$ to one-loop order \cite{Giudice:2014tma, Pica:2016krb} 
+Consider first the gauge coupling's beta function $\beta_g$ to one-loop order
 \begin{equation}
     \beta_g:=\mu\frac{\text{d}\alpha_g}{\text{d}\mu}\implies \beta _g= b_0\alpha_g^2\;,\label{eq:betag1loopcaf}
 \end{equation}
-where $\mu$ is the RG scale, $\alpha_g=\frac{g^2}{(4\pi)^2}$. The coefficient $b_0$ is determined by group factors and the Dynkin index of the representations of the fermions and scalars. We will consider $b_0$ a constant in the CAF analysis below. For the pure gauge theory to be asymptotically free \cite{Politzer:1974fr}, the beta function must be negative, i.e.\ with our definition\footnote{Note that the standard convention often defines $\beta_g=-b_0\alpha_g^2$} in Eq.\ \eqref{eq:betag1loopcaf}, $b_0<0$. 
+where $\mu$ is the RG scale, $\alpha_g=\frac{g^2}{(4\pi)^2}$. The coefficient $b_0$ is determined by group factors and the Dynkin index of the representations of the fermions and scalars (see Eq. \eqref{eq:b0def}). We will consider $b_0$ a constant in the CAF analysis below. For the pure gauge theory to be asymptotically free \cite{Politzer:1974fr}, the beta function must be negative, i.e.\ with our definition\footnote{Note that the standard convention often defines $\beta_g=-b_0\alpha_g^2$} in Eq.\ \eqref{eq:betag1loopcaf}, $b_0<0$. 
 The solution of the differential equation is
 \begin{equation}
     \alpha_g=\frac{\alpha_{g_0}}{1-b_0 \alpha_{g_0} \log \left(\frac{\mu}{\mu_0 }\right)}\;,

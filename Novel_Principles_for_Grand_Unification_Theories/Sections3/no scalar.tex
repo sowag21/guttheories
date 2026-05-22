@@ -80,7 +80,7 @@ In terms of these fields, we can write the Lagrangian using Eq. \eqref{eq:genera
     + i \bar{\psi}^i_\alpha \slashed{D} \psi_i^\alpha 
     + i \bar{\tilde{\psi}}_i^\beta \slashed{D} \tilde{\psi}^i_\beta\;,\label{eq:lGGnoscalar}
 \end{equation}
-where we use similar index conventions as in Eq. \eqref{eq:freeL}: The Lorentz indices are denoted by $\mu,\nu$. The adjoint gauge index $a=1,\dots,N^2-1$, the fundamental gauge indices from $\mathrm{SU}(N)$ are denoted by $i,j=1,\dots,N$, and the flavour indices are given by $\alpha=1,\dots, p$ and $\beta=1,\dots,N-4+p$. 
+where we use similar index conventions as in Eq. \eqref{eq:freeL}: The Lorentz indices are denoted by $\mu,\nu$, the adjoint gauge index $a=1,\dots,N^2-1$, the fundamental gauge indices from $\mathrm{SU}(N)$ are denoted by $i,j=1,\dots,N$, and the flavour indices are given by $\alpha=1,\dots, p$ and $\beta=1,\dots,N-4+p$. 
 
 This theory has one gauge coupling, with beta function \cite{Gross:1973ju}
 \begin{equation}
@@ -100,18 +100,14 @@ Since there are no scalars in the theory, the one-loop coefficient is given by:
 \begin{equation}
 b_0 = -2 \left[ \frac{11}{3} C_2(G) - \frac{2}{3} \sum_f T(R_f)\right] \;.
 \end{equation}
-Recall that the model contains the chiral fermion $\Psi$, which is in the anti-symmetric representation of $\mathrm{SU}(N)$ ($1$ copy) with dimensions $\frac{N(N-1)}{2}$. The vector-like fermion $\tilde{\psi}$ which is in the anti-fundamental representation ($N-4+p$ copies) with dimension $\bar{N}$. Lastly, $\psi$ which is in the fundamental representation ($p$ copies) with dimensions $N$.
-Using the standard group factors for $\mathrm{SU}(N)$: $C_2(G) = N$, $T(\text{Fund}) = T(\text{Anti-Fund}) = 1/2$, and $T(\text{Anti-Symm}) = \frac{N-2}{2}$ and substituting in the field content, we obtain
+Recall that the model contains the chiral fermion $\Psi$, which is in the anti-symmetric representation of $\mathrm{SU}(N)$ ($1$ copy) with dimension $\frac{N(N-1)}{2}$. The vector-like fermion $\tilde{\psi}$ which is in the anti-fundamental representation ($N-4+p$ copies) with dimension $\bar{N}$. Lastly, $\psi$ which is in the fundamental representation ($p$ copies) with dimensions $N$.
+Using the standard group theory factors for $\mathrm{SU}(N)$: $C_2(G) = N$, $T(\text{Fund}) = T(\text{Anti-Fund}) = 1/2$, and $T(\text{Anti-Symm}) = \frac{N-2}{2}$ and substituting in the field content, we obtain
 \begin{align}
 \sum T(R_f) &= 1 \cdot T(A) + (N-4+p) \cdot T(\bar{F}) + p \cdot T(F)  = N - 3 + p\;.
 \end{align}
-Therefore, the gauge beta function will depend on $N$ and $p$ as
-\begin{align}
-\beta_g &\propto \frac{11}{3}N - \frac{2}{3}(N - 3 + p) = \frac{9N + 6 - 2p}{3}\;.
-\end{align}
-Multiplying by the normalisation factor $(-2)$ from the definition in \eqref{eq:betagaugeformula}, we find
+Therefore, we find
 \begin{equation}
-    \beta_g=-\frac{2\alpha_g^2}{3}\left({9}N+6-2p\right)\;. \label{eq:betagauge}
+    b_0=-\frac{2}{3}\left({9}N+6-2p\right)\;. \label{eq:betagauge}
 \end{equation}
 The model contains only a single gauge coupling. Consequently, the theory is constrained solely by the condition on the gauge beta function coefficient, $b_0<0$. In this particular model, this translates into a constraint on the parameters $N$ and $p$, which can be rewritten as a function $p(N)$. This function describes the upper limit of vector-like fermions needed to be added in an $\mathrm{SU}(N)$ theory to ensure CAF, and is given by
 \begin{equation}
@@ -158,9 +154,9 @@ The gauge coupling thus creates an upper limit for the CAF region of the model a
 We next consider a model that differs from the GG model only in that the chiral fermion transforms in a symmetric two-index representation.
 
 \subsection{Scalar-Free Bars--Yankielowicz model}
-We now focus on the Bars--Yankielowicz (BY) model \cite{Bars:1981se}. This model is like the GG model a chiral model, the difference from the GG model is that the chiral fermion is in the two-index symmetric representation, i.e.\ $\chi_{ij}=\chi_{ji}$. This affects the anomaly coefficient of the field $A(\begin{ytableau}{}&{}\end{ytableau})=(N+4)$. This effectively changes the copies of the anti-fundamental vector-like fermion to $q=N+4+p$ to ensure gauge anomaly cancellation. This also changes the Dynkin index $T(\begin{ytableau}{}&{}\end{ytableau})$=(N+4)/2, effectively changing the computation of the charges and will introduce a sign change to $\U_1(1)$ charges, as seen in Table \ref{tab:BY}.
+We now focus on the Bars--Yankielowicz (BY) model \cite{Bars:1981se}. Like the GG model, the BY model is a chiral model, the difference from the GG model is that the chiral fermion is in the two-index symmetric representation, i.e.\ $\chi_{ij}=\chi_{ji}$. This affects the anomaly coefficient of the field $A(\begin{ytableau}{}&{}\end{ytableau})=(N+4)$. This effectively changes the copies of the anti-fundamental vector-like fermion to $q=N+4+p$ to ensure gauge anomaly cancellation. This also changes the Dynkin index $T(\begin{ytableau}{}&{}\end{ytableau})=\frac{N+4}{2}$, effectively changing the computation of the charges and will introduce a sign change to $\U_1(1)$ charges, as seen in Table \ref{tab:BY}.
 
-Similar to the GG model, the BY model also has a lower boundary of the number of colours of the gauge group. The dimensions of the two-index symmetric representation $\frac{N(N+1)}{2}$. For $N=2$ this yields a dimension of $3$, which is the adjoint representation of the group and thus is real \cite{Georgi:1999wka}. Thus, it is not a chiral fermion. For $\SU(3)$ the dimension is $6$ which is a complex representation. Resulting in a lower boundary of number of colours $N\ge3$ for the BY model. 
+Similar to the GG model, the BY model also has a lower boundary of the number of colours of the gauge group. The dimension of the two-index symmetric representation is $\frac{N(N+1)}{2}$. For $N=2$ this yields a dimension of $3$, which is the adjoint representation of the group and thus is real \cite{Georgi:1999wka}. Thus, it is not a chiral fermion. For $\SU(3)$ the dimension is $6$ which is a complex representation. Resulting in a lower boundary of number of colours $N\ge3$ for the BY model. 
 
 Thus, the Lagrangian is similar to that of the GG model and can be expressed as
 \begin{align}\mathcal{L}= -\frac{1}{4} F_{\mu\nu}^a F^{a\mu\nu}+ i \bar{\chi}^{ij} \slashed{D} \chi_{ij} 
@@ -191,12 +187,14 @@ The gauge beta function can be found similarly to the GG model using Eq.\ \eqref
     \caption{Field content of the BY model. The table shows how the fields transform under the gauge and global symmetry groups, and their charges under the $\mathrm{U}_1(1)$ and $\mathrm{U}_2(1)$ symmetries.}
     \label{tab:BY} 
 \end{table}
-Thus, we obtain the beta function
+Thus, we obtain
 \begin{equation}
-    \beta_g=-\frac{2\alpha_g^2}{3}\left({9}N-6-2p\right) \;. \label{eq:betagaugeBY}
+    b_0=-\frac{2}{3}\left({9}N-6-2p\right) \;. \label{eq:betagaugeBY}
 \end{equation}
-This is similar to the one of the GG model Eq.\ \eqref{eq:betagauge}, up to the sign of the second term. Therefore the CAF region for the BY model is similar to that of the GG model. The conditions on the gauge beta function creates a similar upper boundary which is given by
+This is similar to the one of the GG model Eq.\ \eqref{eq:betagauge}, up to the sign of the second term. Therefore the CAF region for the BY model is similar to that of the GG model. The conditions on the gauge beta function creates a comparable upper boundary which is given by
 \begin{equation}
     p_{\text{max}}(N)=\frac{9N-6}{2} \;.\label{eq:pNnoscalarBY}
 \end{equation} 
+Thus, a CAF region exist for any N.
+
 Having now seen the two considered chiral models: the GG and the BY, it is time to introduce scalars into the mix. 

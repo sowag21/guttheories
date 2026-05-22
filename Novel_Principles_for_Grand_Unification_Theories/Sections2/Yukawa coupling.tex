@@ -1,54 +1,51 @@
 \subsection{Yukawa Coupling }\label{sec:CAFYukawa}
-An analogous analysis can be carried out using the RG equations governing the Yukawa couplings
+An analogous analysis can be carried out using the RG equations governing the Yukawa couplings, which depend on the gauge coupling at one loop. For simplicity, we will consider a single Yukawa coupling $\alpha_y$, with the following beta function
 \begin{equation}
     \beta_y:=\mu \frac{\text{d}\alpha_y}{\text{d}\mu}=\alpha_y(c_1\alpha_g+c_2\alpha_y)\;,\label{eq:betay1loop}
 \end{equation}
-where $\alpha_y=\frac{y^2}{(4\pi)^2}$, and $c_1$, $c_2$ are constants, where in general $c_1<0$ and $c_2>0$. First, consider the case of no gauge coupling, $\alpha_g=0$. In this case, the solution will be similar to that of the pure gauge theory Eq.\ \eqref{eq:solbetag1loop}
+where $\alpha_y=\frac{y^2}{(4\pi)^2}$, and $c_1$, $c_2$ are constants, where in general $c_1<0$ and $c_2>0$. First, let us consider the case of a vanishing gauge coupling, i.e.\ $\alpha_g=0$. In this case, the solution is analogous to that of the pure gauge theory (see Eq.\ \eqref{eq:solbetag1loop}), yielding
 \begin{equation}
     \alpha_y=\frac{\alpha_{y_0}}{1-c_2 \alpha_{y_0} \log \left(\frac{\mu}{\mu_0 }\right)}\;,
 \end{equation}
-where the difference from the previous solution Eq.\ \eqref{eq:solbetag1loop} is that the constant $c_2$ is positive. Therefore, in the high energy limit $\mu\to\infty$ the denominator becomes negative, resulting in a non-physical branch. For $\mu<\mu_L$ with $\mu_L=\mu_0\exp(1/{c_2\alpha_{y_0}})$ the coupling is positive. Thus, the coupling flows to the Gaussian fixed point in the IR and flow towards a Landau pole in the UV. This establishes that the Yukawa coupling can never be asymptotically free in the absence of a gauge coupling. 
+with the crucial difference that the constant $c_2$ is positive. Therefore, in the high energy limit $\mu\to\infty$ the denominator becomes negative, resulting in a non-physical branch. For $\mu<\mu_L$ with $\mu_L=\mu_0\exp(1/{c_2\alpha_{y_0}})$ the coupling is positive. Thus, the coupling flows to the Gaussian fixed point in the IR and flows towards a Landau pole in the UV. This establishes that the Yukawa coupling can never be asymptotically free in the absence of a gauge coupling. Thus, when the gauge coupling flows to zero in the UV, so must the Yukawa coupling as fast as $\alpha_g$ or faster, to ensure that the contribution of gauge coupling to the Yukawa beta function (Eq. \eqref{eq:betay1loop}) remain sizeable. 
 
-Let us turn to the case of $\alpha_g\neq0$. We now have a system of two coupled differential equations one for the gauge coupling (see Eq.\ \eqref{eq:betay1loop}), the other from the Yukawa coupling (see Eq.\ \ref{eq:betayfrac}. A solution can be found utilising the ratio method \cite{Pendleton:1980as} on the Yukawa and gauge beta functions 
+Let us turn to the case of $\alpha_g\neq0$. We now have a system of two coupled differential equations. A solution can be found utilising the ratio method \cite{Pendleton:1980as} on the Yukawa (Eq. \eqref{eq:betay1loop}) and gauge (Eq. \eqref{eq:betag1loopcaf}) beta functions 
 \begin{align}
-    \frac{\beta_y}{\beta_g}=\frac{\text{d}\alpha_y}{\text{d}\alpha_g}&= \frac{\alpha_y(c_1 \alpha_g + c_2 \alpha_y)}{b_0 \alpha_g^2} = \frac{\alpha_y}{b_0 \alpha_g} \left( c_1 + c_2 \frac{\alpha_y}{\alpha_g} \right)\;,\label{eq:betayfrac}
+    \frac{\beta_y}{\beta_g}=\frac{\text{d}\alpha_y}{\text{d}\alpha_g}&= \frac{\alpha_y(c_1 \alpha_g + c_2 \alpha_y)}{b_0 \alpha_g^2} = \frac{\alpha_y}{b_0 \alpha_g} \left( c_1 + c_2 \frac{\alpha_y}{\alpha_g} \right)\;.\label{eq:betayfrac}
 \end{align}
 The solutions to the differential equation depend on $b_0$ and $c_1$. 
 
 \paragraph{Case 1 $b_0=c_1$:} In this case the solution is given by 
 \begin{equation}
-    \alpha_y=\frac{\alpha_{y_0}}{\alpha_{g_0}\left(1+\frac{c_2}{c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\log\alpha_{g_0}\right)-\frac{c_2}{c_1}\alpha_{y_0}\log \alpha_g }\alpha_g\;.\label{eq:ysolb0c1}
+    \alpha_y=\frac{\alpha_{y_0}}{\alpha_{g_0}\left(1+\frac{c_2}{c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\log\alpha_{g_0}\right)-\frac{c_2}{c_1}\alpha_{y_0}\log \alpha_g }\alpha_g\;,\label{eq:ysolb0c1}
 \end{equation}
-For $\alpha_g\to0$ the denominator will be dominated by the second term  $(-\frac{c_2}{c_1}\alpha_{y_0}\log \alpha_g) $, as the logarithm of the gauge coupling will go towards negative infinity. Since the constant in front will always be negative $\frac{c_2}{c_1}<0$, the $\alpha_y$ coupling will be negative.
+with the initial condition $\alpha_y(\alpha_{g_0})=\alpha_{y_{0}}$. For $\alpha_g\to0$ the denominator will be dominated by the second term  $(-\frac{c_2}{c_1}\alpha_{y_0}\log \alpha_g) $, as the logarithm of the gauge coupling will go towards negative infinity. Since the constant in front will always be negative $\frac{c_2}{c_1}<0$, the $\alpha_y$ coupling will be negative.
 
 \paragraph{Case 2 $b_0\neq c_1$:} The solution changes to
 \begin{equation}
-    \alpha_y=\frac{\alpha_{y_0}}{ \alpha_g^{1-\frac{c_1}{b_0}}\alpha_{g_0}^{\frac{c_1}{b_0}}\left(1-\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\right)+\frac{c_2}{b_0-c_1}\alpha_{y_0} }\alpha_g\;,
+    \alpha_y=\frac{\alpha_{y_0}}{ \alpha_g^{1-\frac{c_1}{b_0}}\alpha_{g_0}^{\frac{c_1}{b_0}}\left(1-\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\right)+\frac{c_2}{b_0-c_1}\alpha_{y_0} }\alpha_g\;,\label{eq:sol2g}
 \end{equation}
-with the initial condition $\alpha_y(\alpha_{g_0})=\alpha_{y_{0}}$. The equation can be divided into two parts, one which will be dependent on $\alpha^{\frac{c_1}{b_0}}_g$ and one $\alpha_g$. If $\frac{c_1}{b_0}>1$, the first term will dominate, and for $\frac{c_1}{b_0}<1$ the second term will dominate. The case of $\frac{c_1}{b_0}=1$ has already been ruled out from the analysis of Eq.\ \eqref{eq:ysolb0c1}. In the case of $\frac{c_1}{b_0}<1$, the coupling will go as \begin{equation}
-    \alpha_y\sim\frac{b_0-c_1}{c_2}\alpha_g\;,\quad\quad {c_1}>|b_0|>0\;,
-\end{equation}
-which will always be negative, since $b_0-c_1<0$. This case will thus not have an asymptotically free Yukawa coupling. The last possible case is the case of $\frac{c_1}{b_0}>1$ or $b_0-c_1>0$. In this case, the coupling will go as
+The equation can be divided into two parts, one which will be dependent on $\alpha^{\frac{c_1}{b_0}}_g$ and one $\alpha_g$. If $\frac{c_1}{b_0}>1$, the first term will dominate, and for $\frac{c_1}{b_0}<1$ the second term will dominate. The case of $\frac{c_1}{b_0}=1$ has already been ruled out from the analysis of Eq.\ \eqref{eq:ysolb0c1}. In the case of $\frac{c_1}{b_0}<1$, the coupling will go as 
 \begin{equation}
-    \alpha_y\sim\frac{\alpha_{y_0}}{ \alpha_{g_0}^{\frac{c_1}{b_0}}\left(1-\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\right)}\alpha_g^{\frac{c_1}{b_0}}\;,\quad\quad \frac{\alpha_{g_0}}{\alpha_{y_0}}>\frac{c_2}{b_0-c_1}\;,\quad\quad c_1<b_0<0\;,\label{eq:appYukawacondoff}
+    \alpha_y\sim\frac{b_0-c_1}{c_2}\alpha_g\;,\quad\quad 0>{c_1}>b_0\;,
 \end{equation}
-to ensure that the coupling will be positive, we need to constrain the values of the couplings at the arbitrary energy level $\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}<1$. In the UV, where $\alpha_g\to 0$, the Yukawa coupling will also be asymptotically free, and because $\frac{c_1}{b_0}>1$, the Yukawa coupling will go faster to zero than the gauge coupling at high energies. Another possibility is that the values of the couplings at the arbitrary energy level are fine-tuned $\frac{\alpha_{g_0}}{\alpha_{y_0}}=\frac{c_2}{b_0-c_1}$. In this case, the first term in the denominator vanishes, and the previously dominated term is now the only one left:
-\begin{equation}
-    \alpha_y=\frac{b_0-c_1}{ c_2 }\alpha_g\;,\quad\quad \frac{\alpha_{g_0}}{\alpha_{y_0}}=\frac{c_2}{b_0-c_1}\;,\quad\quad b_0-c_1>0\;.\label{eq:ygfixed2}
-\end{equation}
-This case is known as fixed flow \cite{Giudice:2014tma}. Along this trajectory, the Yukawa coupling vanishes with the same rate as the gauge coupling. Conversely, in the off-fixed-flow regime, the Yukawa coupling is driven to zero at a rate faster than the gauge coupling. 
+which will always be negative, since $b_0-c_1<0$. This case will thus not have an asymptotically free Yukawa coupling. 
 
-Thus, the conditions for asymptotic freedom of both gauge and Yukawa coupling off fixed flow are given by
+The last possible case is the case of $\frac{c_1}{b_0}>1$. In this case, the coupling will go as
 \begin{equation}
-    b_0<0\,,\quad\quad\frac{\alpha_{g_0}}{\alpha_{y_0}}>\frac{c_2}{b_0-c_1}\;,\quad\quad c_1<b_0<0\;.\label{eq:ygnotfixed}
+    \alpha_y\sim\frac{\alpha_{y_0}}{ \alpha_{g_0}^{\frac{c_1}{b_0}}\left(1-\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}\right)}\alpha_g^{\frac{c_1}{b_0}}\;,\quad\quad \frac{\alpha_{g_0}}{\alpha_{y_0}}>\frac{c_2}{b_0-c_1}\;,\quad\quad c_1<b_0<0\;,\label{eq:Yukawacondoff}
 \end{equation}
-Note that whether the Yukawa coupling is asymptotically free also depends on the values of the coupling at the reference RG scale. The second possibility of asymptotically free couplings will be on fixed flow (see Eq.\ \eqref{eq:ygfixed2}), in this case we obtain
-\begin{equation}
-     b_0<0\,,\quad\quad\frac{\alpha_{g_0}}{\alpha_{y_0}}=\frac{c_2}{b_0-c_1}\;,\quad\quad c_1<b_0<0\;.\label{eq:ygfixed}
-\end{equation}
-On fixed flow, the values of the gauge and Yukawa coupling at the reference RG scale are more tightly constrained than the case of the off-fixed-flow regime.
+to ensure that the coupling will be positive, we need to constrain the values of the couplings at the arbitrary energy level $\frac{c_2}{b_0-c_1}\frac{\alpha_{y_0}}{\alpha_{g_0}}<1$. In the UV, where $\alpha_g\to 0$, the Yukawa coupling will also be asymptotically free, and because $\frac{c_1}{b_0}>1$, the Yukawa coupling will go faster to zero than the gauge coupling at high energies. 
 
-\begin{figure}[b!]
+Another possibility is that the values of the couplings at the arbitrary energy level are fine-tuned $\frac{\alpha_{g_0}}{\alpha_{y_0}}=\frac{c_2}{b_0-c_1}$. In this case, the first term in the denominator in Eq. \eqref{eq:sol2g} vanishes, and the previously dominated term is now the only one left:
+\begin{equation}
+    \alpha_y=\frac{b_0-c_1}{ c_2 }\alpha_g\;,\quad\quad \frac{\alpha_{g_0}}{\alpha_{y_0}}=\frac{c_2}{b_0-c_1}\;,\quad\quad b_0-c_1>0\;.\label{eq:ygfixed}
+\end{equation}
+This case is known as fixed flow \cite{Giudice:2014tma}. Along this trajectory, the Yukawa coupling vanishes with the same rate as the gauge coupling, i.e.\ the ratio $\alpha_y/\alpha_g$ flows to a constant. Conversely, in the off-fixed-flow regime, the Yukawa coupling is driven to zero at a rate faster than the gauge coupling. 
+
+We thus have two ways of obtaining a CAF region for a system with a single gauge and Yukawa coupling. Either the couplings follow the fixed-flow trajectory (see Eq. \eqref{eq:ygfixed}) or they follow off-fixed-flow trajectories (see Eq. \eqref{eq:Yukawacondoff}). This difference can be visualised through an RG flow plot as seen in Figure~\ref{fig:gYCAFplot}. The values of the coefficients $b_0$ and $c_1$ are chosen such that they obey the CAF conditions. Only on the green flow line will the couplings be on fixed-flow. Thus, on fixed flow, the values of the gauge and Yukawa coupling at the reference RG scale are more tightly constrained than the case of the off-fixed-flow regime. Below the green trajectory we have the off-fixed-flow regime. Lastly, above this, they will not exhibit CAF. This demonstrates the requirement on $\alpha_{g_0}$ as well as $\alpha_{y_0}$ to realise a CAF region, besides the constraints on the coefficients of the beta function. 
+
+\begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \centering

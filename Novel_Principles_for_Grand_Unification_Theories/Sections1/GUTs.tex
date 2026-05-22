@@ -102,10 +102,10 @@ This is a crucial point since the SM is a chiral theory, which indicates that th
 
 Let us first consider the quarks: They carry quantum numbers of all the three gauge groups, and transform as a fundamental. This means that quarks come in three colour charges: red, green, and blue. Because the fundamental representation of $\SU(3)_C$ is the $\mathbf{3}$ representation, we refer to it as a triplet under $\SU(3)_C$. Furthermore, the SM is a chiral theory, meaning that the $\SU(2)_L$ weak interaction exclusively couples to left-handed particles. Thus, right-handed quarks are singlets under $\SU(2)_L$ , and the left-handed quarks transform as doublets under $\SU(2)_L$ Consequently, we denote the quarks as
 \begin{align}
-    Q_{\mathrm{L}} = \begin{pmatrix} u_{\mathrm{L}}^c  \\ d_{\mathrm{L}}^c \end{pmatrix} \sim (\mathbf{3}, \mathbf{2})_{1/6}\,,\\
-    u_{\mathrm{R}}^c  \sim (\mathbf{3}, \mathbf{1})_{2/3}\,,\qquad d_{\mathrm{R}}^c \sim (\mathbf{3}, \mathbf{1})_{-1/3}\,,
+    Q_{\mathrm{L}} = \begin{pmatrix} u_{\mathrm{L}}^f  \\ d_{\mathrm{L}}^f \end{pmatrix} \sim (\mathbf{3}, \mathbf{2})_{1/6}\,,\\
+    u_{\mathrm{R}}^f  \sim (\mathbf{3}, \mathbf{1})_{2/3}\,,\qquad d_{\mathrm{R}}^f \sim (\mathbf{3}, \mathbf{1})_{-1/3}\,,
 \end{align}
-where $c=red,green,blue$. The representation under the gauge groups is denoted by $(p,q)_n$ where $p$ is the $p$-dimensional representation of the $\mathrm{SU}(3)_C$ group, $q$ is the $q$-dimensional representation of the $\mathrm{SU}(2)_L$ group, and finally the $n$ index denotes the charge under the $\mathrm{U}(1)_Y$ group. The hypercharge $Y=1/6$ stems from the SSB of the electroweak force, and will be explained in the following section. In the notation, the generation index is suppressed. The next generations follow a similar structure where $u$ and $d$ are replaced by $c$ and $s$ or $t$ and $b$. 
+where $f=red,green,blue$ is the colour index. The representation under the gauge groups is denoted by $(p,q)_n$ where $p$ is the $p$-dimensional representation of the $\mathrm{SU}(3)_C$ group, $q$ is the $q$-dimensional representation of the $\mathrm{SU}(2)_L$ group, and finally the $n$ index denotes the charge under the $\mathrm{U}(1)_Y$ group. The hypercharge $Y=1/6$ stems from the SSB of the electroweak force, and will be explained in the following section. In the notation, the generation index is suppressed. The next generations follow a similar structure where $u$ and $d$ are replaced by $c$ and $s$ or $t$ and $b$. 
 
 The leptons differ from the quarks because they do not have a colour charge and are thus singlets under $\SU(3)_C$. The left and right-handed components transform differently under $\SU(2)_L$, similar to the quarks. Additionally, there are no right-handed neutrinos. We can therefore organise the leptons as:
 \begin{align}
@@ -123,7 +123,7 @@ With the matter and gauge sectors established, the next step will be to introduc
 
 The gauge fields are also massless. Recall the transformation rules of the gauge fields, defined in Eq. \eqref{eq:Atrans}, this makes mass terms $\sim m^2A_\mu A^\mu$ break gauge symmetries. This puzzle leads us to the Brout-Englert-Higgs mechanism \cite{Englert:1964et,Higgs:1964pj}. 
 
-\subsection{The Higgs mechanism and Yukawa terms}
+\subsection{The Higgs mechanism} \label{sec:SMHiggs}
 Particle masses in the SM are generated through SSB of the electroweak group, as described by the Glashow--Weinberg--Salam theory \cite{Glashow:1961tr, Weinberg:1967tq, Salam:1964ry}. The mechanism responsible for this was first proposed by Brout, Englert and Higgs in the 1960's \cite{Englert:1964et,Higgs:1964pj}. Decades later in 2012 the particle responsible for this mechanism, the Higgs, was found experimentally by ATLAS \cite{ATLAS:2012yve} and CMS \cite{CMS:2012qbp} collaborations. 
 
 The Higgs is a singlet under $\SU(3)_C$ and a doublet under $\SU(2)_L$ with a hypercharge $Y=1/2$ \cite{Georgi:1999wka}. We thus have a complex scalar, on the form
@@ -143,63 +143,79 @@ The potential being the most general renormalisable potential, which takes the f
 The minus in front of the first term ensures that the potential has the famous Mexican hat shape \comment{add plot}. This further ensures that the minimum is not given by $\Phi=0$, but rather this will be an unstable local maximum. 
 \begin{figure}[htbp]
     \centering
-    \begin{tikzpicture}
+   \begin{tikzpicture}[scale=1.3, transform shape]
     \begin{axis}[
-        view={60}{30},
+        view={45}{40},
         axis lines=none,
         width=13cm,
         height=9cm,
-        colormap={viridis-like}{
-            rgb(0)=(0.1,0.1,0.5)
-            rgb(1)=(0.3,0.5,0.9)
-            rgb(2)=(0.8,0.6,0.2)
-            rgb(3)=(1,0.5,0.1)
+        colormap={lightblueorange}{
+            rgb(0)=(0.6,0.8,1.0),
+            rgb(0.5)=(0.2,0.4,0.8),
+            rgb(1)=(1.0,0.5,0.1)
         },
-        xmin=-1.8, xmax=1.8,
-        ymin=-1.8, ymax=1.8,
-        zmin=-1.2, zmax=1.2,
+        xmin=-3.0, xmax=3.0,
+        ymin=-3.0, ymax=3.0,
+        zmin=-1.8, zmax=2.0,
         clip=false
     ]
 
-    % Surface with cutout from 315° to 45° (i.e., missing a 90° wedge)
+    % ----- Surface with cutout (0° to 270°) and faceted grid -----
     \addplot3[
         surf,
-        domain=45:315,         % missing wedge from 315° to 45° (across 0°)
+        domain=0:270,
         y domain=0:1.6,
-        samples=80, samples y=40,
+        samples=60,
+        samples y=35,
         z buffer=sort,
-        shader=interp,
-        faceted color=black!30,
+        shader=faceted interp,
+        faceted color=black!70
     ] ({y*cos(x)}, {y*sin(x)}, {y^4 - 2*y^2});
 
-    % Thick edges along the cut boundaries
-    \addplot3[thick, orange!70!black, domain=0:1.6, samples=50]
-        ({x*cos(45)}, {x*sin(45)}, {x^4 - 2*x^2});
-    \addplot3[thick, orange!70!black, domain=0:1.6, samples=50]
-        ({x*cos(315)}, {x*sin(315)}, {x^4 - 2*x^2});
+    % ----- Thick edges along the cut boundaries -----
+    \addplot3[thick, black, domain=0:1.6, samples=50]
+        ({x}, {0}, {x^4 - 2*x^2});
 
-    % Axes
-    \draw[->, thick, black!70] (axis cs: 0,0,-1.1) -- (axis cs: 0,0,1.2) node[above] {$V(\phi)$};
-    \draw[->, thick, black!70] (axis cs:-1.5,0,0) -- (axis cs:1.7,0,0) node[right] {$\operatorname{Re}(\phi)$};
-    \draw[->, thick, black!70] (axis cs:0,-1.5,0) -- (axis cs:0,1.7,0) node[above left] {$\operatorname{Im}(\phi)$};
+    \addplot3[thick, black, domain=0:1.6, samples=50]
+        ({0}, {-x}, {x^4 - 2*x^2});
 
-    % Balls with larger size and better shading
-    \node[circle, shading=ball, ball color=cyan!60!blue, minimum size=14pt] at (axis cs:0,0,0) {};
-    \node[circle, shading=ball, ball color=cyan!60!blue, minimum size=14pt] at (axis cs:1.0,0,-1) {};
+    % ----- Long axes -----
+    \draw[->, very thick, black] (axis cs:0,0,-1.5) -- (axis cs:0,0,2.7)
+        node[above, font=\large] {$V(\phi)$};
 
-    % Rolling arrow with a more curved path
-    \draw[->, thick, black!80, -{Latex[length=4mm]}, bend left=30]
-        (axis cs:0.2,0.15,0.05) to (axis cs:0.9,0.1,-0.85);
-    \node[black!80, font=\footnotesize, anchor=south west] at (axis cs:0.5,0.2,-0.4) {Rolling};
+    \draw[->, very thick, black] (axis cs:-2.4,0,0) -- (axis cs:2.5,0,0)
+        node[right, font=\large] {$\operatorname{Re}(\phi)$};
 
-    % Labels
-    \node[font=\small\itshape, black!70, anchor=south] at (axis cs:0,0,0.2) {unstable};
-    \node[font=\small\itshape, black!70, anchor=north] at (axis cs:1.1,0.1,-1.05) {stable vacuum};
+    \draw[->, very thick, black] (axis cs:0,-2.4,0) -- (axis cs:0,3,0)
+        node[below, font=\large, yshift=-4pt] {$\operatorname{Im}(\phi)$};
+
+    % ----- Balls -----
+    % Unstable maximum at origin
+    \node[circle, shading=ball, ball color=red!70!black, minimum size=13pt]
+        at (axis cs:0,0,0.25) {};
+
+    % Stable vacuum deep in the trench
+    \node[circle, shading=ball, ball color=red!70!black, minimum size=13pt]
+        at (axis cs:-1.08,0,-1.3) {};
+
+    % ----- Rolling arrow from top to stable ball -----
+    \draw[->, thick, red!70!black, -{Latex[length=3mm,width=2mm]}, bend right=30]
+        (axis cs:0,0,0.25) to (axis cs:-1.1,0,-1);
+
+    %\node[black, font=\small, anchor=south west] at (axis cs:-0.4,0.2,-0.5)
+        %{Rolling};
+
+    % ----- Labels for the two vacua -----
+    %\node[font=\small\itshape, black, anchor=south] at (axis cs:0,0,0.2)
+    %    {unstable};
+
+    %\node[font=\small\itshape, black, anchor=north] at (axis cs:-1.25,0,-1.8)
+    %    {stable vacuum};
 
     \end{axis}
-    \end{tikzpicture}   
-    \caption{The Higgs potential $V(\Phi)$ with a section removed to reveal the inner structure. The blue spheres represent the scalar field, showing the transition from the unstable symmetric state ($V=0$) to the stable broken-symmetry vacuum state.}
-    \label{fig:mexican_hat_balls}
+    \end{tikzpicture}
+    \caption{....}
+    \label{fig:mexihat}
 \end{figure}
 To find the minimum, we minimise the potential 
 \begin{align}
@@ -298,7 +314,7 @@ Now that the gauge bosons responsible for the weak interaction have received a m
 We can use Eq. \eqref{eq:chargedef} to compute the hypercharge, using the isospin of the different particles, which yields 
 \begin{align}
 L_L &= \begin{pmatrix} \nu_{eL} \\ e_L \end{pmatrix}_{-1/2} \,,\\
-Q_L &= \begin{pmatrix} u_L \\ d_L \end{pmatrix}_{1/6} \,,
+Q_L &= \begin{pmatrix} u^f_L \\ d^f_L \end{pmatrix}_{1/6} \,,
 \end{align}
 where the subscript denotes the hypercharge. These specific assignments ensures the familiar charges: neutrinos are neutral, electrons have $Q=-1$, up quarks $Q=+2/3$, and down quarks $Q=-1/3$. 
 
@@ -306,9 +322,9 @@ where the subscript denotes the hypercharge. These specific assignments ensures 
 
 The generation of masses stems from the Yukawa terms in the Lagrangian. These can be written, because of the addition of a scalar into our theory. The Yukawa terms combine two fermions and one scalar, for the SM they are given by
 \begin{align}
-    \mathcal{L}_{\mathrm{Yukawa}} = -y_d^{\gamma\delta} \overline{Q_{\mathrm{L}}^\gamma} \Phi d_{\mathrm{R}}^\delta - y_u^{\gamma\delta} \overline{Q_{\mathrm{L}}^\gamma} \tilde{\Phi} u_{\mathrm{R}}^\delta - y_\ell^{\gamma\delta} \overline{L_{\mathrm{L}}^\gamma} \Phi \ell_{\mathrm{R}}^\delta + \mathrm{h.c.}\,,\label{eq:LYukawa}
+    \mathcal{L}_{\mathrm{Yukawa}} = -y_d^{ij} \overline{Q_{\mathrm{L}}^i} \Phi d_{\mathrm{R}}^j - y_u^{ij} \overline{Q_{\mathrm{L}}^i} \tilde{\Phi} u_{\mathrm{R}}^j - y_\ell^{ij} \overline{L_{\mathrm{L}}^i} \Phi \ell_{\mathrm{R}}^j + \mathrm{h.c.}\,,\label{eq:LYukawa}
 \end{align} 
-where we have introduced the generation index $\gamma,\delta=(1,2,3)$ and $y_d,\,y_u,\,y_\ell$ represent the $3\times3$ Yukawa matrices. 
+where we have introduced the generation index $i,j=(1,2,3)$, dropped the colour index $f$, and $y_d,\,y_u,\,y_\ell$ represent the $3\times3$ Yukawa matrices. 
 
 The first term couples the right-handed down-type quarks with the left-handed quarks. Similarly, the third term relates the right-handed electrons with the left-handed leptons. Lastly, the second term relates the right-handed up quarks with the left-handed quarks by introducing $\tilde\Phi=i\sigma_2\Phi^*$. The $\tilde\Phi$ rotates the VEV (Eq. \eqref{eq:VEVhiggs}) such that the particles of isospin $1/2$ also acquire mass. 
 
@@ -444,11 +460,11 @@ Next, we consider $b_{0_2}$. The Casimir index for $\SU(N)$ gauge groups are giv
 \begin{align}
     b_{0_2}=-\frac{11}{3}(2)+\frac{2}{3}\left(12\frac{1}{2}\right)+\frac{1}{3}\left(\frac{1}{2}\right)=-\frac{19}{6}\,,\label{eq:b02}
 \end{align} 
-The remaining coupling's coefficient can be computed analogously to the two prior. The Casimir index is given by $C_2(G_3)=3$. The only fermions which cary colour are the quarks, which are all in the fundamental representation of $\SU(3)_C$. Thus, $T(R_f)=\frac{1}{2}$. Hence the strong interaction does not see chirality, there will be $12$ fermions. There is no scalars that interact strongly. We thereby obtain
+The remaining coupling's coefficient can be computed analogously to the two prior. The Casimir index is given by $C_2(G_3)=3$. The only fermions which cary colour are the quarks, which are all in the fundamental representation of $\SU(3)_C$. Thus, the dynkin index is given by $T(R_f)=\frac{1}{2}$, and there will be $12$ fermionic degrees of freedom. There is no scalars that interact strongly, thus the third term will vanish, resulting in the following coefficient
 \begin{align}
     b_{0_3}=-\frac{11}{3}(3)+\frac{2}{3}\left(12\frac{1}{2}\right)+0=-7\,.\label{eq:b03}
 \end{align} 
-Using these values of $b_{0_i}$ (Eqs. \eqref{eq:b01}, \eqref{eq:b02}, and \eqref{eq:b03}), the electroweak scale $\mu_0=91,1876\,$GeV, and the values of the couplings at this scale given in Eq. \eqref{eq:electroweakgaugeval}, we obtain Figure \ref{fig:SM_unification}. In Figure \ref{fig:uni} the evolution of the inverse gauge couplings. This result is one of the motivation for discussing GUTs. The intersection of the gauge couplings at high energies around $(10^{13}-10^{17}\,$GeV) indicates that at this scale the couplings might unify. For a valid unification all the lines would have to intersect. In Figure \ref{fig:uni_diff} the energy scale has been limited around the scale at which the couplings intersect. Further, the differences of the the couplings are plotted, thus when the lines cross zero, we have an intersection. The GUT scale is often set to be $10^{15}$. 
+Using these values of $b_{0_i}$ (Eqs. \eqref{eq:b01}, \eqref{eq:b02}, and \eqref{eq:b03}), the electroweak scale $\mu_0=91,1876\,$GeV, and the values of the couplings at this scale given in Eq. \eqref{eq:electroweakgaugeval}, we obtain Figure \ref{fig:SM_unification}. In Figure \ref{fig:uni} the evolution of the inverse gauge couplings is illustrated. The intersection of the gauge couplings at energies around $(10^{13}-10^{17}\,$GeV) indicates that at this scale the couplings might unify. For a valid unification all the lines would have to intersect. In Figure \ref{fig:uni_diff} the energy scale has been limited around the scale at which the couplings intersect. Further, the differences of the the couplings are plotted, thus when the lines cross zero, we have an intersection. The GUT scale is conventionally chosen at $10^{15}$. 
 \begin{figure}[t]
     \centering
     \begin{subfigure}[b]{0.49\textwidth}
@@ -468,43 +484,42 @@ Using these values of $b_{0_i}$ (Eqs. \eqref{eq:b01}, \eqref{eq:b02}, and \eqref
     \label{fig:SM_unification}
 \end{figure}
 
-We define a GUT to be a simple unifying group. However, there are also plenty of examples of product groups as unifying theories. A GUT has two main criteria: It needs to contain the SM gauge sector as a subgroup, and it must have complex representations such that the chiral structure of the SM can be reproduced \cite{Croon:2019kpe}. 
+The convergences of the coupling constants at high energies, suggest BSM physics. To describe extensions of the SM through unification, we define a GUT to be a simple group. However, there are also plenty of examples of product groups as unifying theories. A GUT has two main criteria: It needs to contain the SM gauge sector as a subgroup, and it must have complex representations such that the chiral structure of the SM can be reproduced \cite{Croon:2019kpe}. 
 
-The model we will consider here is the first attempt of unifying the SM, namely the model proposed by H. Georgi and S. Glashow back in 1974 \cite{Georgi:1974yf}. This model is based on the smallest simple group $\SU(5)$, which contains the SM as a subgroup and has complex representations. 
+The model we will consider in this thesis was the first attempt of unifying the SM, namely the model proposed by H. Georgi and S. Glashow back in 1974 \cite{Georgi:1974yf}. This model is based on the smallest simple group $\SU(5)$, which contains the SM as a subgroup and has complex representations. 
 
 \section{SU(5)}\label{sec:SU5}
-\comment{OBS! Make the notation of the particles match the previous section (u,d,e,v vs u,d,Q,L)...}
-To consider a possible simple group, which contains the SM gauge sector $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ as a subgroup, the rank of the group must be at least four, since $\SU(3)_c$ has rank $2$, $\SU(2)_L$ has rank $1$, $\U(1)_Y$ has rank $1$ as well. The simplest group that does this and has complex representations is $\SU(5)$ \cite{Georgi:1999wka}
+To consider a possible simple group, which contains the SM gauge sector $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ as a subgroup, the rank of the group must be at least four, since $\SU(3)_C$ has rank $2$, $\SU(2)_L$ has rank $1$, $\U(1)_Y$ has rank $1$ as well. The simplest group that does this and has complex representations is $\SU(5)$ \cite{Georgi:1999wka}
 \begin{equation}
-    \mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)\subset \mathrm{SU}(5)\,.
+    \mathrm{SU}(3)_C\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\subset \mathrm{SU}(5)\,.
 \end{equation}
 Consider first the particles of the right-handed sector of the SM
 \begin{equation}
     u_R^i : (\mathbf{3}, \mathbf{1})_{2/3} \,,\quad 
     d_R^i : (\mathbf{3}, \mathbf{1})_{-1/3} \,,\quad 
     \ell_R^i : (\mathbf{1}, \mathbf{1})_{-1} \,,\quad 
-    (Q_L^i)^c : (\bar{\mathbf{3}}, \mathbf{2})_{-1/6} \,,\quad 
+    (Q_L^i)^c : (\overline{\mathbf{3}}, \mathbf{2})_{-1/6} \,,\quad 
     (L_L^i)^c : (\mathbf{1}, \mathbf{2})_{1/2} \,, \label{eq:RparticlesSM}
 \end{equation}
 where the $c$ indicates the charge conjugated, and $i$ the generation. These particles represent the up quark, down quark, electron, anti-quarks and anti-leptons and can be found in Table \ref{tab:SMparticle}. These representations can be added through a direct sum
 \begin{align}
-    (3,1)_{2/3}\oplus (3,1)_{-1/3}\oplus (1,1)_{-1}\oplus(\bar{3},2)_{-1/6}\oplus(1,2)_{1/2} \,,
+    (\mathbf{3},\mathbf{1})_{2/3} \oplus (\mathbf{3},\mathbf{1})_{-1/3} \oplus (\mathbf{1},\mathbf{1})_{-1} \oplus (\overline{\mathbf{3}},\mathbf{2})_{-1/6} \oplus (\mathbf{1},\mathbf{2})_{1/2} \,,
 \end{align}
 where we can write the complex conjugate of this expression as
 \begin{align}
-    (\bar{3},1)_{-2/3}\oplus (\bar{3},1)_{1/3}\oplus  (1,1)_{1}\oplus(3,2)_{1/6}\oplus(1,2)_{-1/2} \,.
+    (\overline{\mathbf{3}},\mathbf{1})_{-2/3} \oplus (\overline{\mathbf{3}},\mathbf{1})_{1/3} \oplus (\mathbf{1},\mathbf{1})_{1} \oplus (\mathbf{3},\mathbf{2})_{1/6} \oplus (\mathbf{1},\mathbf{2})_{-1/2} \,.
 \end{align}
 It has been used that the $\SU(2)_L$ representation is real \cite{Georgi:1999wka}. 
 
-The $\SU(5)$ group has two five-dimensional representations, namely $\bar{\mathbf{5}}$ and $\mathbf{5}$. Thus, we need to determine if the right-handed particles of the SM in Eq. \eqref{eq:RparticlesSM} can be grouped such that they fit in the $\mathbf{5}$ or $\bar{\mathbf{5}}$ multiplet of the $\SU(5)$ group. It is necessary to examine whether the generator of the $\U(1)_Y$ group $Y$ remains traceless\footnote{All the $\SU(N)$ groups are "special" groups, which means that the trace of the generators must be 0. However, the Abelian group $\U(1)_Y$ in the SM is not special and ensuring that the trace of the generator is zero is non-trivial. }. 
+The $\SU(5)$ group has two five-dimensional representations, namely $\overline{\mathbf{5}}$ and $\mathbf{5}$. Thus, we need to determine if the right-handed particles of the SM in Eq. \eqref{eq:RparticlesSM} can be grouped such that they fit in the $\mathbf{5}$ or $\overline{\mathbf{5}}$ multiplet of the $\SU(5)$ group. It is necessary to examine whether the generator of the $\U(1)_Y$ group $Y$ remains traceless\footnote{All the $\SU(N)$ groups are "special" groups, which means that the trace of the generators must be 0. However, the Abelian group $\U(1)_Y$ in the SM is not special and ensuring that the trace of the generator is zero is non-trivial. }. 
 
 To build a $5\times 5$ matrix, we have two options
 \begin{align}
-    (3,1)_{2/3}\oplus(1,2)_{1/2}\,,\quad\text{or} \quad  (3,1)_{-1/3}\oplus(1,2)_{1/2}\,.\label{eq:irreps5}
+    (\mathbf{3},\mathbf{1})_{2/3} \oplus (\mathbf{1},\mathbf{2})_{1/2} \,, \quad \text{or} \quad (\mathbf{3},\mathbf{1})_{-1/3} \oplus (\mathbf{1},\mathbf{2})_{1/2} \,. \label{eq:irreps5}
 \end{align}
 To determine whether the combination is valid, we consider the trace of the generator $Y$ for the first option
 \begin{align}
-    \tr(S)=\tr\begin{pmatrix}
+    \tr\begin{pmatrix}
         \frac{2}{3}&0&0&0&0\\
         0&\frac{2}{3}&0&0&0\\
         0&0&\frac{2}{3}&0&0\\
@@ -512,15 +527,17 @@ To determine whether the combination is valid, we consider the trace of the gene
         0&0&0&0&\frac{1}{2}\\
     \end{pmatrix}=3\,.
 \end{align}
-Since this is not zero, this is not an option. The other case, however, evaluates to zero $(-1/3-1/3-1/3+1/2+1/2=0)$. The $\mathbf{5}$ can now be written as a column vector in terms of the particles of the SM from Eq. \eqref{eq:RparticlesSM}, it will consists of 
+Since this is not zero, this is not an option. The other case evaluates to zero $\tr(Y)=(-1/3-1/3-1/3+1/2+1/2)=0$. 
+
+The $\mathbf{5}$ can now be written as a column vector in terms of the particles of the SM from Eq. \eqref{eq:RparticlesSM}, it will consists of 
 \begin{equation}
     \mathbf{5}\leftrightarrow \begin{pmatrix}
-        d_1^\dagger\\d_2^\dagger\\d_3^\dagger\\\bar{e} ^\dagger\\\bar{\nu}^\dagger 
+        d_r\\d_g\\d_b\\e ^c\\-\nu_e^c 
     \end{pmatrix}\,. \label{eq:5rep}
 \end{equation}
 The remaining particles from Eq. \eqref{eq:RparticlesSM} are 
 \begin{equation}
-     (3,1)_{2/3}\oplus (1,1)_{-1}\oplus(\bar{3},2)_{-1/6} \,,
+     (\mathbf{3},\mathbf{1})_{2/3} \oplus (\mathbf{1},\mathbf{1})_{-1} \oplus (\overline{\mathbf{3}},\mathbf{2})_{-1/6} \,,
      \label{eq:5repSU5}
 \end{equation}
 resulting in a ten-dimensional representation. $\SU(5)$ has two ten-dimensional representations $\overline{\mathbf{10}}$ and $\mathbf{10}$. This can be found by constructing the Young tableau of different direct products of representations of the group (see Appendix \ref{app:youngtab} and \ref{app:youngtabSUN}). We can construct the ten-representation by utilising the product of two fives
@@ -528,63 +545,79 @@ resulting in a ten-dimensional representation. $\SU(5)$ has two ten-dimensional 
     \mathbf{5} \otimes \mathbf{5} &= \mathbf{15} \oplus \mathbf{10} \,, \\[0.5ex] 
     \vcenter{\hbox{\ydiagram{1}}} \otimes \vcenter{\hbox{\ydiagram{1}}} &= \vcenter{\hbox{\ydiagram{2}}} \oplus \vcenter{\hbox{\ydiagram{1,1}}}\,.
 \end{align}
-As seen from the computation the symmetric part of the direct product is a $\mathbf{15}$ representation. Thus, we can take the anti-symmetric product of Eq. \eqref{eq:5repSU5} with itself to obtain the $\mathbf{10}$ representation \comment{expand the calulcation like down below}
+As seen from the computation the symmetric part of the direct product is a $\mathbf{15}$ representation. Thus, we can take the anti-symmetric product of Eq. \eqref{eq:5repSU5} with itself to obtain the $\mathbf{10}$ representation 
 \begin{align}
-    \left[(3,1)_{-1/3}\oplus(1,2)_{1/2}\right]\otimes \left[(3,1)_{-1/3}\oplus(1,2)_{1/2}\right]_{AS}=\left[(\bar{3},1)_{-2/3}\oplus(1,1)_{1}\oplus(3,2)_{1/6}\right]\label{eq:irreps10}
-\end{align}
-where the hypercharge simply add \cite{Georgi:1999wka}. This gives us the complete conjugate of remaining particles from Eq. \eqref{eq:RparticlesSM}. We can thus write the remaining particles as the $\overline{\mathbf{10}}$ representation.
-\begin{align}
-\bar{\mathbf{10}} \leftrightarrow 
-\begin{pmatrix}
-    0 & u_3^\dagger & -u_2^\dagger & \bar{u}^{1\dagger} & \bar{d}^{1\dagger} \\
-    -u_3^\dagger & 0 & u_1^\dagger & \bar{u}^{2\dagger} & \bar{d}^{2\dagger} \\
-    u_2^\dagger & -u_1^\dagger & 0 & \bar{u}^{3\dagger} & \bar{d}^{3\dagger} \\
-    -\bar{u}^{1\dagger} & -\bar{u}^{2\dagger} & -\bar{u}^{3\dagger} & 0 & e^\dagger \\
-    -\bar{d}^{1\dagger} & -\bar{d}^{2\dagger} & -\bar{d}^{3\dagger} & -e^\dagger & 0
-\end{pmatrix}\,,\label{eq:10barrep}
-\end{align}
-where $u_a^\dagger$ is right-handed up quarks, $\bar{u}_a^\dagger$ the right-handed anti-up quark, $\bar{d}_a^\dagger$ the right-handed anti-down quark, and $e^\dagger$ is right-handed electrons, where the index $a=1,2,3$ and describes the three colours.   
-Note that the anti-symmetric part also ensures that the diagonal entries are trivial and thus that a particle cannot interact with itself. This removes five degrees of freedom from the twenty-five of the $5\times 5$ matrix. Furthermore, the definition of an anti-symmetric matrix also ensures that the entries are mirrored around the diagonal, leaving us with ten degrees of freedom, equal to the ten particles we had yet to describe. Thus, the two representations $\mathbf{5}$ (Eq. \eqref{eq:5rep}) and $\overline{\mathbf{10}}$ (Eq. \eqref{eq:10barrep}) hold all the particles of the SM (seen in Table \ref{tab:SMparticle}).
-The same analysis can be done with the left-handed particles, which leaves one with the following representations 
-\begin{align}
-    \bar{\mathbf{5}}\leftrightarrow \begin{pmatrix}
-        \bar{d}_1 \\ \bar{d}_2 \\ \bar{d}_3 \\ e \\ -\nu 
-    \end{pmatrix}\quad \mathbf{10}\leftrightarrow \begin{pmatrix}
-    0 & \bar{u}_3 & -\bar{u}_2 & u_1 & d_1 \\
-    -\bar{u}_3 & 0 & \bar{u}_1 & u_2 & d_2 \\
-    \bar{u}_2 & -\bar{u}_1 & 0 & u_3 & d_3 \\
-    -u_1 & -u_2 & -u_3 & 0 & \bar{e} \\
-    -d_1 & -d_2 & -d_3 & -\bar{e} & 0
-\end{pmatrix}
-\end{align} 
-\subsection{Breaking of the GUT group to the SM gauge groups}
-For $\SU(5)$ to be a valid GUT, we need a way of breaking the simple group down to the gauge sector of the SM $\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$. The $\SU(5)$ group has $N^2-1=24$ gauge bosons, which transforms under the adjoint representation $\mathbf{24}$. The decomposition of this representation into irreducible representations (irreps) (see Appendix \ref{app:repersentations}) SM gauge group can be found by computing
-\begin{align}
-    \mathbf{5}\otimes\overline{\mathbf{5}}-1_{\SU(5)}\,,
-\end{align}
-using Eq. \eqref{eq:5rep}, we can write this as 
-\begin{align}
-    \left[(3,1)_{-1/3}\oplus(1,2)_{1/2}\right]\otimes \left[(\bar{3},1)_{1/3}\oplus(1,2)_{-1/2}\right]-(1,1)_0\,.
+    \left[(\mathbf{3},\mathbf{1})_{-1/3}\oplus(\mathbf{1},\mathbf{2})_{1/2}\right]\otimes \left[(\mathbf{3},\mathbf{1})_{-1/3}\oplus(\mathbf{1},\mathbf{2})_{1/2}\right]_{AS}\,.\label{eq:irreps10}
 \end{align}
 To compute this, we use the fact that the hypercharges add. There is only two non-trivial direct products that we have to compute, we will do these explicit. The first one is given by
 \begin{align}
-    (3,1)_{-1/3}\otimes(\bar{3},1)_{1/3}=(3\otimes\bar{3},1\otimes1)_0=(1,1)_0+(8,1)_0\,,
+    (\mathbf{3},\mathbf{1})_{-1/3} \otimes (\mathbf{3},\mathbf{1})_{-1/3} &= (\mathbf{3} \otimes \mathbf{3}, \mathbf{1} \otimes \mathbf{1})_{-2/3} = (\mathbf{6},\mathbf{1})_{-2/3} \oplus (\overline{\mathbf{3}},\mathbf{1})_{-2/3}\,,\label{eq:31rep}
 \end{align}
 where
 \begin{align}
-    (3\otimes{\bar{3}})_{\SU(3)}=\vcenter{\hbox{\ydiagram{1}}} \otimes \vcenter{\hbox{\ydiagram{1,1}}}=\vcenter{\hbox{\ydiagram{1,1,1}}}\oplus \vcenter{\hbox{\ydiagram{2,1}}}\,,
+    (\mathbf{3} \otimes \mathbf{3})_{\text{SU}(3)} &= \vcenter{\hbox{\ydiagram{1}}} \otimes \vcenter{\hbox{\ydiagram{1}}} = \vcenter{\hbox{\ydiagram{2}}} \oplus \vcenter{\hbox{\ydiagram{1,1}}}\,,
 \end{align}
-where the $(1,1,1)$ Young tableau is the $\mathbf{1}$ representation, and $(2,1)$ is the $\mathbf{8}$ representation. The other non-trivial term is
+where the $(0,2)$ Young tableau is the $\mathbf{6}$ representation, and the $(1,1)$ is the $\overline{\mathbf{3}}$ representation, only the latter is the antisymmetric representation. The other non-trivial term is
 \begin{align}
-    (1,2)_{1/2}\otimes(1,2)_{-1/2}=(1\otimes1,2\otimes2)_0=(1,1)_0+(1,3)_0\,,
+    (\mathbf{1},\mathbf{2})_{1/2} \otimes (\mathbf{1},\mathbf{2})_{1/2} &= (\mathbf{1} \otimes \mathbf{1}, \mathbf{2} \otimes \mathbf{2})_1 = (\mathbf{1},\mathbf{1})_1 \oplus (\mathbf{1},\mathbf{3})_1 \,,\label{eq:12rep}
 \end{align}
 where
 \begin{align}
-    (2\otimes2)_{\SU(2)}=\vcenter{\hbox{\ydiagram{1}}} \otimes \vcenter{\hbox{\ydiagram{1}}}=\vcenter{\hbox{\ydiagram{1,1}}}\oplus \vcenter{\hbox{\ydiagram{2}}}\,,
+    (\mathbf{2} \otimes \mathbf{2})_{\text{SU}(2)} &= \vcenter{\hbox{\ydiagram{1}}} \otimes \vcenter{\hbox{\ydiagram{1}}} = \vcenter{\hbox{\ydiagram{1,1}}} \oplus \vcenter{\hbox{\ydiagram{2}}} \,,
 \end{align}
-where the $(1,1)$ Young tableau is the $1$ representation, and $(2)$ is the $3$ representation. Putting all the terms together, we obtain
+where the $(1,1)$ Young tableau is the $\mathbf{1}$ representation, and the $(2)$ is the $\mathbf{3}$ representation, where only the first is antisymmetric. Combining the result from Eqs. \eqref{eq:31rep} and \eqref{eq:12rep}, we obtain the solution to Eq. \eqref{eq:irreps10}
 \begin{align}
-    \mathbf{24}\leftrightarrow (8,1)_0\oplus(1,3)_0\oplus(1,1)_0\oplus (3,2)_{-5/6}\oplus(\bar{3},2)_{5/6}\,. \label{eq:24irrep}
+    \left[(\mathbf{3},\mathbf{1})_{-1/3}\oplus(\mathbf{1},\mathbf{2})_{1/2}\right]\otimes \left[(\mathbf{3},\mathbf{1})_{-1/3}\oplus(\mathbf{1},\mathbf{2})_{1/2}\right]_{AS}=\left[(\overline{\mathbf{3}},\mathbf{1})_{-2/3}\oplus(\mathbf{1},\mathbf{1})_{1}\oplus(\mathbf{3},\mathbf{2})_{1/6}\right]\,.\label{eq:irreps10_2}
+\end{align}
+This gives us the complete conjugate of remaining particles from Eq. \eqref{eq:RparticlesSM}. We can thus write the remaining particles as the $\overline{\mathbf{10}}$ representation.
+\begin{align}
+\overline{\mathbf{10}} \leftrightarrow 
+\begin{pmatrix}
+    0 & u_b & -u_g & u_r^c & d_r^c \\
+    -u_b & 0 & u_r & u_g^c & d_g^c \\
+    u_g & -u_r & 0 & u_b^c & d_b^c \\
+    -u_r^c & -u_g^c & -u_b^c & 0 & e \\
+    -d_r^c & -d_g^c & -d_b^c & -e & 0
+\end{pmatrix} \,,\label{eq:10barrep}
+\end{align}
+where $u_\alpha$ represents the left-handed up quarks, $u_\alpha^c$ the left-handed anti-up quarks, $d_\alpha^c$ the left-handed anti-down quarks, and $e$ the left-handed electrons.
+  
+Note that the anti-symmetric representation ensures that a particle cannot interact with itself and that we have ten degrees of freedom, equal to the ten particles, we had yet to describe. Thus, the two representations $\mathbf{5}$ (Eq. \eqref{eq:5rep}) and $\overline{\mathbf{10}}$ (Eq. \eqref{eq:10barrep}) hold all the particles of the SM (seen in Table \ref{tab:SMparticle}).
+The same analysis can be done with the left-handed particles, which leaves one with the following representations 
+\begin{align}
+    \overline{\mathbf{5}} \leftrightarrow \begin{pmatrix}
+        d_r^c \\ d_g^c \\ d_b^c \\ e \\ -\nu_e 
+    \end{pmatrix} \quad 
+    \mathbf{10} \leftrightarrow \begin{pmatrix}
+    0 & u_b^c & -u_g^c & u_r & d_r \\
+    -u_b^c & 0 & u_r^c & u_g & d_g \\
+    u_g^c & -u_r^c & 0 & u_b & d_b \\
+    -u_r & -u_g & -u_b & 0 & e^c \\
+    -d_r & -d_g & -d_b & -e^c & 0
+\end{pmatrix}\label{eq:5and10rep}
+\end{align}
+\subsection{Spontaneous Symmetry Breaking to the Standard Model}
+For $\SU(5)$ to be a valid GUT, we need to ensure that the model has SSB which breaks the gauge group down to that of the SM: $\mathrm{SU}(3)_C\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$. 
+
+The $\SU(5)$ group has $N^2-1=24$ gauge bosons, which transforms under the adjoint representation $\mathbf{24}$. The decomposition of this representation into irreducible representations (irreps) under the SM gauge group (see Appendix \ref{app:repersentations}) can be found by computing
+\begin{align}
+    \mathbf{5} \otimes \overline{\mathbf{5}} - \mathbf{1}_{\SU(5)} \,,
+\end{align}
+using Eq. \eqref{eq:5rep}, we can write this as 
+\begin{align}
+    \left[ (\mathbf{3},\mathbf{1})_{-1/3} \oplus (\mathbf{1},\mathbf{2})_{1/2} \right] \otimes \left[ (\overline{\mathbf{3}},\mathbf{1})_{1/3} \oplus (\mathbf{1},\mathbf{2})_{-1/2} \right] - (\mathbf{1},\mathbf{1})_0 \,.
+\end{align}
+There is only one non-trivial direct products that we have to compute (the other is computed in Eq. \eqref{eq:12rep}, just with a different hypercharge). The product is given by
+\begin{align}
+    (\mathbf{3},\mathbf{1})_{-1/3} \otimes (\overline{\mathbf{3}},\mathbf{1})_{1/3} &= (\mathbf{3} \otimes \overline{\mathbf{3}}, \mathbf{1} \otimes \mathbf{1})_0 = (\mathbf{1},\mathbf{1})_0 \oplus (\mathbf{8},\mathbf{1})_0 \,,
+\end{align}
+where
+\begin{align}
+    (\mathbf{3} \otimes \overline{\mathbf{3}})_{\text{SU}(3)} &= \vcenter{\hbox{\ydiagram{1}}} \otimes \vcenter{\hbox{\ydiagram{1,1}}} = \vcenter{\hbox{\ydiagram{1,1,1}}} \oplus \vcenter{\hbox{\ydiagram{2,1}}} \,,
+\end{align}
+where the $(1,1,1)$ Young tableau is the $\mathbf{1}$ representation, and $(2,1)$ is the $\mathbf{8}$ representation. Thus, we obtain
+\begin{align}
+    \mathbf{24} \leftrightarrow (\mathbf{8},\mathbf{1})_0 \oplus (\mathbf{1},\mathbf{3})_0 \oplus (\mathbf{1},\mathbf{1})_0 \oplus (\mathbf{3},\mathbf{2})_{-5/6} \oplus (\overline{\mathbf{3}},\mathbf{2})_{5/6} \,. \label{eq:24irrep}
 \end{align}
 The field content of the adjoint representation of $\SU(5)$ is summarised in Table \ref{tab:adjSU5}. The first three terms in Eq. \eqref{eq:24irrep} is gauge bosons known from the SM (see Table \ref{tab:SMparticle}). The last two terms are however gauge bosons which are not a part of the SM. These force carriers is thus particles, which gain mass at the GUT scale through SSB, and therefore have not been observed experimentally. 
 \begin{table}[ht]
@@ -619,13 +652,9 @@ where $a=1,2,\dots,24$ is the adjoint index \cite{Pernow:2021fvb}. Thus, the adj
 \end{equation}
 where the subscript refers to the dimension of the submatrix. The upper left submatrix $A_{3\times3}$ acts like the strong force, $D_{2\times2}$ is equivalent to the weak force, and $B_{3\times2}$ and $C_{2\times3}$ mixes the strong and the weak force and are generally called the $X$ and $Y$ bosons, these are the ones which will eat the Goldstone bosons and require mass \cite{Peskin:1995ev}. 
 
-The breaking of the $\SU(5)$ group is done analogously to the Higgs mechanism of the SM \cite{Pernow:2021fvb}. A scalar field transforming in the adjoint representation of the gauge group acquires a VEV. In this breaking we do not wish to break down the gauge structure of the SM. Thus the VEV needs to commute with the generators of $\mathcal{G}_{\mathrm{SM}}$. It is therefore useful to take a VEV which is proportional to the traceless $Y$ generator \cite{Georgi:1999wka}.    
+The breaking of the $\SU(5)$ group is done analogously to the Higgs mechanism of the SM \cite{Pernow:2021fvb}. The scalar field, which transforms in the adjoint representation of the gauge group will aquire a VEV. However, we need to ensure that the VEV commutes with the generators of $\mathcal{G}_{\mathrm{SM}}$, so that the SM gauge structure remains unbroken. It is therefore useful to take a VEV which is proportional to the traceless $Y$ generator \cite{Georgi:1999wka}.    
 
-To understand the SSB of $\SU(5)$, we consider the general renormalisable potential for the adjoint scalar
-\begin{align}
-    V=-\mu_1^3\tr\Phi-\mu_2^2\tr\Phi^2-\mu_3\tr\Phi^3+\lambda_1(\tr\Phi^2)^2+\lambda_2\tr\Phi^4\,,
-\end{align}
-where we can simplify the potential using that the generators $t^a$ of $\SU(N)$ are traceless and that we can impose parity symmetry. This yields
+To understand the SSB of $\SU(5)$, we consider the general parity-symmetric renormalisable potential for the adjoint scalar
 \begin{align}
     V=-\mu^2\tr\Phi^2+\lambda_1(\tr\Phi^2)^2+\lambda_2\tr\Phi^4\,.\label{eq:SU5pot}
 \end{align}
@@ -634,16 +663,18 @@ We can now find a VEV of the potential. However, we must ensure that it commutes
 \begin{align}
     \langle\Phi\rangle=v\,\mathrm{diag}(2,2,2,-3,-3)\,.\label{eq:VEVdiag}
 \end{align}
-Before specifying the value of $v$, we first need to constrain our values of $\lambda_1,\,\lambda_2$ by considering all possible breaking of $\SU(5)$ \comment{check Peskin exercise}
+Before specifying the value of $v$, we first need to constrain our values of $\lambda_1,\,\lambda_2$ by considering all possible breaking of $\SU(5)$, to ensure the VEV will be proportional to the $Y$ generator. We can write the different options as \comment{check Peskin exercise}
 \begin{align*}
     &\begin{pmatrix} a & & & & \\ & a & & & \\ & & a & & \\ & & & b & \\ & & & & b \end{pmatrix} \to \begin{matrix} 3a + 2b = 0 \\ \SU(3) \times \SU(2) \end{matrix} 
     & \begin{pmatrix} a & & & & \\ & b & & & \\ & & c & & \\ & & & d & \\ & & & & e \end{pmatrix} \to \begin{matrix} a+b+c+d+e = 0 \\ \U(1)\times \U(1)\times\U(1)\times\U(1)\times\U(1) \end{matrix} \\[15pt]
-    &\begin{pmatrix} a & & & & \\ & a & & & \\ & & a & & \\ & & & a & \\ & & & & b \end{pmatrix} \to \begin{matrix} 4a + b = 0 \\ SU(4) \times U(1) \end{matrix} 
-    &\begin{pmatrix} a & & & & \\ & a & & & \\ & & a & & \\ & & & b & \\ & & & & c \end{pmatrix} \to \begin{matrix} 3a + b + c = 0 \\ SU(3) \times U(1) \times U(1) \end{matrix} \\[15pt]
-    &\begin{pmatrix} a & & & & \\ & a & & & \\ & & b & & \\ & & & b & \\ & & & & c \end{pmatrix} \to \begin{matrix} 2(a + b) + c = 0 \\ SU(2) \times SU(2) \times U(1) \end{matrix} 
-    &\begin{pmatrix} a & & & & \\ & a & & & \\ & & b & & \\ & & & c & \\ & & & & d \end{pmatrix} \to \begin{matrix} 2a + b + c + d = 0 \\ SU(2) \times U(1) \times U(1) \times U(1) \end{matrix}
+    &\begin{pmatrix} a & & & & \\ & a & & & \\ & & a & & \\ & & & a & \\ & & & & b \end{pmatrix} \to \begin{matrix} 4a + b = 0 \\ \SU(4) \times \U(1) \end{matrix} 
+    &\begin{pmatrix} a & & & & \\ & a & & & \\ & & a & & \\ & & & b & \\ & & & & c \end{pmatrix} \to \begin{matrix} 3a + b + c = 0 \\ \SU(3) \times \U(1) \times \U(1) \end{matrix} \\[15pt]
+    &\begin{pmatrix} a & & & & \\ & a & & & \\ & & b & & \\ & & & b & \\ & & & & c \end{pmatrix} \to \begin{matrix} 2(a + b) + c = 0 \\ \SU(2) \times \SU(2) \times \U(1) \end{matrix} 
+    &\begin{pmatrix} a & & & & \\ & a & & & \\ & & b & & \\ & & & c & \\ & & & & d \end{pmatrix} \to \begin{matrix} 2a + b + c + d = 0 \\ \SU(2) \times \U(1) \times \U(1) \times \U(1) \end{matrix}
 \end{align*}
-As already noted, the desired breaking is the first which successfully breaks $\SU(5)$ to the SM. To ensure this is the VEV the model actually realises, we need to ensure that it is the minimal VEV. In general, when theories break down to more complex group structures, the VEV becomes larger. We can thus focus on the two simplest sets of eigenvalues, where there are only two variables. First, we can write the derivative of the potential (Eq. \eqref{eq:SU5pot}) in a general form
+As already noted, the desired breaking is the first which successfully breaks $\SU(5)$ to the SM, since $\U(1)_Y$ by construction commutes with the VEV and thus remains unbroken. To ensure this is the VEV the model actually realises, we need to ensure that it is the minimal VEV. 
+
+We can focus on the two simplest sets of eigenvalues, where there are only two variables. First, we can write the derivative of the potential (Eq. \eqref{eq:SU5pot}) in a general form
 \begin{align}
     \frac{\partial V}{\partial v}=-2\mu^2 v A+4v^3(\lambda_1A^2+\lambda_2B)\,,
 \end{align}
@@ -653,13 +684,13 @@ where $A=\tr\Phi^2/v^2$ and $B=\tr\Phi^4/v^4$. If we now minimise the potential,
 \end{align}
 Let us plug this back into the potential Eq. \eqref{eq:SU5pot} and simplify 
 \begin{align}
-    V_{\min}&=-\mu^2A\frac{\mu^2 A}{2(\lambda_1A^2+\lambda_2B)}+\lambda_1A^2\left(\frac{\mu^2 A}{2(\lambda_1A^2+\lambda_2B)}\right)^2+\lambda_2B\left(\frac{\mu^2 A}{2(\lambda_1A^2+\lambda_2B)}\right)^2\nonumber
+    V_{\min}&=-\mu^2A\frac{\mu^2 A}{2(\lambda_1A^2+\lambda_2B)}+\lambda_1A^2\left(\frac{\mu^2 A}{2(\lambda_1A^2+\lambda_2B)}\right)^2+\lambda_2B\left(\frac{\mu^2 A}{2(\lambda_1A^2+\lambda_2B)}\right)^2
     \\
-    &=-\frac{\mu^4 A^2}{2(\lambda_1A^2+\lambda_2B)}+\lambda_1\frac{\mu^4 A^4}{4(\lambda_1A^2+\lambda_2B)^2}+\lambda_2\frac{\mu^4 A^2B}{4(\lambda_1A^2+\lambda_2B)^2}\nonumber
+    &=-\frac{\mu^4 A^2}{2(\lambda_1A^2+\lambda_2B)}+\lambda_1\frac{\mu^4 A^4}{4(\lambda_1A^2+\lambda_2B)^2}+\lambda_2\frac{\mu^4 A^2B}{4(\lambda_1A^2+\lambda_2B)^2}
     \\
-    &=\frac{-2(\lambda_1A^2+\lambda_2B)\mu^4 A^2+\mu^4 A^4\lambda_1+\mu^4 A^2B\lambda_2}{4(\lambda_1A^2+\lambda_2B)^2}\nonumber
+    &=\frac{-2(\lambda_1A^2+\lambda_2B)\mu^4 A^2+\mu^4 A^4\lambda_1+\mu^4 A^2B\lambda_2}{4(\lambda_1A^2+\lambda_2B)^2}
      \\
-    &=\frac{-\mu^4A^2}{4(\lambda_1A^2+\lambda_2B)^2}\left[2(\lambda_1A^2+\lambda_2B)-A^2\lambda_1-B\lambda_2\right]\nonumber
+    &=\frac{-\mu^4A^2}{4(\lambda_1A^2+\lambda_2B)^2}\left[2(\lambda_1A^2+\lambda_2B)-A^2\lambda_1-B\lambda_2\right]
     \\
     &=\frac{-\mu^4A^2}{4(\lambda_1A^2+\lambda_2B)}
 \end{align}
@@ -687,23 +718,22 @@ where $b=-4a$ has been used. To ensure that the VEV is smaller in the case of $\
 \end{align}
 This is only the case for $\lambda_2>0$. 
 
-Now to ensure a bounded potential from below, we also require $\lambda_{\text{eff}}>0$. From this, we obtain a boundary on $\lambda_1$
+Now to ensure a bounded potential from below, we also require $\lambda_{\text{eff}}>0$. From this, we obtain a boundary on $\lambda_1$. The conditions of the quartic couplings are therefore given by
 \begin{align}
-    \lambda_{\text{eff}}&>0\\
-    \lambda_1&>-\lambda_2\frac{7}{30}\,.
+    \lambda_1>-\lambda_2\frac{7}{30}\,,\quad\lambda_2>0\,,\label{eq:lam12condi}
 \end{align}
-This effectively breaks down our gauge group from $\SU(5)\to\SU(3)\times\SU(2)\times\U(1)$, since $\U(1)_Y$ by construction commutes with the VEV. This ensures that the X and Y bosons gain mass at the GUT scale. After symmetry-breaking, eight of the twenty-four gauge bosons are the gluons, three are the weak gauge bosons, and one is the hypercharge gauge boson \cite{Pernow:2021fvb} as seen in Table \ref{tab:adjSU5}.
+This ensures that the GUT breaks down to the SM gauge sector: $\SU(5)\to\SU(3)_C\times\SU(2)_L\times\U(1)_Y$. This ensures that the X and Y bosons gain mass at the GUT scale. After symmetry-breaking, eight of the twenty-four gauge bosons are the gluons, three are the weak gauge bosons, and one is the hypercharge gauge boson \cite{Pernow:2021fvb} as seen in Table \ref{tab:adjSU5}.
 
-With the constraints on $\lambda_2$ and $\lambda_1$, the VEV can be found by combining Eqs. \eqref{eq:VEVvalue} and \eqref{eq:VEVdiag}
+With the limit on the values of $\lambda_2$ and $\lambda_1$ (see Eq. \eqref{eq:lam12condi}), the VEV can be found by combining Eqs. \eqref{eq:VEVvalue} and \eqref{eq:VEVdiag}
 \begin{align}
     \langle \Phi\rangle=\frac{\mu^2}{2(30\lambda_1+7\lambda_2)}\mathrm{diag}(2,2,2,-3,-3)\,,
 \end{align}
 where the values of $A$ and $B$ are given by Eqs. \eqref{eq:VEVA_32} and \eqref{eq:VEVB_32}.
 
 \subsection{The Higgs boson in SU(5)}
-With the GUT broken down to the SM, the next step is to introduce a scalar field which can break the electroweak symmetry, playing the role of the Higgs boson in the SM. The Higgs transforms as $(1,2)_{\pm1/2}$ under $\mathcal{G}_\mathrm{SM}$. This scalar is required to  generate mass for the right-handed positron $(\bar{e})$ and the down type quarks $(d)$.  These specific states reside in the $\mathbf{5}$ representation (see Eq. \eqref{eq:5repSU5}), and their corresponding anti-particles in $\overline{\mathbf{10}}$ (see Eq. \eqref{eq:10barrep}). Their mass term must arise from the tensor product of these representations \cite{Georgi:1999wka}
+With the GUT broken down to the SM, the next step is to introduce a scalar field which can break the electroweak symmetry, playing the role of the Higgs boson in the SM. The Higgs transforms as $(\mathbf{1},\mathbf{2})_{\pm1/2}$ under the SM gauge sector $\mathcal{G}_\mathrm{SM}$. This particle is required in the SM to generate mass for the right-handed positron $(\bar{e})$ and the down type quarks $(d)$ (see Section \ref{sec:SMHiggs}).  These specific states reside in the $\mathbf{5}$ representation (see Eq. \eqref{eq:5repSU5}), and their corresponding anti-particles in $\overline{\mathbf{10}}$ (see Eq. \eqref{eq:10barrep}). Their mass term must arise from the tensor product of these representations \cite{Georgi:1999wka}
 \begin{align}
-     (\overline{\mathbf{10}}\otimes{\mathbf{5}})_{\SU(5)}=\vcenter{\hbox{\ydiagram{1,1,1}}} \otimes \vcenter{\hbox{\ydiagram{1}}}=\vcenter{\hbox{\ydiagram{2,1,1}}}\oplus \vcenter{\hbox{\ydiagram{1,1,1,1}}} =\overline{\mathbf{45}}\otimes \overline{\mathbf{5}}\,, 
+     (\overline{\mathbf{10}}\otimes{\mathbf{5}})_{\SU(5)}=\vcenter{\hbox{\ydiagram{1,1,1}}} \otimes \vcenter{\hbox{\ydiagram{1}}}=\vcenter{\hbox{\ydiagram{2,1,1}}}\oplus \vcenter{\hbox{\ydiagram{1,1,1,1}}} =\overline{\mathbf{45}}\oplus \overline{\mathbf{5}}\,, 
 \end{align} 
 Besides from the positron and down type quarks, the scalar must also generate masses for the ${u}$ and $\overline{u}$ states, both of which is contained in the $\overline{\mathbf{10}}$ representation. Let us consider the product of the representation with itself
 \begin{align}
@@ -724,47 +754,46 @@ Besides from the positron and down type quarks, the scalar must also generate ma
 \begin{ytableau} ~ & ~ \\ ~ & ~ \\ ~ \\ ~ \end{ytableau} \oplus 
 \begin{ytableau} ~ & ~ \\ ~ & ~ \\ ~ & ~ \end{ytableau}={\mathbf{5}}\oplus {\mathbf{45}}\oplus {\mathbf{50}}
 \end{align}
-To determine the allowed representations, the decomposition of the representations need to contain a multiplet with the same quantum numbers of the SM Higgs $(1,2)_{\pm1/2}$. The Higgs like scalar can reside in either the ${\mathbf{5}}$ or ${\mathbf{45}}$ \cite{Georgi:1999wka} (see Eq. \eqref{eq:irreps5} for the ${\mathbf{5}}$ representation). To confirm that this is also the case for the ${\mathbf{45}}$ representation we can compute the direct product of the two representations ${\mathbf{5}}\otimes\overline{{\mathbf{10}}}$. We will demonstrate this by utilising the decomposition in Eq. \eqref{eq:irreps5} and \eqref{eq:irreps10}, which yields
- \begin{align}
-    &\left( (3,1)_{-1/3} \oplus (1,2)_{1/2} \right) \otimes \left( (3,1)_{2/3} \oplus (1,1)_{-1} \oplus (\bar{3},2)_{-1/6} \right) \\&= (6,1)_{1/3} \oplus (\bar{3},1)_{1/3} \oplus (3,1)_{-4/3} \oplus (\bar{8},2)_{-1/2} \oplus (1,2)_{-1/2} \nonumber\\&\quad\oplus (3,2)_{7/6} \oplus (1,2)_{-1/2}\oplus (\bar{3},3)_{1/3}\oplus (\bar{3},1)_{1/3}\,.
+To determine the allowed representations, the decomposition of the representations need to contain a multiplet with the same quantum numbers of the SM Higgs $(\mathbf{1},\mathbf{2})_{\pm1/2}$. The Higgs-like scalar can reside in either the ${\mathbf{5}}$ or ${\mathbf{45}}$ representation (see Eq. \eqref{eq:irreps5} for the ${\mathbf{5}}$ representation). To confirm that this is also the case for the ${\mathbf{45}}$ representation we can compute the direct product of the two representations ${\mathbf{5}}\otimes\overline{{\mathbf{10}}}$. We will demonstrate this by utilising the decomposition in Eq. \eqref{eq:irreps5} and \eqref{eq:irreps10}, which yields
+\begin{align}
+    &\left( (\mathbf{3},\mathbf{1})_{-1/3} \oplus (\mathbf{1},\mathbf{2})_{1/2} \right) \otimes \left( (\mathbf{3},\mathbf{1})_{2/3} \oplus (\mathbf{1},\mathbf{1})_{-1} \oplus (\bar{\mathbf{3}},\mathbf{2})_{-1/6} \right) \\
+    &= (\mathbf{6},\mathbf{1})_{1/3} \oplus (\bar{\mathbf{3}},\mathbf{1})_{1/3} \oplus (\mathbf{3},\mathbf{1})_{-4/3} \oplus (\mathbf{8},\mathbf{2})_{-1/2} \oplus (\mathbf{1},\mathbf{2})_{-1/2} \nonumber\\
+    &\quad\oplus (\mathbf{3},\mathbf{2})_{7/6} \oplus (\mathbf{1},\mathbf{2})_{-1/2}\oplus (\bar{\mathbf{3}},\mathbf{3})_{1/3}\oplus (\bar{\mathbf{3}},\mathbf{1})_{1/3}\,.
 \end{align}
 We can now remove the irreps which make out the $\mathbf{5}$ representations (see Eq. \eqref{eq:irreps5}), effectively revealing the decomposition of the $\mathbf{45}$ representation
- \begin{align}
-    \mathbf{45}\leftrightarrow&\left( (3,1)_{-1/3} \oplus (1,2)_{1/2} \right) \otimes \left( (3,1)_{2/3} \oplus (1,1)_{-1} \oplus (\bar{3},2)_{-1/6} \right) \\&= (6,1)_{1/3} \oplus (\bar{3},1)_{1/3} \oplus (3,1)_{-4/3} \oplus (\bar{8},2)_{-1/2} \oplus (1,2)_{-1/2} \oplus (3,2)_{7/6} \oplus (\bar{3},3)_{1/3}\,,
+\begin{align}
+    \mathbf{45} \leftrightarrow & \left( (\mathbf{3},\mathbf{1})_{-1/3} \oplus (\mathbf{1},\mathbf{2})_{1/2} \right) \otimes \left( (\mathbf{3},\mathbf{1})_{2/3} \oplus (\mathbf{1},\mathbf{1})_{-1} \oplus (\bar{\mathbf{3}},\mathbf{2})_{-1/6} \right) \\
+    &= (\mathbf{6},\mathbf{1})_{1/3} \oplus (\bar{\mathbf{3}},\mathbf{1})_{1/3} \oplus (\mathbf{3},\mathbf{1})_{-4/3} \oplus (\mathbf{8},\mathbf{2})_{-1/2} \oplus (\mathbf{1},\mathbf{2})_{-1/2} \oplus (\mathbf{3},\mathbf{2})_{7/6} \oplus (\bar{\mathbf{3}},\mathbf{3})_{1/3}\,,
 \end{align}
-which includes the Higgs like irrep $(1,2)_{-1/2} $. Thus both ${\mathbf{5}}$ or ${\mathbf{45}}$ can be used to introduce a Higgs like scalar into the GUT.  
+which includes the Higgs like irrep $(\mathbf{1},\mathbf{2})_{-1/2} $. Thus both ${\mathbf{5}}$ or ${\mathbf{45}}$ can be used to introduce a Higgs like scalar into the GUT.  
 
-While conceptually compelling, the minimal $\SU(5)$ model encounters fundamental issues. A theoretical limitation of the model is the so-called \textit{doublet-triplet splitting} \cite{Croon:2019kpe}. This issue arises from the embedding the Higgs scalar within the $\mathbf{5}$ representation. This choice requires fine-tuning of the masses of the multiplets coloured components compared to the uncoloured components. The colour-triplet states needs to be heavy (around GUT scale) to avoid proton decay with a low decay rate. In contrast to the uncoloured doublet needs to be relatively light to ensure that the Higgs mass is in agreement with the measured mass of the Higgs $m_H=125.18\,$GeV \cite{Croon:2019kpe}. 
+While conceptually compelling, the minimal $\SU(5)$ model encounters fundamental issues. A theoretical limitation of the model is the \textit{doublet-triplet splitting} problem\cite{Croon:2019kpe}. This issue arises from the embedding the Higgs scalar within the $\mathbf{5}$ representation. This choice requires fine-tuning of the masses of the multiplets coloured components compared to the uncoloured components. The coloured-triplet states needs to be heavy (around GUT scale) to avoid prediction of proton decay with a low decay rate. In contrast to the uncoloured doublet, which needs to be relatively light to ensure that the Higgs mass is in agreement with the measured mass of the Higgs $m_H=125.18\,$GeV \cite{Croon:2019kpe}. 
 
-A further shortcoming of the model is its lack of generating neutrino mass. Different attempts to fix this have been proposed see \cite{FileviezPerez:2007bcw, Zee:1980ai,FileviezPerez:2016sal}. 
+A further shortcoming of the model is its lack of generating neutrino mass. Different attempts to fix this have been proposed \cite{FileviezPerez:2007bcw, Zee:1980ai,FileviezPerez:2016sal}. 
 
-Lastly, the biggest challenge of the model is its prediction of rapid proton decay. The mixing of quarks and leptons in the representations successfully explains the neutralness of the atom. However, this mixing also results the $X$ and $Y$ gauge bosons, which mediate the proton decay and estimates the proton lifetime at \cite{Croon:2019kpe}
+Lastly, the biggest challenge of the model is its prediction of rapid proton decay. The mixing of quarks and leptons in the representations successfully explains the neutralness of the atom. However, this mixing also results the $X$ and $Y$ gauge bosons (see Table \ref{tab:adjSU5}), which mediate the proton decay and estimates the proton lifetime at \cite{Croon:2019kpe}
 \begin{align}
     \tau_p\sim\frac{M_X^4}{m_p^5}\,,
 \end{align}
-where $m_p$ is the mass of the proton and $M_X$ is the scale of unification. As seen in Figures \ref{fig:uni} above, the assumed unification scale is around $\mu\sim10^{15}\,$GeV. This results in a proton decay rate of $\sim10^{31}\,$years. Since proton decay has not (yet) been observed, there is an experimental lower bound on the decay time of proton at the order of $10^{34}\,$years \cite{Takenaka:2020cmb}. This bound is the results of the experiment the Super-Kamiokande and is thus in disagreement with the estimate from the $\SU(5)$ GUT. Changes to the Higgs sector of the model can help this problem, see \cite{Dorsner:2005fq,Dorsner:2006dj,Fornal:2017xcj,FileviezPerez:2018dyf}. 
+where $m_p$ is the mass of the proton and $M_X$ is the scale of unification. As seen in Figure \ref{fig:uni} above, the assumed unification scale is around $\mu\sim10^{15}\,$GeV. This results in a proton decay rate of $10^{31}\,$years. Since proton decay has not (yet) been observed, there is an experimental lower bound on the decay time of proton at the order of $10^{34}\,$years \cite{Takenaka:2020cmb}. This bound is the results of the Super-Kamiokande experiment and is in disagreement with the estimate from the $\SU(5)$ GUT. Changes to the Higgs sector of the model can help this problem \cite{Dorsner:2005fq,Dorsner:2006dj,Fornal:2017xcj,FileviezPerez:2018dyf}. 
 
 \section{Alternative GUTs}
-The unification of the SM gauge groups does not necessarily need to be restricted to be the simplest embedding. Investigating larger symmetry groups provides alternative frameworks, with on of them being the $\mathrm{SO}(10)$ group. This group has the $\SU(5)$ GUT as a subgroup \cite{Georgi:1999wka}
+The unification of the SM gauge groups does not necessarily need to be restricted to be the simplest embedding. Investigating larger symmetry groups provides alternative frameworks, one example is the $\mathrm{SO}(10)$ group. This group has the $\SU(5)$ GUT as a subgroup \cite{Georgi:1999wka}
 \begin{equation}
     \mathrm{SU}(5)\times \U (1)\subset \mathrm{SO}(10)\,.
 \end{equation}
-The $\SO (10)$ GUT also suffer from the prediction of proton decay, however it resolves several of $\SU(5)$'s issues. Most notably, the $\SO(10)$ generates neutrino masses, through the inclusion of a right-handed neutrino. Furthermore, it fits the entire particle content of the SM into one single $\mathbf{16}$ representation \cite{Fritzsch:1974nn}. 
+The $\SO (10)$ GUT suffers from the prediction of proton decay just as the $\SU(5)$ GUT, however it resolves several of $\SU(5)$'s other issues. Most notably, the $\SO(10)$ generates neutrino masses, through the inclusion of a right-handed neutrinos. Furthermore, it fits the entire particle content of the SM into one single $\mathbf{16}$ representation \cite{Fritzsch:1974nn}. 
 
 Besides the $\SU (5)$ and $\SO(10)$ GUTs, there are multiple other possibilities, such as the exceptional Lie group \cite{Gursey:1975ki}
 \begin{equation}
     \SU(5)\subset\SO(10)\subset\E_6\,.
 \end{equation}
-This embedding of the SM is particularly studied within the string theory community, because the group structure of $\E_6$ is a subgroup of $\E_8\times\E_8$, which is the group structure of \textit{heterotic string theory} \cite{Witten:1985xc,Candelas:1985en}. This would essentially introduce a possible theory of everything, which would break down to an $\E_6$ GUT. This model, however, suffers from a large fundamental representation of $\mathbf{27}$, which introduces a lot of new particles, besides the particles from the SM. Furthermore, the Higgs sector is based on large representations and the breaking of the model down to the SM introduces an extra gauge boson, which has not been discovered experimentally \cite{Langacker:2008yv}. 
+This embedding of the SM is particularly studied within the string theory community, because the group structure of $\E_6$ is a subgroup of $\E_8\times\E_8$, which is the group structure of \textit{heterotic string theory} \cite{Witten:1985xc,Candelas:1985en}. This would essentially introduce a possible theory of everything, which would break down to an $\E_6$ GUT. This model, however, suffers from a large fundamental representation of $\mathbf{27}$, which introduces a lot of new particles, besides the particles from the SM. 
 
-Another set of models are semi-simple groups, such as Pati--Salam \cite{Pati:1974yy} $\SU(4)_C\times \SU(2)_L\times\SU(2)_R$. This GUT restores the left-right symmetry at high energies and at low energies, the $\SU(2)_R$ is broken, ensuring the left-handed bias that we have in the SM. Additionally, it gauges the lepton number as a symmetry. 
+Another set of models are semi-simple groups, such as Pati--Salam \cite{Pati:1974yy} $\SU(4)_C\times \SU(2)_L\times\SU(2)_R$. This GUT restores the left-right symmetry at high energies and at low energies, the $\SU(2)_R$ is broken, ensuring the left-handed bias that we have in the SM. 
 
-Another semi-simple GUT is the so-called Flipped $\SU(5)$ \cite{Barr:1981qv,DeRujula:1980qc} which has the gauge structure $\SU(5)\times\U(1)$. This model solves the doublet-triplet splitting problem of the minimal $\SU(5)$ discussed above \cite{Croon:2019kpe}. 
+Another possibility is supersymmetric (SUSY) GUTs \cite{Dimopoulos:1981zb}. SUSY theories introduce a symmetry between bosons and fermions, resulting in twice the number of particles in the SM. Every particle would have a supersymmetric counterpart; for instance: quarks would have \textit{squarks}, and leptons would have \textit{sleptons}. One of the models shortcomings is that none of the supersymmetric particles has been found yet. A quality of the SUSY GUT is that the Figure \ref{fig:uni} will change, and have an actual intersection of all three couplings at the SUSY GUT scale $10^{16}\,$GeV. This ensures a higher decay time for protons and thus the SUSY $\SU(5)$ GUT would not be ruled out based on the prediction of proton decay. 
 
-Other models such as Trinification $\SU(3)\times\SU(3)\times\SU(3)$ has also been explored \cite{Achiman:1978rv}.
+Despite the different models shortcomings and their individual prediction of new particles, all GUTs share the same core requirements: They must include the necessary fermion generations, supply the scalar fields required to break the unified group down to the SM, and a scalar to play the role of the Higgs.
 
-Despite the models individual shortcomings and differing particle additions, all GUTs share the same core requirements. They must include the necessary fermion generations, supply the scalar fields required to break the unified group down to the SM, and a scalar to play the role of the Higgs.
-
-Another possibility is supersymmetric (SUSY) GUTs \cite{Dimopoulos:1981zb}. This introduces a symmetry between bosons and fermions, resulting in twice the number of particles in the SM. Every particle would have a supersymmetric counterpart; for instance: quarks would have \textit{squarks}, and leptons would have \textit{sleptons}. One of the models shortcomings is that none of the supersymmetric particles has been found yet. A quality of the SUSY GUT is that the Figure \ref{fig:uni} will change, and have an actual intersection of all three couplings at the SUSY GUT scale $10^{16}\,$GeV. This ensures a higher decay time for protons and thus the $\SU(5)$ GUT would not be ruled out based on the prediction of proton decay. 
-
-In this thesis, we will focus on simple GUTs based on non-SUSY $\SU(N)$ groups. In the next chapter, we will explore \textit{complete asymptotic freedom} of the $\SU(N)$ groups.  
+In this thesis, we will focus on chiral theories with $\SU(N)$ simple gauge groups. In the next chapter, we will explore the framework of \textit{complete asymptotic freedom} and later see the application on $\SU(N)$ groups.  
