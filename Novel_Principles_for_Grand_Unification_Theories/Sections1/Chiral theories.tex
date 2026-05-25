@@ -1,9 +1,9 @@
 \section{Chiral theories}
 We want to consider chiral theories which are completely asymptotically free. Before doing that, we'll briefly consider what a chiral theory is. Chirality comes from the Dirac equation 
 \begin{equation}
-    (i\gamma^\mu \partial_\mu - m)\psi (x) =0\;,
+    (i\gamma^\mu \partial_\mu - m)\psi (x) =0\,,
 \end{equation}
-where $\gamma^\mu$ is the gamma matrices. \comment{I use the chiral rep / weyl rep} Rewriting the equation using the momentum operator $\slashed{p}=\gamma^\mu(i\partial_\mu)$ and the $2\times 2$ form of the gamma matricies
+where $\gamma^\mu$ is the gamma matrices. \comment{I use the chiral rep / weyl rep} Rewriting the equation using the momentum operator $\slashed{p}=\gamma^\mu(i\partial_\mu)$ and the $2\times 2$ form of the gamma matrices
 \begin{equation}
 \left[ 
 \begin{pmatrix}
@@ -25,52 +25,52 @@ m & 0 \\
 \psi_L \\
 \psi_R
 \end{pmatrix}
-= 0\;.
+= 0\,.
 \end{equation}
 From this, it can be seen that massless particles come in two types, left- and right-handed and that they do not mix \cite{Lancaster:2014}. In this case, an additional symmetry also applies for the field, namely the chiral symmetry $\psi\to e^{i\gamma^5\phi}\psi$ \cite{Zee:2010}. Chiral fermions are fermions which transform differently under the gauge group. This also means that you cannot combine left- and right-handed fermions to form a gauge-invariant mass term in the Lagrangian. Thus, in chiral theories, fermions obtain mass via spontaneous symmetry breaking, as in the Higgs mechanism \cite{Peskin:1995ev}.
 
 To investigate chiral theories and how the gauge coupling in the theory changes with energy scale, we want to consider the beta function of the Lagrangian 
 \begin{equation}
-    \mathcal{L}=-\frac{1}{4} F^a_{\mu\nu}F^{a\mu\nu} + iT_{ij}\sigma^\mu D_\mu \bar T^{ij} + i\tilde{F}_k\sigma^\mu D_\mu \bar{\tilde{F}}^k+iF_m \sigma^\mu D_\mu \bar{F}^m\;, \label{eq:lagrangian YM Weyl}
+    \mathcal{L}=-\frac{1}{4} F^a_{\mu\nu}F^{a\mu\nu} + iT_{ij}\sigma^\mu D_\mu \bar T^{ij} + i\tilde{F}_k\sigma^\mu D_\mu \bar{\tilde{F}}^k+iF_m \sigma^\mu D_\mu \bar{F}^m\,, \label{eq:lagrangian YM Weyl}
 \end{equation}
 with Weyl fermions in fundamental $F$, anti-fundamental $\tilde{F}$, and two-index symmetric and antisymmetric representations. The Lagrangian is thus a Yang-Mills gauge theory with Weyl fermions in different representations. The flavour indices on the anti-fundamental and the fundamental representation are $k=1,2,\ldots,(N\pm 4+p)$ and $m=1,2,\ldots,p$. The interval of these indices will make sense later. The Weyl fermion representations in the lagrangian are from two chiral theory models. The Georgi-Glashow (anti-symmetric two-index representation) and the Bars-Yankielowicz (symmetric two-index representation) models \cite{Molgaard:2016bqf}. 
 
 The beta function for Yang-Mills theories to first loop order is found in Equation \ref{eq:betafunction YM 1loop}
 \begin{equation}
-    \beta_{g_{1-loop}}=\frac{-g^3}{16\pi^2}\left[ \frac{11}{3}C_2(H)-\frac{4}{3}n_fC(R)\right]\;,
+    \beta_{g_{1-loop}}=\frac{-g^3}{16\pi^2}\left[ \frac{11}{3}C_2(H)-\frac{4}{3}n_fC(R)\right]\,,
 \end{equation}
 This is generic and without a specific fermion representation. First, we want to consider the beta function of the fine structure constant $\alpha_g=\frac{g^2}{16\pi^2}$ instead of the coupling itself
 \begin{equation}
-    \beta_{\alpha_g}=\frac{\text{d}\alpha_g}{\text{d}\ln \mu}=\frac{2g}{16\pi^2}\frac{\text{d}g}{\text{d}\ln \mu}\;.
+    \beta_{\alpha_g}=\frac{\text{d}\alpha_g}{\text{d}\ln \mu}=\frac{2g}{16\pi^2}\frac{\text{d}g}{\text{d}\ln \mu}\,.
 \end{equation}
 Next, we can use that we are considering $\operatorname{SU}(N)$. This results in the Casimir operator $C_2(H)$ to be equal to $N$ \cite{Peskin:1995ev}.\comment{maybe do the calculation earlier}. Thus, the beta function can be written as
 \begin{equation}
-    \beta_{\alpha_{g}}={-\alpha_g^2}\left[ \frac{11}{3}N-\frac{4}{3}n_fC(R)\right]\;,
+    \beta_{\alpha_{g}}={-\alpha_g^2}\left[ \frac{11}{3}N-\frac{4}{3}n_fC(R)\right]\,,
 \end{equation}
 Next lets consider the second term, which depends on the number of fermions for each representation. This is where chiral theories differ from vector-like theories. We consider the same fermionic representations as we had in the Lagrangian in Equation \ref{eq:lagrangian YM Weyl}. To do so, it is necessary to specify the flavours of each fermionic representation. This depends on gauge anomalies, also called $\left[\operatorname{SU}(N) \right]^3$ anomalies \cite{Peskin:1995ev}. This anomaly appears in triangle diagrams of three gauge currents. For the theory to be valid, the anomaly has to vanish. This happens in the SM. For $\operatorname{SU}(3)_c$ it is trivial because the theory is vector-like and thus have an equal amount of left- and right-handed fermions in the same representation. However, for $\operatorname{SU}(2)_L$ it is not as trivial because it is chiral. For three $\operatorname{SU}(2)_L$ gauge currents, the anomaly cancels because the representation is pseudoreal. However, the anomaly can still happen between $\operatorname{SU}(2)_L$ gauge currents and $\operatorname{U}(1)$ or gravity. These combinations still cancel due to the definition of the hypercharge and \comment{why for gravity} \cite{Peskin:1995ev}. 
 Thus, to ensure that our chiral theories are anomaly-free, the different representations must be built so that their anomaly coefficients $A(r)$ cancel
 \begin{equation}
-    \sum_{fermions}A(r)=\mathcal{A}\overset{!}{=}0\;,
+    \sum_{fermions}A(r)=\mathcal{A}\overset{!}{=}0\,,
 \end{equation}
 For a symmetric representation $A(\Psi_{sym})=N+4$ and antisymmetric representation $A(\Psi_{Anti-sym})=N-4$. The fundamental and anti-fundamental representation is given in Equation \ref{eq:anomaly coefficient}. 
 \begin{equation}
-    \mathcal{A} = N\pm 4 + \bar p A(\bar{\square}) + p A({\square})= N\pm 4 - \bar p  +p= 0 \;,
+    \mathcal{A} = N\pm 4 + \bar p A(\bar{\square}) + p A({\square})= N\pm 4 - \bar p  +p= 0 \,,
 \end{equation}
 where $\bar p$ is the number of Weyl fermions transforming in the anti-fundamental representation, that is, the number of fermion flavours transforming under an anti-fundamental. $p$ is equivalent just for the fundamental representation. Thus, $\bar p$ is restricted to be equal to:
 \begin{equation}
-    \bar p= N\pm 4 + p  \;.
+    \bar p= N\pm 4 + p  \,.
 \end{equation}
 Thus, when summing over the Dynkin index for all fermion representations, the anomaly-free expression of $\bar p $ is used 
 \begin{equation}
-    n_f T(R) = T(\Psi) + \bar p T(\bar{\square}) + p T({\square})=\frac{1}{2}\left(N\pm2 + N\pm 4 +p +p\right)=N+p\pm 3\;,
+    n_f T(R) = T(\Psi) + \bar p T(\bar{\square}) + p T({\square})=\frac{1}{2}\left(N\pm2 + N\pm 4 +p +p\right)=N+p\pm 3\,,
 \end{equation}
 where $T(\square)=T(\bar \square)$ is given by equation \ref{eq: Dynkin index fund. rep} and $T(\Psi)=\frac{N\pm2}{2}$, where $+$ is for symmetric and $-$ is for anti-symmetric representations. \comment{where does this come from} 
 Now inserting this in the beta function, remembering that $n_f$ is the number of Dirac fermions, so we need to divide that term by two, when inserting the number of Weyl fermions 
 \begin{equation}
-    \beta_{\alpha_{g}}={-\alpha_g^2}\left[ \frac{22}{3}N-\frac{4}{3}N \mp \frac{12}{3}-\frac{4}{3}p\right]={-\alpha_g^2}\left[ \left(6-\frac{4}{3}x\right)N\mp 4\right]\;,
+    \beta_{\alpha_{g}}={-\alpha_g^2}\left[ \frac{22}{3}N-\frac{4}{3}N \mp \frac{12}{3}-\frac{4}{3}p\right]={-\alpha_g^2}\left[ \left(6-\frac{4}{3}x\right)N\mp 4\right]\,,
 \end{equation}
 where $x=p/N$. From this, the fixed point can be found to one loop order by setting the beta function equal to zero, as explained in \ref{sec: XX}, yielding two solutions
 \begin{equation}
-    \beta_{\alpha_{g}}=0\Rightarrow \alpha_g=0 \vee 6N-\frac{4}{3}xN \mp 4=0\;,
+    \beta_{\alpha_{g}}=0\Rightarrow \alpha_g=0 \vee 6N-\frac{4}{3}xN \mp 4=0\,,
 \end{equation}
 where the first solution is the trivial UV fixed point, also called the Gaussian fixed point. The second fixed point is for $x=x_{FP}=\frac{9}{2}\mp \frac{3}{N}$ \cite{Molgaard:2016bqf} \comment{need to do the fixed point analysis - first the Veneziano limit takes p and N to infinity but keep x=p/N constant, this makes the explicit chiral factor disappear. I think I need to do the change of variables also for vector-like theories to really see the difference.}.

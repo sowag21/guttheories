@@ -123,6 +123,13 @@ ax.set_ylabel(r'$\Delta \alpha_i^{-1}(\mu)$', fontsize=32)
 ax.set_xlim(1e11, 1e18)
 ax.set_ylim(-200, 200) # Centered around zero
 
+# Hide the bottom-most y-tick label (-200) to prevent overlap
+yticks = ax.get_yticks()
+ax.set_yticks(yticks) # Lock in the tick positions
+ylabels = [str(int(y)) for y in yticks] # Convert to strings
+ylabels[0] = '' # Clear the first label
+ax.set_yticklabels(ylabels)
+
 # Tick formatting
 ax.tick_params(axis='both', which='major', labelsize=26, width=1.5, length=8, 
                direction='in', top=True, right=True)
@@ -145,67 +152,59 @@ plt.show()
 
 
 # Define the running coupling function derived from the user's equation
-# alpha_g(mu)^-1 = alpha_g(mu_0)^-1 - b0 * ln(mu/mu_0)
 def alpha_g(mu_ratio, b0, alpha_0=0.1):
     return 1.0 / (1.0 / alpha_0 - b0 * np.log(mu_ratio))
 
-# Define range for mu/mu_0 (from 1 to 1000)
-# Using a log scale for the x-axis is standard for running couplings
+# Define range for mu/mu_0
 mu_ratio = np.logspace(0, 4, 5000)
 
 # Evaluate for b0 = -1 and b0 = 1
-# Assuming an initial coupling of alpha_g(mu_0) = 0.1
 alpha_b_neg1 = alpha_g(mu_ratio, b0=-1)
 alpha_b_pos1 = alpha_g(mu_ratio, b0=1)
-
-
-def beta(g, N, n_f):
-    return - (g**3 / (16 * np.pi**2)) * (11/3 * N - 2/3 * n_f)
-
-g_vals = np.linspace(0, 3, 200)
-N = 3 # SU(3)
-
-beta_6 = beta(g_vals, N, 6)
-beta_27 = beta(g_vals, N, 27)
 
 # Set up the plot
 fig, ax = plt.subplots(figsize=(10, 8))
 
 # Colors
-color_af = '#1f78b4'  # Blue for b0 = -1 (Asymptotic Freedom)
-color_lp = '#33a02c'  # Red for b0 = 1 (Landau Pole / Loss of AF)
+color_af = '#1f78b4'  # Blue for b0 = -1
+color_lp = '#33a02c'  # Green for b0 = 1
 
 # Plot the lines
 ax.plot(mu_ratio, alpha_b_neg1, color=color_af, linewidth=3)
-ax.plot(mu_ratio, alpha_b_pos1, color=color_lp, linewidth=3,linestyle='--')
+ax.plot(mu_ratio, alpha_b_pos1, color=color_lp, linewidth=3, linestyle='--')
 
 # Formatting axes
-ax.set_xscale('log') # Logarithmic x-axis
+ax.set_xscale('log') 
 ax.set_xlabel(r'$\mu / \mu_0$', fontsize=32)
-ax.set_ylabel(r'$\alpha_g(\mu)$', fontsize=32)
-ax.set_xlim(1, 1.1*1e4)
 
-# Adjust y limits for breathing room
+# THE FIX: Added labelpad=25 to push the y-label to the left. 
+# This adds invisible width to the bounding box to match the minus signs on the other plot!
+ax.set_ylabel(r'$\alpha_g(\mu)$', fontsize=32, labelpad=25)
+
+ax.set_xlim(1, 1.1*1e4)
 ax.set_ylim(0, np.max(alpha_b_pos1) * 1.01)
 
-# Tick formatting to match previous style
+# Tick formatting
 ax.tick_params(axis='both', which='major', labelsize=26, width=1.5, length=8, direction='in', top=True, right=True)
 ax.tick_params(axis='x', which='minor', width=1, length=4, direction='in', top=True)
+
 ticks = [1, 10, 100, 1000, 10000]
-labels = ['', r'$10^1$', r'$10^2$', r'$10^3$', r'$10^4$'] # The first element is an empty string
+labels = ['', r'$10^1$', r'$10^2$', r'$10^3$', r'$10^4$'] 
 ax.set_xticks(ticks)
 ax.set_xticklabels(labels)
-# Legend formatting
+
+# Legend formatting (updated sizes to perfectly match the Beta function plot)
 legend_elements = [
     Line2D([0], [0], color=color_af, linewidth=3, label=r'$b_0 = -1$'),
     Line2D([0], [0], color=color_lp, linewidth=3, label=r'$b_0 = 1$', linestyle='--')
 ]
-ax.legend(handles=legend_elements, loc='upper left', fontsize=20, frameon=True, 
-          edgecolor='black', fancybox=False, title='Running Coupling', title_fontsize=22)
+ax.legend(handles=legend_elements, loc='upper left', fontsize=22, frameon=True, 
+          edgecolor='black', fancybox=False, title='Running Coupling', title_fontsize=24)
 
 plt.tight_layout()
 plt.savefig("running_coupling_pretty.pdf", format='pdf', bbox_inches='tight')
 plt.savefig("running_coupling_pretty.png", format='png', bbox_inches='tight', dpi=150)
+plt.show()
 
 fig, ax = plt.subplots(figsize=(10, 8))
 
@@ -243,3 +242,55 @@ plt.tight_layout()
 plt.savefig("beta_function_pretty.pdf", format='pdf', bbox_inches='tight')
 plt.savefig("beta_function_pretty.png", format='png', bbox_inches='tight', dpi=150) # Save png for preview if needed
 
+# --- REPLACEMENT FOR THE FINAL PLOTTING BLOCK ---
+
+# Define the beta function for alpha instead of g
+# beta(alpha) = - (alpha^2 / 2*pi) * (11/3 N - 2/3 n_f)
+def beta_alpha(alpha, N, n_f):
+    b0 = (11/3 * N - 2/3 * n_f)
+    return - (alpha**2 / (2 * np.pi)) * b0
+
+# Set a sensible range for alpha (g=3 corresponds to alpha ~= 0.7)
+alpha_vals = np.linspace(0, 0.8, 200)
+N = 3 # SU(3)
+
+beta_alpha_6 = beta_alpha(alpha_vals, N, 6)
+beta_alpha_27 = beta_alpha(alpha_vals, N, 27)
+
+# Set up the plot
+fig, ax = plt.subplots(figsize=(10, 8))
+
+# Colors
+color_sm = '#1f78b4'  # Light blue for SM
+color_bsm = '#33a02c' # Green for nf=27
+
+# Plot the lines
+ax.plot(alpha_vals, beta_alpha_6, color=color_sm, linewidth=3)
+ax.plot(alpha_vals, beta_alpha_27, color=color_bsm, linewidth=3, linestyle='--')
+
+# Plot the beta = 0 boundary line
+ax.axhline(0, color='black', linewidth=2.5, linestyle='dotted')
+
+# Formatting axes
+ax.set_xlabel(r'$\alpha$', fontsize=32)
+ax.set_ylabel(r'$\beta_{QCD}(\alpha)$', fontsize=32)
+ax.set_xlim(0, 0.8)
+
+# Adjust y limits slightly for breathing room
+ax.set_ylim(np.min(beta_alpha_6)*1.1, np.max(beta_alpha_27)*1.3)
+
+ax.tick_params(axis='both', which='major', labelsize=26, width=1.5, length=8, direction='in', top=True, right=True)
+
+# Legend formatting
+legend_elements = [
+    Line2D([0], [0], color=color_sm, linewidth=3, label=r'$n_f = 6$'),
+    Line2D([0], [0], color=color_bsm, linewidth=3, label=r'$n_f = 27$', linestyle='--'),
+    Line2D([0], [0], color='black', linewidth=2.5, linestyle='dotted', label=r'$\beta=0$')
+]
+ax.legend(handles=legend_elements, loc='upper left', fontsize=22, frameon=True, 
+          edgecolor='black', fancybox=False, title='SU(3) Beta function', title_fontsize=24)
+
+plt.tight_layout()
+plt.savefig("beta_function_alpha_pretty.pdf", format='pdf', bbox_inches='tight')
+plt.savefig("beta_function_alpha_pretty.png", format='png', bbox_inches='tight', dpi=150)
+plt.show()

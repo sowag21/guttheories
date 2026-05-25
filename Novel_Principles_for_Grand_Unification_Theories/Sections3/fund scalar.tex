@@ -1,42 +1,45 @@
 \section{Adding a Single Anti-Fundamental Scalar} \label{sec:fundscalar}
 We first extend the GG and BY models with one scalar field in the anti-fundamental representation. Thus, we introduce the scalar field $\phi$ to theory, which changes our Lagrangian. We will denote the chiral fermionic field as $\Lambda_{ij}$, referring either to $\Psi_{ij}$ for the case of the antisymmetric two-index tensor of the GG model or $\chi_{ij}$ in the case of the two-index symmetric tensor of the BY model. 
 
-This field will also have charges under the $U_1(1)$ and the $\U_2(1)$ groups. These can be found by ensuring that we can write a Yukawa term for the chiral fermion, such as 
+These field will also have charges under the $U_1(1)$ and the $\U_2(1)$ groups. These can be found by ensuring that we can write a Yukawa term for the chiral fermion, given by
 \begin{equation}
-    \mathcal{L}_{\text{Yukawa}}= y^\beta\Lambda_{ij} \tilde\psi ^{i}_{\beta} \phi^j + h.c.\; ,\label{eq:YukawaL}
+    \mathcal{L}_{\text{Yukawa}}= y^\beta\Lambda_{ij} \tilde\psi ^{i}_{\beta} \phi^j + \mathrm{h.c.}\,.\label{eq:YukawaL}
 \end{equation}
-For this term to be invariant we need the total charge of the term to be zero
+For this term to be charge-neutral, the total charge under each gauge group must vanish. For the first charge, $Q_1$, we have:
 \begin{align}
-     Q_{1_\Lambda}  +   Q_{1_{\tilde{\psi}}}+Q_{1_\phi} = 0\;.\\
-     N\mp4 -(N\mp2)+Q_{1_\phi} = 0\implies Q_{1_\phi}=\pm2
-     \\Q_{2_\Lambda}  +   Q_{2_{\tilde{\psi}}}+Q_{2_\phi} = 0\;.\\
-     2p -p+Q_{2_\phi} = 0\implies Q_{2_\phi}=-p\,.
+     Q_{1_\Lambda} + Q_{1_{\tilde{\psi}}} + Q_{1_\phi} &= 0  \\
+     (N \mp 4) - (N \mp 2) + Q_{1_\phi} &= 0 \quad \implies \quad Q_{1_\phi} = \pm 2 \,,
 \end{align}
-This charge assignment prohibits Yukawa terms like $\Psi_{ij}\bar A_{ij}H^i$ and $\psi \bar \psi H^i$ since they are not invariant under $\U_1(1)$ and $\U_2(1)$. Notice, that the Yukawa interaction we have written in Eq. \eqref{eq:YukawaL} results in an open flavour index from the anti-fundamental fermion. Therefore, to have a Yukawa term, we break the global symmetry of $\SU(N-4+p)$ explicitly and therefore results in a vector of yukawa couplings $y^a$ with $a=N-4+p$ Yukawa terms.
+where the upper (lower) sign refers to the GG (BY) model. We will use this convention henceforth. Similarly, for the second charge, $Q_2$:
+\begin{align}
+     Q_{2_\Lambda} + Q_{2_{\tilde{\psi}}} + Q_{2_\phi} &= 0 \notag \\
+     2p - p + Q_{2_\phi} &= 0 \quad \implies \quad Q_{2_\phi} = -p \,.
+\end{align}
+This charge assignment prohibits Yukawa terms mixing the vector-like fermions, since they are not invariant under $\U_1(1)$ and $\U_2(1)$. We will therefore have the Yukawa coupling written in \eqref{eq:YukawaL}.
 
-The Lagrangian will also include self-interaction of the scalars. Ensuring renormalisability and symmetry invariance we can write terms like
+The Lagrangian will also include self-interaction of the scalars. Ensuring renormalisability and symmetry invariance, we can write terms like
 \begin{equation}
     \mathcal{L}_{\text{quartic}}\sim 
-    \lambda \phi^\dagger_i \phi^i \phi^\dagger_j \phi^j + (\phi_i^\dagger (T^A)^i_{\,j}\phi^j)(\phi_k^\dagger (T^A)^k_{\,l}\phi^l)\;.
+    \lambda \phi^\dagger_i \phi^i \phi^\dagger_j \phi^j + (\phi_i^\dagger (T^A)^i_{\,j}\phi^j)(\phi_k^\dagger (T^A)^k_{\,l}\phi^l)\,.\label{eq:quaritcL}
 \end{equation}
-However, for (anti-)fundamental representation, the terms are not linearly independent. This can be proved by considering that the generators $T^A$ uphold the Fierz identity
+However, for a scalar in the (anti-)fundamental representation, the terms are not linearly independent. This can be proved by considering that the generators $T^A$ satisfy the Fierz identity (see Appendix \ref{app:Fierz} for the derivation)
 \begin{align}
-    T_i ^{\,A\,j}T_k ^{\,A\,l}=\frac{1}{2}\left(\delta_i^{\,l}\delta_k^{\,j}-\frac{1}{N}\delta_i^{\,j}\delta_k^{\,l}\right) \;.
+    T_i ^{\,A\,j}T_k ^{\,A\,l}=\frac{1}{2}\left(\delta_i^{\,l}\delta_k^{\,j}-\frac{1}{N}\delta_i^{\,j}\delta_k^{\,l}\right) \,.
 \end{align}
-Inserting this into the term yields
+Applying this to the second term of \eqref{eq:quaritcL} yields
 \begin{align}
-    \frac{1}{2} (\phi_i^\dagger \phi^j)(\phi_k^\dagger \phi^l)\left(\delta_i^{\,l}\delta_k^{\,j}-\frac{1}{N}\delta_i^{\,j}\delta_k^{\,l}\right)=\frac{1}{2}\left[\phi^{\dagger}_i \phi^j \phi^{\dagger}_j \phi^i-\frac{1}{N}\phi^{\dagger}_i \phi^i \phi^{\dagger}_k \phi^ik\right]=\frac{1}{2}\left(1-\frac{1}{N}\right) (\phi^{\dagger}_i \phi^i)^2\;,
+    \frac{1}{2} (\phi_i^\dagger \phi^j)(\phi_k^\dagger \phi^l)\left(\delta_i^{\,l}\delta_k^{\,j}-\frac{1}{N}\delta_i^{\,j}\delta_k^{\,l}\right)=\frac{1}{2}\left[\phi^{\dagger}_i \phi^j \phi^{\dagger}_j \phi^i-\frac{1}{N}\phi^{\dagger}_i \phi^i \phi^{\dagger}_k \phi^k\right]=\frac{1}{2}\left(1-\frac{1}{N}\right) (\phi^{\dagger}_i \phi^i)^2\,,
 \end{align}
-so it is not linearly independent of the quartic term in the Lagrangian.
+Thus, the two quartic terms in the Lagrangian in Eq.~\eqref{eq:quaritcL} are not linearly independent, resulting in only one quartic term. 
 
-Thus, the full Lagrangian reads
+Having collected all the pieces we can write the full Lagrangian as
 \begin{align}
     \mathcal{L}= &-\frac{1}{4} F_{\mu\nu}^a F^{a\mu\nu}+ i \bar{\Lambda}^{ij} \slashed{D} \Lambda_{ij} 
     + i \bar{\psi}^i_\alpha \slashed{D} \psi_i^\alpha 
-    + i \bar{\tilde{\psi}}_i^\beta \slashed{D} \tilde{\psi}^i_\beta\\& +(D_\mu \phi)_i^\dagger (D^\mu\phi)^i+(y^\beta\Lambda_{ij} \tilde\psi ^{i}_{\beta} \phi^j + h.c.)+\lambda (\phi^\dagger_i \phi^i)^2 
-    \;,
+    + i \bar{\tilde{\psi}}_i^\beta \slashed{D} \tilde{\psi}^i_\beta\\\nonumber& +(D_\mu \phi)_i^\dagger (D^\mu\phi)^i+(y^\beta\Lambda_{ij} \tilde\psi ^{i}_{\beta} \phi^j + \mathrm{h.c.})+\lambda (\phi^\dagger_i \phi^i)^2 
+    \,,
 \end{align}
-The transformation of the fields now includes the scalar (see Table \ref{tab:fund}).
+An overview of the model and the transformation of the fields can be seen in Table~\ref{tab:fund}.
 \begin{table}[ht]
     \centering
     \renewcommand{\arraystretch}{1.5} 
@@ -57,29 +60,27 @@ The transformation of the fields now includes the scalar (see Table \ref{tab:fun
     \label{tab:fund} 
 \end{table}
 
-The model has both Yukawas and a single quartic coupling as well as a gauge coupling. It should be noted that the Yukawa term explicitly breaks the global symmetry $\mathrm{SU}(N\mp 4+p)$, where the upper (lower) sign refers to the GG (BY) model. We will use this definition from now on.
+It should be noted that the Yukawa term explicitly breaks the global symmetry $\mathrm{SU}(N\mp 4+p)$. The Yukawa couplings are a vector $y^\beta$ in the flavour space and, without loss of generality, it can be rotated using a $\mathrm{SU}(N\mp4+p)$ transformation so that only its first component is non-zero.\footnote{The flavour symmetry group is therefore broken following $\mathrm{SU}(N\mp4+p) \to \mathrm{SU}(N\mp 4+p-1)$, since the rotation of the Yukawa vector to one non-zero, is the same as selecting a specific component. Thus, only the remaining perpendicular components leaves the term invariant. } Hence, physically there is a single coupling constant, which we define as $y$, which greatly simplifies the computation of the beta functions since $y_\beta y^\beta=y^2$.
 
-The Yukawa couplings is a vector $y^\beta$ in the flavour space and, without loss of generality, it can be rotated using a $\mathrm{SU}(N\mp4+p)$ transformation so that only its first component is non-zero\footnote{The flavour symmetry group is therefore broken to $\mathrm{SU}(N\mp4+p) \to \mathrm{SU}(N\mp 4+p-1)$.}. Hence, physically there is a single coupling constant, which we define as $y$, which greatly simplifies the computation of the beta functions since $y_\beta y^\beta=y^2$.
-
-We begin with the RG equation for the gauge coupling. The only change from the computation done in the previous section is the inclusion of the anti-fundamental scalar, which contributes with $T(S) = 1/2$. Using \eqref{eq:betagauge} we obtain 
+We begin with the RG equation for the gauge coupling. The only change from the computation done in the previous section is the inclusion of the anti-fundamental scalar, which contributes with $T(S) = 1/2$. Using \eqref{eq:betagauge}, we obtain 
 \begin{equation}
-\Delta b_0^{\text{scalar}} =  \frac{2}{3} T(S) =  \frac{1}{3}\;,\label{eq:scaleff}
+\Delta b_0^{\text{scalar}} =  \frac{2}{3} T(S) =  \frac{1}{3}\,,\label{eq:scaleff}
 \end{equation}
 Thus, the beta function of the gauge coupling is given by
 \begin{equation}
-    \beta_g=-\frac{\alpha_g^2}{3}\left(18N-4p\pm{12}-1\right)\;.\label{eq:betagwithp}
+    \beta_g=-\frac{\alpha_g^2}{3}\left(18N-4p\pm{12}-1\right)\,.\label{eq:betagwithp}
 \end{equation}
  The $(-1)$ inside the bracket corresponds to the scalar contribution.
 
-The remaining beta functions are computed using the ”RGBeta” library in Mathematica \cite{Thomsen:2021ncy}. Using similar rescaled couplings as for the gauge coupling $\alpha_y=y^2/(4\pi)^2$, $\alpha_\lambda=\lambda/(4\pi)^2$, the beta functions are given by
+The remaining beta functions are computed using the \texttt{RGBeta} library in Mathematica \cite{Thomsen:2021ncy}. Using similar rescaled couplings as for the gauge coupling $\alpha_y=y^2/(4\pi)^2$, $\alpha_\lambda=\lambda/(4\pi)^2$, the beta functions are given by
 \begin{align}
-    \beta_y&= \frac{\alpha_y}{2}\left[(3 N+2\mp3)\alpha_y+6 \alpha_g\left(-3 N\pm2+\frac 5N\right) \right]\;,\label{eq:betaywithp}
+    \beta_y&= \frac{\alpha_y}{2}\left[(3 N+2\mp3)\alpha_y+6 \alpha_g\left(-3 N\pm2+\frac 5N\right) \right]\,,\label{eq:betaywithp}
    \\
    \beta_\lambda&=\alpha_\lambda\left[2(N\mp1)\alpha_y-\frac{6 \alpha_g 
    \left(N^2-1\right)}{N}+4 \alpha_\lambda (N+4)\right]\nonumber\\&\;\;\;\;\;\;-\frac{1}{2} (N+1\mp 2 )
-  \alpha_y^2+\frac{3 \alpha_g^2 \left(N^3+N^2-4 N+2\right)}{4 N^2}\;. \label{eq:betalamwithp}
+  \alpha_y^2+\frac{3 \alpha_g^2 \left(N^3+N^2-4 N+2\right)}{4 N^2}\,. \label{eq:betalamwithp}
 \end{align}
-\begin{figure}[t]
+\begin{figure}[b!]
     \centering
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
@@ -97,48 +98,46 @@ The remaining beta functions are computed using the ”RGBeta” library in Math
     \caption{CAF regions in parameter space $(N,p)$ for (a) the GG model and (b) the BY model, with one scalar in the anti-fundamental representation. The dark blue area represents the fixed-flow CAF region, bounded above by $b_0=0$ condition (dashed black line) and for the GG model the $b_0-d_2'+\sqrt{k'}=0$ below (dotted black line). The light blue region highlights the CAF region off fixed flow bounded by the $b_0=0$ condition above and the $k=0$ (dash-dotted black line) condition below. The striped region indicates that the model exhibits CAF both on and off fixed flow.  The boundaries are given by the $p_{\max}$ and $p_{\min}$ functions  Eqs. \eqref{eq:pmaxfundoff}, \eqref{eq:pminfundoff}, and  \eqref{eq:pminfundon}.}
     \label{fig:cafby}
 \end{figure}
-The limits of the CAF regions can be found by considering the boundary of the three conditions $b_0=0$, $k=0$, and $b_0-d_2'+\sqrt{k'}=0$. In the off-fixed-flow regime, found from the first two conditions the $p(N)$ functions is found to be
+The limits of the CAF regions can be found by considering the boundary of the three conditions $b_0=0$, $k=0$, and $b_0-d_2'+\sqrt{k'}=0$ (see Eq.s \eqref{eq:CAF} and \eqref{eq:CAFfixed}). In the off-fixed-flow regime, the two former conditions give us 
 \begin{align}
-    p_{\text{max}}(N)&=\frac{18N\pm12-1}{4}\label{eq:pmaxfundoff}\;,\\
-   p_{\text{min}}^\text{off}(N) &= -\frac{1}{4}  \pm 3  + \frac{9}{2N}  + \frac{3}{2N} \sqrt{ 3 (N+4)(N^3 + N^2 - 4N + 2) }\;.\label{eq:pminfundoff}
+    p_{\text{max}}(N)&=\frac{18N\pm12-1}{4}\label{eq:pmaxfundoff}\,,\\
+   p_{\text{min}}^\text{off}(N) &= -\frac{1}{4}  \pm 3  + \frac{9}{2N}  + \frac{3}{2N} \sqrt{ 3 (N+4)(N^3 + N^2 - 4N + 2) }\,.\label{eq:pminfundoff}
 \end{align}
 There is also an alternative branch of the $p_{\text{min}}^\text{off}(N)$ with a minus in front of the final term, which does not border the CAF region because the change results in a negative $p \,\forall\, N$. 
 
-The boundary functions on fixed flow has the same upper boundary as in the off-fixed-flow regime (see Eq.\ \eqref{eq:pmaxfundoff}). The lower boundary found from the $b_0-d_2'+\sqrt{k'}=0$ condition is given by
+The boundary functions on fixed flow has the same upper boundary as in the off-fixed-flow regime (see Eq.~\eqref{eq:pmaxfundoff}). The lower boundary found from the $b_0-d_2'+\sqrt{k'}=0$ condition (see Eq. \eqref{eq:CAFfixed}) is given by
 \begin{align}
-    p_{\text{min}}^\text{on}(N)&= \frac{-720 + 4N(19 + 168N + 2N^2 - 9N^3)}{16N(N - 1)(N + 4)}\nonumber\\&\quad\;+\frac{ 3\sqrt{6}\sqrt{(1 - 3N)^2(N - 1)^2(N + 4)^2(N^2 + 2N - 2)}}{16N(N - 1)(N + 4)}\label{eq:pminfundon}\;,
+    p_{\text{min}}^\text{on}(N)&= \frac{-720 + 4N(19 + 168N + 2N^2 - 9N^3)}{16N(N - 1)(N + 4)}\nonumber\\&\quad\;+\frac{ 3\sqrt{6}\sqrt{(1 - 3N)^2(N - 1)^2(N + 4)^2(N^2 + 2N - 2)}}{16N(N - 1)(N + 4)}\label{eq:pminfundon}\,,
 \end{align}
-where $p_{\text{min}}^\text{on}(N)$ only bounds the GG model, as can be seen from Figure \ref{fig:cafgg_fund}.
+where $p_{\text{min}}^\text{on}(N)$ only bounds the GG model, as can be seen from Figure~\ref{fig:cafgg_fund}.
 
-We have now obtained the necessary beta functions and can continue the analysis of the models by performing a CAF analysis using the conditions mentioned in Eq.\ \eqref{eq:CAF} and Eq.\ \eqref{eq:CAFfixed}. Deploying these conditions on the beta functions Eqs. \eqref{eq:betagwithp}, \eqref{eq:betaywithp}, and \eqref{eq:betalamwithp}. It should be noted that the CAF regions found in this analysis \textit{may} correspond to fully asymptotically free theories. Whether these solutions correspond to CAF regions also depends on initial conditions on the couplings at a given RG scale (see Figure \ref{fig:flowplottheory}). These conditions are provided in Eqs. \eqref{eq:Yukawacondoff}, \eqref{eq:ygfixed}, \eqref{eq:CAFalpha} and \eqref{eq:CAFalphafixed} only when these are satisfied does one realise a genuine CAF regime. 
+We have now obtained the necessary beta functions and can continue the analysis of the models by performing a CAF analysis using the conditions mentioned in Eq.~\eqref{eq:CAF} and Eq.~\eqref{eq:CAFfixed}. We deploy these conditions on the beta functions Eqs. \eqref{eq:betagwithp}, \eqref{eq:betaywithp}, and \eqref{eq:betalamwithp}. It should be noted that the CAF regions found in this analysis \textit{may} correspond to fully asymptotically free theories. Whether these solutions correspond to CAF regions also depends on initial conditions of the couplings at a given RG scale (see Figure~\ref{fig:flowplottheory}). These conditions are provided in Eqs. \eqref{eq:Yukawacondoff}, \eqref{eq:ygfixed}, \eqref{eq:CAFalpha} and \eqref{eq:CAFalphafixed}, only when these are satisfied does one realise a genuine CAF regime. 
 
-In Figure \ref{fig:cafby}, the results of the CAF analysis are shown in the parameter space $(N,p)$. The light blue region in both figures represents the region where the coefficients of the beta functions satisfy the CAF conditions, when the Yukawa and gauge couplings are not on fixed flow. In other words, terms proportional to the Yukawa coupling have only a subleading effect in the beta function of the quartic couplings in this region.
+In Figure~\ref{fig:cafby}, the results of the CAF analysis are shown in the parameter space $(N,p)$. The light blue region in both figures represents the region where the coefficients of the beta functions satisfy the CAF conditions, when the Yukawa and gauge couplings are not on fixed flow. In other words, terms proportional to the Yukawa coupling have only a subleading effect in the beta function of the quartic couplings in this region.
 
-Another feature of Figure \ref{fig:cafby} is the dark blue region which extends up to the dashed black line. This is the region where the CAF conditions are satisfied for the Yukawa and gauge coupling on fixed flow. Thus, in this region, neither of the couplings is subleading. As mentioned in Section \ref{chap:CAF}, on fixed flow, the coefficients $d_2'$ and $d_4'$ can change sign. This is exactly what we observe in these models, effectively rendering the CAF conditions coming from the quartic coupling trivially upheld. Thus, the fixed-flow region closely resembles that of the models without a scalar. 
+Another feature of Figure~\ref{fig:cafby} is the dark blue region, which extends all the way up to the dashed black line. This is the region where the CAF conditions are satisfied for the Yukawa and gauge coupling on fixed flow. Thus, in this region, neither of the couplings is subleading. As mentioned in Section \ref{chap:CAF}, on fixed flow, the coefficients $d_2'$ and $d_4'$ can change sign. This is exactly what we observe in these models, effectively rendering the CAF conditions coming from the quartic coupling trivially satisfied. Thus, the fixed-flow region closely resembles that of the models without a scalar. 
 
-To better understand these conditions and these regions, flow diagrams have been made both within and outside of each region. These can be found in Appendix \ref{app:flow}. The analysis gives the same result as the CAF analysis and clearly illustrates how the values of the couplings at the RG scale are restricted. These conditions are Eq.\ \eqref{eq:CAFalpha} and Eq.\ \eqref{eq:CAFalphafixed}. 
-
-Next, we extend the model to include multiple chiral families motivated by the SM, which has three chiral families. 
+To better understand these conditions and these regions, flow diagrams have been made both within and outside of each region. These can be found in Appendix \ref{app:flow}. The analysis gives the same result as the CAF analysis and clearly illustrates how the values of the couplings at the RG scale are restricted. 
 
 \subsection{Inclusion of Chiral Families }\label{sec:fundscalarNg}
-To further explore the GG  and BY models with a scalar in the fundamental representation, we now extend the analysis to include multiple chiral families. The transformation rules of the models will be similar to those before, as shown in Table \ref{tab:fund_Ng}. The group $\mathrm{SU}(N\mp4+p)$ will change to $\mathrm{SU}(N_g(N\mp4)+p)$ ensuring anomaly cancellation. Furthermore, another group, $\mathrm{SU}(N_g)$, is added, under which the chiral fermionic field transforms, effectively adding chiral families. This will also change the terms involving the (anti-)symmetric two-index fermionic field in the Lagrangian, by introducing a new flavour index $\gamma=1,\dots,N_g$, where $N_g$ is the number of chiral families, putting this together we find the following Lagrangian
+To further explore the GG  and BY models with a scalar in the fundamental representation, we now extend the analysis to include multiple chiral families. The transformation rules of the models will be similar to those before, as shown in Table~\ref{tab:fund_Ng}. The global symmetry group due to the multiplicity of anti-fundamental fermions $\mathrm{SU}(N\mp4+p)$ will change to $\mathrm{SU}(N_g(N\mp4)+p)$ ensuring anomaly cancellation (see Eq. \eqref{eq:anomSU}). Furthermore, another group, $\mathrm{SU}(N_g)$, is added, under which the chiral fermionic field transforms, effectively adding chiral families. This will also change the terms involving the (anti-)symmetric two-index fermionic field in the Lagrangian, by introducing a new flavour index $\gamma=1,\dots,N_g$, where $N_g$ is the number of chiral families. Putting this together, we find the following Lagrangian
 \begin{align}
     \mathcal{L}&=  -\frac{1}{4} F_{\mu\nu}^a F^{a\mu\nu}+ i \bar \Lambda^{ij\gamma}\slashed{D}\Lambda_{ij\gamma}
     + i \bar{\psi}^i_\alpha \slashed{D} \psi_i^\alpha 
-    + i \bar{\tilde{\psi}}_i^\beta \slashed{D} \tilde{\psi}^i_\beta +(D_\mu \phi)_i^\dagger (D^\mu\phi)^i\\&\quad+(y^{\beta\gamma}\Lambda_{ij\gamma} \tilde\psi ^{i}_{\beta} \phi^j + h.c.)+\lambda (\phi^\dagger_i \phi^i)^2 
-    \;,
+    + i \bar{\tilde{\psi}}_i^\beta \slashed{D} \tilde{\psi}^i_\beta +(D_\mu \phi)_i^\dagger (D^\mu\phi)^i\nonumber\\&\,\quad+(y^{\beta\gamma}\Lambda_{ij\gamma} \tilde\psi ^{i}_{\beta} \phi^j + \mathrm{h.c.})+\lambda (\phi^\dagger_i \phi^i)^2 
+    \,,
 \end{align}
 where the Yukawa coupling is a $N_g\times (N_g(N\mp4)+p)$ matrix in flavour space.
 
 We begin by considering the gauge beta function, which is given by
 \begin{equation}
-    \beta_g=-\frac{22N-1\pm 12 N_g-4N_gN -4p}{3}\alpha_g^2\;,
+    \beta_g=-\frac{22N-1\pm 12 N_g-4N_gN -4p}{3}\alpha_g^2\,,
 \end{equation}
-where the beta function now depends on the number of chiral families $N_g$,together with $p$ and $N$. Hence, we can derive an upper limit on $p$ as a function of $N$ and $N_g$:
+where the beta function now depends on the number of chiral families $N_g$, together with $p$ and $N$. Hence, we can derive an upper limit on $p$ as a function of $N$ and $N_g$, namely
 \begin{equation} \label{eq:pmaxfundNg}
     p_{\max} (N,N_g) = \frac{22N-1\pm12N_g-4N_g N}{4}\,.
 \end{equation}
-When $p_{\max} < 0$, no CAF region can exist as the gauge coupling is not asymptotically free, giving a well-known upper bound on the number of chiral generations:
+When $p_{\max} < 0$, no CAF region can exist as the gauge coupling is not asymptotically free, giving an upper bound on the number of chiral generations
 \begin{equation}
     N_{g} \leq \frac{22N-1}{4(N\mp 3)}\,. 
 \end{equation}
@@ -161,24 +160,23 @@ When $p_{\max} < 0$, no CAF region can exist as the gauge coupling is not asympt
     \caption{Field content of the GG (upper signs, antisymmetric $\Lambda$) and BY (lower signs, symmetric $\Lambda$) models with $N_g$ chiral families and one anti-fundamental scalar $\phi$.  The table shows how the fields transform under the gauge and global symmetry groups, and their charges under the $\mathrm{U}_1(1)$ and $\mathrm{U}_2(1)$ symmetries. }
     \label{tab:fund_Ng} 
 \end{table}
-Next, we consider the Yukawa beta function. In Section \ref{sec:fundscalar}, we performed an $\mathrm{SU}(N\mp 4+p)$ transformation to rotate the Yukawa coupling vector, resulting in a single non-zero entry. In the general case, the matrix will not be square. To decouple the generations, we again decompose the matrix\footnote{We can do this using singular value decomposition (SVD). Any complex matrix $A$ can be written as $A=U\Sigma V^T$, where $U$ and $V$ are unitary matrices and $\Sigma$ is a rectangular diagonal matrix with non-negative real entries. }, so that the Yukawa matrix consists of $N_g$ independent and decoupled couplings. To further simplify the beta function, we can assume flavour universality, i.e.\ that the Yukawa coupling has the same value for all generations. This effectively reduces the matrix of beta equations to 
 \begin{equation}
     \beta_{y}={\alpha_y}
     \left(3\alpha_g\left(\frac{5}{N}\pm2-3N\right)
-    +\alpha_y\left(\mp N_g+N_gN+\frac{2\mp1+N}{2}\right)\right)\;,
+    +\alpha_y\left(\mp N_g+N_gN+\frac{2\mp1+N}{2}\right)\right)\,,
 \end{equation} 
-where $N_g$ comes from the trace over Yukawa couplings in the beta function\footnote{The trace factor is simply $N_g$ hence $N_g \le M$ for all relevant  $N$ and $p$ i.e.\ $p>0$ with $N\ge5$ for GG and $N\ge3$ for the BY model. }. Using the same assumptions, the beta function of the quartic coupling is given by
+where $N_g$ comes from the trace over Yukawa couplings in the beta function.\footnote{The trace factor is $N_g$ since $N_g \le N_gN\mp N_g4+p$ for all relevant  $N$ and $p$. } Using the same assumptions, the beta function of the quartic coupling is given by
 \begin{align}
     \beta_{\lambda}=&\alpha_\lambda\left[2N_g(N\mp1)\alpha_y+\left(\frac{6}{N}-6N\right)\alpha_g+4 \alpha_\lambda (N+4)\right]-\frac{N_g}{2} (N+1\mp2)
-  \alpha_y^2\nonumber\\&\;\;\;+\frac{3 \alpha_g^2 \left(N^3+N^2-4 N+2\right)}{4 N^2}\;.
+  \alpha_y^2\nonumber\\&\,+\frac{3 \alpha_g^2 \left(N^3+N^2-4 N+2\right)}{4 N^2}\,.
 \end{align}
 These beta functions now include a dependency on the number of chiral families, effectively changing the CAF regions from the case of one chiral family in Section \ref{sec:fundscalar}.
 
-We can again describe the boundaries of the CAF regions using maximal and minimum $p$ functions. The $p_{\max}$ function is given by the boundary of asymptotic freedom of the gauge coupling (see Eq. \eqref{eq:pmaxfundNg}). For off-fixed-flow regimes the minimum is found from the $k=0$ condition, which yields
+We can again describe the boundaries of the CAF regions using maximal and minimum $p$ functions. The $p_{\max}$ function is given by the boundary of asymptotic freedom of the gauge coupling (see Eq.~\eqref{eq:pmaxfundNg}). For off-fixed-flow regimes the minimum is found from the $k=0$ condition (Eq. \eqref{eq:CAF}), which yields
 \begin{align}
-    p_{\min}^\text{off}(N,N_g)&= -\frac{1}{4} + N + \frac{3\left(3 + \sqrt{3}\sqrt{8 - 14N + 5N^3 + N^4}\right)}{2N} \pm 3N_g - N N_g\;.\label{eq:pminfundNg}
+    p_{\min}^\text{off}(N,N_g)&= -\frac{1}{4} + N + \frac{3\left(3 + \sqrt{3}\sqrt{8 - 14N + 5N^3 + N^4}\right)}{2N} \pm 3N_g - N N_g\,.\label{eq:pminfundNg}
 \end{align}
-In the case of fixed flow we have the same $p_{\max}(N,N_g)$ function, i.e.\ \eqref{eq:pmaxfundNg}, however the lower boundary differs between the two models. The BY models CAF regions extend all the way down to $p=0$. However, for the GG model the lower boundary from the condition $b_0-d_2'+\sqrt{k'}=0$ is found to be
+In the case of fixed flow we have the same $p_{\max}(N,N_g)$ function, i.e.\ Eq.~\eqref{eq:pmaxfundNg}, however the lower boundary differs between the two models. The BY models CAF regions extend all the way down to $p=0$. However, for the GG model the lower boundary from the condition $b_0-d_2'+\sqrt{k'}=0$ is found to be
 \begin{align}
     p_{\min}^\text{on}(N,N_g)& = \frac{1}{16} \left( 68 + \frac{180}{N} - 20N + 48N_g - 16NN_g + \frac{3\sqrt{6}\sqrt{\frac{-2 + N(2+N)}{N_g}}(1 + N + 2(-1+N)N_g)}{N} \right)\label{eq:pminfundNgon}
 \end{align}
@@ -259,11 +257,11 @@ The CAF region is demonstrated for both models in Figures  \ref{fig:CAFGGNG9} an
     \label{fig:CAFNG9}
 \end{figure}
 
-As visualised in Figure \ref{fig:CAFGGNG9} the CAF region becomes smaller as $N_g$ becomes larger, due to the positive contribution of the fermions to the $b_0$ coefficient. The GG model is shown for $N_g=(1,3,5,6)$ but can realise CAF regimes with integer solutions up to $N_g={13}$. 
+As visualised in Figure~\ref{fig:CAFGGNG9} the CAF region becomes smaller as $N_g$ becomes larger, due to the positive contribution of the fermions to the $b_0$ coefficient. While the GG model is explicitly shown for $N_g=(1,3,5,6)$ it can accommodate CAF regimes with integer solutions up to $N_g={13}$. 
 
-It is of interest to consider the case of $\mathrm{SU}(5)$ with three chiral families, which corresponds to a GUT with the Higgs multiplet scalar \cite{Georgi:1974yf} (see Section \ref{sec:SU5}). In this setup the fundamental scalar $\phi$ can break the electroweak symmetry. Our analysis shows that the GG model posses CAF regions both on and off fixed flow. Specifically, when all the Yukawa coupling is on fixed flow the smallest amount of vector-like fermions needed to realise CAF is $p=4$. However, when the Yukawa coupling is off fixed flow the requirement increases to $p=18$. This highlights the viability of the $\mathrm{SU}(5)$ GUT when supplied with a sufficient vector-like sector. 
+It is of interest to consider the case of $\mathrm{SU}(5)$ with three chiral families, which corresponds to a GUT with the Higgs multiplet scalar \cite{Georgi:1974yf} (see Section \ref{sec:SU5}). In this setup the fundamental scalar $\phi$ can break the electroweak symmetry. Our analysis shows that the GG model possesses CAF regions both on and off fixed flow. Specifically, when the Yukawa coupling is on fixed flow the smallest amount of vector-like fermions needed to realise CAF is $p=4$. However, when the Yukawa coupling is off fixed flow the requirement increases to $p=18$. This highlights the viability of the $\mathrm{SU}(5)$ GUT when supplied with a sufficient vector-like sector. 
 
-The BY model can be seen in Figure \ref{fig:CAFNG9}. The figure displays four values of $N_g=(1,2,3,4), $ where for $N_g\ge 5$ the CAF region vanishes contrary to the GG model. In all the cases the theory exhibits CAF both on and off fixed flow. 
+The BY model is shown in Figure~\ref{fig:CAFNG9}. The figure displays four values of $N_g=(1,2,3,4), $ where for $N_g\ge 5$ the CAF region vanishes contrary to the GG model. In all the cases the theory exhibits CAF both on and off fixed flow. 
 
 
 

@@ -33,12 +33,14 @@
 \usepackage{amsmath}
 \allowdisplaybreaks
 \usepackage{slashed}
-% \usepackage{lete-sans-math}
-% \setmathfont{LeteSansMath.otf}
-\usepackage{amsfonts}
-% \usepackage{amssymb}
 \usepackage{braket}
 \usepackage{ytableau}
+
+\usepackage{unicode-math}
+%\setmathfont{Latin Modern Math}
+\setmathfont{NewCMMath-Book}
+%\setmathfont{Asana Math}
+%\setmathfont{Libertinus Math}
 \ytableausetup{centertableaux}
 
 \numberwithin{equation}{chapter}
@@ -177,9 +179,11 @@
 \newcommand{\question}[1]{\textbf{\textit{\color{vibrantred}[Question: #1]}}}
 \newcommand{\comment}[1]{\textbf{\textit{\color{darkgreen}[Comment: #1]}}}
 
+% \renewcommand{\thefootnote}{\Roman{footnote}}
+% \usepackage{perpage} 
+% \MakePerPage{footnote}
 \renewcommand{\thefootnote}{\Roman{footnote}}
-\usepackage{perpage} 
-\MakePerPage{footnote}
+\counterwithin*{footnote}{chapter}
 
 %---------------- Bibliography ----------------%
 \usepackage[sorting = none, style=numeric-comp]{biblatex}% style=authoryear
@@ -233,16 +237,13 @@
 
 \input{Sections0/Title.tex} %<------------ 
 
-\section*{Resumé}
-
-\input{Sections0/Resume.tex}
 
 \section*{Abstract}
 
 \input{Sections0/Abstract.tex}
 \thispagestyle{empty}
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 
 \thispagestyle{empty}
 \tableofcontents
@@ -279,8 +280,26 @@
 \label{chap:conc}
 \input{Sections4/Conclusion.tex}
 
-\printbibliography
+\printbibliography[heading=bibintoc]
 %\newpage
+
+
+% --- NEW APPENDIX SEPARATOR PAGE ---
+\clearpage
+% Adds "Appendices" to the Table of Contents as a Chapter-level item
+\addcontentsline{toc}{chapter}{Appendices} 
+
+% Creates the physical separator page
+\thispagestyle{empty} % Removes the page number from this specific page
+\vspace*{\fill}
+\begin{center}
+    \fontsize{50}{48}\selectfont\textbf{\textcolor{chaptercolour2}{Appendices}}
+\end{center}
+\vspace*{\fill}
+\clearpage
+\clearpage
+% -----------------------------------
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \appendix
 \chapter{Group theory}
 \label{app:GT}

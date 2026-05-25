@@ -1,25 +1,24 @@
 \section{Adding a Single Adjoint scalar} \label{sec:adj}
-Consider now the case of the scalar in the adjoint representation of $\mathrm{SU}(N)$. These scalars will be $N\times N$ matrices and can be written as $\Phi=\phi^bT^b$ where the scalar field transforms as $\Phi(x)\to U(x)\Phi(x)U^\dagger(x)$ with $U(x)=e^{\alpha^a(x)T^a}\in \mathrm{SU}(N)$. The adjoint representation is a real representation, consequently rendering it neutral under Abelian groups. It has $N^2-1$ degrees of freedom. 
+Consider now the case of the scalar in the adjoint representation of $\mathrm{SU}(N)$. These scalars will be $N\times N$ matrices and can be written as $\Phi=\phi^bT^b$ where the scalar field transforms as $\Phi(x)\to U(x)\Phi(x)U^\dagger(x)$. The adjoint representation is a real representation, consequently rendering it neutral under Abelian groups. 
 
 Including an adjoint scalar when extending the SM is particularly useful for implementing spontaneous symmetry breaking (see Section \ref{sec:SU5}). 
-
 
 The adjoint scalar allows for a Yukawa term between the vector-like fermions, thus the Lagrangian can be written as 
 \begin{align}
     \mathcal{L}= &-\frac{1}{4} F_{\mu\nu}^a F^{a\mu\nu}+ i \bar{\Lambda}^{ij} \slashed{D} \Lambda_{ij} 
     + i \bar{\psi}^i_\alpha \slashed{D} \psi_i^\alpha 
-    + i \bar{\tilde{\psi}}_i^\beta \slashed{D} \tilde{\psi}^i_\beta\nonumber\\&+\tr((D^\mu\Phi)(D_\mu\Phi))+ (y^\beta_\alpha \tilde\psi_\beta \Phi\psi^{\alpha}+h.c.)+\lambda_1\tr(\Phi^2)^2+\lambda_2\tr(\Phi^4)
-    \;.\label{eq:Ladj}
+    + i \bar{\tilde{\psi}}_i^\beta \slashed{D} \tilde{\psi}^i_\beta\nonumber\\&+\tr((D^\mu\Phi)(D_\mu\Phi))+ (y^\beta_\alpha \tilde\psi_\beta \Phi\psi^{\alpha}+\mathrm{h.c.})+\lambda_1\tr(\Phi^2)^2+\lambda_2\tr(\Phi^4)
+    \,.\label{eq:Ladj}
 \end{align}
-In comparison to the previous model in Section \ref{sec:fundscalar}, an additional quartic term can be written\footnote{For $N\in\{2,3\}$ there are completeness identities which contract the indices and make the two quartic terms proportional. This is because the determinant goes as $(\Phi^2)^N$. The result of the BY model for $N=3$ can be seen in Appendix \ref{app:BYN3}, where it is shown that the change to the Lagrangian does not effect the final conclusion, the for $N=3$ the BY model is never CAF independently of the number of chiral generations. }. The transformation rules of the model can be seen in Table \ref{tab:adj}. Note that the $\mathrm{U}_2(1)$ symmetry (depending on $p$) is explicitly broken by the Yukawa term in the Lagrangian, since the adjoint scalar is neutral under Abelian groups and thus cannot render the term invariant under $\mathrm{U}_2(1)$.  
+In comparison to the previous model in Section \ref{sec:fundscalar}, an additional quartic term can be written.\footnote{For $N\in\{2,3\}$ there are completeness identities which contract the indices and make the two quartic terms proportional. This is because the determinant goes as $(\Phi^2)^N$. The result of the BY model for $N=3$ can be seen in Appendix \ref{app:BYN3}, where it is shown that the change to the Lagrangian does not effect the final conclusion, the for $N=3$ the BY model is never CAF independently of the number of chiral generations. } The transformation rules of the model can be seen in Table~\ref{tab:adj}. Note that the $\mathrm{U}_2(1)$ symmetry (depending on $p$) is explicitly broken by the Yukawa term in the Lagrangian, since the adjoint scalar is neutral under Abelian groups and thus cannot render the term invariant under $\mathrm{U}_2(1)$.  
 
-From Eq.\ \eqref{eq:Ladj} we see that the structure of the Yukawa term is changed, compared to the previous model. It no longer includes the chiral fermionic sector, but instead couples the vector-like fermions. Similar to the model in Section \ref{sec:fundscalarNg}, the Yukawa coupling is a matrix since $\tilde\psi$ and $\psi$ with dimensions $p\times (N\mp 4+p)$, since they transform under two different global groups. Analogously to the cases of Section \ref{sec:fundscalarNg}, we can decompose the matrix in terms of $p$ independent real couplings. With this, we find the beta functions of the model to be 
+From Eq.~\eqref{eq:Ladj} we see that the structure of the Yukawa term is changed, compared to the previous model. It no longer includes the chiral fermionic sector, but instead couples the vector-like fermions. Similar to the model in Section \ref{sec:fundscalarNg}, the Yukawa coupling is a matrix since the product of $\tilde\psi$ and $\psi$ has dimensions $p\times (N\mp 4+p)$, since they transform under two different global groups. Analogously to the cases of Section \ref{sec:fundscalarNg}, we can decompose the matrix in terms of $p$ independent real couplings. With this, we find the beta functions of the model to be 
 \begin{align}
-    \beta_g&=-\frac{1}{3}\,\alpha_g^2\left(17N \pm 12 -4p\right)\;,\\
-    \beta_{y}&=\alpha_y\left[\left(\frac 6N-6N\right) \alpha_g+ 2p \alpha_{y}+ \left(N-\frac 3N\right )\alpha_y\right]\;,\\
-    \beta_{\lambda_1} &=4\frac{N^2-9}{N}\alpha_{\lambda_1}^2+12\alpha_{\lambda_1}\alpha_{\lambda_2}+4(p\alpha_{y}-3\alpha_{g})\alpha_{\lambda_1}+3N\alpha_g^2-2p\alpha_{y}^2\;,
+    \beta_g&=-\frac{1}{3}\,\alpha_g^2\left(17N \pm 12 -4p\right)\,,\\
+    \beta_{y}&=\alpha_y\left[\left(\frac 6N-6N\right) \alpha_g+ 2p \alpha_{y}+ \left(N-\frac 3N\right)\alpha_y\right]\,, \label{eq:betaYadj}\\
+    \beta_{\lambda_1} &=4\frac{N^2-9}{N}\alpha_{\lambda_1}^2+12\alpha_{\lambda_1}\alpha_{\lambda_2}+4(p\alpha_{y}-3\alpha_{g})\alpha_{\lambda_1}+3N\alpha_g^2-2p\alpha_{y}^2\,,\label{eq:betalamadj1}
     \\
-    \beta_{{\lambda_2}}&=(7+N^2)\alpha_{\lambda_2}^2+\frac{12(3+N^2)}{N^2}\alpha_{\lambda_1}^2+\frac{4(2N^2-3)}{N}\alpha_{\lambda_1}\alpha_{\lambda_2}+4(p\alpha_{y}-3N\alpha_{g})\alpha_{\lambda_2}+18\alpha_{g}^2\;.
+    \beta_{{\lambda_2}}&=(7+N^2)\alpha_{\lambda_2}^2+\frac{12(3+N^2)}{N^2}\alpha_{\lambda_1}^2+\frac{4(2N^2-3)}{N}\alpha_{\lambda_1}\alpha_{\lambda_2}+4(p\alpha_{y}-3N\alpha_{g})\alpha_{\lambda_2}+18\alpha_{g}^2\,.\label{eq:betalamadj2}
 \end{align}
  \begin{table}[ht]
     \centering
@@ -42,19 +41,19 @@ From Eq.\ \eqref{eq:Ladj} we see that the structure of the Yukawa term is change
 \end{table}
 Having two quartic couplings makes the CAF analysis different from the previous models and requires root analysis of fourth-degree polynomials. We use the approach described in Section \ref{sec:CAF2} and Appendix \ref{sec:appCafadj}. This framework converts the task of solving coupled differential equations to an exercise of finding real positive solutions to a fourth-degree polynomial. Viable CAF regions must have at least one real solution. 
 
-For the GG models, a result of the roots analysis can be found in Figure \ref{fig:roots_fixed}. There are three possible scenarios of real or complex roots, depending on the parameters $N$ and $p$, where the viable region in green is delimitated by the condition $\Delta=0$ (see Eqs. \eqref{eq:Delta0noY} and \eqref{eq:Delta0}), where $\Delta$ is the discriminant of the fourth degree polynomial in Eq.\ \eqref{eq:fourthdegpoly}. This region should be compared with the asymptotic freedom condition for the gauge coupling running, which gives an upper bound on $p$ from the condition $b_0=0$
+For the GG models, a result of the roots analysis can be found in Figure~\ref{fig:roots_fixed} for all couplings on fixed flow. There are three possible scenarios of real or complex roots, depending on the parameters $N$ and $p$, where the viable region in green is delimitated by the condition $\Delta=0$ (see Eqs. \eqref{eq:Delta0noY} and \eqref{eq:Delta0}), where $\Delta$ is the discriminant of the fourth degree polynomial in Eq.~\eqref{eq:fourthdegpoly}. This region should be compared with the asymptotic freedom condition for the gauge coupling running, which gives an upper bound on $p$ from the condition $b_0=0$
 \begin{align}
-    p_{\max}(N)&=\frac{17N\pm12}{4}\;, \label{eq:pmaxadj}
+    p_{\max}(N)&=\frac{17N\pm12}{4}\,, \label{eq:pmaxadj}
 \end{align}
-shown as a dashed line in the plots. Thus, there is no viable region on fixed flow.
+shown as a dashed line in the plots. Thus, there is no viable region on fixed flow, since there is no green region below the dashed line (representing this condition) in Figure~\ref{fig:roots_fixed}.
 
-Conversely, in the regime where the Yukawa coupling vanishes faster than the other couplings, its contribution to the scalar beta functions is subleading. The UV behaviour of the theory may then be analysed by solving the gauge–scalar subsystem on fixed flow, effectively reducing the quartic beta equations to
+Conversely, in the off-fixed-flow regime the UV behaviour of the theory may then be analysed by solving the gauge–scalar subsystem on fixed flow, effectively reducing the quartic beta equations to
 \begin{align}
-    \beta_{{\lambda_1}} &=4\frac{N^2-9}{N}\alpha_{\lambda_1}^2+12\alpha_{\lambda_1}\alpha_{\lambda_2}-12N\alpha_{g}\alpha_{\lambda_1}+3N\alpha_g^2 \;,\label{eq:beta1yoff}
+    \beta_{{\lambda_1}} &=4\frac{N^2-9}{N}\alpha_{\lambda_1}^2+12\alpha_{\lambda_1}\alpha_{\lambda_2}-12N\alpha_{g}\alpha_{\lambda_1}+3N\alpha_g^2 \,,\label{eq:beta1yoff}
     \\
-    \beta_{{\lambda_2}}&=(7+N^2)\alpha_{\lambda_2}^2+\frac{12(3+N^2)}{N^2}\alpha_{\lambda_1}^2+\frac{4(2N^2-3)}{N}\alpha_{\lambda_1}\alpha_{\lambda_2}-12N\alpha_{g}\alpha_{\lambda_2}+18\alpha_{g}^2\;.\label{eq:beta12yoff}
+    \beta_{{\lambda_2}}&=(7+N^2)\alpha_{\lambda_2}^2+\frac{12(3+N^2)}{N^2}\alpha_{\lambda_1}^2+\frac{4(2N^2-3)}{N}\alpha_{\lambda_1}\alpha_{\lambda_2}-12N\alpha_{g}\alpha_{\lambda_2}+18\alpha_{g}^2\,.\label{eq:beta12yoff}
 \end{align}
-This approach was explained in Section \ref{sec:CAF2}. In this case real solutions can be found when the gauge coupling is asymptotically free as seen in Figure \ref{fig:roots_noy}.
+This approach was explained in Section \ref{sec:CAF2}. In this case real solutions can be found when the gauge coupling is asymptotically free, as seen in Figure~\ref{fig:roots_noy}.
 
 \begin{figure}[ht]
     \centering
@@ -72,27 +71,27 @@ This approach was explained in Section \ref{sec:CAF2}. In this case real solutio
         \label{fig:roots_noy}
     \end{subfigure}
     
-    \caption{ Root structure of the fourth-degree polynomial for the GG model, for (a) all couplings on fixed flow and (b) the Yukawa coupling off fixed flow. The shaded regions denote four complex roots (white), and two real and two complex roots (light green). The dashed black line illustrates the $b_0=0$ condition, underneath which the gauge coupling is asymptotic free.} 
+    \caption{ Root structure of the fourth-degree polynomial for the GG model, for (a) all couplings on fixed flow and (b) the Yukawa coupling off fixed flow. The shaded regions denote four complex roots (white), and two real and two complex roots (light green). The dashed black line illustrates the $b_0=0$ condition, below which the gauge coupling is asymptotic free.} 
     \label{fig:Deltaadj}
 \end{figure}
-To have a CAF region, we also require a potential bounded from below. Thus, the quartic couplings must be positive as well as real. To determine this, we can use Descartes' rule of signs. For the region shaded in Figure \ref{fig:BYposroots} there are three sign changes resulting in one positive real root, ensuring that the theory has a CAF region, illustrated in Figure \ref{fig:BYposroots}. Interestingly, CAF models only exist for $N \geq 7$ and $p \geq 32$, where no solution exists for the $\mathrm{SU}(5)$ GUT model with one generation. The analysis for the BY models provides similar results, with the CAF region shown in Figure~\ref{fig:gg_combined_ng1} (for more details, see Appendix~\ref{sec:appGGplotsadj}). 
+To have a CAF region, we also require a potential bounded from below. Thus, the quartic couplings must be positive as well as real. To determine this, we can use Descartes' rule of signs. For the region shaded in Figure~\ref{fig:BYposroots} there are three sign changes resulting in one positive real root, ensuring that the theory has a CAF region, illustrated in Figure~\ref{fig:BYposroots}. Interestingly, CAF models only exist for $N \geq 7$ and $p \geq 32$, where no solution exists for the $\mathrm{SU}(5)$ GUT model with one generation. The analysis for the BY models provides similar results, with the CAF region shown in Figure~\ref{fig:gg_combined_ng1} (for more details, see Appendix~\ref{sec:appGGplotsadj}). 
 
 \begin{figure}[t!]
     \centering
     \includegraphics[width=0.5\textwidth]{Figures/CAFplotGG_3_FinalCombined_Ng1.pdf}
-    \caption{CAF regions for the GG model with the Yukawa coupling $\alpha_y$ off fixed flow (light blue). The dashed black line illustrates the $b_0=0$ condition (Eq.\ \eqref{eq:pmaxadj}), and the solid black line the $\Delta=0$ for $\alpha_y$ off fixed flow \eqref{eq:Delta0noY}.}
+    \caption{CAF regions for the GG model with the Yukawa coupling $\alpha_y$ off fixed flow (light blue). The dashed black line illustrates the $b_0=0$ condition (Eq.~\eqref{eq:pmaxadj}), and the solid black line the $\Delta=0$ for $\alpha_y$ off fixed flow \eqref{eq:Delta0noY}.}
     \label{fig:BYposroots}
 \end{figure}
 As in the case of the anti-fundamental scalar, we can extend our model to include multiple chiral families. We will do this in the following section.
 \subsection{Inclusion of Chiral Families}\label{sec:adjNg}
- Let us now upgrade the model with an adjoint scalar to include chiral generations. As done in Section \ref{sec:fundscalarNg}, the global symmetry group will depend on the number of families $\mathrm{SU}(N_g(N\mp4)+p)$. This also changes the transformation table, see Table \ref{tab:adj_Ng}. 
+ Let us now upgrade the GG and BY model with an adjoint scalar to include chiral generations. As done in Section \ref{sec:fundscalarNg}, the global symmetry group will depend on the number of families: $\mathrm{SU}(N_g(N\mp4)+p)$. This also changes the transformation table, see Table~\ref{tab:adj_Ng}. 
 
 The Lagrangian is similar to that of \eqref{eq:Ladj}, except for the additional flavour index on the two-index anti-fundamental chiral fermion, yielding
 \begin{align}
    \mathcal{L}= &-\frac{1}{4} F_{\mu\nu}^a F^{a\mu\nu}+ i \bar{\Lambda}^{ij\gamma} \slashed{D} \Lambda_{ij\gamma } 
     + i \bar{\psi}^i_\alpha \slashed{D} \psi_i^\alpha 
-    + i \bar{\tilde{\psi}}_i^\beta \slashed{D} \tilde{\psi}^i_\beta\nonumber\\&+\tr((D^\mu\Phi)(D_\mu\Phi))+ (y^\beta_\alpha \tilde\psi_\beta \Phi\psi^{\alpha}+h.c.)+\lambda_1\tr(\Phi^2)^2+\lambda_2\tr(\Phi^4)
-    \;.
+    + i \bar{\tilde{\psi}}_i^\beta \slashed{D} \tilde{\psi}^i_\beta\nonumber\\&+\tr((D^\mu\Phi)(D_\mu\Phi))+ (y^\beta_\alpha \tilde\psi_\beta \Phi\psi^{\alpha}+\mathrm{h.c.})+\lambda_1\tr(\Phi^2)^2+\lambda_2\tr(\Phi^4)
+    \,.
 \end{align}
 We can again consider a decomposing of the Yukawa matrix, leaving us $p$ independent real couplings, which we consider identical. 
 \begin{table}[ht]
@@ -115,11 +114,11 @@ We can again consider a decomposing of the Yukawa matrix, leaving us $p$ indepen
     \label{tab:adj_Ng} 
 \end{table}
 
-Since, the Yukawa interaction is does not include the chiral fermions in the case of an adjoint scalar; only the gauge beta function will be affected by the number of generations, as follows
+Since, the Yukawa interaction does not include the chiral fermions in the case of an adjoint scalar, only the gauge beta function will be affected by the number of generations as follows
 \begin{equation}
-     \beta_g=-\frac{1}{3}\left(21N \pm 12 N_g-4p-4N_gN\right)\alpha_g^2\;,
+     \beta_g=-\frac{1}{3}\left(21N \pm 12 N_g-4p-4N_gN\right)\alpha_g^2\,,
 \end{equation} 
-while the Yukawa and quartic beta functions remain the same as for the one-family models.
+while the Yukawa and quartic beta functions remain the same as for the one-family models (see Eqs. \eqref{eq:betaYadj}, \eqref{eq:betalamadj1} and \eqref{eq:betalamadj2}).
 \begin{figure}[t!]
     \centering
     \begin{subfigure}[b]{0.49\textwidth}
@@ -136,17 +135,17 @@ while the Yukawa and quartic beta functions remain the same as for the one-famil
         \label{fig:final_combined_ng2}
     \end{subfigure}
     
-    \caption{ Properties of the GG model with $N_g=3$ chiral families. (a) Root structure of the fourth-degree polynomial with all the couplings on fixed flow. The shaded regions denote four complex roots (white) or two real and two complex roots (light green). (b) CAF regions with the Yukawa coupling $\alpha_y$ off fixed flow (light blue). The dashed black line illustrates the $b_0=0$ condition (Eq.\ \eqref{eq:pmaxadj}), and the solid black line the $\Delta=0$ for $\alpha_y$ off fixed flow \eqref{eq:Delta0noY}.} 
+    \caption{ Properties of the GG model with $N_g=3$ chiral families. (a) Root structure of the fourth-degree polynomial with all the couplings on fixed flow. The shaded regions denote four complex roots (white) or two real and two complex roots (light green). (b) CAF regions with the Yukawa coupling $\alpha_y$ off fixed flow (light blue). The dashed black line illustrates the $b_0=0$ condition (Eq.~\eqref{eq:pmaxadj}), and the solid black line the $\Delta=0$ for $\alpha_y$ off fixed flow \eqref{eq:Delta0noY}.} 
     \label{fig:Ng2}
 \end{figure}
 
-It is only possible to express the upper boundary in a compact analytic form, analogous to the case of a single chiral family, from the $b_0=0$ condition. In this analysis, we obtain
+It is only possible to express the upper boundary in a compact analytic form, analogous to the case of a single chiral family, from the $b_0=0$ condition, which yields
 \begin{align}
-    p_{\max}(N,N_g)=\frac{21N\pm12 N_g-4NN_g}{4}\label{eq:padjscalar}
+    p_{\max}(N,N_g)=\frac{21N\pm12 N_g-4NN_g}{4}\,.\label{eq:padjscalar}
 \end{align}
-where the lower boundary is described by $\Delta=0$ (see Eqs. \eqref{eq:Delta0noY} and \eqref{eq:Delta0}).
+The lower boundary is described by $\Delta=0$ (see Eqs. \eqref{eq:Delta0noY} and \eqref{eq:Delta0}).
 
-Now we can perform a CAF analysis. First, consider the GG model with $N_g=3$. In Figure \ref{fig:Ng2}, a similar result can be seen as that for one chiral family: CAF solutions only excist on fixed flow. More in detail, Figure \ref{fig:roots_fixed_ng2} illustrates that on fixed-flow, all the roots will be complex within the region where the gauge coupling is asymptotic free. In Figure \ref{fig:final_combined_ng2}, the light blue region represents the CAF region for the Yukawa coupling off fixed flow. Solutions only exist for $N\geq 7$ and $p\geq 24$, once again excluding the $\mathrm{SU}(5)$ GUT model.
+Now we can perform a CAF analysis. First, consider the GG model with $N_g=3$. As shown in Figure~\ref{fig:Ng2}, the result mirrors that of the one family case: CAF solutions only exist on fixed flow. More in detail, Figure~\ref{fig:roots_fixed_ng2} illustrates that on fixed-flow, all the roots will be complex within the region where the gauge coupling is asymptotically free. In Figure~\ref{fig:final_combined_ng2}, the light blue region represents the CAF region for the Yukawa coupling off fixed flow. Solutions only exist for $N\geq 7$ and $p\geq 24$, once again excluding the $\mathrm{SU}(5)$ GUT model.
 
 \begin{figure}[t!]
     \centering
@@ -179,7 +178,7 @@ Now we can perform a CAF analysis. First, consider the GG model with $N_g=3$. In
         \label{fig:gg_combined_ng6}
     \end{subfigure}
     
-    \caption{Properties of the GG model with $N_g=5$ chiral families. (a) Root structure of the fourth-degree polynomial with all the couplings on fixed flow. The shaded regions denote four complex roots (white) or two real and two complex roots (light green). (b,c,d) CAF regions with all couplings on fixed flow (dark blue) and for the Yukawa coupling $\alpha_y$ off fixed flow (light blue). The dashed black line illustrates the $b_0=0$ condition (Eq.\ \eqref{eq:pmaxadj}), the solid black line the $\Delta=0$ for $\alpha_y$ off fixed flow \eqref{eq:Delta0noY} and the dash dotted line illustrates $\Delta=0$ on fixed flow \eqref{eq:Delta0}. } 
+    \caption{Properties of the GG model with $N_g=5$ chiral families. (a) Root structure of the fourth-degree polynomial with all the couplings on fixed flow. The shaded regions denote four complex roots (white) or two real and two complex roots (light green). (b,c,d) CAF regions with all couplings on fixed flow (dark blue) and for the Yukawa coupling $\alpha_y$ off fixed flow (light blue). The dashed black line illustrates the $b_0=0$ condition (Eq.~\eqref{eq:pmaxadj}), the solid black line the $\Delta=0$ for $\alpha_y$ off fixed flow \eqref{eq:Delta0noY} and the dash dotted line illustrates $\Delta=0$ on fixed flow \eqref{eq:Delta0}. } 
     \label{fig:Ng3}
 \end{figure}
 
@@ -217,30 +216,30 @@ Now we can perform a CAF analysis. First, consider the GG model with $N_g=3$. In
     \caption{CAF regions in the ($N$, $p$) parameter space for the BY model with $N_g \in \{1, 2, 3, 4\}$. The dark blue area indicates the region of CAF on the fixed flow, which is bounded above by the $b_0=0$ condition (dashed black line) \eqref{eq:padjscalar} and below by $\Delta=0$ (black dash dotted line) with $\alpha_y$ on fixed flow \eqref{eq:Delta0}. The light blue area highlights the region of CAF with the Yukawa coupling $\alpha_y$ off the fixed flow, bounded by the $b_0=0$ above and $\Delta=0$ below (solid black line) for $\alpha_y$ off fixed flow \eqref{eq:Delta0noY}. } 
     \label{fig:GGadjNG37}
 \end{figure}
-Matters change when the number of families is $N_g=5$ as illustrated in Figure \ref{fig:roots_fixed_ng3}, where the nature of the roots is shown. We identify two regions with two regions with two real and two complex roots. One of them excluded by the requirement of asymptotic free gauge coupling. Thus, one region with an asymptotically free gauge coupling remains. Further, the polynomial has one sign change in this area, and thus has one positive real root as a consequence of Descartes' rule of signs. As shown in Figure \ref{fig:final_combined_ng3}, the GG model with $N_g=5$ has a CAF region on fixed flow highlighted in dark blue and starting at $N \geq 13$.
+Matters change when the number of families is $N_g=5$, as illustrated in Figure~\ref{fig:roots_fixed_ng3}, which displays the nature of the roots. We identify two regions with two regions with two real and two complex roots. One of them is excluded by the requirement of asymptotic free gauge coupling. Thus, only one region with an asymptotically free gauge coupling remains. Furthermore, the polynomial has one sign change in this area, and thus has one positive real root as a consequence of Descartes' rule of signs. As shown in Figure~\ref{fig:final_combined_ng3}, the GG model with $N_g=5$ has a CAF region on fixed flow highlighted in dark blue and starting at $N \geq 13$.
 
-Off fixed flow, the situation is similar to that of lower $N_g$: a viable region exists below the dashed line, as shown by the light blue region in Figure \ref{fig:final_combined_ng3}. Similar solutions can be found for larger $N_g$, as illustrated in Figure \ref{fig:gg_combined_ng5} and \ref{fig:gg_combined_ng6} for $N_g=6,7$, respectively. Finally, for $N_g>13$, the gauge coupling loses asymptotic freedom.
+Off fixed flow, the situation is similar to that of lower $N_g$: a viable region exists below the dashed line, as shown by the light blue region in Figure~\ref{fig:final_combined_ng3}. Similar solutions can be found for larger $N_g$, as illustrated in Figure~\ref{fig:gg_combined_ng5} and \ref{fig:gg_combined_ng6} for $N_g=6,7$, respectively. Note that no CAF regions are found for $\SU(5)$. Finally, for $N_g>13$, the gauge coupling loses asymptotic freedom.
 
-For the BY models, the gauge coupling looses asymptotic freedom for $N \geq 5$, as was the case in Section \ref{sec:fundscalarNg}. In Figure \ref{fig:GGadjNG37}, the CAF region can be seen for the case of $N_g\in\{1,2,3,4\}$.
+For the BY models, the gauge coupling looses asymptotic freedom for $N \geq 5$, as was established in Section \ref{sec:fundscalarNg}. In Figure~\ref{fig:GGadjNG37}, the CAF region can be seen for the case of $N_g\in\{1,2,3,4\}$.
 
 % \subsection{One Quartic Scalar Coupling off Fixed Flow}
 % Let us turn our focus to the scalar sector and consider one quartic coupling off fixed flow. We first take $\alpha_{\lambda_1}$ off fixed flow, effectively decoupling the quartic beta functions, we obtain
 % \begin{align}
-%     \beta_{{\lambda_1}} &=3N\alpha_g^2-2p\alpha_{y}^2\;,
+%     \beta_{{\lambda_1}} &=3N\alpha_g^2-2p\alpha_{y}^2\,,
 %     \\
-%     \beta_{{\lambda_2}}&=(7+N^2)\alpha_{\lambda_2}^2+4(p\alpha_{y}-3N\alpha_{g})\alpha_{\lambda_2}+18\alpha_{g}^2\;.
+%     \beta_{{\lambda_2}}&=(7+N^2)\alpha_{\lambda_2}^2+4(p\alpha_{y}-3N\alpha_{g})\alpha_{\lambda_2}+18\alpha_{g}^2\,.
 % \end{align}
 % We can use the CAF conditions from Section \ref{sec:CAGquartic}, in Eqs. \eqref{eq:CAFfixednolam1} and \eqref{eq:CAFnotfixednolam1}. The new condition introduced in this CAF analysis for $\alpha_{\lambda_1}$ is $d_4''<0$ or $d_4<0$, depending on whether the Yukawa coupling is on or off fixed flow, respectively. In this case, $d_4=3N$, which will never be negative. Thus, a model with one adjoint scalar, which has both $\alpha_{\lambda_1}$ and $\alpha_y$ off fixed flow, cannot be CAF.
 % In the case of only $\alpha_{\lambda_1}$ off fixed flow, the new condition in this model will be
 % \begin{align}
-%     d_4''=3N-2K\left(\frac{b_0-c_1}{c_2}\right)^2<0\;.
+%     d_4''=3N-2K\left(\frac{b_0-c_1}{c_2}\right)^2<0\,.
 % \end{align}
 % This condition will only be satisfied in regions where the CAF condition $k_e'<0$ holds. Thus, the theory cannot be CAF in the case of only $\alpha_{\lambda_1}$ off fixed flow. 
 
 % In the case of $\alpha_{\lambda_2}$ off fixed flow, the condition is $e_4''<0$ and $e_4<0$. For this theory, we have the constraints
 % \begin{align}
-%     18&=e_4<0\;,\\
-%     18&+\frac{12(3+N^2)}{N^2}\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2=e''_4<0\;.
+%     18&=e_4<0\,,\\
+%     18&+\frac{12(3+N^2)}{N^2}\left(\frac{b_0-e_2\pm\sqrt{k_e}}{2e_1}\right)^2=e''_4<0\,.
 % \end{align}
 % Neither of these conditions will be satisfied for any $(N,p)$. 
 

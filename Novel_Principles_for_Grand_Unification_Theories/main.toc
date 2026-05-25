@@ -5,68 +5,69 @@
 \contentsline {section}{\numberline {2.2}The Callan-Symanzik Equation}{11}{section.2.2}%
 \contentsline {section}{\numberline {2.3}The beta function}{13}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}An example: Non-Abelian Lagrangian}{13}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Solutions to the beta function and asymptotic freedom}{20}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Solutions to the beta function and asymptotic freedom}{21}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}Grand Unified Theories}{23}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Chiral theories}{23}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Standard Model}{24}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Gauge bosons}{24}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Fermionic matter}{26}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}The Higgs mechanism}{27}{subsection.3.2.3}%
-\contentsline {paragraph}{Gauge boson masses: }{29}{paragraph*.5}%
-\contentsline {paragraph}{Hypercharge of fermions: }{31}{paragraph*.6}%
-\contentsline {paragraph}{Fermion masses: }{31}{paragraph*.7}%
+\contentsline {paragraph}{Gauge boson masses: }{30}{paragraph*.6}%
+\contentsline {paragraph}{Hypercharge of fermions: }{31}{paragraph*.7}%
+\contentsline {paragraph}{Fermion masses: }{31}{paragraph*.8}%
 \contentsline {subsection}{\numberline {3.2.4}The SM and problems}{33}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Motivation of Standard Model extensions}{35}{section.3.3}%
 \contentsline {section}{\numberline {3.4}SU(5)}{38}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Spontaneous Symmetry Breaking to the Standard Model}{41}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}The Higgs boson in SU(5)}{44}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Alternative GUTs}{46}{section.3.5}%
+\contentsline {subsection}{\numberline {3.4.2}The Higgs boson in SU(5)}{45}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Alternative GUTs}{47}{section.3.5}%
 \contentsline {chapter}{\numberline {4}CAF Framework}{49}{chapter.4}%
 \contentsline {section}{\numberline {4.1}ODE approach}{49}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Gauge Coupling}{49}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.1}Gauge Coupling}{50}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Yukawa Coupling }{50}{subsection.4.1.2}%
-\contentsline {paragraph}{Case 1 $b_0=c_1$:}{51}{paragraph*.11}%
-\contentsline {paragraph}{Case 2 $b_0\neq c_1$:}{51}{paragraph*.12}%
-\contentsline {subsection}{\numberline {4.1.3}Quartic Scalar Coupling}{52}{subsection.4.1.3}%
-\contentsline {paragraph}{Case 1 $k < 0$:}{53}{paragraph*.14}%
-\contentsline {paragraph}{Case 2 $k > 0$:}{53}{paragraph*.15}%
-\contentsline {paragraph}{Case 3 $k = 0$:}{55}{paragraph*.16}%
+\contentsline {paragraph}{Case 1 $b_0=c_1$:}{51}{paragraph*.12}%
+\contentsline {paragraph}{Case 2 $b_0\neq c_1$:}{51}{paragraph*.13}%
+\contentsline {subsection}{\numberline {4.1.3}Quartic Scalar Coupling}{53}{subsection.4.1.3}%
+\contentsline {paragraph}{Case 1 $k < 0$:}{53}{paragraph*.15}%
+\contentsline {paragraph}{Case 2 $k > 0$:}{54}{paragraph*.16}%
+\contentsline {paragraph}{Case 3 $k = 0$:}{55}{paragraph*.17}%
 \contentsline {section}{\numberline {4.2}Polynomial approach}{57}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Interplay of Multiple Couplings}{57}{subsection.4.2.1}%
-\contentsline {subsubsection}{Two quartic scalar couplings}{59}{subsubsection*.17}%
-\contentsline {paragraph}{Yukawa off fixed flow}{59}{paragraph*.18}%
+\contentsline {subsection}{\numberline {4.2.1}Gauge couplings }{58}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Yukawa couplings }{58}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Quartic couplings }{59}{subsection.4.2.3}%
+\contentsline {paragraph}{Two quartic scalar couplings: }{59}{paragraph*.18}%
+\contentsline {paragraph}{Yukawa off fixed flow}{60}{paragraph*.19}%
 \contentsline {chapter}{\numberline {5}Chiral models}{61}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Introduction of the Chiral Models}{61}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Scalar-Free Georgi--Glashow model}{63}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Scalar-Free Bars--Yankielowicz model}{66}{subsection.5.1.2}%
 \contentsline {section}{\numberline {5.2}Adding a Single Anti-Fundamental Scalar}{67}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Inclusion of Chiral Families }{71}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}Adding a Single Adjoint scalar}{73}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Inclusion of Chiral Families}{77}{subsection.5.3.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{83}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Conclusion}{83}{section.6.1}%
+\contentsline {subsection}{\numberline {5.2.1}Inclusion of Chiral Families }{70}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Adding a Single Adjoint scalar}{72}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Inclusion of Chiral Families}{76}{subsection.5.3.1}%
+\contentsline {chapter}{\numberline {6}Conclusion}{81}{chapter.6}%
+\contentsline {chapter}{Bibliography}{85}{chapter*.37}%
+\contentsline {chapter}{Appendices}{93}{chapter*.37}%
+\setcounter {tocdepth}{0}
 \contentsline {chapter}{\numberline {A}Group theory}{95}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Groups}{95}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Representation}{96}{section.A.2}%
 \contentsline {section}{\numberline {A.3}Subgroups}{97}{section.A.3}%
 \contentsline {section}{\numberline {A.4}Young Tableaux}{97}{section.A.4}%
 \contentsline {section}{\numberline {A.5}Lie groups}{98}{section.A.5}%
-\contentsline {subsection}{\numberline {A.5.1}Non-abelian group representations}{98}{subsection.A.5.1}%
+\contentsline {subsection}{\numberline {A.5.1}Representations}{98}{subsection.A.5.1}%
 \contentsline {subsection}{\numberline {A.5.2}Young tableaux for SU(N)}{102}{subsection.A.5.2}%
 \contentsline {chapter}{\numberline {B}CAF framework}{105}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Detailed CAF analysis}{105}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}CAF Analysis from Solving ODE's}{105}{subsection.B.1.1}%
-\contentsline {subsubsection}{Yukawa Coupling}{105}{subsubsection*.39}%
-\contentsline {subsubsection}{Quartic Scalar Coupling}{105}{subsubsection*.40}%
-\contentsline {paragraph}{Case 1 $k < 0$:}{106}{paragraph*.41}%
-\contentsline {paragraph}{Case 2 $k > 0$:}{106}{paragraph*.42}%
-\contentsline {paragraph}{Case 3 $k = 0$:}{107}{paragraph*.43}%
-\contentsline {subsection}{\numberline {B.1.2}CAF Analysis Using the Fixed-Flow Framework}{108}{subsection.B.1.2}%
-\contentsline {subsubsection}{Two Quartic Couplings}{109}{subsubsection*.44}%
-\contentsline {paragraph}{The determinant}{110}{paragraph*.45}%
-\contentsline {chapter}{\numberline {C}Chiral models}{113}{appendix.C}%
-\contentsline {section}{\numberline {C.1}The Fierz identity}{113}{section.C.1}%
-\contentsline {section}{\numberline {C.2}BY model with N=3}{114}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Supplementary Figures}{114}{section.C.3}%
-\contentsline {subsection}{\numberline {C.3.1}RG Flows: BY model with an Anti-Fundamental Scalar}{114}{subsection.C.3.1}%
-\contentsline {subsection}{\numberline {C.3.2}Chiral Models with an Adjoint Scalar}{118}{subsection.C.3.2}%
+\contentsline {section}{\numberline {B.1}Solutions to ODE's}{105}{section.B.1}%
+\contentsline {paragraph}{Case 1 $k < 0$:}{105}{paragraph*.40}%
+\contentsline {paragraph}{Case 2 $k > 0$:}{106}{paragraph*.41}%
+\contentsline {paragraph}{Case 3 $k = 0$:}{107}{paragraph*.42}%
+\contentsline {section}{\numberline {B.2}CAF Analysis Using the Fixed-Flow Framework}{108}{section.B.2}%
+\contentsline {subsection}{\numberline {B.2.1}Two Quartic Couplings}{108}{subsection.B.2.1}%
+\contentsline {paragraph}{The determinant}{109}{paragraph*.43}%
+\contentsline {chapter}{\numberline {C}Chiral models}{111}{appendix.C}%
+\contentsline {section}{\numberline {C.1}The Fierz identity}{111}{section.C.1}%
+\contentsline {section}{\numberline {C.2}BY model with N=3}{112}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Supplementary Figures}{112}{section.C.3}%
+\contentsline {subsection}{\numberline {C.3.1}RG Flows: BY model with an Anti-Fundamental Scalar}{113}{subsection.C.3.1}%
+\contentsline {subsection}{\numberline {C.3.2}Chiral Models with an Adjoint Scalar}{116}{subsection.C.3.2}%

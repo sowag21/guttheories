@@ -1,22 +1,22 @@
-When constructing viable GUTs, it is necessary to ensure that the model remains consistent at small distances. One possible approach to this is to ensure that all the couplings are asymptotically free at high energies. Imposing the requirement that the Yukawa and quartic couplings vanish faster than or at the same rate as the gauge coupling leads us to the framework of \textit{complete asymptotic freedom} (CAF) \cite{Giudice:2014tma, Pica:2016krb}.
+When constructing viable GUTs, it is necessary to ensure that the model remains consistent at small distances. One possible approach to this is to ensure that all the couplings are asymptotically free at high energies, this leads us to the framework of \textit{complete asymptotic freedom} (CAF) \cite{Giudice:2014tma, Pica:2016krb}. CAF requires that the Yukawa and quartic couplings vanish faster than or at the same rate as the gauge coupling, which has to be asymptotically free. 
 
-The analysis within this framework can be split into two primary approaches. The first involves solving the coupled ordinary differential equations (ODE)s analytically to evaluate the evolution of the coupling with the energy scale. This approach will be considered in the first Section \ref{sec:CAFODE} in this chapter.
+The analysis within this framework can be split into two primary approaches. The first involves solving the system of coupled beta functions analytically to evaluate the evolution of the coupling with the energy scale. This approach will be considered in the first Section \ref{sec:CAFODE} in this chapter.
 
-The second approach is a polynomial method, which is useful when dealing with multiple couplings of various types. By assuming \textit{fixed flow} the beta functions can be transformed from coupled ODEs into coupled algebraic equations. Depending on the polynomial order, these can be solved numerically or analytically, as explain in Section \ref{sec:ODEpoly}. 
+The second approach is a polynomial method, which is useful when dealing with multiple couplings of various types. By assuming \textit{fixed flow}, the beta functions can be transformed from coupled ODEs into coupled algebraic equations. Depending on the polynomial order, these can be solved numerically or analytically, as explained in Section \ref{sec:CAF2}. 
 
 \section{ODE approach}\label{sec:CAFODE}
-To constrain the coefficients of the renormalisation group (RG) equations of a gauge-Yukawa theory with scalars, we will start by considering a pure gauge theory and work our way to the full model, following a similar approach to \cite{Giudice:2014tma, Pica:2016krb}. As we seek to find vanishing values of the couplings, we only consider one-loop beta functions. 
+To constrain the coefficients of the RG equations of a gauge-Yukawa theory with scalars, we will start by considering a pure gauge theory and work our way to the full model, following a similar approach to \cite{Giudice:2014tma, Pica:2016krb}. The introduction of scalars are necessary to realise a physical GUT as reviewed in Section \ref{sec:SU5}. As we seek to find vanishing values of the couplings, we only consider one-loop beta functions. 
 \subsection{Gauge Coupling}\label{sec:CAFgauge}
-Consider first the gauge coupling's beta function $\beta_g$ to one-loop order
+Consider first the gauge coupling's beta function $\beta_g$ to one-loop order (defined in Eq. \eqref{eq:betafunc})
 \begin{equation}
-    \beta_g:=\mu\frac{\text{d}\alpha_g}{\text{d}\mu}\implies \beta _g= b_0\alpha_g^2\;,\label{eq:betag1loopcaf}
+    \beta_g:=\mu\frac{\text{d}\alpha_g}{\text{d}\mu}\implies \beta _g= b_0\alpha_g^2\,,\label{eq:betag1loopcaf}
 \end{equation}
-where $\mu$ is the RG scale, $\alpha_g=\frac{g^2}{(4\pi)^2}$. The coefficient $b_0$ is determined by group factors and the Dynkin index of the representations of the fermions and scalars (see Eq. \eqref{eq:b0def}). We will consider $b_0$ a constant in the CAF analysis below. For the pure gauge theory to be asymptotically free \cite{Politzer:1974fr}, the beta function must be negative, i.e.\ with our definition\footnote{Note that the standard convention often defines $\beta_g=-b_0\alpha_g^2$} in Eq.\ \eqref{eq:betag1loopcaf}, $b_0<0$. 
+where $\mu$ is the RG scale, $\alpha_g=\frac{g^2}{(4\pi)^2}$. The coefficient $b_0$ is given in Eq.~\eqref{eq:b0def} for a non-Abelian gauge group. We will consider $b_0$ a constant in the CAF analysis below. For the pure gauge theory to be asymptotically free \cite{Politzer:1974fr}, the beta function must be negative, i.e.\ with our definition\footnote{Note that some authors define $\beta_g:=-b_0\alpha_g^2$, which changes the overall sign in the subsequent analysis.} in Eq.~\eqref{eq:betag1loopcaf}, $b_0<0$. 
 The solution of the differential equation is
 \begin{equation}
-    \alpha_g=\frac{\alpha_{g_0}}{1-b_0 \alpha_{g_0} \log \left(\frac{\mu}{\mu_0 }\right)}\;,
+    \alpha_g=\frac{\alpha_{g_0}}{1-b_0 \alpha_{g_0} \ln \left(\frac{\mu}{\mu_0 }\right)}\,,
     \label{eq:solbetag1loop}
 \end{equation}
 where the initial condition is $\alpha(\mu_0)=\alpha_{g_0}$, with $\mu_0$ as the reference RG scale. 
 
-In the case $\mu<\mu_L$, where $\mu_L=\mu_0\exp(1/{b_0\alpha_{g_0}})$, the denominator is negative since $b_0<0$, implying a negative coupling, resulting in a non-physical branch. In the case $\mu=\mu_L$, we have a Landau pole in the infrared (IR). Finally, when $\mu>\mu_L$, the coupling is positive will vanish as $\mu\to\infty$ signifying asymptotic freedom.
+In the case where $\mu<\mu_L$, with $\mu_L=\mu_0\exp(1/{b_0\alpha_{g_0}})$, the denominator is negative since $b_0<0$, resulting in a negative coupling, which will be a non-physical branch. In the case where $\mu=\mu_L$, we have a Landau pole in the infrared (IR). Finally, when $\mu>\mu_L$, the coupling is positive and will vanish as $\mu\to\infty$ signifying asymptotic freedom.

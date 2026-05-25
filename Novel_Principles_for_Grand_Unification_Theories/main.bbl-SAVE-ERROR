@@ -2244,8 +2244,8 @@
       \strng{authorfullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhashraw}{15e144c72b0b9d10db00ddc6d37a19e6}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{{General Relativity}: {An Einstein Centenary Survey}}
@@ -2271,8 +2271,8 @@
       \strng{authorfullhash}{d8dc045abf1b867c743dba0a5d4456d3}
       \strng{authorfullhashraw}{d8dc045abf1b867c743dba0a5d4456d3}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -2383,37 +2383,6 @@
       \verb 10.1016/0031-9163(64)90711-5
       \endverb
     \endentry
-    \entry{Pich:2007vu}{inproceedings}{}{}
-      \name{author}{1}{}{%
-        {{hash=44f1be3103b55105f860525ca34893e4}{%
-           family={Pich},
-           familyi={P\bibinitperiod},
-           given={Antonio},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{44f1be3103b55105f860525ca34893e4}
-      \strng{fullhash}{44f1be3103b55105f860525ca34893e4}
-      \strng{fullhashraw}{44f1be3103b55105f860525ca34893e4}
-      \strng{bibnamehash}{44f1be3103b55105f860525ca34893e4}
-      \strng{authorbibnamehash}{44f1be3103b55105f860525ca34893e4}
-      \strng{authornamehash}{44f1be3103b55105f860525ca34893e4}
-      \strng{authorfullhash}{44f1be3103b55105f860525ca34893e4}
-      \strng{authorfullhashraw}{44f1be3103b55105f860525ca34893e4}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{{2006 European School of High-Energy Physics}}
-      \field{eprintclass}{hep-ph}
-      \field{eprinttype}{arXiv}
-      \field{title}{{The Standard model of electroweak interactions}}
-      \field{year}{2007}
-      \field{pages}{1\bibrangedash 49}
-      \range{pages}{49}
-      \verb{eprint}
-      \verb 0705.4264
-      \endverb
-    \endentry
     \entry{Yang:1954ek}{article}{}{}
       \name{author}{2}{}{%
         {{hash=038511b03bd690257f555dc172161358}{%
@@ -2497,8 +2466,8 @@
       \strng{editornamehash}{630b0280008fd36896a000baa05c7579}
       \strng{editorfullhash}{630b0280008fd36896a000baa05c7579}
       \strng{editorfullhashraw}{630b0280008fd36896a000baa05c7579}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -2539,8 +2508,8 @@
       \strng{editorfullhash}{630b0280008fd36896a000baa05c7579}
       \strng{editorfullhashraw}{630b0280008fd36896a000baa05c7579}
       \field{extraname}{3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -2635,8 +2604,8 @@
       \strng{authornamehash}{13fc9674bd1a57cf7c265f9a25b37ce7}
       \strng{authorfullhash}{13fc9674bd1a57cf7c265f9a25b37ce7}
       \strng{authorfullhashraw}{13fc9674bd1a57cf7c265f9a25b37ce7}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nuovo Cim.}
@@ -2666,8 +2635,8 @@
       \strng{authornamehash}{6688667b723b1c9236805ea8664f1e21}
       \strng{authorfullhash}{6688667b723b1c9236805ea8664f1e21}
       \strng{authorfullhashraw}{6688667b723b1c9236805ea8664f1e21}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Prog. Theor. Phys.}
@@ -2697,8 +2666,8 @@
       \strng{authornamehash}{120639dfbef93a99e706e785fafee4b1}
       \strng{authorfullhash}{120639dfbef93a99e706e785fafee4b1}
       \strng{authorfullhashraw}{120639dfbef93a99e706e785fafee4b1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nuovo Cim.}
@@ -2737,8 +2706,8 @@
       \strng{authornamehash}{133ee76abdc410523c0b145d4f4d8c34}
       \strng{authorfullhash}{133ee76abdc410523c0b145d4f4d8c34}
       \strng{authorfullhashraw}{133ee76abdc410523c0b145d4f4d8c34}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev.}
@@ -2847,8 +2816,8 @@
       \strng{authornamehash}{6524327f231db5f2fc9ea23ee7049326}
       \strng{authorfullhash}{31a784c29255f60c614ea9ffe4191a94}
       \strng{authorfullhashraw}{31a784c29255f60c614ea9ffe4191a94}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -3110,8 +3079,8 @@
       \strng{authornamehash}{180f898d42375ad6f5ed5ead87a55d50}
       \strng{authorfullhash}{180f898d42375ad6f5ed5ead87a55d50}
       \strng{authorfullhashraw}{180f898d42375ad6f5ed5ead87a55d50}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Pisma Zh. Eksp. Teor. Fiz.}
@@ -3150,8 +3119,8 @@
       \strng{authornamehash}{c104a32cc12625a9c4771915c2d59318}
       \strng{authorfullhash}{c104a32cc12625a9c4771915c2d59318}
       \strng{authorfullhashraw}{c104a32cc12625a9c4771915c2d59318}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Lett. B}
@@ -3195,8 +3164,8 @@
       \strng{authornamehash}{847650ffe1b10c93884d6462bfd26265}
       \strng{authorfullhash}{90c8fa0fe78319a94932036c57acf3ca}
       \strng{authorfullhashraw}{90c8fa0fe78319a94932036c57acf3ca}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -3372,8 +3341,8 @@
       \strng{authornamehash}{0ab4b2c15bf5afee3dabe079f50b8c4a}
       \strng{authorfullhash}{0ab4b2c15bf5afee3dabe079f50b8c4a}
       \strng{authorfullhashraw}{0ab4b2c15bf5afee3dabe079f50b8c4a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ph}
@@ -3418,8 +3387,8 @@
       \strng{authornamehash}{3c5179cdd8b0782a5040ad59fd7451cd}
       \strng{authorfullhash}{3c5179cdd8b0782a5040ad59fd7451cd}
       \strng{authorfullhashraw}{3c5179cdd8b0782a5040ad59fd7451cd}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -3452,8 +3421,8 @@
       \strng{authornamehash}{57d5460feef651e0511cad25207f396b}
       \strng{authorfullhash}{57d5460feef651e0511cad25207f396b}
       \strng{authorfullhashraw}{57d5460feef651e0511cad25207f396b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. D}
@@ -3497,8 +3466,8 @@
       \strng{authornamehash}{02055f9a99e4180a906b6b4eb68f89f5}
       \strng{authorfullhash}{f5037e8a827483d525ce21c33ccf1ae8}
       \strng{authorfullhashraw}{f5037e8a827483d525ce21c33ccf1ae8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ph}
@@ -3544,8 +3513,8 @@
       \strng{editorfullhash}{e869e09432fb1c78af5d18e2ffe2ec59}
       \strng{editorfullhashraw}{e869e09432fb1c78af5d18e2ffe2ec59}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -3586,8 +3555,8 @@
       \strng{editorfullhash}{e869e09432fb1c78af5d18e2ffe2ec59}
       \strng{editorfullhashraw}{e869e09432fb1c78af5d18e2ffe2ec59}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. D}
@@ -3617,8 +3586,8 @@
       \strng{authornamehash}{0d6e6d48c2586ae1ddc23435ca002c1f}
       \strng{authorfullhash}{0d6e6d48c2586ae1ddc23435ca002c1f}
       \strng{authorfullhashraw}{0d6e6d48c2586ae1ddc23435ca002c1f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -4040,6 +4009,36 @@
       \verb 1903.04977
       \endverb
     \endentry
+    \entry{Ruegg:1980gf}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d002ddf3bb285d80cb3970375abf25eb}{%
+           family={Ruegg},
+           familyi={R\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d002ddf3bb285d80cb3970375abf25eb}
+      \strng{fullhash}{d002ddf3bb285d80cb3970375abf25eb}
+      \strng{fullhashraw}{d002ddf3bb285d80cb3970375abf25eb}
+      \strng{bibnamehash}{d002ddf3bb285d80cb3970375abf25eb}
+      \strng{authorbibnamehash}{d002ddf3bb285d80cb3970375abf25eb}
+      \strng{authornamehash}{d002ddf3bb285d80cb3970375abf25eb}
+      \strng{authorfullhash}{d002ddf3bb285d80cb3970375abf25eb}
+      \strng{authorfullhashraw}{d002ddf3bb285d80cb3970375abf25eb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{{Extremas of SU($N$) Higgs Potentials and Symmetry Breaking Pattern}}
+      \field{volume}{22}
+      \field{year}{1980}
+      \field{pages}{2040}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.22.2040
+      \endverb
+    \endentry
     \entry{FileviezPerez:2007bcw}{article}{}{}
       \name{author}{1}{}{%
         {{hash=d347249de7fbe6979f02aaaa8b456543}{%
@@ -4457,143 +4456,6 @@
       \verb 10.1016/0550-3213(85)90602-9
       \endverb
     \endentry
-    \entry{Langacker:2008yv}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=002786261d9a888b7c2ba1aecca24144}{%
-           family={Langacker},
-           familyi={L\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{002786261d9a888b7c2ba1aecca24144}
-      \strng{fullhash}{002786261d9a888b7c2ba1aecca24144}
-      \strng{fullhashraw}{002786261d9a888b7c2ba1aecca24144}
-      \strng{bibnamehash}{002786261d9a888b7c2ba1aecca24144}
-      \strng{authorbibnamehash}{002786261d9a888b7c2ba1aecca24144}
-      \strng{authornamehash}{002786261d9a888b7c2ba1aecca24144}
-      \strng{authorfullhash}{002786261d9a888b7c2ba1aecca24144}
-      \strng{authorfullhashraw}{002786261d9a888b7c2ba1aecca24144}
-      \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{hep-ph}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{Rev. Mod. Phys.}
-      \field{title}{{The Physics of Heavy $Z^\prime$ Gauge Bosons}}
-      \field{volume}{81}
-      \field{year}{2009}
-      \field{pages}{1199\bibrangedash 1228}
-      \range{pages}{30}
-      \verb{doi}
-      \verb 10.1103/RevModPhys.81.1199
-      \endverb
-      \verb{eprint}
-      \verb 0801.1345
-      \endverb
-    \endentry
-    \entry{Barr:1981qv}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=49308bfc159bb036eed801e7b0721bad}{%
-           family={Barr},
-           familyi={B\bibinitperiod},
-           given={Stephen\bibnamedelima M.},
-           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{49308bfc159bb036eed801e7b0721bad}
-      \strng{fullhash}{49308bfc159bb036eed801e7b0721bad}
-      \strng{fullhashraw}{49308bfc159bb036eed801e7b0721bad}
-      \strng{bibnamehash}{49308bfc159bb036eed801e7b0721bad}
-      \strng{authorbibnamehash}{49308bfc159bb036eed801e7b0721bad}
-      \strng{authornamehash}{49308bfc159bb036eed801e7b0721bad}
-      \strng{authorfullhash}{49308bfc159bb036eed801e7b0721bad}
-      \strng{authorfullhashraw}{49308bfc159bb036eed801e7b0721bad}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Lett. B}
-      \field{title}{{A New Symmetry Breaking Pattern for SO(10) and Proton Decay}}
-      \field{volume}{112}
-      \field{year}{1982}
-      \field{pages}{219\bibrangedash 222}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1016/0370-2693(82)90966-2
-      \endverb
-    \endentry
-    \entry{DeRujula:1980qc}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=d5583c681bd7d097481983a54b49ebe3}{%
-           family={De\bibnamedelima Rujula},
-           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=539150865c9eaf3cf228abdd3d0e88ba}{%
-           family={Georgi},
-           familyi={G\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-        {{hash=fdc67cd69f482037e96009aec70a2312}{%
-           family={Glashow},
-           familyi={G\bibinitperiod},
-           given={S.\bibnamedelimi L.},
-           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{d9abb168b44c6b4c393809d47c921366}
-      \strng{fullhash}{d9abb168b44c6b4c393809d47c921366}
-      \strng{fullhashraw}{d9abb168b44c6b4c393809d47c921366}
-      \strng{bibnamehash}{d9abb168b44c6b4c393809d47c921366}
-      \strng{authorbibnamehash}{d9abb168b44c6b4c393809d47c921366}
-      \strng{authornamehash}{d9abb168b44c6b4c393809d47c921366}
-      \strng{authorfullhash}{d9abb168b44c6b4c393809d47c921366}
-      \strng{authorfullhashraw}{d9abb168b44c6b4c393809d47c921366}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Lett.}
-      \field{title}{{FLAVOR GONIOMETRY BY PROTON DECAY}}
-      \field{volume}{45}
-      \field{year}{1980}
-      \field{pages}{413}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.45.413
-      \endverb
-    \endentry
-    \entry{Achiman:1978rv}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=348db4927327f515c3f909c9096c47af}{%
-           family={Achiman},
-           familyi={A\bibinitperiod},
-           given={Yoav},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=ce2a20e2051cb4df8f3477a5b24b7943}{%
-           family={Stech},
-           familyi={S\bibinitperiod},
-           given={Berthold},
-           giveni={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{c02a15638b306e9828c1437a35908077}
-      \strng{fullhash}{c02a15638b306e9828c1437a35908077}
-      \strng{fullhashraw}{c02a15638b306e9828c1437a35908077}
-      \strng{bibnamehash}{c02a15638b306e9828c1437a35908077}
-      \strng{authorbibnamehash}{c02a15638b306e9828c1437a35908077}
-      \strng{authornamehash}{c02a15638b306e9828c1437a35908077}
-      \strng{authorfullhash}{c02a15638b306e9828c1437a35908077}
-      \strng{authorfullhashraw}{c02a15638b306e9828c1437a35908077}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{NATO Sci. Ser. B}
-      \field{title}{{TOPLESS MODEL FOR GRAND UNIFICATION}}
-      \field{year}{1979}
-      \field{pages}{303\bibrangedash 314}
-      \range{pages}{12}
-    \endentry
     \entry{Dimopoulos:1981zb}{article}{}{}
       \name{author}{2}{}{%
         {{hash=4deaacdbd56502c3b9dcc298562daae6}{%
@@ -4886,8 +4748,8 @@
       \strng{editornamehash}{ce581f4fe3d5d7ff991ff3c57e443c86}
       \strng{editorfullhash}{ce581f4fe3d5d7ff991ff3c57e443c86}
       \strng{editorfullhashraw}{ce581f4fe3d5d7ff991ff3c57e443c86}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{isbn}{0442226462}
